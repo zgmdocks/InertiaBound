@@ -5,6 +5,7 @@
 # is not tight
 def check(G):
     alpha = len(G.independent_set())
+    numVertices = len(G)
     if not is_alpha_critical(G):
         return False
     circuit = G.eulerian_circuit()
@@ -12,7 +13,14 @@ def check(G):
         return False
     if not G.is_arc_transitive():
         return False
-    
+    subgraphs = []
+    for combo in Combinations(range(numVertices,2*alpha+1)):
+        g = G.subgraph(combo)
+        if nonsingular_graph(g):
+            stg = g.canonical_label.graph6_string()
+            if stg not in subgraphs:
+                subgraphs.append(stg)
+
     return True
 
 
