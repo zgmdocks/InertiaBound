@@ -6,14 +6,14 @@ def contained(G, Triangle, SubGraph):
     for triangle in G.subgraph_search_iterator(Triangle,induced = true):
         if j == 0:
             # if j = 0, we did not find the triangle in any subgraph
-            return false
+            return False
         j = 0
         for subgraph in G.subgraph_search_iterator(SubGraph,induced = true):
             # we want to break if the triangle is contained in the current subgraph and start checking the next triangle
             if set(triangle).issubset(set(subgraph)):
                 j = 1
                 break
-    return true
+    return True
 
 g=graphs.CirculantGraph(17,[1, 2, 4, 8])
 T = graphs.CompleteGraph(3)
