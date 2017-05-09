@@ -14,13 +14,23 @@ def check(G):
     if not G.is_arc_transitive():
         return False
     subgraphs = []
-    for combo in Combinations(range(numVertices,2*alpha+1)):
+    for combo in Combinations(range(numVertices),2*alpha+1):
         g = G.subgraph(combo)
         if nonsingular_graph(g):
-            stg = g.canonical_label.graph6_string()
-            if stg not in subgraphs:
-                subgraphs.append(stg)
-
+            # need to create copy so I don't alter g
+            h = g.copy()
+            # in this loop, I find all pendant vertices of g, delete them
+            # and all neighbours, and then check if the resulting graph is
+            # a cycle
+            for v in h.vertex_iterator():
+                if len(h[v]) == 1:
+                    h.delete_vertex(h[v][0])
+                    h.delete_vertex(v)
+            if h.is_cycle():
+                stg = g.canonical_label().graph6_string()
+                if stg not in subgraphs:
+                    subgraphs.append(stg)
+                
     return True
 
 
@@ -49,17 +59,17 @@ def contained(G, Triangle, SubGraph):
 # is_alpha_critical returns true if the graph G is alpha critical
 def is_alpha_critical(G):
     alpha=len(G.independent_set())
-        for i in G.edges():
-            H=G.copy()
-            H.delete_edge(i)
-            if len(H.independent_set())==alpha:
-                return False
+    for i in G.edges():
+        H=G.copy()
+        H.delete_edge(i)
+        if len(H.independent_set())==alpha:
+            return False
     return True
 
 
 
 
-nonsingular_graph(g):
+def nonsingular_graph(g):
     """
     Return True if g is nonsingular, otherwise return False.  
     The algorithm keeps deleting a leaf and its only neighbor.  If the final graph 
