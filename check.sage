@@ -17,19 +17,9 @@ def check(G):
     for combo in Combinations(range(numVertices),2*alpha+1):
         g = G.subgraph(combo)
         if nonsingular_graph(g):
-            # need to create copy so I don't alter g
-            h = g.copy()
-            # in this loop, I find all pendant vertices of g, delete them
-            # and all neighbours, and then check if the resulting graph is
-            # a cycle
-            for v in h.vertex_iterator():
-                if len(h[v]) == 1:
-                    h.delete_vertex(h[v][0])
-                    h.delete_vertex(v)
-            if h.is_cycle():
-                stg = g.canonical_label().graph6_string()
-                if stg not in subgraphs:
-                    subgraphs.append(stg)
+            stg = temp.canonical_label().graph6_string()
+            if stg not in subgraphs:
+                subgraphs.append(stg)
                 
     return True
 
@@ -101,3 +91,6 @@ def nonsingular_graph(g):
         return nonsingular_graph(h);
     else:
         return False;
+
+g = graphs.CirculantGraph(17,[1,2,4,8])
+print check(g)
