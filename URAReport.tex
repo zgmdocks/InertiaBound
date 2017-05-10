@@ -245,8 +245,24 @@ Let H be the subgraph of G formed by the vertices in an independent set of size 
 \lambda_i \geq \tau_i = 0 \text{ for all i } \in \{1,\ldots ,s\}
 \end{equation}
 
-and so
+and so 
+\begin{equation}
+n - n_-(W) = n_+(W) + n_0(W) \geq s
+\end{equation}
+Also, note that by negating W, the positive eigenvalues become negative eigenvalues and vice versa. Thus,
+\begin{equation}
+n - n_+(W) = n - n_-(-W),
+\end{equation}
+However, the principal submatrix corresponding to H in -W is still the zero matrix and thus has all zero eigenvalues. Thus, by interlacing, we get a similar result as above, 
+\begin{equation}
+n - n_+(W) = n - n_-(-W) = n_+(-W) + n_0(-W) \geq s
+\end{equation}
 
+Therefore, both $n - n_+(W)$ and $n - n_-(W)$ are greater than or equal to s. Since s is the size of the idependent set, we can see that letting s = $\alpha$(G), we get:
+
+\begin{equation}
+\alpha(G) \leq min\{|G| - n_+(W),|G|-n_-(W)\}
+\end{equation}
 
 \end{proof}
 
