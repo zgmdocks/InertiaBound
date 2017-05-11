@@ -14,13 +14,38 @@ def check(G):
     if not G.is_arc_transitive():
         return False
     subgraphs = []
+    trainglesCheck = []
     for combo in Combinations(range(numVertices),2*alpha+1):
         g = G.subgraph(combo)
-        if nonsingular_graph(g):
-            stg = temp.canonical_label().graph6_string()
-            if stg not in subgraphs:
-                subgraphs.append(stg)
-                
+        #this next while loop will delete all pendants of g,
+        #then check if the resulting g is a: a single odd cycle
+        # or b: a disjoint union of odd cycles. if it is in category
+        # a, then it is added to trainglesCheck list, and if it is in b,
+        # it is added to subgraphs list
+        h = g.copy()
+        # this changed variable is necessary because when we iterate through the
+        # vertices, we are deleting some and creating new pendants that we need
+        # to delete also, but if we already iterated over that vertice, then
+        # we won't realize that it still needs to be deleted so we need to
+        # keep iterating over the vertices until we get to a point where we don't
+        # find and delete any new pendants
+        changed = True
+        while changed:
+            changed = False
+            for v in h.vertex_iterator():
+                if len(h[v]) == 1:
+                    changed = True
+                    h.delete_vertex(h[v][0])
+                    h.delete_vertex(v)
+            if h.is_cycle() and h.order()%2 == 1:
+                if g not in trainglesCheck:
+                    trianglesCheck.append(g)
+            components = h.connected_components_subgraphs()
+            for com in components:
+                if (not com.is_cycle()) or (not com.order()%2 == 1):
+                    continue
+                if g not in subgraphs:
+                    subraphs.append(g)               
     return True
 
 
@@ -55,34 +80,6 @@ def is_alpha_critical(G):
         if len(H.independent_set())==alpha:
             return False
     return True
-
-
-
-# triangle_sign_check deletes all pendants on a graph g, and then checks if that
-# graph only has a single odd cycle left. This is necessary to be able to figure
-# out if all triangles must have the same sign
-def triangle_sign_check(g):
-    h = g.copy()
-    # in the loop, I find all pendant vertices of g, delete them
-    # and all neighbours, and then check if the resulting graph is
-    # a cycle
-    changed = True
-    # this changed variable is necessary because when we iterate through the
-    # vertices, we are deleting some and creating new pendants that we need
-    # to delete also, but if we already iterated over that vertice, then
-    # we won't realize that it still needs to be deleted so we need to
-    # keep iterating over the vertices until we get to a point where we don't
-    # find and delete any new pendants
-    while changed:
-        changed = False
-        for v in h.vertex_iterator():
-            if len(h[v]) == 1:
-                changed = true
-                h.delete_vertex(h[v][0])
-                h.delete_vertex(v)
-    if h.is_cycle() and h.order()%2 == 1:
-        return True
-    return False
 
 g = graphs.CirculantGraph(17,[1,2,4,8])
 print check(g)
