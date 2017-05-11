@@ -14,7 +14,7 @@ def check(G):
     if not G.is_arc_transitive():
         return False
     subgraphs = []
-    trainglesCheck = []
+    trianglesCheck = []
     for combo in Combinations(range(numVertices),2*alpha+1):
         g = G.subgraph(combo)
         #this next while loop will delete all pendants of g,
@@ -37,15 +37,16 @@ def check(G):
                     changed = True
                     h.delete_vertex(h[v][0])
                     h.delete_vertex(v)
+                    break
             if h.is_cycle() and h.order()%2 == 1:
-                if g not in trainglesCheck:
+                if g not in trianglesCheck:
                     trianglesCheck.append(g)
             components = h.connected_components_subgraphs()
             for com in components:
                 if (not com.is_cycle()) or (not com.order()%2 == 1):
                     continue
                 if g not in subgraphs:
-                    subraphs.append(g)               
+                    subgraphs.append(g)               
     return True
 
 
