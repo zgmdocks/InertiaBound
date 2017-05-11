@@ -58,39 +58,31 @@ def is_alpha_critical(G):
 
 
 
-
-def nonsingular_graph(g):
-    """
-    Return True if g is nonsingular, otherwise return False.  
-    The algorithm keeps deleting a leaf and its only neighbor.  If the final graph 
-    is a disjoint union of odd cycles, then g is nonsingular.
-    
-    Input:
-        g: a simple graph (considered as no loop)
-    Output:
-        True or False
-    """
-    if g.order()==0:
-        return True;
-    com=g.connected_components_subgraphs()[0]
-    V=com.vertices();
-    ##If has a leaf, then delete the leaf and its neighbor.
-    for v in V:
-        if g.degree(v)==1:
-            u=g.neighbors(v)[0];
-            h=g.copy();
-            h.delete_vertex(v);
-            h.delete_vertex(u);
-            return nonsingular_graph(h);
-    ##If no leaf, check odd cycle or not.
-    deg_seq=com.degree_sequence();
-    if max(deg_seq)==2 and min(deg_seq)==2 and com.order()%2==1:
-        h=g.copy();
-        for v in V:
-            h.delete_vertex(v);
-        return nonsingular_graph(h);
-    else:
-        return False;
+# triangle_sign_check deletes all pendants on a graph g, and then checks if that
+# graph only has a single odd cycle left. This is necessary to be able to figure
+# out if all triangles must have the same sign
+def triangle_sign_check(g):
+    h = g.copy()
+    # in the loop, I find all pendant vertices of g, delete them
+    # and all neighbours, and then check if the resulting graph is
+    # a cycle
+    changed = True
+    # this changed variable is necessary because when we iterate through the
+    # vertices, we are deleting some and creating new pendants that we need
+    # to delete also, but if we already iterated over that vertice, then
+    # we won't realize that it still needs to be deleted so we need to
+    # keep iterating over the vertices until we get to a point where we don't
+    # find and delete any new pendants
+    while changed:
+        changed = False
+        for v in h.vertex_iterator():
+            if len(h[v]) == 1:
+                changed = true
+                h.delete_vertex(h[v][0])
+                h.delete_vertex(v)
+    if h.is_cycle() and h.order()%2 == 1:
+        return True
+    return False
 
 g = graphs.CirculantGraph(17,[1,2,4,8])
 print check(g)
