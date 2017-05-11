@@ -16,7 +16,7 @@ def check(G):
     subgraphs = []
     trianglesCheck = []
     for combo in Combinations(range(numVertices),2*alpha+1):
-        g = G.subgraph(combo)
+        g = G.subgraph(combo).canonical_label()
         #this next while loop will delete all pendants of g,
         #then check if the resulting g is a: a single odd cycle
         # or b: a disjoint union of odd cycles. if it is in category
