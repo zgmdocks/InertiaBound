@@ -88,11 +88,13 @@ The weight matrix of a graph G, is a matrix defined by:
 \begin{equation}
     W_{i,j} = 
     \begin{cases}
-        1 & \mbox{if $v_i$ and $v_j$ are adjacent} \\
+        c_{i,j} & \mbox{if $v_i$ and $v_j$ are adjacent} \\
         0 & \mbox{otherwise}
     \end{cases}
 \end{equation}
-with $v_i$ a vertice of G.
+with $v_i$ a vertice of G and $c_{i,j}$, a constant.
+
+The weight matrix of a graph, is identical to an adjacency matrix, except where there was a 1 in the matrix at entry $A_{i,j}$ if vertices $v_i$ and $v_j$ were adjacent, there is now a constant indicating a weighting for the edge between $v_i$ and $v_j$.
 
 \end{definition}
 
@@ -104,10 +106,10 @@ For any graph G, there exists a bound on $\alpha$(G), known as the Cvetkovi\'c b
 
 Where $n_+(W)$ and $n_-(W)$ denote the number of positive and negative eigenvalues of W, respectively.
 
-To prove this, we first need to introduce the Eigenvalue Interlacing Theorem:
+To prove this, we first need to introduce a result that comes from the Eigenvalue Interlacing Theorem:
 
-\begin{theorem}{Eigenvalue Interlacing Theorem}
-Let A be an $n\times n$ real symmetric matrix with eigenvalues $\lambda_1 \geq \lambda_2 \geq \ldots \geq \lambda_n$ and let C be a $k\times k$ principal submatrix of A with eigenvalues $\tau_1 \geq \tau_2 \geq \ldots \geq \tau_k$. Then $\lambda_i \geq \tau_i$ for all i $\in \{1,\ldots ,k\}$. *****(CITE FROM JOHNS PAPER)******
+\begin{theorem}{Corollary of Eigenvalue Interlacing Theorem}
+Let A be an $n\times n$ real symmetric matrix with eigenvalues $\lambda_1 \geq \lambda_2 \geq \ldots \geq \lambda_n$ and let C be a $k\times k$ principal submatrix of A with eigenvalues $\tau_1 \geq \tau_2 \geq \ldots \geq \tau_k$. Then $\lambda_i \geq \tau_i$ for all i $\in \{1,\ldots ,k\}$. \cite{sinkovic2016graph}
 \end{theorem}
 
 \begin{definition}{Principal Submatrix}
@@ -239,7 +241,7 @@ Let G be a graph on n vertices, and W be the weight matrix of G. Then the follow
 \end{equation}
 \end{theorem}
 
-\begin{proof}
+\begin{proof}\footnote{Interesting Graphs and their Colourings, unpublished lecture notes C. Godsil (2004)}
 Let H be the subgraph of G formed by the vertices in an independent set of size s. Then H is an induced subgraph of G and all eigenvalues of the principal submatrix W(H) are 0 since the principal submatrix will just be a zero matrix. Let $\lambda_i$ denote the ith largest eigenvalue of W and $\tau_i$ denote the ith larest eigenvalue of W(H). Now, by interlacing, we have,
 \begin{equation}
 \lambda_i \geq \tau_i = 0 \text{ for all i } \in \{1,\ldots ,s\}
@@ -265,6 +267,9 @@ Therefore, both $n - n_+(W)$ and $n - n_-(W)$ are greater than or equal to s. Si
 \end{equation}
 
 \end{proof}
+
+\bibliographystyle{plain}
+\bibliography{mybib}
 
 \end{document}
 
