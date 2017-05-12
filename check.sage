@@ -48,8 +48,8 @@ def check(G):
         for com in components:
             if (not com.is_cycle()) or (not com.order()%2 == 1):
                 continue_loop = True 
-                # need continue_loop because I want to break out of outer for
-                # loop, but using break now will only break out of 
+                # need continue_loop because I want to continue out of outer for
+                # loop, but using continue now will only continue out of 
                 # the inner for loop
                 break
         if continue_loop:
@@ -57,8 +57,9 @@ def check(G):
         # if we make it to this point, every component was an odd cycle
         if g not in subgraphs:
             subgraphs.append(g)
-    print len(subgraphs)
-    print len(trianglesCheck)
+    T = graphs.CompleteGraph(3)
+    if not contained(G,T,trianglesCheck):
+        return False
     return True
 
 
@@ -66,19 +67,22 @@ def check(G):
 # contained returns true if the each triangle in G is
 # contained in at least one subgraph of the form SubGraph and
 # false otherwise
-def contained(G, Triangle, SubGraph):
+def contained(G, Triangle, SubGraphs):
     j = 1 
     #calculates the total number of triangles in G
     for triangle in G.subgraph_search_iterator(Triangle,induced = true):
         if j == 0:
             # if j = 0, we did not find the triangle in any subgraph
             return False
-        j = 0 
-        for subgraph in G.subgraph_search_iterator(SubGraph,induced = true):
-            # we want to break if the triangle is contained in the current 
-            #subgraph and start checking the next triangle
-            if set(triangle).issubset(set(subgraph)):
-                j = 1 
+        j = 0
+        for s in SubGraphs:
+            for subgraph in G.subgraph_search_iterator(s,induced = true):
+                # we want to break if the triangle is contained in the current 
+                #subgraph and start checking the next triangle
+                if set(triangle).issubset(set(subgraph)):
+                    j = 1 
+                    break
+            if j == 1:
                 break
     return True
 
@@ -94,5 +98,5 @@ def is_alpha_critical(G):
             return False
     return True
 
-g = graphs.CirculantGraph(17,[1,2,4,8])
+g = graphs.CirculantGraph(19,[1,7,8])
 print check(g)
