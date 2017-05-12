@@ -42,11 +42,14 @@ def check(G):
             if g not in trianglesCheck:
                 trianglesCheck.append(g)
         components = h.connected_components_subgraphs()
+        if not components:
+            break
         for com in components:
             if (not com.is_cycle()) or (not com.order()%2 == 1):
-                continue
-            if g not in subgraphs:
-                subgraphs.append(g)               
+                break
+        # if we make it to this point, every component was an odd cycle
+        if g not in subgraphs:
+            subgraphs.append(g)
     return True
 
 
