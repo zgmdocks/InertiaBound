@@ -44,12 +44,21 @@ def check(G):
         components = h.connected_components_subgraphs()
         if not components:
             break
+        continue_loop = False
         for com in components:
             if (not com.is_cycle()) or (not com.order()%2 == 1):
+                continue_loop = True 
+                # need continue_loop because I want to break out of outer for
+                # loop, but using break now will only break out of 
+                # the inner for loop
                 break
+        if continue_loop:
+            continue
         # if we make it to this point, every component was an odd cycle
         if g not in subgraphs:
             subgraphs.append(g)
+    print len(subgraphs)
+    print len(trianglesCheck)
     return True
 
 
