@@ -1,3 +1,4 @@
+import os
 # check takes a graph G as input and returns true if the 
 # graph satisfies all properties that would make
 # it a good candidate for the method used in John 
@@ -60,10 +61,12 @@ def check(G):
     T = graphs.CompleteGraph(3)
     if not contained(G,T,trianglesCheck):
         return False
+    # finished preliminary check, now to check signs
+    print Check passed
     return True
 
 
-
+#Thinking this is working correctly, but might need to come back to
 # contained returns true if the each triangle in G is
 # contained in at least one subgraph of the form SubGraph and
 # false otherwise
@@ -99,4 +102,7 @@ def is_alpha_critical(G):
     return True
 
 g = graphs.CirculantGraph(19,[1,7,8])
+graphic = g.plot()
+graphic.save('output.png')
+os.system('open output.png')
 print check(g)
