@@ -120,6 +120,7 @@ Where $n_+(W)$ and $n_-(W)$ denote the number of positive and negative eigenvalu
 To prove this, we first need to introduce a result that comes from the Eigenvalue Interlacing Theorem:
 
 \begin{theorem}[Corollary of Eigenvalue Interlacing Theorem]
+\label{interlacing}
 Let $A$ be an $n\times n$ real symmetric matrix with eigenvalues $\lambda_1 \geq \lambda_2 \geq \ldots \geq \lambda_n$ and let $C$ be a $k\times k$ principal submatrix of $A$ with eigenvalues $\tau_1 \geq \tau_2 \geq \ldots \geq \tau_k$. Then $\lambda_i \geq \tau_i$ for all $i$ $\in \{1,\ldots ,k\}$. \cite{sinkovic2016graph}
 \end{theorem}
 
@@ -283,9 +284,7 @@ Therefore, both $n - n_+(W)$ and $n - n_-(W)$ are greater than or equal to s. Si
 
 \section{Algorithm to Find Graphs Lacking a Tight Inertia Bound}
 
-\subsection{Preliminary Tests to Determine if the Graph may be Suitable}
-
-\subsubsection{Test for $\alpha-$Critical}
+\subsection{Outline of Method}
 
 \begin{definition}[Optimal Weight Matrix]
 A weight matrix, $W$, of a graph, $G$, is optimal if
@@ -468,6 +467,20 @@ Finding the eigenvalues of this weight matrix, we find there are 4 positive eige
 Therefore, we see that the previous weighting was not optimal for G.
 \end{exmp}
 
+\begin{lemma}
+If a graph, $G$, with weight matrix $W$, has two induced subgraphs, $S_1$ and $S_2$, such that $S_1$ has $\alpha(G)+1$ positive eigenvalues under the weighting of $W$, and $S_2$ has $\alpha(G)+1$ negative eigenvalues under the weighting of $W$, then $W$ is not optimal
+\end{lemma}
+
+\begin{proof}
+
+
+
+\end{proof}
+
+\subsection{Preliminary Tests to Determine if the Graph may be Suitable}
+
+\subsubsection{Test for $\alpha-$Critical}
+
 \begin{definition}[$\bm{\alpha-}$Critical]
 A graph, G, is $\alpha-$critical if $\alpha(G) < \alpha(G-e)$ for all edges e.
 \end{definition}
@@ -519,6 +532,11 @@ Due to the complexity of needing to consider edges that could potentially be zer
 \begin{definition}[Arc Transitive]
 A graph is called arc-transitive if its automorphism group has a single orbit on the set of all ordered pairs of adjacent vertices in the graph. \cite{conder2015orders}
 \end{definition}
+
+\subsubsection{Determining Each Triangle Must Have the Same Sign}
+
+
+
 
 \bibliographystyle{plain}
 \bibliography{mybib}
