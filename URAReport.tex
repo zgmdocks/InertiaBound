@@ -6,6 +6,7 @@
 \usepackage{tikz}
 \usepackage{amsmath}
 \usepackage{color}
+\usepackage{bm}
 
 \newtheoremstyle{parenbold} % Name
   {2\parskip}           % Space above
@@ -16,6 +17,10 @@
   {}                    % Punctuation after theorem head
   { }                 % Space after theorem head
   {\thmnumber{#2 }\thmname{#1.\newline}\thmnote{\bfseries{#3} |}} % Theorem head spec
+  
+\makeatletter
+\g@addto@macro\bfseries{\boldmath}
+\makeatother
 
 \theoremstyle{parenbold}
 \newtheorem{definition}{Definition}[section]
@@ -280,7 +285,7 @@ Therefore, both $n - n_+(W)$ and $n - n_-(W)$ are greater than or equal to s. Si
 
 \subsection{Preliminary Tests to Determine if the Graph may be Suitable}
 
-\subsubsection{Test for Alpha Critical}
+\subsubsection{Test for $\alpha-$Critical}
 
 \begin{definition}[Optimal Weight Matrix]
 A weight matrix, $W$, of a graph, $G$, is optimal if
@@ -463,8 +468,8 @@ Finding the eigenvalues of this weight matrix, we find there are 4 positive eige
 Therefore, we see that the previous weighting was not optimal for G.
 \end{exmp}
 
-\begin{definition}[Alpha Critical]
-A graph, G, is alpha critical if $\alpha(G) < \alpha(G-e)$ for all edges e.
+\begin{definition}[$\bm{\alpha-}$Critical]
+A graph, G, is $\alpha-$critical if $\alpha(G) < \alpha(G-e)$ for all edges e.
 \end{definition}
 
 \begin{exmp}
@@ -500,16 +505,20 @@ Thus, G is $\alpha-$critical.
 If G is $\alpha-$critical, and $W$ an optimal weight matrix of G, then $w_{i,j} \neq$ 0 for all $i,j \in E(G)$
 \end{lemma} 
 \begin{proof}
-Assume for the sake of contradiction, that for some $i,j \in E(G)$, we have $w_{i,j} = 0$. Then, we know $\alpha(G-e_{i,j}) > \alpha(G)$ because G is alpha critical. Thus:
+Assume for the sake of contradiction, that for some $i,j \in E(G)$, we have $w_{i,j} = 0$. Then, we know $\alpha(G-e_{i,j}) > \alpha(G)$ because G is $\alpha-$critical. Thus:
 
 $\alpha(G) < \alpha(G-e_{i,j}) \leq \min\{|G| - n_+(W),|G| - n_-(W)\}$
 
 Thus, we see that the inertia bound is not tight for G, so W is not an optimal weight matrix of G, which is a contradiction.
 \end{proof}
 
-Due to the complexity of needing to consider edges that could potentially be zero in the weight matrix, it is easier to consider graphs that are restricted to only non-zero edge weights in its optimal weight matrix. Thus, it makes sense to only consider alpha critical graphs, because of Lemma \ref{alpha} ensuring that all alpha critical graphs have non-zero weight matrices.
+Due to the complexity of needing to consider edges that could potentially be zero in the weight matrix, it is easier to consider graphs that are restricted to only non-zero edge weights in its optimal weight matrix. Thus, it makes sense to only consider $\alpha-$critical graphs, because of Lemma \ref{alpha} ensuring that all $\alpha-$critical graphs have non-zero weight matrices.
 
 \subsubsection{Test for Arc Transitivity}
+
+\begin{definition}[Arc Transitive]
+A graph is called arc-transitive if its automorphism group has a single orbit on the set of all ordered pairs of adjacent vertices in the graph. \cite{conder2015orders}
+\end{definition}
 
 \bibliographystyle{plain}
 \bibliography{mybib}

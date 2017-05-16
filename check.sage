@@ -9,8 +9,8 @@ def check(G):
     numVertices = len(G)
     if not is_alpha_critical(G):
         return False
-    circuit = G.eulerian_circuit()
-    if not circuit:
+    path = G.hamiltonian_path()
+    if not path:
         return False
     if not G.is_arc_transitive():
         return False
@@ -62,7 +62,7 @@ def check(G):
     if not contained(G,T,trianglesCheck):
         return False
     # finished preliminary check, now to check signs
-    print Check passed
+    print "Check passed"
     return True
 
 
