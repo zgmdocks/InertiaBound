@@ -1,3 +1,4 @@
+import os
 # signing accepts a graph G, a matrix that will hold the signs of edges, M, and
 # a list of nonsingular subgraphs of G of size 2alpha+1. This function will
 # attempt to determine the signing of G and find a contradiction for a tight
@@ -27,8 +28,7 @@ def signing(G, M, subgraphs):
                 # the edges will be 19 at the least. Thus, if the sum is less
                 # then 19, we know at least two edges. Also, if the sum is
                 # >= 8, then we know we only have 1 missing edge and can determine it
-                if M[t[0]-1,t[1]-1] + M[t[0]-1,t[2]-1] + M[t[1]-1,t[2]-1] < 19 and
-                    M[t[0]-1,t[1]-1] + M[t[0]-1,t[2]-1] + M[t[1]-1,t[2]-1] >= 8:
+                if (M[t[0]-1,t[1]-1] + M[t[0]-1,t[2]-1] + M[t[1]-1,t[2]-1] < 19) and (M[t[0]-1,t[1]-1] + M[t[0]-1,t[2]-1] + M[t[1]-1,t[2]-1] >= 8):
                         if M[t[0]-1,t[1]-1] == 10:
                             M[t[0]-1,t[1]-1] = triSign*M[t[0]-1,t[2]-1]*M[t[1]-1,t[2]-1]
                             M[t[1]-1,t[0]-1] = triSign*M[t[0]-1,t[2]-1]*M[t[1]-1,t[2]-1]
@@ -49,7 +49,7 @@ def signing(G, M, subgraphs):
                     continue
                 # if we get to this point, we know that all edges in the subgraph have a
                 # sign and so we can determine if it should be in posEigen of negEigen
-                c = s.copy(immutable=False))
+                c = s.copy(immutable=False)
                 for e in c.edge_iterator(label=false):
                     temp1 = e[0]
                     temp2 = e[1]
