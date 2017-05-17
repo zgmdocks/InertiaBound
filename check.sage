@@ -1,4 +1,5 @@
 import os
+load('signing.sage')
 # check takes a graph G as input and returns true if the 
 # graph satisfies all properties that would make
 # it a good candidate for the method used in John 
@@ -70,6 +71,17 @@ def check(G):
     # finished preliminary check, now to check signs
     print "Check passed"
     print len(subgraphs)
+    for e in G.edge_iterator(labels=false):
+        temp1 = e[0]
+        temp2 = e[1]
+        G.delete_edge(e)
+        if path.has_edge(e):
+            G.add_edge((temp1,temp2,1))
+        else:
+            G.add_edge((temp1,temp2,10))
+    M = G.weighted_adjacency_matrix()
+    signing(G,M,subgraphs,1)
+    signing(G,M,subgraphs,-1)
     return True
 
 
