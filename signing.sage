@@ -16,13 +16,17 @@ def signing(G, M, subgraphs):
         #it has alpha(G)+1 negative eigenvalues
         posEigen = set()
         negEigen = set()
-        print "sign of triangles is " + triSign
+        print "sign of triangles is " 
+        print triSign
         changed = True
+        case = False
         while True:
+            if case == True:
+                break
             if changed == False:
                 break
             changed = True
-            for t in subgraph_search_iterator(triangle,induced=true):
+            for t in G.subgraph_search_iterator(triangle,induced=true):
                 # since we let M[i,j] = 10 if we didn't know the sign of the
                 # edge, we know that if we don't know two edges, the sum of
                 # the edges will be 19 at the least. Thus, if the sum is less
@@ -39,7 +43,7 @@ def signing(G, M, subgraphs):
                             M[t[1]-1,t[2]-1] = triSign*M[t[0]-1,t[1]-1]*M[t[0]-1,t[2]-1]
                             M[t[2]-1,t[1]-1] = triSign*M[t[0]-1,t[1]-1]*M[t[0]-1,t[2]-1]
                         changed = True
-            for s in subgraphs:
+            for s in subCopy:
                 edgeSigned = True
                 for e in s.edge_iterator(labels=false):
                     if M[e[0]-1,e[1]-1] == 10:
@@ -50,7 +54,7 @@ def signing(G, M, subgraphs):
                 # if we get to this point, we know that all edges in the subgraph have a
                 # sign and so we can determine if it should be in posEigen of negEigen
                 c = s.copy(immutable=False)
-                for e in c.edge_iterator(label=false):
+                for e in c.edge_iterator(labels=false):
                     temp1 = e[0]
                     temp2 = e[1]
                     c.delete_edge(e)
@@ -59,7 +63,6 @@ def signing(G, M, subgraphs):
                     posEigen.add(s)
                 else:
                     negEigen.add(s)
-                subgraph.remove(s)
             if posEigen and negEigen:
                 print "Found a contradictory case"
                 print M
@@ -69,9 +72,10 @@ def signing(G, M, subgraphs):
                 os.system('open subgraph1.png')
                 graphic2.save('subgraph2.png')
                 os.system('open subgraph2.png')
-                return True
+                case = True
         print "did not find a contradiction"
         return False
+    return True
 
 
 
