@@ -17,7 +17,8 @@ def check(G):
     subgraphs = []
     trianglesCheck = []
     for combo in Combinations(range(numVertices),2*alpha+1):
-        g = G.subgraph(combo).canonical_label()
+        g = G.subgraph(combo)
+        st = g.graph6_string()
         #this next while loop will delete all pendants of g,
         #then check if the resulting g is a: a single odd cycle
         # or b: a disjoint union of odd cycles. if it is in category
@@ -40,8 +41,8 @@ def check(G):
                     h.delete_vertex(v)
                     break
         if h.is_cycle() and h.order()%2 == 1:
-            if g not in trianglesCheck:
-                trianglesCheck.append(g)
+            if st not in trianglesCheck:
+                trianglesCheck.append(st)
         components = h.connected_components_subgraphs()
         if not components:
             break
@@ -56,13 +57,14 @@ def check(G):
         if continue_loop:
             continue
         # if we make it to this point, every component was an odd cycle
-        if g not in subgraphs:
-            subgraphs.append(g)
+        if st not in subgraphs:
+            subgraphs.append(st)
     T = graphs.CompleteGraph(3)
     if not contained(G,T,trianglesCheck):
         return False
     # finished preliminary check, now to check signs
     print "Check passed"
+    print len(subgraphs)
     return True
 
 
@@ -78,7 +80,8 @@ def contained(G, Triangle, SubGraphs):
             # if j = 0, we did not find the triangle in any subgraph
             return False
         j = 0
-        for s in SubGraphs:
+        for st in SubGraphs:
+            s = Graph(st)
             for subgraph in G.subgraph_search_iterator(s,induced = true):
                 # we want to break if the triangle is contained in the current 
                 #subgraph and start checking the next triangle
@@ -101,7 +104,7 @@ def is_alpha_critical(G):
             return False
     return True
 
-g = graphs.CirculantGraph(19,[1,7,8])
+g = graphs.CirculantGraph(17,[1,2,4,8])
 graphic = g.plot()
 graphic.save('output.png')
 os.system('open output.png')
