@@ -14,11 +14,12 @@ def check(G):
         return False
     if not G.is_arc_transitive():
         return False
-    subgraphs = []
-    trianglesCheck = []
+    subgraphs = set()
+    trianglesCheck = set()
     for combo in Combinations(range(numVertices),2*alpha+1):
         g = G.subgraph(combo)
-        st = g.graph6_string()
+        I = G.subgraph(combo,immutable=true)
+        #st = g.canonical_label().graph6_string()
         #this next while loop will delete all pendants of g,
         #then check if the resulting g is a: a single odd cycle
         # or b: a disjoint union of odd cycles. if it is in category
@@ -41,8 +42,10 @@ def check(G):
                     h.delete_vertex(v)
                     break
         if h.is_cycle() and h.order()%2 == 1:
-            if st not in trianglesCheck:
-                trianglesCheck.append(st)
+            trianglesCheck.add(I)
+            #if st not in trianglesCheck:
+                #trianglesCheck.append(st)
+             #   trianglesCheck.add(st)
         components = h.connected_components_subgraphs()
         if not components:
             break
@@ -57,8 +60,10 @@ def check(G):
         if continue_loop:
             continue
         # if we make it to this point, every component was an odd cycle
-        if st not in subgraphs:
-            subgraphs.append(st)
+        subgraphs.add(I)
+        #if st not in subgraphs:
+            #subgraphs.append(st)
+           # subgraphs.add(st)
     T = graphs.CompleteGraph(3)
     if not contained(G,T,trianglesCheck):
         return False
