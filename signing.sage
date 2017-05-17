@@ -42,13 +42,36 @@ def signing(G, M, subgraphs):
             for s in subgraphs:
                 edgeSigned = True
                 for e in s.edge_iterator(labels=false):
-                    if M[e[0],e[1]] == 10:
+                    if M[e[0]-1,e[1]-1] == 10:
                         edgeSigned = False
                         break
                 if edgeSigned == False:
                     continue
                 # if we get to this point, we know that all edges in the subgraph have a
                 # sign and so we can determine if it should be in posEigen of negEigen
+                c = s.copy(immutable=False))
+                for e in c.edge_iterator(label=false):
+                    temp1 = e[0]
+                    temp2 = e[1]
+                    c.delete_edge(e)
+                    c.add_edge((temp1,temp2,M[temp1-1,temp2-1]))
+                if sum(x>0 for x in c.weighted_adjacency_matrix().eigenvalues()) == alpha+1:
+                    posEigen.add(s)
+                else:
+                    negEigen.add(s)
+                subgraph.remove(s)
+            if posEigen and negEigen:
+                print "Found a contradictory case"
+                print M
+                graphic1 = posEigen[0].plot()
+                graphic2 = negEigen[0].plot()
+                graphic1.save('subgraph1.png')
+                os.system('open subgraph1.png')
+                graphic2.save('subgraph2.png')
+                os.system('open subgraph2.png')
+                return True
+        print "did not find a contradiction"
+        return False
 
 
 
