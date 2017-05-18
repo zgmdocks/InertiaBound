@@ -12,7 +12,7 @@ def check(G):
         return False
     path = G.hamiltonian_path()
     if not path:
-        return False
+        path = G.random_spanning_tree()
     if not G.is_arc_transitive():
         return False
     subgraphs = set()
@@ -133,8 +133,8 @@ def is_alpha_critical(G):
             return False
     return True
 
-g = graphs.CirculantGraph(17,[1,2,4,8])
-graphic = g.plot()
-graphic.save('output.png')
-os.system('open output.png')
-print check(g)
+#g = graphs.CirculantGraph(17,[1,2,4,8])
+#graphic = g.plot()
+#graphic.save('output.png')
+#os.system('open output.png')
+#print check(g)

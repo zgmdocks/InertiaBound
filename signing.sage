@@ -18,6 +18,7 @@ def signing(G, M, subgraphs, triSign):
     if debug:
         print "sign of triangles is {}".format(triSign)
     changed = True
+    i = 0
     while True:
         if changed == False:
             n = G.order()
@@ -40,15 +41,23 @@ def signing(G, M, subgraphs, triSign):
             # >= 8, then we know we only have 1 missing edge and can determine it
             if (M[t[0],t[1]] + M[t[0],t[2]] + M[t[1],t[2]] < 19) and (M[t[0],t[1]] + M[t[0],t[2]] + M[t[1],t[2]] >= 8):
                 if debug:
+                    i += 1
+                    print "{}th step:".format(i)
                     print "triangle is {}-{}-{}".format(t[0],t[1],t[2])
                     print "signs are {}-{}: {}, {}-{}: {}, {}-{}: {}".format(t[0],t[1],M[t[0],t[1]],t[0],t[2],M[t[0],t[2]],t[1],t[2],M[t[1],t[2]])
                 if M[t[0],t[1]] == 10:
+                    if debug:
+                        print "new sign is: {}".format(triSign*M[t[0],t[2]]*M[t[1],t[2]])
                     M[t[0],t[1]] = triSign*M[t[0],t[2]]*M[t[1],t[2]]
                     M[t[1],t[0]] = triSign*M[t[0],t[2]]*M[t[1],t[2]]
                 if M[t[0],t[2]] == 10:
+                    if debug:
+                        print "new sign is: {}".format(triSign*M[t[0],t[1]]*M[t[1],t[2]])
                     M[t[0],t[2]] = triSign*M[t[0],t[1]]*M[t[1],t[2]]
                     M[t[2],t[0]] = triSign*M[t[0],t[1]]*M[t[1],t[2]]
                 if M[t[1],t[2]] == 10:
+                    if debug:
+                        print "new sign is: {}".format(triSign*M[t[0],t[1]]*M[t[0],t[2]])
                     M[t[1],t[2]] = triSign*M[t[0],t[1]]*M[t[0],t[2]]
                     M[t[2],t[1]] = triSign*M[t[0],t[1]]*M[t[0],t[2]]
                 changed = True
