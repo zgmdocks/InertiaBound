@@ -14,8 +14,7 @@ def signing(G, M, subgraphs, triSign):
     #it has alpha(G)+1 negative eigenvalues
     posEigen = set()
     negEigen = set()
-    print "sign of triangles is " 
-    print triSign
+    print "sign of triangles is {}".format(triSign)
     changed = True
     while True:
         if changed == False:
@@ -34,21 +33,23 @@ def signing(G, M, subgraphs, triSign):
             # the edges will be 19 at the least. Thus, if the sum is less
             # then 19, we know at least two edges. Also, if the sum is
             # >= 8, then we know we only have 1 missing edge and can determine it
-            if (M[t[0]-1,t[1]-1] + M[t[0]-1,t[2]-1] + M[t[1]-1,t[2]-1] < 19) and (M[t[0]-1,t[1]-1] + M[t[0]-1,t[2]-1] + M[t[1]-1,t[2]-1] >= 8):
-                    if M[t[0]-1,t[1]-1] == 10:
-                        M[t[0]-1,t[1]-1] = triSign*M[t[0]-1,t[2]-1]*M[t[1]-1,t[2]-1]
-                        M[t[1]-1,t[0]-1] = triSign*M[t[0]-1,t[2]-1]*M[t[1]-1,t[2]-1]
-                    if M[t[0]-1,t[2]-1] == 10:
-                        M[t[0]-1,t[2]-1] = triSign*M[t[0]-1,t[1]-1]*M[t[1]-1,t[2]-1]
-                        M[t[2]-1,t[0]-1] = triSign*M[t[0]-1,t[1]-1]*M[t[1]-1,t[2]-1]
-                    if M[t[1]-1,t[2]-1] == 10:
-                        M[t[1]-1,t[2]-1] = triSign*M[t[0]-1,t[1]-1]*M[t[0]-1,t[2]-1]
-                        M[t[2]-1,t[1]-1] = triSign*M[t[0]-1,t[1]-1]*M[t[0]-1,t[2]-1]
+            if (M[t[0],t[1]] + M[t[0],t[2]] + M[t[1],t[2]] < 19) and (M[t[0],t[1]] + M[t[0],t[2]] + M[t[1],t[2]] >= 8):
+                    print "triangle is {}-{}-{}".format(t[0],t[1],t[2])
+                    print "signs are {}-{}: {}, {}-{}: {}, {}-{}: {}".format(t[0],t[1],M[t[0],t[1]],t[0],t[2],M[t[0],t[2]],t[1],t[2],M[t[1],t[2]])
+                    if M[t[0],t[1]] == 10:
+                        M[t[0],t[1]] = triSign*M[t[0],t[2]]*M[t[1],t[2]]
+                        M[t[1],t[0]] = triSign*M[t[0],t[2]]*M[t[1],t[2]]
+                    if M[t[0],t[2]] == 10:
+                        M[t[0],t[2]] = triSign*M[t[0],t[1]]*M[t[1],t[2]]
+                        M[t[2],t[0]] = triSign*M[t[0],t[1]]*M[t[1],t[2]]
+                    if M[t[1],t[2]] == 10:
+                        M[t[1],t[2]] = triSign*M[t[0],t[1]]*M[t[0],t[2]]
+                        M[t[2],t[1]] = triSign*M[t[0],t[1]]*M[t[0],t[2]]
                     changed = True
         for s in subgraphs:
             edgeSigned = True
             for e in s.edge_iterator(labels=false):
-                if M[e[0]-1,e[1]-1] == 10:
+                if M[e[0],e[1]] == 10:
                     edgeSigned = False
                     break
             if edgeSigned == False:
@@ -60,7 +61,7 @@ def signing(G, M, subgraphs, triSign):
                 temp1 = e[0]
                 temp2 = e[1]
                 c.delete_edge(e)
-                c.add_edge((temp1,temp2,M[temp1-1,temp2-1]))
+                c.add_edge((temp1,temp2,M[temp1,temp2]))
             if sum(x>0 for x in c.weighted_adjacency_matrix().eigenvalues()) == alpha+1:
                 posEigen.add(s)
             else:
@@ -70,10 +71,10 @@ def signing(G, M, subgraphs, triSign):
             print M
             graphic1 = posEigen.pop().plot()
             graphic2 = negEigen.pop().plot()
-            graphic1.save('subgraph1.png')
-            os.system('open subgraph1.png')
-            graphic2.save('subgraph2.png')
-            os.system('open subgraph2.png')
+            graphic1.save('subgraph1-{}.png'.format(triSign))
+            os.system('open subgraph1-{}.png'.format(triSign))
+            graphic2.save('subgraph2-{}.png'.format(triSign))
+            os.system('open subgraph2-{}.png'.format(triSign))
             return True
     print "did not find a contradiction"
     return False
