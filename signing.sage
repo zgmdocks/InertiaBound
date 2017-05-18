@@ -34,18 +34,28 @@ def signing(G, M, subgraphs, triSign):
             # then 19, we know at least two edges. Also, if the sum is
             # >= 8, then we know we only have 1 missing edge and can determine it
             if (M[t[0],t[1]] + M[t[0],t[2]] + M[t[1],t[2]] < 19) and (M[t[0],t[1]] + M[t[0],t[2]] + M[t[1],t[2]] >= 8):
-                    print "triangle is {}-{}-{}".format(t[0],t[1],t[2])
-                    print "signs are {}-{}: {}, {}-{}: {}, {}-{}: {}".format(t[0],t[1],M[t[0],t[1]],t[0],t[2],M[t[0],t[2]],t[1],t[2],M[t[1],t[2]])
-                    if M[t[0],t[1]] == 10:
-                        M[t[0],t[1]] = triSign*M[t[0],t[2]]*M[t[1],t[2]]
-                        M[t[1],t[0]] = triSign*M[t[0],t[2]]*M[t[1],t[2]]
-                    if M[t[0],t[2]] == 10:
-                        M[t[0],t[2]] = triSign*M[t[0],t[1]]*M[t[1],t[2]]
-                        M[t[2],t[0]] = triSign*M[t[0],t[1]]*M[t[1],t[2]]
-                    if M[t[1],t[2]] == 10:
-                        M[t[1],t[2]] = triSign*M[t[0],t[1]]*M[t[0],t[2]]
-                        M[t[2],t[1]] = triSign*M[t[0],t[1]]*M[t[0],t[2]]
-                    changed = True
+                print "triangle is {}-{}-{}".format(t[0],t[1],t[2])
+                print "signs are {}-{}: {}, {}-{}: {}, {}-{}: {}".format(t[0],t[1],M[t[0],t[1]],t[0],t[2],M[t[0],t[2]],t[1],t[2],M[t[1],t[2]])
+                if M[t[0],t[1]] == 10:
+                    M[t[0],t[1]] = triSign*M[t[0],t[2]]*M[t[1],t[2]]
+                    M[t[1],t[0]] = triSign*M[t[0],t[2]]*M[t[1],t[2]]
+                if M[t[0],t[2]] == 10:
+                    M[t[0],t[2]] = triSign*M[t[0],t[1]]*M[t[1],t[2]]
+                    M[t[2],t[0]] = triSign*M[t[0],t[1]]*M[t[1],t[2]]
+                if M[t[1],t[2]] == 10:
+                    M[t[1],t[2]] = triSign*M[t[0],t[1]]*M[t[0],t[2]]
+                    M[t[2],t[1]] = triSign*M[t[0],t[1]]*M[t[0],t[2]]
+                changed = True
+        #This loop will once again loop through all triangles, but this time, it will make sure
+        #that all the signings that were made in the last loop were valid.
+        for t in G.subgraph_search_iterator(triangle,induced=true):
+            if (M[t[0],t[1]] + M[t[0],t[2]] + M[t[1],t[2]] < 8):
+                if (M[t[0],t[1]]*M[t[0],t[2]]*M[t[1],t[2]] != triSign):
+                    print "triangle {}-{}-{} is not valid".format(t[0],t[1],t[2])
+                    print "signs are {}-{}: {}, {}-{}: {}, {}-{}: {}".format(t[0],t[1],M[t[0],t[1]],t[0],t[2],M[t[0],t[2]],t[1],t[2],    M[t[1],t[2]])
+                    return True
+        #This loop is used to look through subgraphs and find subgraphs that have fully been signed
+        #so we can put them in posEigen or negEigen
         for s in subgraphs:
             edgeSigned = True
             for e in s.edge_iterator(labels=false):
@@ -55,7 +65,7 @@ def signing(G, M, subgraphs, triSign):
             if edgeSigned == False:
                 continue
             # if we get to this point, we know that all edges in the subgraph have a
-            # sign and so we can determine if it should be in posEigen of negEigen
+            # sign and so we can determine if it should be in posEigen or negEigen
             c = s.copy(immutable=False)
             for e in c.edge_iterator(labels=false):
                 temp1 = e[0]
@@ -69,8 +79,24 @@ def signing(G, M, subgraphs, triSign):
         if posEigen and negEigen:
             print "Found a contradictory case"
             print M
-            graphic1 = posEigen.pop().plot()
-            graphic2 = negEigen.pop().plot()
+            subgraph1 = posEigen.pop()
+            subgraph2 = negEigen.pop()
+            subgraph1c = subgraph1.copy(immutable = False)
+            subgraph2c = subgraph2.copy(immutable = False)
+            for e in subgraph1c.edge_iterator(labels=false):
+                temp1 = e[0]
+                temp2 = e[1]
+                subgraph1c.delete_edge(e)
+                subgraph1c.add_edge((temp1,temp2,M[temp1,temp2]))
+            for e in subgraph2c.edge_iterator(labels=false):
+                temp1 = e[0]
+                temp2 = e[1]
+                subgraph2c.delete_edge(e)
+                subgraph2c.add_edge((temp1,temp2,M[temp1,temp2]))
+            print subgraph1c.weighted_adjacency_matrix().eigenvalues()
+            print subgraph2c.weighted_adjacency_matrix().eigenvalues()
+            graphic1 = subgraph1.plot()
+            graphic2 = subgraph2.plot()
             graphic1.save('subgraph1-{}.png'.format(triSign))
             os.system('open subgraph1-{}.png'.format(triSign))
             graphic2.save('subgraph2-{}.png'.format(triSign))
