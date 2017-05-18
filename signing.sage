@@ -1,4 +1,5 @@
 import os
+debug = False
 # signing accepts a graph G, a matrix that will hold the signs of edges, M, and
 # a list of nonsingular subgraphs of G of size 2alpha+1. This function will
 # attempt to determine the signing of G and find a contradiction for a tight
@@ -14,17 +15,21 @@ def signing(G, M, subgraphs, triSign):
     #it has alpha(G)+1 negative eigenvalues
     posEigen = set()
     negEigen = set()
-    print "sign of triangles is {}".format(triSign)
+    if debug:
+        print "sign of triangles is {}".format(triSign)
     changed = True
     while True:
         if changed == False:
             n = G.order()
-            print "edges that are undetermined:"
+            if debug:
+                print "edges that are undetermined:"
             for i in range(n):
                 for j in range(n):
                     if M[i,j] == 10:
-                        print i,j
-            print M
+                        if debug:
+                            print i,j
+            if debug:
+                print M
             break
         changed = False
         for t in G.subgraph_search_iterator(triangle,induced=true):
@@ -34,8 +39,9 @@ def signing(G, M, subgraphs, triSign):
             # then 19, we know at least two edges. Also, if the sum is
             # >= 8, then we know we only have 1 missing edge and can determine it
             if (M[t[0],t[1]] + M[t[0],t[2]] + M[t[1],t[2]] < 19) and (M[t[0],t[1]] + M[t[0],t[2]] + M[t[1],t[2]] >= 8):
-                print "triangle is {}-{}-{}".format(t[0],t[1],t[2])
-                print "signs are {}-{}: {}, {}-{}: {}, {}-{}: {}".format(t[0],t[1],M[t[0],t[1]],t[0],t[2],M[t[0],t[2]],t[1],t[2],M[t[1],t[2]])
+                if debug:
+                    print "triangle is {}-{}-{}".format(t[0],t[1],t[2])
+                    print "signs are {}-{}: {}, {}-{}: {}, {}-{}: {}".format(t[0],t[1],M[t[0],t[1]],t[0],t[2],M[t[0],t[2]],t[1],t[2],M[t[1],t[2]])
                 if M[t[0],t[1]] == 10:
                     M[t[0],t[1]] = triSign*M[t[0],t[2]]*M[t[1],t[2]]
                     M[t[1],t[0]] = triSign*M[t[0],t[2]]*M[t[1],t[2]]
@@ -51,8 +57,9 @@ def signing(G, M, subgraphs, triSign):
         for t in G.subgraph_search_iterator(triangle,induced=true):
             if (M[t[0],t[1]] + M[t[0],t[2]] + M[t[1],t[2]] < 8):
                 if (M[t[0],t[1]]*M[t[0],t[2]]*M[t[1],t[2]] != triSign):
-                    print "triangle {}-{}-{} is not valid".format(t[0],t[1],t[2])
-                    print "signs are {}-{}: {}, {}-{}: {}, {}-{}: {}".format(t[0],t[1],M[t[0],t[1]],t[0],t[2],M[t[0],t[2]],t[1],t[2],    M[t[1],t[2]])
+                    if debug:
+                        print "triangle {}-{}-{} is not valid".format(t[0],t[1],t[2])
+                        print "signs are {}-{}: {}, {}-{}: {}, {}-{}: {}".format(t[0],t[1],M[t[0],t[1]],t[0],t[2],M[t[0],t[2]],t[1],t[2],    M[t[1],t[2]])
                     return True
         #This loop is used to look through subgraphs and find subgraphs that have fully been signed
         #so we can put them in posEigen or negEigen
@@ -77,32 +84,34 @@ def signing(G, M, subgraphs, triSign):
             else:
                 negEigen.add(s)
         if posEigen and negEigen:
-            print "Found a contradictory case"
-            print M
-            subgraph1 = posEigen.pop()
-            subgraph2 = negEigen.pop()
-            subgraph1c = subgraph1.copy(immutable = False)
-            subgraph2c = subgraph2.copy(immutable = False)
-            for e in subgraph1c.edge_iterator(labels=false):
-                temp1 = e[0]
-                temp2 = e[1]
-                subgraph1c.delete_edge(e)
-                subgraph1c.add_edge((temp1,temp2,M[temp1,temp2]))
-            for e in subgraph2c.edge_iterator(labels=false):
-                temp1 = e[0]
-                temp2 = e[1]
-                subgraph2c.delete_edge(e)
-                subgraph2c.add_edge((temp1,temp2,M[temp1,temp2]))
-            print subgraph1c.weighted_adjacency_matrix().eigenvalues()
-            print subgraph2c.weighted_adjacency_matrix().eigenvalues()
-            graphic1 = subgraph1.plot()
-            graphic2 = subgraph2.plot()
-            graphic1.save('subgraph1^{}.png'.format(triSign))
-            os.system('open subgraph1^{}.png'.format(triSign))
-            graphic2.save('subgraph2^{}.png'.format(triSign))
-            os.system('open subgraph2^{}.png'.format(triSign))
+            if debug:
+                print "Found a contradictory case"
+                print M
+                subgraph1 = posEigen.pop()
+                subgraph2 = negEigen.pop()
+                subgraph1c = subgraph1.copy(immutable = False)
+                subgraph2c = subgraph2.copy(immutable = False)
+                for e in subgraph1c.edge_iterator(labels=false):
+                    temp1 = e[0]
+                    temp2 = e[1]
+                    subgraph1c.delete_edge(e)
+                    subgraph1c.add_edge((temp1,temp2,M[temp1,temp2]))
+                for e in subgraph2c.edge_iterator(labels=false):
+                    temp1 = e[0]
+                    temp2 = e[1]
+                    subgraph2c.delete_edge(e)
+                    subgraph2c.add_edge((temp1,temp2,M[temp1,temp2]))
+                print subgraph1c.weighted_adjacency_matrix().eigenvalues()
+                print subgraph2c.weighted_adjacency_matrix().eigenvalues()
+                graphic1 = subgraph1.plot()
+                graphic2 = subgraph2.plot()
+                graphic1.save('subgraph1^{}.png'.format(triSign))
+                os.system('open subgraph1^{}.png'.format(triSign))
+                graphic2.save('subgraph2^{}.png'.format(triSign))
+                os.system('open subgraph2^{}.png'.format(triSign))
             return True
-    print "did not find a contradiction"
+    if debug:
+        print "did not find a contradiction"
     return False
 
 

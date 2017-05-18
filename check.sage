@@ -69,25 +69,31 @@ def check(G):
     if not contained(G,T,trianglesCheck):
         return False
     # finished preliminary check, now to check signs
-    print "Check passed"
-    print len(subgraphs)
+    if debug:
+        print "Check passed"
+        print len(subgraphs)
     for e in G.edge_iterator(labels=false):
         temp1 = e[0]
         temp2 = e[1]
         G.delete_edge(e)
         if path.has_edge(e):
-            print e
+            if debug:
+                print e
             G.add_edge((temp1,temp2,1))
         else:
             G.add_edge((temp1,temp2,10))
     M1 = G.weighted_adjacency_matrix()
     M2 = G.weighted_adjacency_matrix()
-    print M1
-    signing(G,M1,subgraphs,1)
-    signing(G,M2,subgraphs,-1)
-    pathGraphic = path.plot()
-    pathGraphic.save('path.png')
-    os.system('open path.png')
+    if debug:
+        print M1
+    if not signing(G,M1,subgraphs,1):
+        return False
+    if not signing(G,M2,subgraphs,-1):
+        return False
+    if debug:
+        pathGraphic = path.plot()
+        pathGraphic.save('path.png')
+        os.system('open path.png')
     return True
 
 
