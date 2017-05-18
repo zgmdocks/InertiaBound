@@ -19,14 +19,14 @@ def signing(G, M, subgraphs, triSign):
     while True:
         if changed == False:
             n = G.order()
+            print "edges that are undetermined:"
             for i in range(n):
                 for j in range(n):
                     if M[i,j] == 10:
-                        print i
-                        print j
+                        print i,j
             print M
             break
-        changed = True
+        changed = False
         for t in G.subgraph_search_iterator(triangle,induced=true):
             # since we let M[i,j] = 10 if we didn't know the sign of the
             # edge, we know that if we don't know two edges, the sum of
@@ -97,10 +97,10 @@ def signing(G, M, subgraphs, triSign):
             print subgraph2c.weighted_adjacency_matrix().eigenvalues()
             graphic1 = subgraph1.plot()
             graphic2 = subgraph2.plot()
-            graphic1.save('subgraph1-{}.png'.format(triSign))
-            os.system('open subgraph1-{}.png'.format(triSign))
-            graphic2.save('subgraph2-{}.png'.format(triSign))
-            os.system('open subgraph2-{}.png'.format(triSign))
+            graphic1.save('subgraph1^{}.png'.format(triSign))
+            os.system('open subgraph1^{}.png'.format(triSign))
+            graphic2.save('subgraph2^{}.png'.format(triSign))
+            os.system('open subgraph2^{}.png'.format(triSign))
             return True
     print "did not find a contradiction"
     return False
