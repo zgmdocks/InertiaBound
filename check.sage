@@ -9,12 +9,14 @@ def check(G):
     alpha = len(G.independent_set())
     numVertices = len(G)
     if not is_alpha_critical(G):
+        print "alpha critical"
         return False
     path = G.hamiltonian_path()
     if not path:
+        print "no hamiltionian"
         path = G.random_spanning_tree()
-    if not G.is_arc_transitive():
-        return False
+    #if not G.is_arc_transitive():
+        #return False
     subgraphs = set()
     trianglesCheck = set()
     for combo in Combinations(range(numVertices),2*alpha+1):
@@ -44,9 +46,6 @@ def check(G):
                     break
         if h.is_cycle() and h.order()%2 == 1:
             trianglesCheck.add(I)
-            #if st not in trianglesCheck:
-                #trianglesCheck.append(st)
-             #   trianglesCheck.add(st)
         components = h.connected_components_subgraphs()
         if not components:
             break
@@ -62,11 +61,9 @@ def check(G):
             continue
         # if we make it to this point, every component was an odd cycle
         subgraphs.add(I)
-        #if st not in subgraphs:
-            #subgraphs.append(st)
-           # subgraphs.add(st)
     T = graphs.CompleteGraph(3)
     if not contained(G,T,trianglesCheck):
+        print "contained"
         return False
     # finished preliminary check, now to check signs
     if debug:
@@ -133,8 +130,8 @@ def is_alpha_critical(G):
             return False
     return True
 
-#g = graphs.CirculantGraph(17,[1,2,4,8])
-#graphic = g.plot()
-#graphic.save('output.png')
-#os.system('open output.png')
-#print check(g)
+g = graphs.CirculantGraph(19,[1,7,8])
+graphic = g.plot()
+graphic.save('output.png')
+os.system('open output.png')
+print check(g)

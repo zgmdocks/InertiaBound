@@ -1,5 +1,8 @@
 import os
-debug = False
+#this debug variable is to control the output to the screen. If it is set to true,
+#steps of the process will be printed to the screen. If it is false, the functions will
+#not output anything to the screen.
+debug = True
 # signing accepts a graph G, a matrix that will hold the signs of edges, M, and
 # a list of nonsingular subgraphs of G of size 2alpha+1. This function will
 # attempt to determine the signing of G and find a contradiction for a tight
@@ -42,7 +45,7 @@ def signing(G, M, subgraphs, triSign):
             if (M[t[0],t[1]] + M[t[0],t[2]] + M[t[1],t[2]] < 19) and (M[t[0],t[1]] + M[t[0],t[2]] + M[t[1],t[2]] >= 8):
                 if debug:
                     i += 1
-                    print "{}th step:".format(i)
+                    print "step {}:".format(i)
                     print "triangle is {}-{}-{}".format(t[0],t[1],t[2])
                     print "signs are {}-{}: {}, {}-{}: {}, {}-{}: {}".format(t[0],t[1],M[t[0],t[1]],t[0],t[2],M[t[0],t[2]],t[1],t[2],M[t[1],t[2]])
                 if M[t[0],t[1]] == 10:
