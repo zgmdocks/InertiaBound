@@ -45,7 +45,8 @@ def check(G):
                     h.delete_vertex(v)
                     break
         if h.is_cycle() and h.order()%2 == 1:
-            trianglesCheck.add(I)
+            copy = h.copy(immutable=true)
+            trianglesCheck.add(copy)
         components = h.connected_components_subgraphs()
         if not components:
             break
@@ -62,7 +63,8 @@ def check(G):
         # if we make it to this point, every component was an odd cycle
         subgraphs.add(I)
     T = graphs.CompleteGraph(3)
-    if not contained(G,T,trianglesCheck):
+    Triangles = contained(G,T,trianglesCheck)
+    if not Triangles:
         print "contained"
         return False
     # finished preliminary check, now to check signs
@@ -83,9 +85,9 @@ def check(G):
     M2 = G.weighted_adjacency_matrix()
     if debug:
         print M1
-    if not signing(G,M1,subgraphs,1):
+    if not signing(G,M1,subgraphs,1,Triangles):
         return False
-    if not signing(G,M2,subgraphs,-1):
+    if not signing(G,M2,subgraphs,-1,Triangles):
         return False
     if debug:
         pathGraphic = path.plot()
@@ -100,23 +102,14 @@ def check(G):
 # false otherwise
 def contained(G, Triangle, SubGraphs):
     j = 1 
+    Triangles = set()
     #calculates the total number of triangles in G
     for triangle in G.subgraph_search_iterator(Triangle,induced = true):
-        if j == 0:
-            # if j = 0, we did not find the triangle in any subgraph
-            return False
-        j = 0
-        for st in SubGraphs:
-            s = Graph(st)
-            for subgraph in G.subgraph_search_iterator(s,induced = true):
-                # we want to break if the triangle is contained in the current 
-                #subgraph and start checking the next triangle
-                if set(triangle).issubset(set(subgraph)):
-                    j = 1 
-                    break
-            if j == 1:
+        for s in SubGraphs:
+            if set(triangle).issubset(set(s)):
+                Triangles.add(tuple(triangle))
                 break
-    return True
+    return Triangles
 
 
 
@@ -130,8 +123,8 @@ def is_alpha_critical(G):
             return False
     return True
 
-#g = Graph('I~qkzXZLw')
-#graphic = g.plot()
-#graphic.save('output.png')
-#os.system('open output.png')
-#print check(g)
+g = graphs.CirculantGraph(19,[1,7,8])
+graphic = g.plot()
+graphic.save('output.png')
+os.system('open output.png')
+print check(g)

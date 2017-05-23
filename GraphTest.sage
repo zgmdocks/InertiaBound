@@ -1,6 +1,6 @@
 load('check.sage')
 output_file = open('GraphsBig.txt','w+')
-for j in range(20,31):
+for j in range(1,20):
     i = 0
     print "graphs on {} vertices".format(j)
     output_file.write("Graphs on {} vertices:".format(j))

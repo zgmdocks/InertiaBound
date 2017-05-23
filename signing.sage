@@ -2,7 +2,7 @@ import os
 #this debug variable is to control the output to the screen. If it is set to true,
 #steps of the process will be printed to the screen. If it is false, the functions will
 #not output anything to the screen.
-debug = False
+debug = True
 # signing accepts a graph G, a matrix that will hold the signs of edges, M, and
 # a list of nonsingular subgraphs of G of size 2alpha+1. This function will
 # attempt to determine the signing of G and find a contradiction for a tight
@@ -10,8 +10,8 @@ debug = False
 # throughout. M[i,j] will equal 1 if the edge between vertices i and j is
 # positive, -1 if the edge is positive, 0 if there is no edge, and 10 if
 # there is an edge but we have not determined the sign yet.
-def signing(G, M, subgraphs, triSign):
-    triangle = graphs.CompleteGraph(3)
+# triangles is the set of all triangles we know must be the same sign
+def signing(G, M, subgraphs, triSign, Triangles):
     alpha = len(G.independent_set())
     #posEigen and negEigen are sets where if a subgraph belongs to posEigen
     #it has alpha(G)+1 positive Eigevalues, and if it belongs to negEigen
@@ -36,7 +36,7 @@ def signing(G, M, subgraphs, triSign):
                 print M
             break
         changed = False
-        for t in G.subgraph_search_iterator(triangle,induced=true):
+        for t in Triangles:
             # since we let M[i,j] = 10 if we didn't know the sign of the
             # edge, we know that if we don't know two edges, the sum of
             # the edges will be 19 at the least. Thus, if the sum is less
@@ -66,7 +66,7 @@ def signing(G, M, subgraphs, triSign):
                 changed = True
         #This loop will once again loop through all triangles, but this time, it will make sure
         #that all the signings that were made in the last loop were valid.
-        for t in G.subgraph_search_iterator(triangle,induced=true):
+        for t in Triangles:
             if (M[t[0],t[1]] + M[t[0],t[2]] + M[t[1],t[2]] < 8):
                 if (M[t[0],t[1]]*M[t[0],t[2]]*M[t[1],t[2]] != triSign):
                     if debug:
