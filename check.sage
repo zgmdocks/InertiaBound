@@ -123,7 +123,7 @@ def is_alpha_critical(G):
             return False
     return True
 
-g = graphs.CirculantGraph(19,[1,7,8])
+g = graphs.CirculantGraph(17,[1,2,4,8])
 graphic = g.plot()
 graphic.save('output.png')
 os.system('open output.png')
