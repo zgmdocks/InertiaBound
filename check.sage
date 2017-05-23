@@ -130,8 +130,8 @@ def is_alpha_critical(G):
             return False
     return True
 
-g = Graph('I~qkzXZLw')
-graphic = g.plot()
-graphic.save('output.png')
-os.system('open output.png')
-print check(g)
+#g = Graph('I~qkzXZLw')
+#graphic = g.plot()
+#graphic.save('output.png')
+#os.system('open output.png')
+#print check(g)
