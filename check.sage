@@ -18,7 +18,8 @@ def ncr(n, r):
 # Sinkovic's Paper to find an inertia bound that
 # is not tight
 def check(G):
-    t0 = time.clock()
+    if moreDebug:
+        t0 = time.clock()
     alpha = len(G.independent_set())
     numVertices = len(G)
     if 2*alpha+1 > numVertices:
