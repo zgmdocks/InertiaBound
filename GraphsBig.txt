@@ -1,2 +1,1 @@
 Graphs on 21 vertices:
-Graphs on 22 vertices:

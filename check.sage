@@ -39,7 +39,7 @@ def check(G):
         #return False
     subgraphs = set()
     trianglesCheck = set()
-    for combo in Combinations(range(numVertices),2*alpha+1):
+    for combo in Combinations(numVertices,2*alpha+1):
         g = G.subgraph(combo)
         I = G.subgraph(combo,immutable=true)
         #st = g.canonical_label().graph6_string()
@@ -88,6 +88,8 @@ def check(G):
     T = graphs.CompleteGraph(3)
     Triangles = contained(G,T,trianglesCheck)
     if moreDebug:
+        print "number of triangles to use: {}".format(len(Triangles))
+    if moreDebug:
         print "number of triangles: {}".format(len(Triangles))
     if not Triangles:
         print "contained"
@@ -126,10 +128,9 @@ def check(G):
 # contained in at least one subgraph of the form SubGraph and
 # false otherwise
 def contained(G, Triangle, SubGraphs):
-    j = 1 
     Triangles = set()
     #calculates the total number of triangles in G
-    for triangle in G.subgraph_search_iterator(Triangle,induced = true):
+    for triangle in G.subgraph_search_iterator(Traingle,induced = true):
         for s in SubGraphs:
             if set(triangle).issubset(set(s)):
                 Triangles.add(tuple(triangle))
@@ -148,8 +149,8 @@ def is_alpha_critical(G):
             return False
     return True
 
-g = Graph("T~~~FFbF?wbb?w?w_[W?w?FC?[W?Fw?F{?B~")
-graphic = g.plot()
-graphic.save('output.png')
-os.system('open output.png')
-print check(g)
+#g = Graph("T~~~FFbF?wbb?w?w_[W?w?FC?[W?Fw?F{?B~")
+#graphic = g.plot()
+#graphic.save('output.png')
+#os.system('open output.png')
+#print check(g)
