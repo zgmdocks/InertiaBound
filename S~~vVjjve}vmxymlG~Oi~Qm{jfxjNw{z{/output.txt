@@ -1,0 +1,921 @@
+Check passed
+5504
+(0, 1)
+(0, 9)
+(1, 12)
+(2, 17)
+(2, 8)
+(3, 18)
+(3, 10)
+(4, 11)
+(4, 13)
+(5, 14)
+(6, 17)
+(6, 12)
+(7, 10)
+(7, 14)
+(8, 16)
+(9, 19)
+(11, 15)
+(13, 19)
+(16, 18)
+20 x 20 sparse matrix over Integer Ring
+sign of triangles is 1
+step 1:
+triangle is 1-12-6
+signs are 1-12: 1, 1-6: 10, 12-6: 1
+new sign is: 1
+step 2:
+triangle is 5-14-7
+signs are 5-14: 1, 5-7: 10, 14-7: 1
+new sign is: 1
+step 3:
+triangle is 0-1-9
+signs are 0-1: 1, 0-9: 1, 1-9: 10
+new sign is: 1
+step 4:
+triangle is 19-4-13
+signs are 19-4: 10, 19-13: 1, 4-13: 1
+new sign is: 1
+step 5:
+triangle is 11-19-4
+signs are 11-19: 10, 11-4: 1, 19-4: 1
+new sign is: 1
+step 6:
+triangle is 7-10-14
+signs are 7-10: 1, 7-14: 1, 10-14: 10
+new sign is: 1
+step 7:
+triangle is 19-11-13
+signs are 19-11: 1, 19-13: 1, 11-13: 10
+new sign is: 1
+step 8:
+triangle is 17-6-12
+signs are 17-6: 1, 17-12: 10, 6-12: 1
+new sign is: 1
+step 9:
+triangle is 9-13-19
+signs are 9-13: 10, 9-19: 1, 13-19: 1
+new sign is: 1
+step 10:
+triangle is 9-19-11
+signs are 9-19: 1, 9-11: 10, 19-11: 1
+new sign is: 1
+step 11:
+triangle is 17-2-8
+signs are 17-2: 1, 17-8: 10, 2-8: 1
+new sign is: 1
+step 12:
+triangle is 8-17-12
+signs are 8-17: 1, 8-12: 10, 17-12: 1
+new sign is: 1
+step 13:
+triangle is 13-11-15
+signs are 13-11: 1, 13-15: 10, 11-15: 1
+new sign is: 1
+step 14:
+triangle is 7-10-5
+signs are 7-10: 1, 7-5: 1, 10-5: 10
+new sign is: 1
+step 15:
+triangle is 17-12-2
+signs are 17-12: 1, 17-2: 1, 12-2: 10
+new sign is: 1
+step 16:
+triangle is 15-13-19
+signs are 15-13: 1, 15-19: 10, 13-19: 1
+new sign is: 1
+step 17:
+triangle is 19-4-9
+signs are 19-4: 1, 19-9: 1, 4-9: 10
+new sign is: 1
+step 18:
+triangle is 0-1-6
+signs are 0-1: 1, 0-6: 10, 1-6: 1
+new sign is: 1
+step 19:
+triangle is 19-9-15
+signs are 19-9: 1, 19-15: 1, 9-15: 10
+new sign is: 1
+step 20:
+triangle is 17-6-8
+signs are 17-6: 1, 17-8: 1, 6-8: 10
+new sign is: 1
+step 21:
+triangle is 9-4-1
+signs are 9-4: 1, 9-1: 1, 4-1: 10
+new sign is: 1
+step 22:
+triangle is 2-1-12
+signs are 2-1: 10, 2-12: 1, 1-12: 1
+new sign is: 1
+step 23:
+triangle is 16-6-8
+signs are 16-6: 10, 16-8: 1, 6-8: 1
+new sign is: 1
+step 24:
+triangle is 1-2-0
+signs are 1-2: 1, 1-0: 1, 2-0: 10
+new sign is: 1
+step 25:
+triangle is 17-8-16
+signs are 17-8: 1, 17-16: 10, 8-16: 1
+new sign is: 1
+step 26:
+triangle is 6-1-2
+signs are 6-1: 1, 6-2: 10, 1-2: 1
+new sign is: 1
+step 27:
+triangle is 4-1-2
+signs are 4-1: 1, 4-2: 10, 1-2: 1
+new sign is: 1
+step 28:
+triangle is 9-1-6
+signs are 9-1: 1, 9-6: 10, 1-6: 1
+new sign is: 1
+step 29:
+triangle is 2-4-11
+signs are 2-4: 1, 2-11: 10, 4-11: 1
+new sign is: 1
+step 30:
+triangle is 12-1-0
+signs are 12-1: 1, 12-0: 10, 1-0: 1
+new sign is: 1
+step 31:
+triangle is 10-3-5
+signs are 10-3: 1, 10-5: 1, 3-5: 10
+new sign is: 1
+step 32:
+triangle is 6-1-16
+signs are 6-1: 1, 6-16: 1, 1-16: 10
+new sign is: 1
+step 33:
+triangle is 4-9-6
+signs are 4-9: 1, 4-6: 10, 9-6: 1
+new sign is: 1
+step 34:
+triangle is 0-11-2
+signs are 0-11: 10, 0-2: 1, 11-2: 1
+new sign is: 1
+step 35:
+triangle is 17-4-6
+signs are 17-4: 10, 17-6: 1, 4-6: 1
+new sign is: 1
+step 36:
+triangle is 16-8-12
+signs are 16-8: 1, 16-12: 10, 8-12: 1
+new sign is: 1
+step 37:
+triangle is 13-17-4
+signs are 13-17: 10, 13-4: 1, 17-4: 1
+new sign is: 1
+step 38:
+triangle is 17-13-19
+signs are 17-13: 1, 17-19: 10, 13-19: 1
+new sign is: 1
+step 39:
+triangle is 4-16-17
+signs are 4-16: 10, 4-17: 1, 16-17: 1
+new sign is: 1
+step 40:
+triangle is 2-1-8
+signs are 2-1: 1, 2-8: 1, 1-8: 10
+new sign is: 1
+step 41:
+triangle is 12-8-0
+signs are 12-8: 1, 12-0: 1, 8-0: 10
+new sign is: 1
+step 42:
+triangle is 4-13-2
+signs are 4-13: 1, 4-2: 1, 13-2: 10
+new sign is: 1
+step 43:
+triangle is 0-2-13
+signs are 0-2: 1, 0-13: 10, 2-13: 1
+new sign is: 1
+step 44:
+triangle is 6-9-19
+signs are 6-9: 1, 6-19: 10, 9-19: 1
+new sign is: 1
+step 45:
+triangle is 4-9-16
+signs are 4-9: 1, 4-16: 1, 9-16: 10
+new sign is: 1
+step 46:
+triangle is 15-17-19
+signs are 15-17: 10, 15-19: 1, 17-19: 1
+new sign is: 1
+step 47:
+triangle is 16-15-17
+signs are 16-15: 10, 16-17: 1, 15-17: 1
+new sign is: 1
+step 48:
+triangle is 0-4-6
+signs are 0-4: 10, 0-6: 1, 4-6: 1
+new sign is: 1
+step 49:
+triangle is 8-4-0
+signs are 8-4: 10, 8-0: 1, 4-0: 1
+new sign is: 1
+step 50:
+triangle is 16-19-9
+signs are 16-19: 10, 16-9: 1, 19-9: 1
+new sign is: 1
+step 51:
+triangle is 16-18-19
+signs are 16-18: 1, 16-19: 1, 18-19: 10
+new sign is: 1
+step 52:
+triangle is 18-16-17
+signs are 18-16: 1, 18-17: 10, 16-17: 1
+new sign is: 1
+step 53:
+triangle is 16-13-19
+signs are 16-13: 10, 16-19: 1, 13-19: 1
+new sign is: 1
+step 54:
+triangle is 18-12-17
+signs are 18-12: 10, 18-17: 1, 12-17: 1
+new sign is: 1
+step 55:
+triangle is 11-18-19
+signs are 11-18: 10, 11-19: 1, 18-19: 1
+new sign is: 1
+step 56:
+triangle is 18-11-15
+signs are 18-11: 1, 18-15: 10, 11-15: 1
+new sign is: 1
+step 57:
+triangle is 13-6-16
+signs are 13-6: 10, 13-16: 1, 6-16: 1
+new sign is: 1
+step 58:
+triangle is 17-2-18
+signs are 17-2: 1, 17-18: 1, 2-18: 10
+new sign is: 1
+step 59:
+triangle is 8-2-13
+signs are 8-2: 1, 8-13: 10, 2-13: 1
+new sign is: 1
+step 60:
+triangle is 17-15-11
+signs are 17-15: 1, 17-11: 10, 15-11: 1
+new sign is: 1
+step 61:
+triangle is 15-18-13
+signs are 15-18: 1, 15-13: 1, 18-13: 10
+new sign is: 1
+step 62:
+triangle is 11-8-13
+signs are 11-8: 10, 11-13: 1, 8-13: 1
+new sign is: 1
+step 63:
+triangle is 5-3-7
+signs are 5-3: 1, 5-7: 1, 3-7: 10
+new sign is: 1
+step 64:
+triangle is 8-12-18
+signs are 8-12: 1, 8-18: 10, 12-18: 1
+new sign is: 1
+step 65:
+triangle is 5-18-3
+signs are 5-18: 10, 5-3: 1, 18-3: 1
+new sign is: 1
+step 66:
+triangle is 18-7-3
+signs are 18-7: 10, 18-3: 1, 7-3: 1
+new sign is: 1
+step 67:
+triangle is 14-18-5
+signs are 14-18: 10, 14-5: 1, 18-5: 1
+new sign is: 1
+step 68:
+triangle is 17-18-14
+signs are 17-18: 1, 17-14: 10, 18-14: 1
+new sign is: 1
+step 69:
+triangle is 18-5-11
+signs are 18-5: 1, 18-11: 1, 5-11: 10
+new sign is: 1
+step 70:
+triangle is 12-15-18
+signs are 12-15: 10, 12-18: 1, 15-18: 1
+new sign is: 1
+step 71:
+triangle is 18-17-7
+signs are 18-17: 1, 18-7: 1, 17-7: 10
+new sign is: 1
+step 72:
+triangle is 12-14-17
+signs are 12-14: 10, 12-17: 1, 14-17: 1
+new sign is: 1
+step 73:
+triangle is 14-8-17
+signs are 14-8: 10, 14-17: 1, 8-17: 1
+new sign is: 1
+step 74:
+triangle is 14-12-7
+signs are 14-12: 1, 14-7: 1, 12-7: 10
+new sign is: 1
+step 75:
+triangle is 8-14-6
+signs are 8-14: 1, 8-6: 1, 14-6: 10
+new sign is: 1
+step 76:
+triangle is 15-3-18
+signs are 15-3: 10, 15-18: 1, 3-18: 1
+new sign is: 1
+step 77:
+triangle is 16-18-14
+signs are 16-18: 1, 16-14: 10, 18-14: 1
+new sign is: 1
+step 78:
+triangle is 12-7-1
+signs are 12-7: 1, 12-1: 1, 7-1: 10
+new sign is: 1
+step 79:
+triangle is 15-3-5
+signs are 15-3: 1, 15-5: 10, 3-5: 1
+new sign is: 1
+step 80:
+triangle is 18-5-12
+signs are 18-5: 1, 18-12: 1, 5-12: 10
+new sign is: 1
+step 81:
+triangle is 9-14-16
+signs are 9-14: 10, 9-16: 1, 14-16: 1
+new sign is: 1
+step 82:
+triangle is 8-1-7
+signs are 8-1: 1, 8-7: 10, 1-7: 1
+new sign is: 1
+step 83:
+triangle is 14-10-6
+signs are 14-10: 1, 14-6: 1, 10-6: 10
+new sign is: 1
+step 84:
+triangle is 16-14-1
+signs are 16-14: 1, 16-1: 1, 14-1: 10
+new sign is: 1
+step 85:
+triangle is 1-7-0
+signs are 1-7: 1, 1-0: 1, 7-0: 10
+new sign is: 1
+step 86:
+triangle is 1-10-7
+signs are 1-10: 10, 1-7: 1, 10-7: 1
+new sign is: 1
+step 87:
+triangle is 15-19-3
+signs are 15-19: 1, 15-3: 1, 19-3: 10
+new sign is: 1
+step 88:
+triangle is 11-5-7
+signs are 11-5: 1, 11-7: 10, 5-7: 1
+new sign is: 1
+step 89:
+triangle is 2-11-5
+signs are 2-11: 1, 2-5: 10, 11-5: 1
+new sign is: 1
+step 90:
+triangle is 0-7-2
+signs are 0-7: 1, 0-2: 1, 7-2: 10
+new sign is: 1
+step 91:
+triangle is 3-15-7
+signs are 3-15: 1, 3-7: 1, 15-7: 10
+new sign is: 1
+step 92:
+triangle is 10-6-9
+signs are 10-6: 1, 10-9: 10, 6-9: 1
+new sign is: 1
+step 93:
+triangle is 14-18-19
+signs are 14-18: 1, 14-19: 10, 18-19: 1
+new sign is: 1
+step 94:
+triangle is 9-5-15
+signs are 9-5: 10, 9-15: 1, 5-15: 1
+new sign is: 1
+step 95:
+triangle is 7-15-14
+signs are 7-15: 1, 7-14: 1, 15-14: 10
+new sign is: 1
+step 96:
+triangle is 3-18-11
+signs are 3-18: 1, 3-11: 10, 18-11: 1
+new sign is: 1
+step 97:
+triangle is 5-10-15
+signs are 5-10: 1, 5-15: 1, 10-15: 10
+new sign is: 1
+step 98:
+triangle is 0-10-9
+signs are 0-10: 10, 0-9: 1, 10-9: 1
+new sign is: 1
+step 99:
+triangle is 13-19-3
+signs are 13-19: 1, 13-3: 10, 19-3: 1
+new sign is: 1
+step 100:
+triangle is 12-10-14
+signs are 12-10: 10, 12-14: 1, 10-14: 1
+new sign is: 1
+step 101:
+triangle is 1-10-16
+signs are 1-10: 1, 1-16: 1, 10-16: 10
+new sign is: 1
+step 102:
+triangle is 3-10-0
+signs are 3-10: 1, 3-0: 10, 10-0: 1
+new sign is: 1
+step 103:
+triangle is 15-19-10
+signs are 15-19: 1, 15-10: 1, 19-10: 10
+new sign is: 1
+step 104:
+triangle is 4-0-3
+signs are 4-0: 1, 4-3: 10, 0-3: 1
+new sign is: 1
+step 105:
+triangle is 3-2-13
+signs are 3-2: 10, 3-13: 1, 2-13: 1
+new sign is: 1
+step 106:
+triangle is 5-7-0
+signs are 5-7: 1, 5-0: 10, 7-0: 1
+new sign is: 1
+step 107:
+triangle is 5-9-1
+signs are 5-9: 1, 5-1: 10, 9-1: 1
+new sign is: 1
+step 108:
+triangle is 4-10-9
+signs are 4-10: 10, 4-9: 1, 10-9: 1
+new sign is: 1
+step 109:
+triangle is 9-13-3
+signs are 9-13: 1, 9-3: 10, 13-3: 1
+new sign is: 1
+step 110:
+triangle is 1-9-3
+signs are 1-9: 1, 1-3: 10, 9-3: 1
+new sign is: 1
+step 111:
+triangle is 19-10-5
+signs are 19-10: 1, 19-5: 10, 10-5: 1
+new sign is: 1
+Found a contradictory case
+20 x 20 sparse matrix over Integer Ring
+[2, -1.618033988749895?, -1.618033988749895?, 0.618033988749895?, 0.618033988749895?]
+[-1, -1.775712855736215?, -0.5892157430780010?, 0.723742122620924?, 2.641186476193292?]
+sign of triangles is -1
+step 1:
+triangle is 1-12-6
+signs are 1-12: 1, 1-6: 10, 12-6: 1
+new sign is: -1
+step 2:
+triangle is 5-14-7
+signs are 5-14: 1, 5-7: 10, 14-7: 1
+new sign is: -1
+step 3:
+triangle is 0-1-9
+signs are 0-1: 1, 0-9: 1, 1-9: 10
+new sign is: -1
+step 4:
+triangle is 19-4-13
+signs are 19-4: 10, 19-13: 1, 4-13: 1
+new sign is: -1
+step 5:
+triangle is 11-19-4
+signs are 11-19: 10, 11-4: 1, 19-4: -1
+new sign is: 1
+step 6:
+triangle is 7-10-14
+signs are 7-10: 1, 7-14: 1, 10-14: 10
+new sign is: -1
+step 7:
+triangle is 19-11-13
+signs are 19-11: 1, 19-13: 1, 11-13: 10
+new sign is: -1
+step 8:
+triangle is 17-6-12
+signs are 17-6: 1, 17-12: 10, 6-12: 1
+new sign is: -1
+step 9:
+triangle is 9-13-19
+signs are 9-13: 10, 9-19: 1, 13-19: 1
+new sign is: -1
+step 10:
+triangle is 9-19-11
+signs are 9-19: 1, 9-11: 10, 19-11: 1
+new sign is: -1
+step 11:
+triangle is 17-2-8
+signs are 17-2: 1, 17-8: 10, 2-8: 1
+new sign is: -1
+step 12:
+triangle is 8-17-12
+signs are 8-17: -1, 8-12: 10, 17-12: -1
+new sign is: -1
+step 13:
+triangle is 13-11-15
+signs are 13-11: -1, 13-15: 10, 11-15: 1
+new sign is: 1
+step 14:
+triangle is 7-10-5
+signs are 7-10: 1, 7-5: -1, 10-5: 10
+new sign is: 1
+step 15:
+triangle is 17-12-2
+signs are 17-12: -1, 17-2: 1, 12-2: 10
+new sign is: 1
+step 16:
+triangle is 15-13-19
+signs are 15-13: 1, 15-19: 10, 13-19: 1
+new sign is: -1
+step 17:
+triangle is 19-4-9
+signs are 19-4: -1, 19-9: 1, 4-9: 10
+new sign is: 1
+step 18:
+triangle is 0-1-6
+signs are 0-1: 1, 0-6: 10, 1-6: -1
+new sign is: 1
+step 19:
+triangle is 19-9-15
+signs are 19-9: 1, 19-15: -1, 9-15: 10
+new sign is: 1
+step 20:
+triangle is 17-6-8
+signs are 17-6: 1, 17-8: -1, 6-8: 10
+new sign is: 1
+step 21:
+triangle is 9-4-1
+signs are 9-4: 1, 9-1: -1, 4-1: 10
+new sign is: 1
+step 22:
+triangle is 2-1-12
+signs are 2-1: 10, 2-12: 1, 1-12: 1
+new sign is: -1
+step 23:
+triangle is 16-6-8
+signs are 16-6: 10, 16-8: 1, 6-8: 1
+new sign is: -1
+step 24:
+triangle is 1-2-0
+signs are 1-2: -1, 1-0: 1, 2-0: 10
+new sign is: 1
+step 25:
+triangle is 17-8-16
+signs are 17-8: -1, 17-16: 10, 8-16: 1
+new sign is: 1
+step 26:
+triangle is 6-1-2
+signs are 6-1: -1, 6-2: 10, 1-2: -1
+new sign is: -1
+step 27:
+triangle is 4-1-2
+signs are 4-1: 1, 4-2: 10, 1-2: -1
+new sign is: 1
+step 28:
+triangle is 9-1-6
+signs are 9-1: -1, 9-6: 10, 1-6: -1
+new sign is: -1
+step 29:
+triangle is 2-4-11
+signs are 2-4: 1, 2-11: 10, 4-11: 1
+new sign is: -1
+step 30:
+triangle is 12-1-0
+signs are 12-1: 1, 12-0: 10, 1-0: 1
+new sign is: -1
+step 31:
+triangle is 10-3-5
+signs are 10-3: 1, 10-5: 1, 3-5: 10
+new sign is: -1
+step 32:
+triangle is 6-1-16
+signs are 6-1: -1, 6-16: -1, 1-16: 10
+new sign is: -1
+step 33:
+triangle is 4-9-6
+signs are 4-9: 1, 4-6: 10, 9-6: -1
+new sign is: 1
+step 34:
+triangle is 0-11-2
+signs are 0-11: 10, 0-2: 1, 11-2: -1
+new sign is: 1
+step 35:
+triangle is 17-4-6
+signs are 17-4: 10, 17-6: 1, 4-6: 1
+new sign is: -1
+step 36:
+triangle is 16-8-12
+signs are 16-8: 1, 16-12: 10, 8-12: -1
+new sign is: 1
+step 37:
+triangle is 13-17-4
+signs are 13-17: 10, 13-4: 1, 17-4: -1
+new sign is: 1
+step 38:
+triangle is 17-13-19
+signs are 17-13: 1, 17-19: 10, 13-19: 1
+new sign is: -1
+step 39:
+triangle is 4-16-17
+signs are 4-16: 10, 4-17: -1, 16-17: 1
+new sign is: 1
+step 40:
+triangle is 2-1-8
+signs are 2-1: -1, 2-8: 1, 1-8: 10
+new sign is: 1
+step 41:
+triangle is 12-8-0
+signs are 12-8: -1, 12-0: -1, 8-0: 10
+new sign is: -1
+step 42:
+triangle is 4-13-2
+signs are 4-13: 1, 4-2: 1, 13-2: 10
+new sign is: -1
+step 43:
+triangle is 0-2-13
+signs are 0-2: 1, 0-13: 10, 2-13: -1
+new sign is: 1
+step 44:
+triangle is 6-9-19
+signs are 6-9: -1, 6-19: 10, 9-19: 1
+new sign is: 1
+step 45:
+triangle is 4-9-16
+signs are 4-9: 1, 4-16: 1, 9-16: 10
+new sign is: -1
+step 46:
+triangle is 15-17-19
+signs are 15-17: 10, 15-19: -1, 17-19: -1
+new sign is: -1
+step 47:
+triangle is 16-15-17
+signs are 16-15: 10, 16-17: 1, 15-17: -1
+new sign is: 1
+step 48:
+triangle is 0-4-6
+signs are 0-4: 10, 0-6: 1, 4-6: 1
+new sign is: -1
+step 49:
+triangle is 8-4-0
+signs are 8-4: 10, 8-0: -1, 4-0: -1
+new sign is: -1
+step 50:
+triangle is 16-19-9
+signs are 16-19: 10, 16-9: -1, 19-9: 1
+new sign is: 1
+step 51:
+triangle is 16-18-19
+signs are 16-18: 1, 16-19: 1, 18-19: 10
+new sign is: -1
+step 52:
+triangle is 18-16-17
+signs are 18-16: 1, 18-17: 10, 16-17: 1
+new sign is: -1
+step 53:
+triangle is 16-13-19
+signs are 16-13: 10, 16-19: 1, 13-19: 1
+new sign is: -1
+step 54:
+triangle is 18-12-17
+signs are 18-12: 10, 18-17: -1, 12-17: -1
+new sign is: -1
+step 55:
+triangle is 11-18-19
+signs are 11-18: 10, 11-19: 1, 18-19: -1
+new sign is: 1
+step 56:
+triangle is 18-11-15
+signs are 18-11: 1, 18-15: 10, 11-15: 1
+new sign is: -1
+step 57:
+triangle is 13-6-16
+signs are 13-6: 10, 13-16: -1, 6-16: -1
+new sign is: -1
+step 58:
+triangle is 17-2-18
+signs are 17-2: 1, 17-18: -1, 2-18: 10
+new sign is: 1
+step 59:
+triangle is 8-2-13
+signs are 8-2: 1, 8-13: 10, 2-13: -1
+new sign is: 1
+step 60:
+triangle is 17-15-11
+signs are 17-15: -1, 17-11: 10, 15-11: 1
+new sign is: 1
+step 61:
+triangle is 15-18-13
+signs are 15-18: -1, 15-13: 1, 18-13: 10
+new sign is: 1
+step 62:
+triangle is 11-8-13
+signs are 11-8: 10, 11-13: -1, 8-13: 1
+new sign is: 1
+step 63:
+triangle is 5-3-7
+signs are 5-3: -1, 5-7: -1, 3-7: 10
+new sign is: -1
+step 64:
+triangle is 8-12-18
+signs are 8-12: -1, 8-18: 10, 12-18: -1
+new sign is: -1
+step 65:
+triangle is 5-18-3
+signs are 5-18: 10, 5-3: -1, 18-3: 1
+new sign is: 1
+step 66:
+triangle is 18-7-3
+signs are 18-7: 10, 18-3: 1, 7-3: -1
+new sign is: 1
+step 67:
+triangle is 14-18-5
+signs are 14-18: 10, 14-5: 1, 18-5: 1
+new sign is: -1
+step 68:
+triangle is 17-18-14
+signs are 17-18: -1, 17-14: 10, 18-14: -1
+new sign is: -1
+step 69:
+triangle is 18-5-11
+signs are 18-5: 1, 18-11: 1, 5-11: 10
+new sign is: -1
+step 70:
+triangle is 12-15-18
+signs are 12-15: 10, 12-18: -1, 15-18: -1
+new sign is: -1
+step 71:
+triangle is 18-17-7
+signs are 18-17: -1, 18-7: 1, 17-7: 10
+new sign is: 1
+step 72:
+triangle is 12-14-17
+signs are 12-14: 10, 12-17: -1, 14-17: -1
+new sign is: -1
+step 73:
+triangle is 14-8-17
+signs are 14-8: 10, 14-17: -1, 8-17: -1
+new sign is: -1
+step 74:
+triangle is 14-12-7
+signs are 14-12: -1, 14-7: 1, 12-7: 10
+new sign is: 1
+step 75:
+triangle is 8-14-6
+signs are 8-14: -1, 8-6: 1, 14-6: 10
+new sign is: 1
+step 76:
+triangle is 15-3-18
+signs are 15-3: 10, 15-18: -1, 3-18: 1
+new sign is: 1
+step 77:
+triangle is 16-18-14
+signs are 16-18: 1, 16-14: 10, 18-14: -1
+new sign is: 1
+step 78:
+triangle is 12-7-1
+signs are 12-7: 1, 12-1: 1, 7-1: 10
+new sign is: -1
+step 79:
+triangle is 15-3-5
+signs are 15-3: 1, 15-5: 10, 3-5: -1
+new sign is: 1
+step 80:
+triangle is 18-5-12
+signs are 18-5: 1, 18-12: -1, 5-12: 10
+new sign is: 1
+step 81:
+triangle is 9-14-16
+signs are 9-14: 10, 9-16: -1, 14-16: 1
+new sign is: 1
+step 82:
+triangle is 8-1-7
+signs are 8-1: 1, 8-7: 10, 1-7: -1
+new sign is: 1
+step 83:
+triangle is 14-10-6
+signs are 14-10: -1, 14-6: 1, 10-6: 10
+new sign is: 1
+step 84:
+triangle is 16-14-1
+signs are 16-14: 1, 16-1: -1, 14-1: 10
+new sign is: 1
+step 85:
+triangle is 1-7-0
+signs are 1-7: -1, 1-0: 1, 7-0: 10
+new sign is: 1
+step 86:
+triangle is 1-10-7
+signs are 1-10: 10, 1-7: -1, 10-7: 1
+new sign is: 1
+step 87:
+triangle is 15-19-3
+signs are 15-19: -1, 15-3: 1, 19-3: 10
+new sign is: 1
+step 88:
+triangle is 11-5-7
+signs are 11-5: -1, 11-7: 10, 5-7: -1
+new sign is: -1
+step 89:
+triangle is 2-11-5
+signs are 2-11: -1, 2-5: 10, 11-5: -1
+new sign is: -1
+step 90:
+triangle is 0-7-2
+signs are 0-7: 1, 0-2: 1, 7-2: 10
+new sign is: -1
+step 91:
+triangle is 3-15-7
+signs are 3-15: 1, 3-7: -1, 15-7: 10
+new sign is: 1
+step 92:
+triangle is 10-6-9
+signs are 10-6: 1, 10-9: 10, 6-9: -1
+new sign is: 1
+step 93:
+triangle is 14-18-19
+signs are 14-18: -1, 14-19: 10, 18-19: -1
+new sign is: -1
+step 94:
+triangle is 9-5-15
+signs are 9-5: 10, 9-15: 1, 5-15: 1
+new sign is: -1
+step 95:
+triangle is 7-15-14
+signs are 7-15: 1, 7-14: 1, 15-14: 10
+new sign is: -1
+step 96:
+triangle is 3-18-11
+signs are 3-18: 1, 3-11: 10, 18-11: 1
+new sign is: -1
+step 97:
+triangle is 5-10-15
+signs are 5-10: 1, 5-15: 1, 10-15: 10
+new sign is: -1
+step 98:
+triangle is 0-10-9
+signs are 0-10: 10, 0-9: 1, 10-9: 1
+new sign is: -1
+step 99:
+triangle is 13-19-3
+signs are 13-19: 1, 13-3: 10, 19-3: 1
+new sign is: -1
+step 100:
+triangle is 12-10-14
+signs are 12-10: 10, 12-14: -1, 10-14: -1
+new sign is: -1
+step 101:
+triangle is 1-10-16
+signs are 1-10: 1, 1-16: -1, 10-16: 10
+new sign is: 1
+step 102:
+triangle is 3-10-0
+signs are 3-10: 1, 3-0: 10, 10-0: -1
+new sign is: 1
+step 103:
+triangle is 15-19-10
+signs are 15-19: -1, 15-10: -1, 19-10: 10
+new sign is: -1
+step 104:
+triangle is 4-0-3
+signs are 4-0: -1, 4-3: 10, 0-3: 1
+new sign is: 1
+step 105:
+triangle is 3-2-13
+signs are 3-2: 10, 3-13: -1, 2-13: -1
+new sign is: -1
+step 106:
+triangle is 5-7-0
+signs are 5-7: -1, 5-0: 10, 7-0: 1
+new sign is: 1
+step 107:
+triangle is 5-9-1
+signs are 5-9: -1, 5-1: 10, 9-1: -1
+new sign is: -1
+step 108:
+triangle is 4-10-9
+signs are 4-10: 10, 4-9: 1, 10-9: 1
+new sign is: -1
+step 109:
+triangle is 9-13-3
+signs are 9-13: -1, 9-3: 10, 13-3: -1
+new sign is: -1
+step 110:
+triangle is 1-9-3
+signs are 1-9: -1, 1-3: 10, 9-3: -1
+new sign is: -1
+step 111:
+triangle is 19-10-5
+signs are 19-10: -1, 19-5: 10, 10-5: 1
+new sign is: 1
+Found a contradictory case
+20 x 20 sparse matrix over Integer Ring
+[1, -2.641186476193292?, -0.723742122620924?, 0.5892157430780010?, 1.775712855736215?]
+[-2, -0.618033988749895?, -0.618033988749895?, 1.618033988749895?, 1.618033988749895?]
+True
