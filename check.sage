@@ -71,6 +71,7 @@ def check(G):
     if debug:
         print "Check passed"
         print len(subgraphs)
+    print "number of subgraphs: {}".format(len(subgraphs))
     for e in G.edge_iterator(labels=false):
         temp1 = e[0]
         temp2 = e[1]
@@ -123,7 +124,7 @@ def is_alpha_critical(G):
             return False
     return True
 
-g = Graph("O~~em]uj[vmsZTUrfFwN~")
+g = Graph("Q~rH`cKBGE?X?K?K_@_?X??{?Bw")
 graphic = g.plot()
 graphic.save('output.png')
 os.system('open output.png')
