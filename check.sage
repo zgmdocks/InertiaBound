@@ -1,13 +1,33 @@
 import os
+import operator as op
+import time
 load('signing.sage')
+
+moreDebug = True
+
+def ncr(n, r):
+    r = min(r, n-r)
+    if r == 0: return 1
+    numer = reduce(op.mul, xrange(n, n-r, -1))
+    denom = reduce(op.mul, xrange(1, r+1))
+    return numer//denom
+
 # check takes a graph G as input and returns true if the 
 # graph satisfies all properties that would make
 # it a good candidate for the method used in John 
 # Sinkovic's Paper to find an inertia bound that
 # is not tight
 def check(G):
+    t0 = time.clock()
     alpha = len(G.independent_set())
     numVertices = len(G)
+    if 2*alpha+1 > numVertices:
+        print "alpha too large"
+        return False
+    if moreDebug:
+        print "alpha is {}".format(alpha)
+        print "numVerties is {}".format(numVertices)
+        print "number of combinations will be {}".format(ncr(numVertices,2*alpha+1))
     if not is_alpha_critical(G):
         print "alpha critical"
         return False
@@ -62,8 +82,13 @@ def check(G):
             continue
         # if we make it to this point, every component was an odd cycle
         subgraphs.add(I)
+    if moreDebug:
+        print "number of subgraphs: {}".format(len(subgraphs))
+        print "**************************** {}".format(time.clock() - t0)
     T = graphs.CompleteGraph(3)
     Triangles = contained(G,T,trianglesCheck)
+    if moreDebug:
+        print "number of triangles: {}".format(len(Triangles))
     if not Triangles:
         print "contained"
         return False
@@ -71,7 +96,6 @@ def check(G):
     if debug:
         print "Check passed"
         print len(subgraphs)
-    print "number of subgraphs: {}".format(len(subgraphs))
     for e in G.edge_iterator(labels=false):
         temp1 = e[0]
         temp2 = e[1]
@@ -124,7 +148,7 @@ def is_alpha_critical(G):
             return False
     return True
 
-g = Graph("Q~rH`cKBGE?X?K?K_@_?X??{?Bw")
+g = Graph("T~~~FFbF?wbb?w?w_[W?w?FC?[W?Fw?F{?B~")
 graphic = g.plot()
 graphic.save('output.png')
 os.system('open output.png')

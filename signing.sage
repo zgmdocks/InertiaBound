@@ -23,18 +23,6 @@ def signing(G, M, subgraphs, triSign, Triangles):
     changed = True
     i = 0
     while True:
-        if changed == False:
-            n = G.order()
-            if debug:
-                print "edges that are undetermined:"
-            for i in range(n):
-                for j in range(n):
-                    if M[i,j] == 10:
-                        if debug:
-                            print i,j
-            if debug:
-                print M
-            break
         changed = False
         for t in Triangles:
             # since we let M[i,j] = 10 if we didn't know the sign of the
@@ -64,8 +52,20 @@ def signing(G, M, subgraphs, triSign, Triangles):
                     M[t[1],t[2]] = triSign*M[t[0],t[1]]*M[t[0],t[2]]
                     M[t[2],t[1]] = triSign*M[t[0],t[1]]*M[t[0],t[2]]
                 changed = True
+        if changed == False:
+            n = G.order()
+            if debug:
+                print "edges that are undetermined:"
+            for i in range(n):
+                for j in range(n):
+                    if M[i,j] == 10:
+                        if debug:
+                            print i,j
+            if debug:
+                print M
+            break    
         #This loop will once again loop through all triangles, but this time, it will make sure
-        #that all the signings that were made in the last loop were valid.
+        #that all the signings that were made in the last loop were valid. (may be unneccessary)
         for t in Triangles:
             if (M[t[0],t[1]] + M[t[0],t[2]] + M[t[1],t[2]] < 8):
                 if (M[t[0],t[1]]*M[t[0],t[2]]*M[t[1],t[2]] != triSign):
