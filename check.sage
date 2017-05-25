@@ -3,7 +3,7 @@ import operator as op
 import time
 load('signing.sage')
 
-moreDebug = True
+moreDebug = False
 
 def ncr(n, r):
     r = min(r, n-r)
@@ -41,7 +41,6 @@ def check(G):
     subgraphs = set()
     trianglesCheck = set()
     for combo in Combinations(numVertices,2*alpha+1):
-        g = G.subgraph(combo)
         I = G.subgraph(combo,immutable=true)
         #st = g.canonical_label().graph6_string()
         #this next while loop will delete all pendants of g,
@@ -49,7 +48,7 @@ def check(G):
         # or b: a disjoint union of odd cycles. if it is in category
         # a, then it is added to trainglesCheck list, and if it is in b,
         # it is added to subgraphs list
-        h = g.copy()
+        h = G.subgraph(combo)
         # this changed variable is necessary because when we iterate through the
         # vertices, we are deleting some and creating new pendants that we need
         # to delete also, but if we already iterated over that vertice, then
@@ -131,7 +130,7 @@ def check(G):
 def contained(G, Triangle, SubGraphs):
     Triangles = set()
     #calculates the total number of triangles in G
-    for triangle in G.subgraph_search_iterator(Traingle,induced = true):
+    for triangle in G.subgraph_search_iterator(Triangle,induced = true):
         for s in SubGraphs:
             if set(triangle).issubset(set(s)):
                 Triangles.add(tuple(triangle))
@@ -150,8 +149,8 @@ def is_alpha_critical(G):
             return False
     return True
 
-#g = Graph("T~~~FFbF?wbb?w?w_[W?w?FC?[W?Fw?F{?B~")
-#graphic = g.plot()
-#graphic.save('output.png')
-#os.system('open output.png')
-#print check(g)
+g = Graph("Uv~LnbgfeDShP\G}HuXmePrSemapSxqJWG|ZCVhw")
+graphic = g.plot()
+graphic.save('output.png')
+os.system('open output.png')
+print check(g)

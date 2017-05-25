@@ -75,6 +75,7 @@ def signing(G, M, subgraphs, triSign, Triangles):
                     return True
         #This loop is used to look through subgraphs and find subgraphs that have fully been signed
         #so we can put them in posEigen or negEigen
+        t1 = time.clock()
         for s in subgraphs:
             edgeSigned = True
             for e in s.edge_iterator(labels=false):
@@ -95,6 +96,7 @@ def signing(G, M, subgraphs, triSign, Triangles):
                 posEigen.add(s)
             else:
                 negEigen.add(s)
+        print "*#*#*#*#**#*#*#*#*#*#* {}".format(time.clock() - t1)
         if posEigen and negEigen:
             if debug:
                 print "Found a contradictory case"
