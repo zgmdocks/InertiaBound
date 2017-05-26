@@ -282,6 +282,158 @@ Therefore, both $n - n_+(W)$ and $n - n_-(W)$ are greater than or equal to s. Si
 
 \end{proof}
 
+\subsection{Graphs with Tight Inertia Bounds}
+
+\subsubsection{Perfect Graphs}
+
+\begin{definition}[Chromatic Number]
+The chromatic number of a graph, $\chi(G)$, is the minimum number of colours needed in a proper colouring of G. \cite{elzinga2007minimum}
+\end{definition}
+
+\begin{exmp}
+Consider the following graph:
+\\
+
+\begin{tikzpicture}
+[scale=.8,every node/.style={circle,fill=blue!20}]
+\node (n1) at (1.5,9) {1};
+\node (n2) at (4,9) {2};
+\node (n3) at (4,6) {3};
+\node (n4) at (7,6) {4};
+\node (n5) at (7,9) {5};
+\node (n6) at (9.5,7.5) {6};
+\node (n7) at (1.5,6) {7};
+\node (n8) at (0,7.5) {8};
+\foreach \from/\to in {n1/n2,n2/n3,n2/n5,n3/n4,n5/n4,n5/n6,n4/n6,n3/n7,n7/n8,n1/n8}
+\draw (\from) -- (\to);
+\end{tikzpicture}
+
+An example of a colouring would be:
+\\
+
+\begin{tikzpicture}
+[scale=.8,every node/.style={circle,fill=blue!20}]
+\node[fill=red] (n1) at (1.5,9) {1};
+\node[fill=green] (n2) at (4,9) {2};
+\node[fill=orange] (n3) at (4,6) {3};
+\node[fill=yellow] (n4) at (7,6) {4};
+\node[fill=orange] (n5) at (7,9) {5};
+\node[fill=green] (n6) at (9.5,7.5) {6};
+\node[fill=red] (n7) at (1.5,6) {7};
+\node[fill=yellow] (n8) at (0,7.5) {8};
+\foreach \from/\to in {n1/n2,n2/n3,n2/n5,n3/n4,n5/n4,n5/n6,n4/n6,n3/n7,n7/n8,n1/n8}
+\draw (\from) -- (\to);
+\end{tikzpicture}
+
+However, $\chi(G)$ for this graph is 3:
+\\
+
+\begin{tikzpicture}
+[scale=.8,every node/.style={circle,fill=blue!20}]
+\node[fill=green] (n1) at (1.5,9) {1};
+\node[fill=red] (n2) at (4,9) {2};
+\node[fill=green] (n3) at (4,6) {3};
+\node[fill=red] (n4) at (7,6) {4};
+\node[fill=green] (n5) at (7,9) {5};
+\node[fill=yellow] (n6) at (9.5,7.5) {6};
+\node[fill=red] (n7) at (1.5,6) {7};
+\node[fill=yellow] (n8) at (0,7.5) {8};
+\foreach \from/\to in {n1/n2,n2/n3,n2/n5,n3/n4,n5/n4,n5/n6,n4/n6,n3/n7,n7/n8,n1/n8}
+\draw (\from) -- (\to);
+\end{tikzpicture}
+
+\end{exmp}
+
+\begin{definition}[Clique]
+An m-clique in a graph is a complete subgraph on m vertices. \cite{elzinga2007minimum}
+
+The clique number, $\omega(G)$, is the number of vertices in a maximum clique of $G$.
+
+\end{definition}
+
+\begin{definition}[Clique Cover]
+A Clique Cover of the vertex set $V(G)$ of a graph $G$ is a set of cliques $C$, such that each vertex is in at least one clique in $C$. 
+
+The clique cover number, $\theta(G)$ is the minimum number of cliques needed in a clique cover of $G$. \cite{elzinga2007minimum}
+
+\end{definition}
+
+\begin{exmp}
+Consider the following graph:
+\\
+\begin{tikzpicture}
+[scale=.8,every node/.style={circle,fill=blue!20}]
+\node (n1) at (1.5,9) {1};
+\node (n2) at (4,9) {2};
+\node (n3) at (4,6) {3};
+\node (n4) at (7,6) {4};
+\node (n5) at (7,9) {5};
+\node (n6) at (9.5,7.5) {6};
+\node (n7) at (1.5,6) {7};
+\node (n8) at (0,7.5) {8};
+\foreach \from/\to in {n1/n2,n2/n3,n2/n5,n3/n4,n5/n4,n5/n6,n4/n6,n3/n7,n7/n8,n1/n8,n2/n4,n3/n5,n2/n7,n2/n8}
+\draw (\from) -- (\to);
+\end{tikzpicture}
+
+A possible clique covering is:
+\\
+\begin{tikzpicture}
+[scale=.8,every node/.style={circle,fill=blue!20}]
+\node[fill=green] (n1) at (1.5,9) {1};
+\node[fill=red] (n2) at (4,9) {2};
+\node[fill=red] (n3) at (4,6) {3};
+\node[fill=red] (n4) at (7,6) {4};
+\node[fill=red] (n5) at (7,9) {5};
+\node[fill=yellow] (n6) at (9.5,7.5) {6};
+\node[fill=orange] (n7) at (1.5,6) {7};
+\node[fill=green] (n8) at (0,7.5) {8};
+\foreach \from/\to in {n1/n2,n2/n3,n2/n5,n3/n4,n5/n4,n5/n6,n4/n6,n3/n7,n7/n8,n1/n8,n2/n4,n3/n5,n2/n7,n2/n8}
+\draw (\from) -- (\to);
+\end{tikzpicture}
+
+However, we can find that $\theta(G)$ is equal to 3 (smallest I could find):
+\\
+\begin{tikzpicture}
+[scale=.8,every node/.style={circle,fill=blue!20}]
+\node[fill=green] (n1) at (1.5,9) {1};
+\node[fill=orange] (n2) at (4,9) {2};
+\node[fill=orange] (n3) at (4,6) {3};
+\node[fill=red] (n4) at (7,6) {4};
+\node[fill=red] (n5) at (7,9) {5};
+\node[fill=red] (n6) at (9.5,7.5) {6};
+\node[fill=orange] (n7) at (1.5,6) {7};
+\node[fill=green] (n8) at (0,7.5) {8};
+\foreach \from/\to in {n1/n2,n2/n3,n2/n5,n3/n4,n5/n4,n5/n6,n4/n6,n3/n7,n7/n8,n1/n8,n2/n4,n3/n5,n2/n7,n2/n8}
+\draw (\from) -- (\to);
+\end{tikzpicture}
+
+As well, the clique number, $\omega(G)$, is 4:
+\\
+\begin{tikzpicture}
+[scale=.8,every node/.style={circle,fill=blue!20}]
+\node (n1) at (1.5,9) {1};
+\node[fill=red] (n2) at (4,9) {2};
+\node[fill=red] (n3) at (4,6) {3};
+\node[fill=red] (n4) at (7,6) {4};
+\node[fill=red] (n5) at (7,9) {5};
+\node (n6) at (9.5,7.5) {6};
+\node (n7) at (1.5,6) {7};
+\node (n8) at (0,7.5) {8};
+\foreach \from/\to in {n1/n2,n2/n3,n2/n5,n3/n4,n5/n4,n5/n6,n4/n6,n3/n7,n7/n8,n1/n8,n2/n4,n3/n5,n2/n7,n2/n8}
+\draw (\from) -- (\to);
+\end{tikzpicture}
+
+\end{exmp}
+
+\begin{definition}[Perfect Graph]
+A graph is perfect if 
+
+\end{definition}
+
+\subsubsection{Graphs with an Eigensharp decomposition by Stars}
+
+\subsection{Other Bounds on Independence Number}
+
 \section{Algorithm to Find Graphs Lacking a Tight Inertia Bound}
 
 \subsection{Outline of Method}

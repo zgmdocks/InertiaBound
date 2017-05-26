@@ -2,7 +2,7 @@ import os
 #this debug variable is to control the output to the screen. If it is set to true,
 #steps of the process will be printed to the screen. If it is false, the functions will
 #not output anything to the screen.
-debug = True
+debug = False
 # signing accepts a graph G, a matrix that will hold the signs of edges, M, and
 # a list of nonsingular subgraphs of G of size 2alpha+1. This function will
 # attempt to determine the signing of G and find a contradiction for a tight
@@ -22,7 +22,9 @@ def signing(G, M, subgraphs, triSign, Triangles):
         print "sign of triangles is {}".format(triSign)
     changed = True
     i = 0
+    t2 = time.clock()
     while True:
+        print "this time around: {}".format(time.clock() - t2)
         changed = False
         for t in Triangles:
             # since we let M[i,j] = 10 if we didn't know the sign of the
@@ -54,13 +56,18 @@ def signing(G, M, subgraphs, triSign, Triangles):
                 changed = True
         if changed == False:
             n = G.order()
-            if debug:
-                print "edges that are undetermined:"
-            for i in range(n):
-                for j in range(n):
-                    if M[i,j] == 10:
-                        if debug:
-                            print i,j
+            if debug or edgesLeft:
+                count = 0
+                if debug:
+                    print "edges that are undetermined:"
+                for i in range(n):
+                    for j in range(n):
+                        if M[i,j] == 10:
+                            if debug:
+                                print i,j
+                            count += 1
+                if edgesLeft:
+                    print "number of edges undetermined: {}".format(count)
             if debug:
                 print M
             break    

@@ -3,7 +3,8 @@ import operator as op
 import time
 load('signing.sage')
 
-moreDebug = False
+moreDebug = True
+edgesLeft = True
 
 def ncr(n, r):
     r = min(r, n-r)
@@ -114,6 +115,8 @@ def check(G):
         print M1
     if not signing(G,M1,subgraphs,1,Triangles):
         return False
+    if moreDebug:
+        print "************* Positive Signing found a contradiction **********************"
     if not signing(G,M2,subgraphs,-1,Triangles):
         return False
     if debug:
@@ -123,7 +126,6 @@ def check(G):
     return True
 
 
-#Thinking this is working correctly, but might need to come back to
 # contained returns true if the each triangle in G is
 # contained in at least one subgraph of the form SubGraph and
 # false otherwise
@@ -149,8 +151,8 @@ def is_alpha_critical(G):
             return False
     return True
 
-g = Graph("Uv~LnbgfeDShP\G}HuXmePrSemapSxqJWG|ZCVhw")
-graphic = g.plot()
-graphic.save('output.png')
-os.system('open output.png')
-print check(g)
+#g = Graph("O~~em]uj[vmsZTUrfFwN~")
+#graphic = g.plot()
+#graphic.save('output.png')
+#os.system('open output.png')
+#print check(g)
