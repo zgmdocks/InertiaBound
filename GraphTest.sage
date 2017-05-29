@@ -8,7 +8,7 @@ for j in range(24,30):
     with open('/Users/zgmdocks/Downloads/VertexTransitiveGraphs/trans{num1:02d}/trans{num2:02d}c.g6'.format(num1=j,num2=j)) as input_file:
         for line in input_file:
             i += 1
-            if j == 24 and i < 1740:
+            if j == 24 and i < 3353:
                 continue
             print "graph {} on {} vertices".format(i,j)
             G = Graph(line)
