@@ -1,7 +1,12 @@
+include 'sage/ext/stdsage.pxi'
+include 'sage/ext/cdefs.pxi'
+include 'cysignals/signals.pxi'
+
 import os
 import operator as op
 import time
-load('signing.sage')
+import signing.spyx
+from sage.all import *
 
 moreDebug = True
 edgesLeft = True
@@ -151,8 +156,8 @@ def is_alpha_critical(G):
             return False
     return True
 
-g = Graph("W~nELU\`aKkXTJ]?@cGUB@KgBSX?wG_sS`DUCGyWO`}?@M^")
-graphic = g.plot()
-graphic.save('output.png')
-os.system('open output.png')
+g = Graph("W~ffCIWaONGYEhEYDRAH_KT?hEIBYogboAqxBBlAGEicPKt")
+#graphic = g.plot()
+#graphic.save('output.png')
+#os.system('open output.png')
 print check(g)
