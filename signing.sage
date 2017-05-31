@@ -56,7 +56,7 @@ def signing(G, M, subgraphs, triSign, Triangles):
                 changed = True
         if changed == False:
             n = G.order()
-            if debug or edgesLeft:
+            if debug or moreDebug:
                 count = 0
                 if debug:
                     print "edges that are undetermined:"
@@ -66,7 +66,7 @@ def signing(G, M, subgraphs, triSign, Triangles):
                             if debug:
                                 print i,j
                             count += 1
-                if edgesLeft:
+                if moreDebug:
                     print "number of edges undetermined: {}".format(count)
             if debug:
                 print M

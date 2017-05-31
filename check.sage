@@ -3,9 +3,14 @@ import operator as op
 import time
 load('signing.sage')
 
+# if moreDebug is true, information will be printed to screen to help debug issues
+# or just figure out what the program is doing. The following things will be printed:
+# time taken for certain processes, the independent number, number of vertices,
+# the number of subgraphs needed to iterate over, the number of subraphs that are
+# potentially useable, and the success of finding a contradictary case.
 moreDebug = True
-edgesLeft = True
 
+# ncr returns n choose r
 def ncr(n, r):
     r = min(r, n-r)
     if r == 0: return 1
@@ -20,6 +25,8 @@ def ncr(n, r):
 # is not tight
 def check(G):
     if moreDebug:
+        # t0 is used to help time how long processes are taking to understand
+        # how the problem will scale as we increase the number of vertices.
         t0 = time.clock()
     alpha = len(G.independent_set())
     numVertices = len(G)
@@ -37,13 +44,10 @@ def check(G):
     if not path:
         print "no hamiltionian"
         path = G.random_spanning_tree()
-    #if not G.is_arc_transitive():
-        #return False
     subgraphs = set()
     trianglesCheck = set()
     for combo in Combinations(numVertices,2*alpha+1):
         I = G.subgraph(combo,immutable=true)
-        #st = g.canonical_label().graph6_string()
         #this next while loop will delete all pendants of g,
         #then check if the resulting g is a: a single odd cycle
         # or b: a disjoint union of odd cycles. if it is in category
@@ -151,7 +155,7 @@ def is_alpha_critical(G):
             return False
     return True
 
-g = Graph("W~nELU\`aKkXTJ]?@cGUB@KgBSX?wG_sS`DUCGyWO`}?@M^")
+g = Graph("W}mKmIbqD_JJMMBYa]_{??ucC{YKeHKXPadVXOmqQbqEDMp")
 graphic = g.plot()
 graphic.save('output.png')
 os.system('open output.png')
