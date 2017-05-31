@@ -1,0 +1,373 @@
+alpha is 4
+numVerties is 24
+number of combinations will be 1307504
+number of subgraphs: 92760
+**************************** 1016.757764
+number of triangles to use: 720
+number of triangles: 720
+Check passed
+92760
+(0, 1)
+(0, 4)
+(1, 20)
+(2, 10)
+(2, 12)
+(3, 10)
+(3, 11)
+(4, 12)
+(5, 18)
+(5, 13)
+(6, 19)
+(6, 14)
+(7, 21)
+(7, 11)
+(8, 20)
+(8, 14)
+(9, 17)
+(9, 18)
+(13, 22)
+(15, 21)
+(15, 23)
+(16, 19)
+(16, 22)
+24 x 24 sparse matrix over Integer Ring
+sign of triangles is 1
+this time around: 9.99999997475e-07
+step 1:
+triangle is 10-3-11
+signs are 10-3: 1, 10-11: 10, 3-11: 1
+new sign is: 1
+step 2:
+triangle is 22-19-16
+signs are 22-19: 10, 22-16: 1, 19-16: 1
+new sign is: 1
+step 3:
+triangle is 16-6-19
+signs are 16-6: 10, 16-19: 1, 6-19: 1
+new sign is: 1
+step 4:
+triangle is 8-14-6
+signs are 8-14: 1, 8-6: 10, 14-6: 1
+new sign is: 1
+step 5:
+triangle is 8-6-20
+signs are 8-6: 1, 8-20: 1, 6-20: 10
+new sign is: 1
+step 6:
+triangle is 20-19-6
+signs are 20-19: 10, 20-6: 1, 19-6: 1
+new sign is: 1
+step 7:
+triangle is 9-18-17
+signs are 9-18: 1, 9-17: 1, 18-17: 10
+new sign is: 1
+step 8:
+triangle is 5-18-13
+signs are 5-18: 1, 5-13: 1, 18-13: 10
+new sign is: 1
+step 9:
+triangle is 14-6-19
+signs are 14-6: 1, 14-19: 10, 6-19: 1
+new sign is: 1
+step 10:
+triangle is 17-5-18
+signs are 17-5: 10, 17-18: 1, 5-18: 1
+new sign is: 1
+step 11:
+triangle is 14-19-22
+signs are 14-19: 1, 14-22: 10, 19-22: 1
+new sign is: 1
+step 12:
+triangle is 4-2-12
+signs are 4-2: 10, 4-12: 1, 2-12: 1
+new sign is: 1
+step 13:
+triangle is 4-0-2
+signs are 4-0: 1, 4-2: 1, 0-2: 10
+new sign is: 1
+step 14:
+triangle is 2-10-0
+signs are 2-10: 1, 2-0: 1, 10-0: 10
+new sign is: 1
+step 15:
+triangle is 10-3-0
+signs are 10-3: 1, 10-0: 1, 3-0: 10
+new sign is: 1
+step 16:
+triangle is 3-0-1
+signs are 3-0: 1, 3-1: 10, 0-1: 1
+new sign is: 1
+step 17:
+triangle is 11-3-1
+signs are 11-3: 1, 11-1: 10, 3-1: 1
+new sign is: 1
+step 18:
+triangle is 20-1-11
+signs are 20-1: 1, 20-11: 10, 1-11: 1
+new sign is: 1
+step 19:
+triangle is 11-1-7
+signs are 11-1: 1, 11-7: 1, 1-7: 10
+new sign is: 1
+step 20:
+triangle is 1-0-2
+signs are 1-0: 1, 1-2: 10, 0-2: 1
+new sign is: 1
+step 21:
+triangle is 0-1-7
+signs are 0-1: 1, 0-7: 10, 1-7: 1
+new sign is: 1
+*#*#*#*#**#*#*#*#*#*#* 0.586982
+this time around: 0.589127
+step 22:
+triangle is 2-1-20
+signs are 2-1: 1, 2-20: 10, 1-20: 1
+new sign is: 1
+step 23:
+triangle is 8-20-2
+signs are 8-20: 1, 8-2: 10, 20-2: 1
+new sign is: 1
+step 24:
+triangle is 19-11-20
+signs are 19-11: 10, 19-20: 1, 11-20: 1
+new sign is: 1
+step 25:
+triangle is 2-19-20
+signs are 2-19: 10, 2-20: 1, 19-20: 1
+new sign is: 1
+step 26:
+triangle is 0-8-2
+signs are 0-8: 10, 0-2: 1, 8-2: 1
+new sign is: 1
+step 27:
+triangle is 10-2-19
+signs are 10-2: 1, 10-19: 10, 2-19: 1
+new sign is: 1
+step 28:
+triangle is 21-1-7
+signs are 21-1: 10, 21-7: 1, 1-7: 1
+new sign is: 1
+step 29:
+triangle is 14-19-11
+signs are 14-19: 1, 14-11: 10, 19-11: 1
+new sign is: 1
+step 30:
+triangle is 14-7-11
+signs are 14-7: 10, 14-11: 1, 7-11: 1
+new sign is: 1
+step 31:
+triangle is 12-8-2
+signs are 12-8: 10, 12-2: 1, 8-2: 1
+new sign is: 1
+step 32:
+triangle is 16-19-10
+signs are 16-19: 1, 16-10: 10, 19-10: 1
+new sign is: 1
+step 33:
+triangle is 6-0-8
+signs are 6-0: 10, 6-8: 1, 0-8: 1
+new sign is: 1
+step 34:
+triangle is 7-14-21
+signs are 7-14: 1, 7-21: 1, 14-21: 10
+new sign is: 1
+step 35:
+triangle is 14-19-21
+signs are 14-19: 1, 14-21: 1, 19-21: 10
+new sign is: 1
+step 36:
+triangle is 8-0-7
+signs are 8-0: 1, 8-7: 10, 0-7: 1
+new sign is: 1
+step 37:
+triangle is 6-0-3
+signs are 6-0: 1, 6-3: 10, 0-3: 1
+new sign is: 1
+step 38:
+triangle is 19-21-2
+signs are 19-21: 1, 19-2: 1, 21-2: 10
+new sign is: 1
+step 39:
+triangle is 14-11-3
+signs are 14-11: 1, 14-3: 10, 11-3: 1
+new sign is: 1
+step 40:
+triangle is 12-2-21
+signs are 12-2: 1, 12-21: 10, 2-21: 1
+new sign is: 1
+*#*#*#*#**#*#*#*#*#*#* 1.843672
+Found a contradictory case
+24 x 24 sparse matrix over Integer Ring
+[-1.522306067882028?, -0.4673915226294910?, 0.2379844872514029?, 0.5714846818330995?, 0.795752750073839?, 1.463056780001485?, 3.459908595926016?, -2.405679031173488? + 0.?e-54*I, -2.132810673400834? + 0.?e-54*I]
+[-2.408694971426805?, -1.981024847622380?, -1.123167652865489?, -0.7170440793928405?, -0.2952974965894451?, 0.4698738479478713?, 0.6613952619734182?, 1.431032960576978?, 3.962926977398691?]
+************* Positive Signing found a contradiction **********************
+sign of triangles is -1
+this time around: 3.9999999899e-06
+step 1:
+triangle is 10-3-11
+signs are 10-3: 1, 10-11: 10, 3-11: 1
+new sign is: -1
+step 2:
+triangle is 22-19-16
+signs are 22-19: 10, 22-16: 1, 19-16: 1
+new sign is: -1
+step 3:
+triangle is 16-6-19
+signs are 16-6: 10, 16-19: 1, 6-19: 1
+new sign is: -1
+step 4:
+triangle is 8-14-6
+signs are 8-14: 1, 8-6: 10, 14-6: 1
+new sign is: -1
+step 5:
+triangle is 8-6-20
+signs are 8-6: -1, 8-20: 1, 6-20: 10
+new sign is: 1
+step 6:
+triangle is 20-19-6
+signs are 20-19: 10, 20-6: 1, 19-6: 1
+new sign is: -1
+step 7:
+triangle is 9-18-17
+signs are 9-18: 1, 9-17: 1, 18-17: 10
+new sign is: -1
+step 8:
+triangle is 5-18-13
+signs are 5-18: 1, 5-13: 1, 18-13: 10
+new sign is: -1
+step 9:
+triangle is 14-6-19
+signs are 14-6: 1, 14-19: 10, 6-19: 1
+new sign is: -1
+step 10:
+triangle is 17-5-18
+signs are 17-5: 10, 17-18: -1, 5-18: 1
+new sign is: 1
+step 11:
+triangle is 14-19-22
+signs are 14-19: -1, 14-22: 10, 19-22: -1
+new sign is: -1
+step 12:
+triangle is 4-2-12
+signs are 4-2: 10, 4-12: 1, 2-12: 1
+new sign is: -1
+step 13:
+triangle is 4-0-2
+signs are 4-0: 1, 4-2: -1, 0-2: 10
+new sign is: 1
+step 14:
+triangle is 2-10-0
+signs are 2-10: 1, 2-0: 1, 10-0: 10
+new sign is: -1
+step 15:
+triangle is 10-3-0
+signs are 10-3: 1, 10-0: -1, 3-0: 10
+new sign is: 1
+step 16:
+triangle is 3-0-1
+signs are 3-0: 1, 3-1: 10, 0-1: 1
+new sign is: -1
+step 17:
+triangle is 11-3-1
+signs are 11-3: 1, 11-1: 10, 3-1: -1
+new sign is: 1
+step 18:
+triangle is 20-1-11
+signs are 20-1: 1, 20-11: 10, 1-11: 1
+new sign is: -1
+step 19:
+triangle is 11-1-7
+signs are 11-1: 1, 11-7: 1, 1-7: 10
+new sign is: -1
+step 20:
+triangle is 1-0-2
+signs are 1-0: 1, 1-2: 10, 0-2: 1
+new sign is: -1
+step 21:
+triangle is 0-1-7
+signs are 0-1: 1, 0-7: 10, 1-7: -1
+new sign is: 1
+*#*#*#*#**#*#*#*#*#*#* 0.6344
+this time around: 0.639651
+step 22:
+triangle is 2-1-20
+signs are 2-1: -1, 2-20: 10, 1-20: 1
+new sign is: 1
+step 23:
+triangle is 8-20-2
+signs are 8-20: 1, 8-2: 10, 20-2: 1
+new sign is: -1
+step 24:
+triangle is 19-11-20
+signs are 19-11: 10, 19-20: -1, 11-20: -1
+new sign is: -1
+step 25:
+triangle is 2-19-20
+signs are 2-19: 10, 2-20: 1, 19-20: -1
+new sign is: 1
+step 26:
+triangle is 0-8-2
+signs are 0-8: 10, 0-2: 1, 8-2: -1
+new sign is: 1
+step 27:
+triangle is 10-2-19
+signs are 10-2: 1, 10-19: 10, 2-19: 1
+new sign is: -1
+step 28:
+triangle is 21-1-7
+signs are 21-1: 10, 21-7: 1, 1-7: -1
+new sign is: 1
+step 29:
+triangle is 14-19-11
+signs are 14-19: -1, 14-11: 10, 19-11: -1
+new sign is: -1
+step 30:
+triangle is 14-7-11
+signs are 14-7: 10, 14-11: -1, 7-11: 1
+new sign is: 1
+step 31:
+triangle is 12-8-2
+signs are 12-8: 10, 12-2: 1, 8-2: -1
+new sign is: 1
+step 32:
+triangle is 16-19-10
+signs are 16-19: 1, 16-10: 10, 19-10: -1
+new sign is: 1
+step 33:
+triangle is 6-0-8
+signs are 6-0: 10, 6-8: -1, 0-8: 1
+new sign is: 1
+step 34:
+triangle is 7-14-21
+signs are 7-14: 1, 7-21: 1, 14-21: 10
+new sign is: -1
+step 35:
+triangle is 14-19-21
+signs are 14-19: -1, 14-21: -1, 19-21: 10
+new sign is: -1
+step 36:
+triangle is 8-0-7
+signs are 8-0: 1, 8-7: 10, 0-7: 1
+new sign is: -1
+step 37:
+triangle is 6-0-3
+signs are 6-0: 1, 6-3: 10, 0-3: 1
+new sign is: -1
+step 38:
+triangle is 19-21-2
+signs are 19-21: -1, 19-2: 1, 21-2: 10
+new sign is: 1
+step 39:
+triangle is 14-11-3
+signs are 14-11: -1, 14-3: 10, 11-3: 1
+new sign is: 1
+step 40:
+triangle is 12-2-21
+signs are 12-2: 1, 12-21: 10, 2-21: 1
+new sign is: -1
+*#*#*#*#**#*#*#*#*#*#* 1.983949
+Found a contradictory case
+24 x 24 sparse matrix over Integer Ring
+[-3.962926977398691?, -1.431032960576978?, -0.6613952619734182?, -0.4698738479478713?, 0.2952974965894451?, 0.7170440793928405?, 1.123167652865489?, 1.981024847622380?, 2.408694971426805?]
+[-3.459908595926016?, -1.463056780001485?, -0.795752750073839?, -0.5714846818330995?, -0.2379844872514029?, 0.4673915226294910?, 1.522306067882028?, 2.132810673400834? + 0.?e-54*I, 2.405679031173488? + 0.?e-54*I]
+True
