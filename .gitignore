@@ -1,6 +1,5 @@
 *.dvi
 *.pyx
-*.png
 *.c
 *.toc
 test.sage
