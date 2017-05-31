@@ -1,6 +1,5 @@
 *.dvi
 *.c
-*.png
 *.toc
 test.sage
 *.out
