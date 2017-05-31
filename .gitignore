@@ -1,4 +1,5 @@
 *.dvi
+*.png
 *.c
 *.toc
 test.sage
