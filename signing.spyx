@@ -13,7 +13,7 @@ debug = False
 # attempt to determine the signing of G and find a contradiction for a tight
 # inertia bound using the list of subgraphs. M will hold the signs of the edges
 # throughout. M[i,j] will equal 1 if the edge between vertices i and j is
-# positive, -1 if the edge is positive, 0 if there is no edge, and 10 if
+# positive, -1 if the edge is negative, 0 if there is no edge, and 10 if
 # there is an edge but we have not determined the sign yet.
 # triangles is the set of all triangles we know must be the same sign
 def signing(G, M, subgraphs, triSign, Triangles):
