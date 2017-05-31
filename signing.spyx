@@ -1,3 +1,6 @@
+# This file is equivalent to signing.sage. However, this file will be updated
+# to use cython for performance improvements.
+
 import os
 import time
 #this debug variable is to control the output to the screen. If it is set to true,
