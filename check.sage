@@ -155,7 +155,7 @@ def is_alpha_critical(G):
             return False
     return True
 
-g = Graph("W~~~vnn{vT{nvFnFo^}~Dnw\{^AF|hFz[YZ~DT~wX^~n{B~")
+g = Graph("W~~~vnn{vXyjqnnFs^}~Knw\[^QF|hiz[iznCt~wX^~n{B~")
 graphic = g.plot()
 graphic.save('output.png')
 os.system('open output.png')
