@@ -2,7 +2,7 @@ import os
 #this debug variable is to control the output to the screen. If it is set to true,
 #steps of the process will be printed to the screen. If it is false, the functions will
 #not output anything to the screen.
-debug = False
+debug = True
 # signing accepts a graph G, a matrix that will hold the signs of edges, M, and
 # a list of nonsingular subgraphs of G of size 2alpha+1. This function will
 # attempt to determine the signing of G and find a contradiction for a tight
@@ -62,7 +62,7 @@ def signing(G, M, subgraphs, triSign, Triangles, guesses):
                 changed = True
         if changed == False:
             # This if will let the signing guess an edge and try again if it has not guessed yet
-            if guesses == 0:
+            if guesses < 50:
                 guessedEdge = None
                 for t in Triangles:
                     if (M[t[0],t[1]] + M[t[0],t[2]] + M[t[1],t[2]] >= 19) and (M[t[0],t[1]] + M[t[0],t[2]] + M[t[1],t[2]] <= 21):
@@ -83,8 +83,7 @@ def signing(G, M, subgraphs, triSign, Triangles, guesses):
                     N = copy(M)
                     N[guessedEdge[0],guessedEdge[1]] = -1
                     N[guessedEdge[1],guessedEdge[0]] = -1
-                    guesses += 1
-                    if signing(G,P,subgraphs,triSign,Triangles,1) and signing(G,N,subgraphs,triSign,Triangles,-1):
+                    if signing(G,P,subgraphs,triSign,Triangles,guesses+1) and signing(G,N,subgraphs,triSign,Triangles,guesses-1):
                         print "Guesses both reached a contradiction *******************"
                         return True
                     else:
