@@ -2,7 +2,7 @@ import os
 #this debug variable is to control the output to the screen. If it is set to true,
 #steps of the process will be printed to the screen. If it is false, the functions will
 #not output anything to the screen.
-debug = True
+debug = False
 # signing accepts a graph G, a matrix that will hold the signs of edges, M, and
 # a list of nonsingular subgraphs of G of size 2alpha+1. This function will
 # attempt to determine the signing of G and find a contradiction for a tight
@@ -11,7 +11,7 @@ debug = True
 # positive, -1 if the edge is negative, 0 if there is no edge, and 10 if
 # there is an edge but we have not determined the sign yet.
 # triangles is the set of all triangles we know must be the same sign
-def signing(G, M, subgraphs, triSign, Triangles):
+def signing(G, M, subgraphs, triSign, Triangles, guesses):
     alpha = len(G.independent_set())
     #posEigen and negEigen are sets where if a subgraph belongs to posEigen
     #it has alpha(G)+1 positive Eigevalues, and if it belongs to negEigen
@@ -19,7 +19,13 @@ def signing(G, M, subgraphs, triSign, Triangles):
     posEigen = set()
     negEigen = set()
     if debug:
+        print "NEW SIGNING IS BEGINNING ************************"
         print "sign of triangles is {}".format(triSign)
+    if debug:
+        if guesses == 1:
+            print "guessed edge is set to positive"
+        elif guesses == -1:
+            print "guessed edge is set to negative"
     changed = True
     i = 0
     t2 = time.clock()
@@ -55,6 +61,34 @@ def signing(G, M, subgraphs, triSign, Triangles):
                     M[t[2],t[1]] = triSign*M[t[0],t[1]]*M[t[0],t[2]]
                 changed = True
         if changed == False:
+            # This if will let the signing guess an edge and try again if it has not guessed yet
+            if guesses == 0:
+                guessedEdge = None
+                for t in Triangles:
+                    if (M[t[0],t[1]] + M[t[0],t[2]] + M[t[1],t[2]] >= 19) and (M[t[0],t[1]] + M[t[0],t[2]] + M[t[1],t[2]] <= 21):
+                        if M[t[0],t[1]] == 10:
+                            guessedEdge = [t[0], t[1]]
+                        if M[t[0],t[2]] == 10:
+                            guessedEdge = [t[0], t[2]]
+                        if M[t[1],t[2]] == 10:
+                            guessedEdge = [t[1], t[2]]
+                        break
+                if guessedEdge:
+                    if moreDebug:
+                        print "GUESSING EDGES ************************"
+                        print "edge that will be guessed is {} - {}".format(guessedEdge[0],guessedEdge[1])
+                    P = copy(M)
+                    P[guessedEdge[0],guessedEdge[1]] = 1
+                    P[guessedEdge[1],guessedEdge[0]] = 1
+                    N = copy(M)
+                    N[guessedEdge[0],guessedEdge[1]] = -1
+                    N[guessedEdge[1],guessedEdge[0]] = -1
+                    guesses += 1
+                    if signing(G,P,subgraphs,triSign,Triangles,1) and signing(G,N,subgraphs,triSign,Triangles,-1):
+                        print "Guesses both reached a contradiction *******************"
+                        return True
+                    else:
+                        print "Guesses did not reach a contradiction"
             n = G.order()
             if debug or moreDebug:
                 count = 0
@@ -124,12 +158,13 @@ def signing(G, M, subgraphs, triSign, Triangles):
                     subgraph2c.add_edge((temp1,temp2,M[temp1,temp2]))
                 print subgraph1c.weighted_adjacency_matrix().eigenvalues()
                 print subgraph2c.weighted_adjacency_matrix().eigenvalues()
-                graphic1 = subgraph1.plot()
-                graphic2 = subgraph2.plot()
-                graphic1.save('subgraph1^{}.png'.format(triSign))
-                os.system('open subgraph1^{}.png'.format(triSign))
-                graphic2.save('subgraph2^{}.png'.format(triSign))
-                os.system('open subgraph2^{}.png'.format(triSign))
+                if showFigs:
+                    graphic1 = subgraph1.plot()
+                    graphic2 = subgraph2.plot()
+                    graphic1.save('subgraph1^{}.png'.format(triSign))
+                    os.system('open subgraph1^{}.png'.format(triSign))
+                    graphic2.save('subgraph2^{}.png'.format(triSign))
+                    os.system('open subgraph2^{}.png'.format(triSign))
             return True
     if debug:
         print "did not find a contradiction"

@@ -9,6 +9,11 @@ load('signing.sage')
 # the number of subgraphs needed to iterate over, the number of subraphs that are
 # potentially useable, and the success of finding a contradictary case.
 moreDebug = True
+# showFigs will save and open files showing the graph, path used, and subgraphs used
+showFigs = False
+# change Guess to 0 if you want it to make a guess, and change it to any value other than
+# 0, 1, or -1 if you don't want it to guess.
+Guess = 0
 
 # ncr returns n choose r
 def ncr(n, r):
@@ -117,13 +122,13 @@ def check(G):
     M2 = G.weighted_adjacency_matrix()
     if debug:
         print M1
-    if not signing(G,M1,subgraphs,1,Triangles):
+    if not signing(G,M1,subgraphs,1,Triangles, Guess):
         return False
     if moreDebug:
         print "************* Positive Signing found a contradiction **********************"
-    if not signing(G,M2,subgraphs,-1,Triangles):
+    if not signing(G,M2,subgraphs,-1,Triangles, Guess):
         return False
-    if debug:
+    if showFigs:
         pathGraphic = path.plot()
         pathGraphic.save('path.png')
         os.system('open path.png')
@@ -155,8 +160,9 @@ def is_alpha_critical(G):
             return False
     return True
 
-g = Graph("R}ecZ@OH?o`W@gOWcI_`p?hkHL?GuG")
-graphic = g.plot()
-graphic.save('output.png')
-os.system('open output.png')
-print check(g)
+#g = Graph("N~zLaWqCgY?U@R?N_Jw")
+#graphic = g.plot()
+if showFigs:
+    graphic.save('output.png')
+    os.system('open output.png')
+#print check(g)
