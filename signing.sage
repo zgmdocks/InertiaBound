@@ -64,7 +64,12 @@ def signing(G, M, subgraphs, triSign, Triangles, guesses):
             # This if will let the signing guess an edge and try again if it has not guessed yet
             if guesses < 50:
                 guessedEdge = None
+                threeUnknown = False
+                if debug:
+                    print "Printing sum of edges in all trianlges:"
                 for t in Triangles:
+                    if debug:
+                        print M[t[0],t[1]] + M[t[0],t[2]] + M[t[1],t[2]]
                     if (M[t[0],t[1]] + M[t[0],t[2]] + M[t[1],t[2]] >= 19) and (M[t[0],t[1]] + M[t[0],t[2]] + M[t[1],t[2]] <= 21):
                         if M[t[0],t[1]] == 10:
                             guessedEdge = [t[0], t[1]]
@@ -73,6 +78,13 @@ def signing(G, M, subgraphs, triSign, Triangles, guesses):
                         if M[t[1],t[2]] == 10:
                             guessedEdge = [t[1], t[2]]
                         break
+                    if (M[t[0],t[1]] + M[t[0],t[2]] + M[t[1],t[2]] == 30):
+                        threeUnknown = True
+                if (guessedEdge == None) and threeUnknown:
+                    for t in Triangles:
+                        if (M[t[0],t[1]] + M[t[0],t[2]] + M[t[1],t[2]] == 30):
+                            guessedEdge = [t[0],t[1]]
+                            break
                 if guessedEdge:
                     if moreDebug:
                         print "GUESSING EDGES ************************"
@@ -116,6 +128,8 @@ def signing(G, M, subgraphs, triSign, Triangles, guesses):
         #This loop is used to look through subgraphs and find subgraphs that have fully been signed
         #so we can put them in posEigen or negEigen
         t1 = time.clock()
+        if debug:
+            print "CHECKING SUBGRAPHS FOR CONTRADICTION"
         for s in subgraphs:
             edgeSigned = True
             for e in s.edge_iterator(labels=false):

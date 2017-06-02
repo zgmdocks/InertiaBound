@@ -10,7 +10,7 @@ load('signing.sage')
 # potentially useable, and the success of finding a contradictary case.
 moreDebug = True
 # showFigs will save and open files showing the graph, path used, and subgraphs used
-showFigs = True
+showFigs = False
 # change Guess to 0 if you want it to make a guess, and change it to any value other than
 # 0, 1, or -1 if you don't want it to guess.
 Guess = 0
@@ -160,9 +160,9 @@ def is_alpha_critical(G):
             return False
     return True
 
-g = Graph("Otr@PKoE?T_iOoOG_dg_m")
-graphic = g.plot()
+g = Graph("Otr@`OdE?g`Y@iOWGBGCN")
 if showFigs:
+    graphic = g.plot()
     graphic.save('output.png')
     os.system('open output.png')
 print check(g)
