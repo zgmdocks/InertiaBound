@@ -160,9 +160,9 @@ def is_alpha_critical(G):
             return False
     return True
 
-g = Graph("Str@_SEOA?`GAO@H?cP?iGCkOL?_TGFo?")
+#g = Graph("Str@_SEOA?`GAO@H?cP?iGCkOL?_TGFo?")
 if showFigs:
     graphic = g.plot()
     graphic.save('output.png')
     os.system('open output.png')
-print check(g)
+#print check(g)
