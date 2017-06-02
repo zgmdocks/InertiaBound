@@ -1,0 +1,988 @@
+alpha is 5
+numVerties is 20
+number of combinations will be 167960
+number of subgraphs: 38720
+**************************** 107.084691
+number of triangles to use: 120
+number of triangles: 120
+Check passed
+38720
+(0, 4)
+(0, 5)
+(1, 9)
+(1, 10)
+(2, 16)
+(2, 15)
+(3, 17)
+(3, 6)
+(4, 12)
+(5, 8)
+(6, 19)
+(7, 19)
+(7, 11)
+(8, 13)
+(9, 15)
+(10, 17)
+(11, 13)
+(12, 18)
+(14, 18)
+20 x 20 sparse matrix over Integer Ring
+NEW SIGNING IS BEGINNING ************************
+sign of triangles is 1
+this time around: 9.99999997475e-07
+step 1:
+triangle is 12-14-18
+signs are 12-14: 10, 12-18: 1, 14-18: 1
+new sign is: 1
+step 2:
+triangle is 5-13-8
+signs are 5-13: 10, 5-8: 1, 13-8: 1
+new sign is: 1
+step 3:
+triangle is 6-19-7
+signs are 6-19: 1, 6-7: 10, 19-7: 1
+new sign is: 1
+step 4:
+triangle is 1-10-9
+signs are 1-10: 1, 1-9: 1, 10-9: 10
+new sign is: 1
+step 5:
+triangle is 2-16-15
+signs are 2-16: 1, 2-15: 1, 16-15: 10
+new sign is: 1
+step 6:
+triangle is 9-16-15
+signs are 9-16: 10, 9-15: 1, 16-15: 1
+new sign is: 1
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 0.199165
+this time around: 0.199677
+Printing sum of edges in all trianlges:
+21
+GUESSING EDGES ************************
+edge that will be guessed is 1 - 5
+NEW SIGNING IS BEGINNING ************************
+sign of triangles is 1
+guessed edge is set to positive
+this time around: 1.99999999495e-06
+step 1:
+triangle is 1-0-5
+signs are 1-0: 10, 1-5: 1, 0-5: 1
+new sign is: 1
+step 2:
+triangle is 1-4-0
+signs are 1-4: 10, 1-0: 1, 4-0: 1
+new sign is: 1
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 0.217501
+this time around: 0.21794
+Printing sum of edges in all trianlges:
+3
+21
+GUESSING EDGES ************************
+edge that will be guessed is 4 - 11
+NEW SIGNING IS BEGINNING ************************
+sign of triangles is 1
+this time around: 9.99999997475e-07
+step 1:
+triangle is 7-4-11
+signs are 7-4: 10, 7-11: 1, 4-11: 1
+new sign is: 1
+step 2:
+triangle is 7-12-4
+signs are 7-12: 10, 7-4: 1, 12-4: 1
+new sign is: 1
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 0.447811
+Found a contradictory case
+20 x 20 sparse matrix over Integer Ring
+[-2.103125782643845?, -1.699796934142036?, -1.505749270760286?, -1.303504622041799?, -1.216655551838281?, 0.1194073609479933?, 0.2729246705388195?, 0.8126988424823735?, 1.330103921255052?, 2.050661346290206?, 3.243036019911801?]
+[2, 1, -1, -1, -1, -2.105254958910221?, -1.831010781411150?, -0.3596649373811250?, 0.2191649944990514?, 1.108893816257070?, 2.967871866946374?]
+NEW SIGNING IS BEGINNING ************************
+sign of triangles is 1
+this time around: 9.99999997475e-07
+step 1:
+triangle is 7-4-11
+signs are 7-4: 10, 7-11: 1, 4-11: -1
+new sign is: -1
+step 2:
+triangle is 7-12-4
+signs are 7-12: 10, 7-4: -1, 12-4: 1
+new sign is: -1
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 0.52036
+Found a contradictory case
+20 x 20 sparse matrix over Integer Ring
+[-2, -1, -1, 0.3819660112501051?, 2.618033988749895?, -1.618033988749895?, 0.618033988749895?, -1.774622899504490?, 0.1858853464264596?, 1.360409337131395?, 2.228328215946636?]
+[2, 1, -1, -1, -1, -2.105254958910221?, -1.831010781411150?, -0.3596649373811250?, 0.2191649944990514?, 1.108893816257070?, 2.967871866946374?]
+Guesses both reached a contradiction *******************
+NEW SIGNING IS BEGINNING ************************
+sign of triangles is 1
+guessed edge is set to negative
+this time around: 2.99999999243e-06
+step 1:
+triangle is 1-0-5
+signs are 1-0: 10, 1-5: -1, 0-5: 1
+new sign is: -1
+step 2:
+triangle is 1-4-0
+signs are 1-4: 10, 1-0: -1, 4-0: 1
+new sign is: -1
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 0.231545
+this time around: 0.232067
+Printing sum of edges in all trianlges:
+-1
+21
+GUESSING EDGES ************************
+edge that will be guessed is 4 - 11
+NEW SIGNING IS BEGINNING ************************
+sign of triangles is 1
+this time around: 0.0
+step 1:
+triangle is 7-4-11
+signs are 7-4: 10, 7-11: 1, 4-11: 1
+new sign is: 1
+step 2:
+triangle is 7-12-4
+signs are 7-12: 10, 7-4: 1, 12-4: 1
+new sign is: 1
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 0.451022
+Found a contradictory case
+20 x 20 sparse matrix over Integer Ring
+[-2.103125782643845?, -1.699796934142036?, -1.505749270760286?, -1.303504622041799?, -1.216655551838281?, 0.1194073609479933?, 0.2729246705388195?, 0.8126988424823735?, 1.330103921255052?, 2.050661346290206?, 3.243036019911801?]
+[2, 1, -1, -1, -1, -2.105254958910221?, -1.831010781411150?, -0.3596649373811250?, 0.2191649944990514?, 1.108893816257070?, 2.967871866946374?]
+NEW SIGNING IS BEGINNING ************************
+sign of triangles is 1
+this time around: 1.99999999495e-06
+step 1:
+triangle is 7-4-11
+signs are 7-4: 10, 7-11: 1, 4-11: -1
+new sign is: -1
+step 2:
+triangle is 7-12-4
+signs are 7-12: 10, 7-4: -1, 12-4: 1
+new sign is: -1
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 0.511688
+this time around: 0.512609
+Printing sum of edges in all trianlges:
+-1
+-1
+21
+GUESSING EDGES ************************
+edge that will be guessed is 14 - 16
+NEW SIGNING IS BEGINNING ************************
+sign of triangles is 1
+guessed edge is set to negative
+this time around: 9.99999997475e-07
+step 1:
+triangle is 12-14-16
+signs are 12-14: 1, 12-16: 10, 14-16: 1
+new sign is: 1
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 1.369808
+this time around: 1.370406
+Printing sum of edges in all trianlges:
+-1
+-1
+3
+-1
+21
+GUESSING EDGES ************************
+edge that will be guessed is 11 - 17
+NEW SIGNING IS BEGINNING ************************
+sign of triangles is 1
+this time around: 1.99999999495e-06
+step 1:
+triangle is 13-11-17
+signs are 13-11: 1, 13-17: 10, 11-17: 1
+new sign is: 1
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 2.907541
+Found a contradictory case
+20 x 20 sparse matrix over Integer Ring
+[-2, -1, -1, 0.3819660112501051?, 2.618033988749895?, -1.618033988749895?, 0.618033988749895?, -1.774622899504490?, 0.1858853464264596?, 1.360409337131395?, 2.228328215946636?]
+[-1, -2.336768069030173?, -1.642683623745071?, -1.440387772250892?, -0.4874430719430504?, -0.3543526782632992?, 0.3762809686780757?, 0.7490671031556602?, 1.332897313635331?, 1.961444457209996?, 2.841945372553422?]
+NEW SIGNING IS BEGINNING ************************
+sign of triangles is 1
+this time around: 1.99999999495e-06
+step 1:
+triangle is 13-11-17
+signs are 13-11: 1, 13-17: 10, 11-17: -1
+new sign is: -1
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 3.185379
+this time around: 3.185997
+Printing sum of edges in all trianlges:
+-1
+-1
+3
+-1
+-1
+-1
+3
+3
+-1
+-1
+30
+21
+GUESSING EDGES ************************
+edge that will be guessed is 14 - 5
+NEW SIGNING IS BEGINNING ************************
+sign of triangles is 1
+guessed edge is set to negative
+this time around: 2.00000000916e-06
+step 1:
+triangle is 8-14-5
+signs are 8-14: 10, 8-5: 1, 14-5: 1
+new sign is: 1
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 7.416998
+Found a contradictory case
+20 x 20 sparse matrix over Integer Ring
+[-1, -2, -1.246979603717467?, 0.4450418679126288?, 1.801937735804839?, -1.817841125378833?, -1.389319653181509?, 0.1274323640030443?, 0.6916748271812107?, 1.626979914068993?, 2.761073673307094?]
+[-1, -2.108100760575618?, -1.871786784388323?, -1.549984798418968?, -0.5993834371958854?, -0.4255731175697962?, 0.1680588200537101?, 0.7825715794029204?, 1.686926269993651?, 1.942237920756516?, 2.975034307941793?]
+NEW SIGNING IS BEGINNING ************************
+sign of triangles is 1
+this time around: 3.9999999899e-06
+step 1:
+triangle is 8-14-5
+signs are 8-14: 10, 8-5: 1, 14-5: -1
+new sign is: -1
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 7.600092
+this time around: 7.600838
+Printing sum of edges in all trianlges:
+-1
+-1
+3
+-1
+-1
+-1
+3
+3
+-1
+-1
+30
+-1
+3
+3
+21
+GUESSING EDGES ************************
+edge that will be guessed is 17 - 18
+NEW SIGNING IS BEGINNING ************************
+sign of triangles is 1
+this time around: 1.0000000259e-06
+step 1:
+triangle is 10-17-18
+signs are 10-17: 1, 10-18: 10, 17-18: 1
+new sign is: 1
+step 2:
+triangle is 18-17-3
+signs are 18-17: 1, 18-3: 10, 17-3: 1
+new sign is: 1
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 25.921581
+Found a contradictory case
+20 x 20 sparse matrix over Integer Ring
+[1, -1, -2.065696594118276?, -1.821799861883103?, -1.531812866874085?, -0.7736157340382174?, 0.1587947702484236?, 0.5309201490573505?, 1.279423597438971?, 1.561980646413568?, 2.661805893755369?]
+[-1, -2.108100760575618?, -1.871786784388323?, -1.549984798418968?, -0.5993834371958854?, -0.4255731175697962?, 0.1680588200537101?, 0.7825715794029204?, 1.686926269993651?, 1.942237920756516?, 2.975034307941793?]
+NEW SIGNING IS BEGINNING ************************
+sign of triangles is 1
+this time around: 1.99999999495e-06
+step 1:
+triangle is 10-17-18
+signs are 10-17: 1, 10-18: 10, 17-18: -1
+new sign is: -1
+step 2:
+triangle is 18-17-3
+signs are 18-17: -1, 18-3: 10, 17-3: 1
+new sign is: -1
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 23.866447
+this time around: 23.867113
+Printing sum of edges in all trianlges:
+-1
+-1
+3
+-1
+-1
+-1
+3
+3
+-1
+-1
+30
+-1
+3
+3
+-1
+-1
+21
+GUESSING EDGES ************************
+edge that will be guessed is 2 - 3
+NEW SIGNING IS BEGINNING ************************
+sign of triangles is 1
+this time around: 9.99999997475e-07
+step 1:
+triangle is 2-6-3
+signs are 2-6: 10, 2-3: 1, 6-3: 1
+new sign is: 1
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 50.517441
+this time around: 50.518047
+Printing sum of edges in all trianlges:
+-1
+-1
+3
+-1
+-1
+-1
+3
+3
+-1
+-1
+21
+GUESSING EDGES ************************
+edge that will be guessed is 0 - 3
+NEW SIGNING IS BEGINNING ************************
+sign of triangles is 1
+this time around: 0.0
+step 1:
+triangle is 0-2-3
+signs are 0-2: 10, 0-3: 1, 2-3: 1
+new sign is: 1
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 111.339407
+this time around: 111.339936
+Printing sum of edges in all trianlges:
+-1
+-1
+3
+-1
+-1
+-1
+3
+3
+-1
+-1
+3
+-1
+3
+3
+-1
+-1
+3
+3
+3
+3
+3
+3
+-1
+-1
+21
+GUESSING EDGES ************************
+edge that will be guessed is 19 - 10
+NEW SIGNING IS BEGINNING ************************
+sign of triangles is 1
+guessed edge is set to negative
+this time around: 1.99999999495e-06
+step 1:
+triangle is 19-9-10
+signs are 19-9: 10, 19-10: 1, 9-10: 1
+new sign is: 1
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 196.096706
+Found a contradictory case
+20 x 20 sparse matrix over Integer Ring
+[2, -0.4142135623730951?, 2.414213562373095?, -1.618033988749895?, -1.618033988749895?, -1.618033988749895?, -1.618033988749895?, 0.618033988749895?, 0.618033988749895?, 0.618033988749895?, 0.618033988749895?]
+[2, 1, -1, -1, -1, -2.105254958910221?, -1.831010781411150?, -0.3596649373811250?, 0.2191649944990514?, 1.108893816257070?, 2.967871866946374?]
+NEW SIGNING IS BEGINNING ************************
+sign of triangles is 1
+this time around: 1.99999999495e-06
+step 1:
+triangle is 19-9-10
+signs are 19-9: 10, 19-10: -1, 9-10: 1
+new sign is: -1
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 199.26964
+this time around: 199.270646
+Printing sum of edges in all trianlges:
+-1
+-1
+3
+-1
+-1
+-1
+3
+3
+-1
+-1
+3
+-1
+3
+3
+-1
+-1
+3
+3
+3
+3
+3
+3
+-1
+-1
+-1
+3
+3
+3
+3
+21
+GUESSING EDGES ************************
+edge that will be guessed is 15 - 13
+NEW SIGNING IS BEGINNING ************************
+sign of triangles is 1
+this time around: 9.99999997475e-07
+step 1:
+triangle is 11-15-13
+signs are 11-15: 10, 11-13: 1, 15-13: 1
+new sign is: 1
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 352.850083
+this time around: 352.850634
+Printing sum of edges in all trianlges:
+-1
+-1
+3
+-1
+-1
+-1
+3
+3
+-1
+-1
+3
+-1
+3
+3
+-1
+-1
+3
+3
+3
+3
+3
+3
+-1
+-1
+-1
+3
+3
+3
+3
+3
+-1
+-1
+-1
+-1
+3
+3
+3
+-1
+3
+-1
+3
+3
+3
+21
+GUESSING EDGES ************************
+edge that will be guessed is 8 - 19
+NEW SIGNING IS BEGINNING ************************
+sign of triangles is 1
+guessed edge is set to negative
+this time around: 0.0
+step 1:
+triangle is 8-6-19
+signs are 8-6: 10, 8-19: 1, 6-19: 1
+new sign is: 1
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 629.081477
+Found a contradictory case
+20 x 20 sparse matrix over Integer Ring
+[-2.454040884212217?, -1.897415515826219?, -1.548961285239928?, -1.144697607377333?, -0.7720707356299112?, 0.10481409728727329?, 0.3879441077800512?, 0.9462019339348686?, 1.344409937209070?, 1.998296137513328?, 3.035519814561017?]
+[-1.618033988749895?, 0.618033988749895?, -2.238088211159176?, -1.824065513985290?, -1.145921995500895?, -0.683059890092325?, -0.1096787532978850?, 0.7919026537029073?, 1.109457568167361?, 2.626494626339625?, 2.472959515825678? + 0.?e-53*I]
+NEW SIGNING IS BEGINNING ************************
+sign of triangles is 1
+this time around: 2.99999987874e-06
+step 1:
+triangle is 8-6-19
+signs are 8-6: 10, 8-19: -1, 6-19: 1
+new sign is: -1
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 621.561836
+this time around: 621.562824
+Printing sum of edges in all trianlges:
+-1
+-1
+3
+-1
+-1
+-1
+3
+3
+-1
+-1
+3
+-1
+3
+3
+-1
+-1
+3
+3
+3
+3
+3
+3
+-1
+-1
+-1
+3
+3
+3
+3
+3
+-1
+-1
+-1
+-1
+3
+3
+3
+-1
+3
+-1
+3
+3
+3
+-1
+3
+-1
+-1
+3
+3
+3
+-1
+3
+3
+3
+3
+-1
+-1
+3
+-1
+3
+3
+-1
+-1
+3
+-1
+3
+-1
+3
+3
+-1
+-1
+-1
+3
+3
+3
+-1
+3
+-1
+-1
+-1
+3
+-1
+3
+3
+-1
+-1
+-1
+-1
+-1
+3
+3
+-1
+3
+3
+-1
+3
+3
+-1
+3
+-1
+3
+-1
+-1
+3
+-1
+-1
+3
+-1
+-1
+-1
+-1
+3
+3
+3
+-1
+-1
+-1
+3
+-1
+-1
+edges that are undetermined:
+number of edges undetermined: 0
+20 x 20 sparse matrix over Integer Ring
+did not find a contradiction
+Guesses did not reach a contradiction
+edges that are undetermined:
+6 8
+8 6
+8 19
+19 8
+number of edges undetermined: 4
+20 x 20 sparse matrix over Integer Ring
+did not find a contradiction
+Guesses did not reach a contradiction
+edges that are undetermined:
+6 8
+8 6
+8 19
+11 15
+13 15
+15 11
+15 13
+19 8
+number of edges undetermined: 8
+20 x 20 sparse matrix over Integer Ring
+did not find a contradiction
+Guesses did not reach a contradiction
+edges that are undetermined:
+6 8
+8 6
+8 19
+9 19
+10 19
+11 15
+13 15
+15 11
+15 13
+19 8
+19 9
+19 10
+number of edges undetermined: 12
+20 x 20 sparse matrix over Integer Ring
+did not find a contradiction
+Guesses did not reach a contradiction
+edges that are undetermined:
+0 2
+0 3
+2 0
+3 0
+6 8
+8 6
+8 19
+9 19
+10 19
+11 15
+13 15
+15 11
+15 13
+19 8
+19 9
+19 10
+number of edges undetermined: 16
+20 x 20 sparse matrix over Integer Ring
+did not find a contradiction
+Guesses did not reach a contradiction
+edges that are undetermined:
+0 2
+0 3
+2 0
+2 3
+2 6
+3 0
+3 2
+6 2
+6 8
+8 6
+8 19
+9 19
+10 19
+11 15
+13 15
+15 11
+15 13
+19 8
+19 9
+19 10
+number of edges undetermined: 20
+20 x 20 sparse matrix over Integer Ring
+did not find a contradiction
+Guesses did not reach a contradiction
+edges that are undetermined:
+0 2
+0 3
+2 0
+2 3
+2 6
+3 0
+3 2
+3 18
+6 2
+6 8
+8 6
+8 19
+9 19
+10 18
+10 19
+11 15
+13 15
+15 11
+15 13
+17 18
+18 3
+18 10
+18 17
+19 8
+19 9
+19 10
+number of edges undetermined: 26
+20 x 20 sparse matrix over Integer Ring
+did not find a contradiction
+Guesses did not reach a contradiction
+edges that are undetermined:
+0 2
+0 3
+2 0
+2 3
+2 6
+3 0
+3 2
+3 18
+5 14
+6 2
+6 8
+8 6
+8 14
+8 19
+9 19
+10 18
+10 19
+11 15
+13 15
+14 5
+14 8
+15 11
+15 13
+17 18
+18 3
+18 10
+18 17
+19 8
+19 9
+19 10
+number of edges undetermined: 30
+20 x 20 sparse matrix over Integer Ring
+did not find a contradiction
+Guesses did not reach a contradiction
+edges that are undetermined:
+0 2
+0 3
+2 0
+2 3
+2 6
+3 0
+3 2
+3 18
+5 14
+6 2
+6 8
+8 6
+8 14
+8 19
+9 19
+10 18
+10 19
+11 15
+11 17
+13 15
+13 17
+14 5
+14 8
+15 11
+15 13
+17 11
+17 13
+17 18
+18 3
+18 10
+18 17
+19 8
+19 9
+19 10
+number of edges undetermined: 34
+20 x 20 sparse matrix over Integer Ring
+did not find a contradiction
+Guesses did not reach a contradiction
+edges that are undetermined:
+0 2
+0 3
+2 0
+2 3
+2 6
+3 0
+3 2
+3 18
+5 14
+6 2
+6 8
+8 6
+8 14
+8 19
+9 19
+10 18
+10 19
+11 15
+11 17
+12 16
+13 15
+13 17
+14 5
+14 8
+14 16
+15 11
+15 13
+16 12
+16 14
+17 11
+17 13
+17 18
+18 3
+18 10
+18 17
+19 8
+19 9
+19 10
+number of edges undetermined: 38
+20 x 20 sparse matrix over Integer Ring
+did not find a contradiction
+Guesses did not reach a contradiction
+edges that are undetermined:
+0 2
+0 3
+2 0
+2 3
+2 6
+3 0
+3 2
+3 18
+4 7
+4 11
+5 14
+6 2
+6 8
+7 4
+7 12
+8 6
+8 14
+8 19
+9 19
+10 18
+10 19
+11 4
+11 15
+11 17
+12 7
+12 16
+13 15
+13 17
+14 5
+14 8
+14 16
+15 11
+15 13
+16 12
+16 14
+17 11
+17 13
+17 18
+18 3
+18 10
+18 17
+19 8
+19 9
+19 10
+number of edges undetermined: 44
+20 x 20 sparse matrix over Integer Ring
+did not find a contradiction
+Guesses did not reach a contradiction
+edges that are undetermined:
+0 1
+0 2
+0 3
+1 0
+1 4
+1 5
+2 0
+2 3
+2 6
+3 0
+3 2
+3 18
+4 1
+4 7
+4 11
+5 1
+5 14
+6 2
+6 8
+7 4
+7 12
+8 6
+8 14
+8 19
+9 19
+10 18
+10 19
+11 4
+11 15
+11 17
+12 7
+12 16
+13 15
+13 17
+14 5
+14 8
+14 16
+15 11
+15 13
+16 12
+16 14
+17 11
+17 13
+17 18
+18 3
+18 10
+18 17
+19 8
+19 9
+19 10
+number of edges undetermined: 50
+20 x 20 sparse matrix over Integer Ring
+did not find a contradiction
+False

@@ -2,7 +2,7 @@ import os
 #this debug variable is to control the output to the screen. If it is set to true,
 #steps of the process will be printed to the screen. If it is false, the functions will
 #not output anything to the screen.
-debug = True
+debug = False
 # signing accepts a graph G, a matrix that will hold the signs of edges, M, and
 # a list of nonsingular subgraphs of G of size 2alpha+1. This function will
 # attempt to determine the signing of G and find a contradiction for a tight
@@ -128,7 +128,7 @@ def signing(G, M, subgraphs, triSign, Triangles, guesses):
         #This loop is used to look through subgraphs and find subgraphs that have fully been signed
         #so we can put them in posEigen or negEigen
         t1 = time.clock()
-        if debug:
+        if moreDebug:
             print "CHECKING SUBGRAPHS FOR CONTRADICTION"
         for s in subgraphs:
             edgeSigned = True
