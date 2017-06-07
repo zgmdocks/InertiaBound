@@ -1,0 +1,48 @@
+Graphs on 0 vertices:
+Graphs on 0 vertices:
+Graphs on 1 vertices:
+Graphs on 2 vertices:
+Graphs on 3 vertices:
+Graphs on 4 vertices:
+Graphs on 5 vertices:
+Graphs on 1 vertices:
+Graphs on 2 vertices:
+Graphs on 3 vertices:
+Graphs on 4 vertices:
+Graphs on 5 vertices:
+Graphs on 6 vertices:
+Graphs on 7 vertices:
+Graphs on 8 vertices:
+Graphs on 1 vertices:
+1 graphs on 1 vertices
+Graphs on 2 vertices:
+2 graphs on 2 vertices
+Graphs on 3 vertices:
+4 graphs on 3 vertices
+Graphs on 4 vertices:
+11 graphs on 4 vertices
+Graphs on 5 vertices:
+34 graphs on 5 vertices
+Graphs on 6 vertices:
+156 graphs on 6 vertices
+Graphs on 7 vertices:
+1044 graphs on 7 vertices
+Graphs on 8 vertices:
+12346 graphs on 8 vertices
+Graphs on 9 vertices:
+Graphs on 9 vertices:
+274668 graphs on 9 vertices
+Graphs on 10 vertices:
+Graphs on 10 vertices:
+Graphs on 10 vertices:
+0 graphs on 10 vertices
+Graphs on 10 vertices:
+0 graphs on 10 vertices
+Graphs on 10 vertices:
+0 graphs on 10 vertices
+Graphs on 10 vertices:
+0 graphs on 10 vertices
+Graphs on 10 vertices:
+Graphs on 10 vertices:
+Graphs on 10 vertices:
+12005168 graphs on 10 vertices

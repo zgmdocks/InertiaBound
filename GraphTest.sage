@@ -1,6 +1,6 @@
 load('check.sage')
 output_file = open('GraphsBig.txt','a+')
-for j in range(20,30):
+for j in range(21,30):
     i = 0
     print "graphs on {} vertices".format(j)
     output_file.write("Graphs on {} vertices:".format(j))
@@ -8,7 +8,7 @@ for j in range(20,30):
     with open('/Users/zgmdocks/Downloads/VertexTransitiveGraphs/trans{num1:02d}/trans{num2:02d}c.g6'.format(num1=j,num2=j)) as input_file:
         for line in input_file:
             i += 1
-            if j == 20 and i < 261:
+            if j == 21 and i < 47:
                 continue
             print "graph {} on {} vertices".format(i,j)
             G = Graph(line)
