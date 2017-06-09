@@ -1,6 +1,6 @@
 load('check.sage')
 output_file = open('Verify.txt','a+')
-for i in range(10,11):
+for i in range(11,12):
     count = 0
     output_file.write("Graphs on {} vertices:".format(i))
     output_file.write("\n")

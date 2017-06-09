@@ -11,13 +11,15 @@ debug = False
 # positive, -1 if the edge is negative, 0 if there is no edge, and 10 if
 # there is an edge but we have not determined the sign yet.
 # triangles is the set of all triangles we know must be the same sign
-def signing(G, M, subgraphs, triSign, Triangles, guesses):
+def signing(G, M, subgraphs, triSign, Triangles, guesses, depth):
     alpha = len(G.independent_set())
     #posEigen and negEigen are sets where if a subgraph belongs to posEigen
     #it has alpha(G)+1 positive Eigevalues, and if it belongs to negEigen
     #it has alpha(G)+1 negative eigenvalues
     posEigen = set()
     negEigen = set()
+    if moreDebug:
+        print "tree node is " + depth
     if debug:
         print "NEW SIGNING IS BEGINNING ************************"
         print "sign of triangles is {}".format(triSign)
@@ -95,7 +97,7 @@ def signing(G, M, subgraphs, triSign, Triangles, guesses):
                     N = copy(M)
                     N[guessedEdge[0],guessedEdge[1]] = -1
                     N[guessedEdge[1],guessedEdge[0]] = -1
-                    if signing(G,P,subgraphs,triSign,Triangles,guesses+1) and signing(G,N,subgraphs,triSign,Triangles,guesses-1):
+                    if signing(G,P,subgraphs,triSign,Triangles,guesses+1, depth+'1') and signing(G,N,subgraphs,triSign,Triangles,guesses-1,depth+'0'):
                         print "Guesses both reached a contradiction *******************"
                         return True
                     else:
@@ -175,9 +177,10 @@ def signing(G, M, subgraphs, triSign, Triangles, guesses):
                     graphic1 = subgraph1.plot()
                     graphic2 = subgraph2.plot()
                     graphic1.save('subgraph1^{}.png'.format(triSign))
-                    os.system('open subgraph1^{}.png'.format(triSign))
                     graphic2.save('subgraph2^{}.png'.format(triSign))
-                    os.system('open subgraph2^{}.png'.format(triSign))
+                    if openFig:
+                        os.system('open subgraph1^{}.png'.format(triSign))
+                        os.system('open subgraph2^{}.png'.format(triSign))
             return True
     if debug:
         print "did not find a contradiction"

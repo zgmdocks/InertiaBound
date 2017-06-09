@@ -3,6 +3,27 @@ import operator as op
 import time
 load('signing.sage')
 
+import sys
+
+# this logger class is needed so output is written to a file while still output to the
+# command line
+class Logger(object):
+    def __init__(self):
+        self.terminal = sys.stdout
+        self.log = open("output.txt", "a")
+
+    def write(self, message):
+        self.terminal.write(message)
+        self.log.write(message)  
+
+    def flush(self):
+        #this flush method is needed for python 3 compatibility.
+        #this handles the flush command by doing nothing.
+        #you might want to specify some extra behavior here.
+        pass    
+
+#sys.stdout = Logger()
+
 # if moreDebug is true, information will be printed to screen to help debug issues
 # or just figure out what the program is doing. The following things will be printed:
 # time taken for certain processes, the independent number, number of vertices,
@@ -11,6 +32,7 @@ load('signing.sage')
 moreDebug = True
 # showFigs will save and open files showing the graph, path used, and subgraphs used
 showFigs = False
+openFig = False
 # change Guess to 0 if you want it to make a guess, and change it to any value other than
 # 0, 1, or -1 if you don't want it to guess.
 Guess = 0
@@ -122,16 +144,17 @@ def check(G):
     M2 = G.weighted_adjacency_matrix()
     if debug:
         print M1
-    if not signing(G,M1,subgraphs,1,Triangles, Guess):
+    if not signing(G,M1,subgraphs,1,Triangles, Guess,''):
         return False
     if moreDebug:
         print "************* Positive Signing found a contradiction **********************"
-    if not signing(G,M2,subgraphs,-1,Triangles, Guess):
+    if not signing(G,M2,subgraphs,-1,Triangles, Guess,''):
         return False
     if showFigs:
         pathGraphic = path.plot()
         pathGraphic.save('path.png')
-        os.system('open path.png')
+        if openFig:
+            os.system('open path.png')
     return True
 
 
@@ -160,9 +183,10 @@ def is_alpha_critical(G):
             return False
     return True
 
-#g = Graph("Ssqmdb_FO{?}AzUOEoIHZIKx`JBChG`o{")
 if showFigs:
+    g = Graph("Ssqmdb_FO{?}AzUOEoIHZIKx`JBChG`o{")
     graphic = g.plot()
     graphic.save('output.png')
-    os.system('open output.png')
-#print check(g)
+    if openFig:
+        os.system('open output.png')
+    print check(g)
