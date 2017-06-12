@@ -20,3 +20,10 @@ Graphs on 12 vertices:
 Graphs on 14 vertices:
 Graphs on 16 vertices:
 Graphs on 18 vertices:
+Graphs on 10 vertices:
+Graphs on 12 vertices:
+Graphs on 14 vertices:
+Graphs on 16 vertices:
+Graphs on 18 vertices:
+Graphs on 20 vertices:
+Graphs on 22 vertices:

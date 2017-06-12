@@ -22,7 +22,7 @@ class Logger(object):
         #you might want to specify some extra behavior here.
         pass    
 
-#sys.stdout = Logger()
+sys.stdout = Logger()
 
 # if moreDebug is true, information will be printed to screen to help debug issues
 # or just figure out what the program is doing. The following things will be printed:
@@ -184,7 +184,7 @@ def is_alpha_critical(G):
     return True
 
 if showFigs:
-    g = Graph("Ssqmdb_FO{?}AzUOEoIHZIKx`JBChG`o{")
+    g = Graph("Ntr@PKoE?T_iOoOG_dg")
     graphic = g.plot()
     graphic.save('output.png')
     if openFig:
