@@ -1,7 +1,7 @@
 load('check.sage')
 output_file = open('delVtx.txt','a+')
 i = 0
-with open('/Users/zgmdocks/Downloads/DeleteMore.txt') as input_file:
+with open('/Users/zgmdocks/Downloads/DeleteFourth.txt') as input_file:
     for line in input_file:
         i += 1
         G = Graph(line)

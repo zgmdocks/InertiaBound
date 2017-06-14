@@ -10,7 +10,7 @@ import sys
 class Logger(object):
     def __init__(self):
         self.terminal = sys.stdout
-        self.log = open("output.txt", "a")
+        self.log = open("DeleteVertices.txt", "a")
 
     def write(self, message):
         self.terminal.write(message)
@@ -29,7 +29,7 @@ sys.stdout = Logger()
 # time taken for certain processes, the independent number, number of vertices,
 # the number of subgraphs needed to iterate over, the number of subraphs that are
 # potentially useable, and the success of finding a contradictary case.
-moreDebug = True
+moreDebug = False
 # showFigs will save and open files showing the graph, path used, and subgraphs used
 showFigs = False
 openFig = False
@@ -58,18 +58,21 @@ def check(G):
     alpha = len(G.independent_set())
     numVertices = len(G)
     if 2*alpha+1 > numVertices:
-        print "alpha too large"
+        if moreDebug:
+            print "alpha too large"
         return False
     if moreDebug:
         print "alpha is {}".format(alpha)
         print "numVerties is {}".format(numVertices)
         print "number of combinations will be {}".format(ncr(numVertices,2*alpha+1))
     if not is_alpha_critical(G):
-        print "alpha critical"
+        if moreDebug:
+            print "alpha critical"
         return False
     path = G.hamiltonian_path()
     if not path:
-        print "no hamiltionian"
+        if moreDebug:
+            print "no hamiltionian"
         path = G.random_spanning_tree()
     subgraphs = set()
     trianglesCheck = set()

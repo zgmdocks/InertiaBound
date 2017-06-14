@@ -32,7 +32,8 @@ def signing(G, M, subgraphs, triSign, Triangles, guesses, depth):
     i = 0
     t2 = time.clock()
     while True:
-        print "this time around: {}".format(time.clock() - t2)
+        if moreDebug:
+            print "this time around: {}".format(time.clock() - t2)
         changed = False
         for t in Triangles:
             # since we let M[i,j] = 10 if we didn't know the sign of the
@@ -98,10 +99,12 @@ def signing(G, M, subgraphs, triSign, Triangles, guesses, depth):
                     N[guessedEdge[0],guessedEdge[1]] = -1
                     N[guessedEdge[1],guessedEdge[0]] = -1
                     if signing(G,P,subgraphs,triSign,Triangles,guesses+1, depth+'1') and signing(G,N,subgraphs,triSign,Triangles,guesses-1,depth+'0'):
-                        print "Guesses both reached a contradiction *******************"
+                        if moreDebug:
+                            print "Guesses both reached a contradiction *******************"
                         return True
                     else:
-                        print "Guesses did not reach a contradiction"
+                        if moreDebug:
+                            print "Guesses did not reach a contradiction"
             n = G.order()
             if debug or moreDebug:
                 count = 0
@@ -152,7 +155,8 @@ def signing(G, M, subgraphs, triSign, Triangles, guesses, depth):
                 posEigen.add(s)
             else:
                 negEigen.add(s)
-        print "*#*#*#*#**#*#*#*#*#*#* {}".format(time.clock() - t1)
+        if moreDebug: 
+            print "*#*#*#*#**#*#*#*#*#*#* {}".format(time.clock() - t1)
         if posEigen and negEigen:
             if debug:
                 print "Found a contradictory case"
