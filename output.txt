@@ -11116,3 +11116,329 @@ number of triangles: 1314
 tree node is 
 this time around: 1.99999976758e-06
 CHECKING SUBGRAPHS FOR CONTRADICTION
+graph 13 on 23 vertices
+alpha is 3
+numVerties is 23
+number of combinations will be 245157
+number of subgraphs: 44880
+**************************** 182.052096
+number of triangles to use: 1314
+number of triangles: 1314
+tree node is 
+this time around: 9.99999997475e-07
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 368.67151
+************* Positive Signing found a contradiction **********************
+tree node is 
+this time around: 1.99999999495e-06
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 381.535858
+V}}VNbMtdyWkic?zg]gevHT_TfGo~bPK|xHkJJMoloz_
+ does not have a tight bound
+graph 14 on 23 vertices
+alpha is 4
+numVerties is 23
+number of combinations will be 817190
+number of subgraphs: 65550
+**************************** 574.584935
+number of triangles to use: 600
+number of triangles: 600
+tree node is 
+this time around: 1.00000011116e-06
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 0.34502
+this time around: 0.34677
+GUESSING EDGES ************************
+edge that will be guessed is 5 - 9
+tree node is 1
+this time around: 9.99999883788e-07
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 0.509874
+this time around: 0.51174
+GUESSING EDGES ************************
+edge that will be guessed is 4 - 3
+tree node is 11
+this time around: 1.99999999495e-06
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 1.974604
+tree node is 10
+this time around: 0.0
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 1.883804
+this time around: 1.885848
+GUESSING EDGES ************************
+edge that will be guessed is 13 - 12
+tree node is 101
+this time around: 9.99999883788e-07
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 90.832659
+tree node is 100
+this time around: 1.99999999495e-06
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 90.864969
+Guesses both reached a contradiction *******************
+Guesses both reached a contradiction *******************
+tree node is 0
+this time around: 1.99999999495e-06
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 0.492456
+this time around: 0.494347
+GUESSING EDGES ************************
+edge that will be guessed is 4 - 3
+tree node is 01
+this time around: 1.00000011116e-06
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 1.921993
+tree node is 00
+this time around: 1.99999999495e-06
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 1.939234
+this time around: 1.941275
+GUESSING EDGES ************************
+edge that will be guessed is 13 - 12
+tree node is 001
+this time around: 1.99999999495e-06
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 90.393344
+tree node is 000
+this time around: 1.99999999495e-06
+CHECKING SUBGRAPHS FOR CONTRADICTION
+graph 14 on 23 vertices
+alpha is 4
+numVerties is 23
+number of combinations will be 817190
+number of subgraphs: 65550
+**************************** 555.823033
+number of triangles to use: 600
+number of triangles: 600
+tree node is 
+this time around: 0.0
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 0.347684
+this time around: 0.349388
+GUESSING EDGES ************************
+edge that will be guessed is 5 - 9
+tree node is 1
+this time around: 9.99999997475e-07
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 0.492521
+this time around: 0.494326
+GUESSING EDGES ************************
+edge that will be guessed is 4 - 3
+tree node is 11
+this time around: 9.99999997475e-07
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 1.893232
+tree node is 10
+this time around: 0.0
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 1.885384
+this time around: 1.887428
+GUESSING EDGES ************************
+edge that will be guessed is 13 - 12
+tree node is 101
+this time around: 0.0
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 90.978713
+tree node is 100
+this time around: 2.00000010864e-06
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 90.200572
+Guesses both reached a contradiction *******************
+Guesses both reached a contradiction *******************
+tree node is 0
+this time around: 9.99999997475e-07
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 0.484408
+this time around: 0.486238
+GUESSING EDGES ************************
+edge that will be guessed is 4 - 3
+tree node is 01
+this time around: 9.99999997475e-07
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 1.88798
+tree node is 00
+this time around: 9.99999997475e-07
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 1.8715
+this time around: 1.873512
+GUESSING EDGES ************************
+edge that will be guessed is 13 - 12
+tree node is 001
+this time around: 2.00000010864e-06
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 90.098007
+tree node is 000
+this time around: 0.0
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 90.27973
+Guesses both reached a contradiction *******************
+Guesses both reached a contradiction *******************
+Guesses both reached a contradiction *******************
+************* Positive Signing found a contradiction **********************
+tree node is 
+this time around: 9.99999997475e-07
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 0.343735
+this time around: 0.345523
+GUESSING EDGES ************************
+edge that will be guessed is 5 - 9
+tree node is 1
+this time around: 0.0
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 0.48406
+this time around: 0.485871
+GUESSING EDGES ************************
+edge that will be guessed is 4 - 3
+tree node is 11
+this time around: 9.99999997475e-07
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 1.88616
+tree node is 10
+this time around: 9.99999997475e-07
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 1.869317
+this time around: 1.871329
+GUESSING EDGES ************************
+edge that will be guessed is 13 - 12
+tree node is 101
+this time around: 9.99999997475e-07
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 90.793642
+tree node is 100
+this time around: 9.99999997475e-07
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 90.022909
+Guesses both reached a contradiction *******************
+Guesses both reached a contradiction *******************
+tree node is 0
+this time around: 1.99999999495e-06
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 0.490707
+this time around: 0.492567
+GUESSING EDGES ************************
+edge that will be guessed is 4 - 3
+tree node is 01
+this time around: 1.99999999495e-06
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 1.887132
+tree node is 00
+this time around: 1.99999999495e-06
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 1.869763
+this time around: 1.871778
+GUESSING EDGES ************************
+edge that will be guessed is 13 - 12
+tree node is 001
+this time around: 9.99999883788e-07
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 90.332115
+tree node is 000
+this time around: 1.99999999495e-06
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 90.741618
+Guesses both reached a contradiction *******************
+Guesses both reached a contradiction *******************
+Guesses both reached a contradiction *******************
+V}~SvAbp@IcjDgEaj?@BKPCgBbXP@oCz?BLdE@KwGu[?
+ does not have a tight bound
+graph 15 on 23 vertices
+alpha is 4
+numVerties is 23
+number of combinations will be 817190
+number of subgraphs: 55500
+**************************** 557.85865
+number of triangles to use: 528
+number of triangles: 528
+tree node is 
+this time around: 9.99999883788e-07
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 0.280877
+this time around: 0.282565
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 10.098762
+************* Positive Signing found a contradiction **********************
+tree node is 
+this time around: 9.99999883788e-07
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 0.282286
+this time around: 0.28401
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 10.139105
+V~nELU\`aKkXTJ]?@cGUB@KgBSX?wG_sS`DUCGyWO`}?
+ does not have a tight bound
+graph 16 on 23 vertices
+alpha is 2
+numVerties is 23
+number of combinations will be 33649
+number of subgraphs: 11210
+**************************** 29.432938
+number of triangles to use: 3276
+number of triangles: 3276
+tree node is 
+this time around: 9.99999883788e-07
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 59.984861
+************* Positive Signing found a contradiction **********************
+tree node is 
+this time around: 0.0
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 60.281493
+V~~~vnnv|~}gzH}`za|J^ef|~wBJNisn[bn^@^nwez~_
+ does not have a tight bound
+graph 17 on 23 vertices
+alpha is 2
+numVerties is 23
+number of combinations will be 33649
+number of subgraphs: 11324
+**************************** 29.252582
+number of triangles to use: 3438
+number of triangles: 3438
+tree node is 
+this time around: 0.0
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 60.787055
+************* Positive Signing found a contradiction **********************
+tree node is 
+this time around: 9.99999883788e-07
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 61.746875
+V~~~vnn{vT{nvFnFo^}~Dnw\{^AF|hFz[YZ~DT~wX^~_
+ does not have a tight bound
+graph 18 on 23 vertices
+alpha is 2
+numVerties is 23
+number of combinations will be 33649
+number of subgraphs: 11324
+**************************** 29.285022
+number of triangles to use: 3402
+number of triangles: 3402
+tree node is 
+this time around: 1.99999976758e-06
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 60.869767
+************* Positive Signing found a contradiction **********************
+tree node is 
+this time around: 9.99999883788e-07
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 61.321994
+V~~~vnn{vXyjqnnFs^}~Knw\[^QF|hiz[iznCt~wX^~_
+ does not have a tight bound
+graph 19 on 23 vertices
+alpha is 2
+numVerties is 23
+number of combinations will be 33649
+number of subgraphs: 11210
+**************************** 29.214266
+number of triangles to use: 3420
+number of triangles: 3420
+tree node is 
+this time around: 1.99999976758e-06
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 60.089731
+************* Positive Signing found a contradiction **********************
+tree node is 
+this time around: 9.99999883788e-07
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 60.797791
+V~~~vvu|^\\jvivTvtTyj_~|}ibyiiF}[b{~C{~wU^~_ does not have a tight bound
