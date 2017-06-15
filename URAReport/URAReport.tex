@@ -28,6 +28,8 @@
 
 \newtheorem{exmp}{Example}[section]
 
+\newtheorem{observation}{Observation}[section]
+
 \newtheorem{lemma}{Lemma}[section]
 
 \newtheorem{theorem}{Theorem}[section]
@@ -434,6 +436,129 @@ As well, the clique number, $\omega(G)$, is 4:
 A graph G is perfect if $\chi(G) = \omega(G)$ for all induced subgraphs, H, of G.
 
 \end{definition}
+
+\begin{theorem}[Perfect Graph Theorem]
+A Graph $G$ is perfect if and only if its compliment, $\overline{G}$, is also perfect.
+\end{theorem}
+
+\begin{observation} \label{obs1}
+For a graph $G$, $\omega(G) = \alpha(\overline{G})$
+\end{observation}
+
+\begin{exmp}
+Consider the following graph, $G$:
+
+\begin{tikzpicture}
+[scale=.8,every node/.style={circle,fill=blue!20}]
+\node (n1) at (1.5,9) {1};
+\node (n2) at (4,9) {2};
+\node (n3) at (4,6) {3};
+\node (n4) at (7,6) {4};
+\node (n5) at (7,9) {5};
+\node (n6) at (9.5,7.5) {6};
+\node (n7) at (1.5,6) {7};
+\node (n8) at (0,7.5) {8};
+\foreach \from/\to in {n1/n2,n2/n3,n2/n5,n3/n4,n5/n4,n5/n6,n4/n6,n3/n7,n7/n8,n1/n8,n2/n4,n3/n5,n2/n7,n2/n8}
+\draw (\from) -- (\to);
+\end{tikzpicture}
+
+We see that the largest clique in $G$ is:
+
+\begin{tikzpicture}
+[scale=.8,every node/.style={circle,fill=blue!20}]
+\node (n1) at (1.5,9) {1};
+\node[fill=red] (n2) at (4,9) {2};
+\node[fill=red] (n3) at (4,6) {3};
+\node[fill=red] (n4) at (7,6) {4};
+\node[fill=red] (n5) at (7,9) {5};
+\node (n6) at (9.5,7.5) {6};
+\node (n7) at (1.5,6) {7};
+\node (n8) at (0,7.5) {8};
+\foreach \from/\to in {n1/n2,n2/n3,n2/n5,n3/n4,n5/n4,n5/n6,n4/n6,n3/n7,n7/n8,n1/n8,n2/n4,n3/n5,n2/n7,n2/n8}
+\draw (\from) -- (\to);
+\end{tikzpicture}
+
+Thus, $W(G)$ is 4.
+
+Now consider $G$'s compliment, $\overline{G}$:
+
+\begin{tikzpicture}
+[scale=.8,every node/.style={circle,fill=blue!20}]
+\node (n1) at (1.5,9) {1};
+\node (n2) at (4,9) {2};
+\node (n3) at (4,6) {3};
+\node (n4) at (7,6) {4};
+\node (n5) at (7,9) {5};
+\node (n6) at (9.5,7.5) {6};
+\node (n7) at (1.5,6) {7};
+\node (n8) at (0,7.5) {8};
+\foreach \from/\to in {n1/n7,n1/n3,n1/n4,n1/n5,n1/n6,n2/n6,n3/n8,n3/n6,n4/n7,n4/n8,n5/n7,n5/n8,n6/n7,n6/n8}
+\draw (\from) -- (\to);
+\end{tikzpicture}
+
+In $\overline{G}$, the largest independent set is:
+
+\begin{tikzpicture}
+[scale=.8,every node/.style={circle,fill=blue!20}]
+\node (n1) at (1.5,9) {1};
+\node[fill=red] (n2) at (4,9) {2};
+\node[fill=red] (n3) at (4,6) {3};
+\node[fill=red] (n4) at (7,6) {4};
+\node[fill=red] (n5) at (7,9) {5};
+\node (n6) at (9.5,7.5) {6};
+\node (n7) at (1.5,6) {7};
+\node (n8) at (0,7.5) {8};
+\foreach \from/\to in {n1/n7,n1/n3,n1/n4,n1/n5,n1/n6,n2/n6,n3/n8,n3/n6,n4/n7,n4/n8,n5/n7,n5/n8,n6/n7,n6/n8}
+\draw (\from) -- (\to);
+\end{tikzpicture}
+
+Therefore, we see $\omega(G) = 4 = \alpha(\overline{G})$
+
+\end{exmp}
+
+\begin{observation} \label{obs2}
+Similar to the last observation, for a graph $G$, $\theta(G) = \chi(\overline{G})$
+\end{observation}
+
+\begin{exmp}
+Consider the same graph from the last example. Recall that we calculated $\theta(G)$ to be 3. Now, we can find $\chi(\overline{G})$ to be 3 as well:
+
+\begin{tikzpicture}
+[scale=.8,every node/.style={circle,fill=blue!20}]
+\node[fill=green] (n1) at (1.5,9) {1};
+\node[fill=orange] (n2) at (4,9) {2};
+\node[fill=orange] (n3) at (4,6) {3};
+\node[fill=red] (n4) at (7,6) {4};
+\node[fill=red] (n5) at (7,9) {5};
+\node[fill=red] (n6) at (9.5,7.5) {6};
+\node[fill=orange] (n7) at (1.5,6) {7};
+\node[fill=green] (n8) at (0,7.5) {8};
+\foreach \from/\to in {n1/n7,n1/n3,n1/n4,n1/n5,n1/n6,n2/n6,n3/n8,n3/n6,n4/n7,n4/n8,n5/n7,n5/n8,n6/n7,n6/n8}
+\draw (\from) -- (\to);
+\end{tikzpicture}
+
+Thus, $\theta(G) = 3 = \chi(\overline{G})$
+
+\end{exmp}
+
+\begin{lemma} \label{lem:alphatheta}
+Let $G$ be a graph. Then $\alpha(G) \leq \min\{|G| - n_+(W),|G|-n_-(W)\} \leq \theta(G)$. Thus, if $\alpha(G) = \theta(G)$, G has a tight inertia bound. 
+\cite{elzinga2007minimum}
+\end{lemma}
+
+\begin{theorem}
+Every Perfect Graph, $G$, has a tight inertia bound
+\end{theorem}
+
+\begin{proof}
+By the Perfect Graph Theorem, we know that $\overline{G}$, is also perfect. Thus $\overline{G}$ satisies that $\chi(H) = \omega(H)$ for all subgraphs, $H$, of $\overline{G}$, by definition.
+Thus, since $\chi(\overline{G}) = \omega(\overline{G})$, we can get from the observation \ref{obs1} and \ref{obs2}, that
+\begin{equation}
+\alpha(G) = \omega(\overline{G}) = \chi(\overline{G}) = \theta(G)
+\end{equation}
+
+Therefore, from lemma \ref{lem:alphatheta}, G has a tight inertia bound.
+\end{proof}
 
 \subsubsection{Graphs with an Eigensharp decomposition by Stars}
 
