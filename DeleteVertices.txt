@@ -18,36 +18,6 @@ Otr@PKoE?T_iOoOG_dg_m has a non-tight bound ************
         Checking Graph: MIG[?SbBQeEc_LoE_ on 14 vertices
         Checking Graph: M?QBd_gD?dcMRDbI? on 14 vertices
 Checking Graph: O~~em]uj[vmsZTUrfFwN~ on 16 vertices
-Checking Graph: Otr@PKoE?T_iOoOG_dg_m on 16 vertices
-Otr@PKoE?T_iOoOG_dg_m has a non-tight bound ************
-    Checking Graph: Ntr@PKoE?T_iOoOG_dg on 15 vertices
-    Ntr@PKoE?T_iOoOG_dg has a non-tight bound ************
-        Checking Graph: MIWQCM?FHg@U?rgI_ on 14 vertices
-        Checking Graph: M_Kp?ccEAFOYQM`L? on 14 vertices
-        Checking Graph: MJHCSI?PHP`hCkCp_ on 14 vertices
-        Checking Graph: M@DK@DOXQf@wgKaH_ on 14 vertices
-        Checking Graph: MJHCSI?PHP`hCkCp_ on 14 vertices
-        Checking Graph: MJOLCIOH_XhGCJ?t_ on 14 vertices
-Checking Graph: Otr@PKoE?T_iOoOG_dg_m on 16 vertices
-Otr@PKoE?T_iOoOG_dg_m has a non-tight bound ************
-    Checking Graph: Ntr@PKoE?T_iOoOG_dg on 15 vertices
-    Ntr@PKoE?T_iOoOG_dg has a non-tight bound ************
-        Checking Graph: MIWQCM?FHg@U?rgI_ on 14 vertices
-        Checking Graph: M_Kp?ccEAFOYQM`L? on 14 vertices
-        Checking Graph: MJHCSI?PHP`hCkCp_ on 14 vertices
-        Checking Graph: M@DK@DOXQf@wgKaH_ on 14 vertices
-        Checking Graph: MJHCSI?PHP`hCkCp_ on 14 vertices
-        Checking Graph: MJOLCIOH_XhGCJ?t_ on 14 vertices
-        Checking Graph: MIWQCM?FHg@U?rgI_ on 14 vertices
-        Checking Graph: M@QBC_wL?E_\REbH? on 14 vertices
-        Checking Graph: M?]qC?gD@FAZOk_[_ on 14 vertices
-        Checking Graph: M?GPWxA_QRou[GkC_ on 14 vertices
-        Checking Graph: MJOLCIOH_XhGCJ?t_ on 14 vertices
-        Checking Graph: MIG[?SbBQeEc_LoE_ on 14 vertices
-        Checking Graph: M@DK@DOXQf@wgKaH_ on 14 vertices
-        Checking Graph: MIG[?SbBQeEc_LoE_ on 14 vertices
-        Checking Graph: M?QBd_gD?dcMRDbI? on 14 vertices
-Checking Graph: O~~em]uj[vmsZTUrfFwN~ on 16 vertices
 O~~em]uj[vmsZTUrfFwN~ has a non-tight bound ************
     Checking Graph: N~~em]uj[vmsZTUrfFw on 15 vertices
     N~~em]uj[vmsZTUrfFw has a non-tight bound ************
@@ -75,98 +45,220 @@ O~~em]uj[vmsZTUrfFwN~ has a non-tight bound ************
                 Checking Graph: KjemvG}NZfp~ on 12 vertices
                 Checking Graph: KJ^d\nMt\uZF on 12 vertices
             Checking Graph: LxUZrutlmZXrF~ on 13 vertices
-            LxUZrutlmZXrF~ has a non-tight bound ************
-                Checking Graph: Kb]ljqfr]ff~ on 12 vertices
-                Checking Graph: Kb]ljqfr]ff~ on 12 vertices
-                Checking Graph: Kb]ljqfr]ff~ on 12 vertices
-                Checking Graph: KLm}MVRZrlnN on 12 vertices
-                Checking Graph: KLm}MVRZrlnN on 12 vertices
-                Checking Graph: KLm}MVRZrlnN on 12 vertices
-                Checking Graph: KjemvG}NZfp~ on 12 vertices
-                Checking Graph: KjemvG}NZfp~ on 12 vertices
-                Checking Graph: KjemvG}NZfp~ on 12 vertices
-                Checking Graph: KjemvG}NZfp~ on 12 vertices
-                Checking Graph: KjemvG}NZfp~ on 12 vertices
-                Checking Graph: KjemvG}NZfp~ on 12 vertices
-                Checking Graph: KJ^d\nMt\uZF on 12 vertices
             Checking Graph: LxUZrutlmZXrF~ on 13 vertices
-            LxUZrutlmZXrF~ has a non-tight bound ************
-                Checking Graph: Kb]ljqfr]ff~ on 12 vertices
-                Checking Graph: Kb]ljqfr]ff~ on 12 vertices
-                Checking Graph: Kb]ljqfr]ff~ on 12 vertices
-                Checking Graph: KLm}MVRZrlnN on 12 vertices
-                Checking Graph: KLm}MVRZrlnN on 12 vertices
-                Checking Graph: KLm}MVRZrlnN on 12 vertices
-                Checking Graph: KjemvG}NZfp~ on 12 vertices
-                Checking Graph: KjemvG}NZfp~ on 12 vertices
-                Checking Graph: KjemvG}NZfp~ on 12 vertices
-                Checking Graph: KjemvG}NZfp~ on 12 vertices
-                Checking Graph: KjemvG}NZfp~ on 12 vertices
-                Checking Graph: KjemvG}NZfp~ on 12 vertices
-                Checking Graph: KJ^d\nMt\uZF on 12 vertices
             Checking Graph: LxUZrutlmZXrF~ on 13 vertices
-            LxUZrutlmZXrF~ has a non-tight bound ************
-                Checking Graph: Kb]ljqfr]ff~ on 12 vertices
-                Checking Graph: Kb]ljqfr]ff~ on 12 vertices
-                Checking Graph: Kb]ljqfr]ff~ on 12 vertices
-                Checking Graph: KLm}MVRZrlnN on 12 vertices
-                Checking Graph: KLm}MVRZrlnN on 12 vertices
-                Checking Graph: KLm}MVRZrlnN on 12 vertices
-                Checking Graph: KjemvG}NZfp~ on 12 vertices
-                Checking Graph: KjemvG}NZfp~ on 12 vertices
-                Checking Graph: KjemvG}NZfp~ on 12 vertices
-                Checking Graph: KjemvG}NZfp~ on 12 vertices
-                Checking Graph: KjemvG}NZfp~ on 12 vertices
-                Checking Graph: KjemvG}NZfp~ on 12 vertices
-                Checking Graph: KJ^d\nMt\uZF on 12 vertices
             Checking Graph: LxUZrutlmZXrF~ on 13 vertices
-            LxUZrutlmZXrF~ has a non-tight bound ************
-                Checking Graph: Kb]ljqfr]ff~ on 12 vertices
-                Checking Graph: Kb]ljqfr]ff~ on 12 vertices
-                Checking Graph: Kb]ljqfr]ff~ on 12 vertices
-                Checking Graph: KLm}MVRZrlnN on 12 vertices
-                Checking Graph: KLm}MVRZrlnN on 12 vertices
-                Checking Graph: KLm}MVRZrlnN on 12 vertices
-                Checking Graph: KjemvG}NZfp~ on 12 vertices
-                Checking Graph: KjemvG}NZfp~ on 12 vertices
-                Checking Graph: KjemvG}NZfp~ on 12 vertices
-                Checking Graph: KjemvG}NZfp~ on 12 vertices
-                Checking Graph: KjemvG}NZfp~ on 12 vertices
-                Checking Graph: KjemvG}NZfp~ on 12 vertices
-                Checking Graph: KJ^d\nMt\uZF on 12 vertices
             Checking Graph: LxUZrutlmZXrF~ on 13 vertices
-            LxUZrutlmZXrF~ has a non-tight bound ************
-                Checking Graph: Kb]ljqfr]ff~ on 12 vertices
-                Checking Graph: Kb]ljqfr]ff~ on 12 vertices
-                Checking Graph: Kb]ljqfr]ff~ on 12 vertices
-                Checking Graph: KLm}MVRZrlnN on 12 vertices
-                Checking Graph: KLm}MVRZrlnN on 12 vertices
-                Checking Graph: KLm}MVRZrlnN on 12 vertices
-                Checking Graph: KjemvG}NZfp~ on 12 vertices
-                Checking Graph: KjemvG}NZfp~ on 12 vertices
-                Checking Graph: KjemvG}NZfp~ on 12 vertices
-                Checking Graph: KjemvG}NZfp~ on 12 vertices
-                Checking Graph: KjemvG}NZfp~ on 12 vertices
-                Checking Graph: KjemvG}NZfp~ on 12 vertices
-                Checking Graph: KJ^d\nMt\uZF on 12 vertices
             Checking Graph: LxUZrutlmZXrF~ on 13 vertices
-            LxUZrutlmZXrF~ has a non-tight bound ************
-                Checking Graph: Kb]ljqfr]ff~ on 12 vertices
-                Checking Graph: Kb]ljqfr]ff~ on 12 vertices
-                Checking Graph: Kb]ljqfr]ff~ on 12 vertices
-                Checking Graph: KLm}MVRZrlnN on 12 vertices
-                Checking Graph: KLm}MVRZrlnN on 12 vertices
-                Checking Graph: KLm}MVRZrlnN on 12 vertices
-                Checking Graph: KjemvG}NZfp~ on 12 vertices
-                Checking Graph: KjemvG}NZfp~ on 12 vertices
-                Checking Graph: KjemvG}NZfp~ on 12 vertices
-                Checking Graph: KjemvG}NZfp~ on 12 vertices
-                Checking Graph: KjemvG}NZfp~ on 12 vertices
-                Checking Graph: KjemvG}NZfp~ on 12 vertices
-                Checking Graph: KJ^d\nMt\uZF on 12 vertices
             Checking Graph: LxUZrutlmZXrF~ on 13 vertices
-            LxUZrutlmZXrF~ has a non-tight bound ************
-                Checking Graph: Kb]ljqfr]ff~ on 12 vertices
-                Checking Graph: Kb]ljqfr]ff~ on 12 vertices
-                Checking Graph: Kb]ljqfr]ff~ on 12 vertices
-                Checking Graph: KLm}MVRZrlnN on 12 vertices
+        Checking Graph: M]~qitfY{nRZhni^_ on 14 vertices
+        Checking Graph: M]~qitfY{nRZhni^_ on 14 vertices
+        Checking Graph: M]~qitfY{nRZhni^_ on 14 vertices
+        Checking Graph: M]~qitfY{nRZhni^_ on 14 vertices
+        Checking Graph: MxUZrutlmZXrF~w~_ on 14 vertices
+        Checking Graph: MxUZrutlmZXrF~w~_ on 14 vertices
+        Checking Graph: MxUZrutlmZXrF~w~_ on 14 vertices
+        Checking Graph: MxUZrutlmZXrF~w~_ on 14 vertices
+        Checking Graph: MxUZrutlmZXrF~w~_ on 14 vertices
+        Checking Graph: MxUZrutlmZXrF~w~_ on 14 vertices
+        Checking Graph: MxUZrutlmZXrF~w~_ on 14 vertices
+        Checking Graph: MxUZrutlmZXrF~w~_ on 14 vertices
+        Checking Graph: MxUZrutlmZXrF~w~_ on 14 vertices
+        Checking Graph: MxUZrutlmZXrF~w~_ on 14 vertices
+Checking Graph: P}qtSeLUbaKeQZJabfGmmG~G on 17 vertices
+P}qtSeLUbaKeQZJabfGmmG~G has a non-tight bound ************
+    Checking Graph: O}qtSeLUbaKeQZJabfGmm on 16 vertices
+    O}qtSeLUbaKeQZJabfGmm has a non-tight bound ************
+        Checking Graph: NLGY[XViuSWhNBW\qVW on 15 vertices
+        Checking Graph: NLGY[XViuSWhNBW\qVW on 15 vertices
+        Checking Graph: NCcyrhigeGevRui[yLg on 15 vertices
+        Checking Graph: NLGY[XViuSWhNBW\qVW on 15 vertices
+        Checking Graph: NLGY[XViuSWhNBW\qVW on 15 vertices
+        Checking Graph: NLGY[XViuSWhNBW\qVW on 15 vertices
+        Checking Graph: NCcyrhigeGevRui[yLg on 15 vertices
+        Checking Graph: NCcyrhigeGevRui[yLg on 15 vertices
+        Checking Graph: NCcyrhigeGevRui[yLg on 15 vertices
+        Checking Graph: NCcyrhigeGevRui[yLg on 15 vertices
+        Checking Graph: NCcyrhigeGevRui[yLg on 15 vertices
+        Checking Graph: NCcyrhigeGevRui[yLg on 15 vertices
+        Checking Graph: NLGY[XViuSWhNBW\qVW on 15 vertices
+        Checking Graph: NLGY[XViuSWhNBW\qVW on 15 vertices
+        Checking Graph: NCcyrhigeGevRui[yLg on 15 vertices
+        Checking Graph: NLGY[XViuSWhNBW\qVW on 15 vertices
+Checking Graph: R}ecZ@OH?o`W@gOWcI_`p?hkHL?GuG on 19 vertices
+R}ecZ@OH?o`W@gOWcI_`p?hkHL?GuG has a non-tight bound ************
+    Checking Graph: Q}ecZ@OH?o`W@gOWcI_`p?hkHL? on 18 vertices
+    Q}ecZ@OH?o`W@gOWcI_`p?hkHL? has a non-tight bound ************
+        Checking Graph: PJWO[IAgU@AsBoKDH@OAf?J[ on 17 vertices
+        PJWO[IAgU@AsBoKDH@OAf?J[ has a non-tight bound ************
+            Checking Graph: OK?A[[gDHHbEQ``QK@[_N on 16 vertices
+            Checking Graph: O_MCWg`oJ??pHZC[GBgsJ on 16 vertices
+            Checking Graph: O_MCWg`oJ??pHZC[GBgsJ on 16 vertices
+            Checking Graph: O@KaSDFhCaWA@Y@Db@YSJ on 16 vertices
+            O@KaSDFhCaWA@Y@Db@YSJ has a non-tight bound ************
+                Checking Graph: NKLC@OW@gMge_qWPqCw on 15 vertices
+                Checking Graph: N@QApiKIIIQOGUOboEw on 15 vertices
+                Checking Graph: NHA@qOPB[`KOBdOZO`w on 15 vertices
+                Checking Graph: N@`AY_gLcGQH?ZQwcfO on 15 vertices
+                Checking Graph: N_CpOs[XDCGI_I@L_Xw on 15 vertices
+                Checking Graph: N@qAGPaUPFEC`@@qaIw on 15 vertices
+                Checking Graph: NAHT@oK@m?PDSQGs_Fw on 15 vertices
+                Checking Graph: NAHT@oK@m?PDSQGs_Fw on 15 vertices
+                Checking Graph: N@PCbPEL?osG@MARoSw on 15 vertices
+                Checking Graph: NAQ`@cS_sOhOC]Hh@Dw on 15 vertices
+                Checking Graph: NCOoWksOT?PPQK?vCFW on 15 vertices
+                Checking Graph: N@SGxa@`Y@OTWA@bciW on 15 vertices
+                Checking Graph: NWeaa@`D_IbCa@?e_Lw on 15 vertices
+                Checking Graph: N?YPx?POS@HB`FS[SL? on 15 vertices
+                N?YPx?POS@HB`FS[SL? has a non-tight bound ************
+                    Checking Graph: MHDFCQAROpE@@J@T_ on 14 vertices
+                    Checking Graph: MHDFCQAROpE@@J@T_ on 14 vertices
+                    Checking Graph: M`EcI?oHGt@IArO\? on 14 vertices
+                    Checking Graph: M`EcI?oHGt@IArO\? on 14 vertices
+                    Checking Graph: MG_`gIDaGqBRO[SQ_ on 14 vertices
+                    Checking Graph: MG_`gIDaGqBRO[SQ_ on 14 vertices
+                    Checking Graph: MKGOOHA_YJpUIoDo_ on 14 vertices
+                    Checking Graph: MIH`ObO`SPAW@TAb_ on 14 vertices
+                    Checking Graph: MIH`ObO`SPAW@TAb_ on 14 vertices
+                    Checking Graph: MIH`ObO`SPAW@TAb_ on 14 vertices
+                    Checking Graph: MIH`ObO`SPAW@TAb_ on 14 vertices
+                    Checking Graph: M`KPQi_OOS_F@b`H_ on 14 vertices
+                    Checking Graph: M`KPQi_OOS_F@b`H_ on 14 vertices
+                    Checking Graph: M@AbKXOc?RFAAFOi_ on 14 vertices
+                    Checking Graph: M@AbKXOc?RFAAFOi_ on 14 vertices
+                Checking Graph: NDaG?cpOZC?yHbQaHEG on 15 vertices
+                Checking Graph: N@NCQCCXIaCEEI_p?Lw on 15 vertices
+            Checking Graph: O@KaSDFhCaWA@Y@Db@YSJ on 16 vertices
+            Checking Graph: O@KaSDFhCaWA@Y@Db@YSJ on 16 vertices
+            Checking Graph: O@KaSDFhCaWA@Y@Db@YSJ on 16 vertices
+            Checking Graph: OOCxAPJTCAQ@EhHc?PyAr on 16 vertices
+            Checking Graph: OOCxAPJTCAQ@EhHc?PyAr on 16 vertices
+            Checking Graph: OOKaQDESSAQ@EhNC?jGH\ on 16 vertices
+Checking Graph: R}ecZ@OH?o`W@gOWcI_`p?hkHL?GuG on 19 vertices
+R}ecZ@OH?o`W@gOWcI_`p?hkHL?GuG has a non-tight bound ************
+    Checking Graph: Q}ecZ@OH?o`W@gOWcI_`p?hkHL? on 18 vertices
+    Q}ecZ@OH?o`W@gOWcI_`p?hkHL? has a non-tight bound ************
+        Checking Graph: PJWO[IAgU@AsBoKDH@OAf?J[ on 17 vertices
+        PJWO[IAgU@AsBoKDH@OAf?J[ has a non-tight bound ************
+            Checking Graph: OK?A[[gDHHbEQ``QK@[_N on 16 vertices
+            Checking Graph: O_MCWg`oJ??pHZC[GBgsJ on 16 vertices
+            Checking Graph: O_MCWg`oJ??pHZC[GBgsJ on 16 vertices
+            Checking Graph: O@KaSDFhCaWA@Y@Db@YSJ on 16 vertices
+            O@KaSDFhCaWA@Y@Db@YSJ has a non-tight bound ************
+                Checking Graph: NKLC@OW@gMge_qWPqCw on 15 vertices
+                Checking Graph: N@QApiKIIIQOGUOboEw on 15 vertices
+                Checking Graph: NHA@qOPB[`KOBdOZO`w on 15 vertices
+                Checking Graph: N@`AY_gLcGQH?ZQwcfO on 15 vertices
+                Checking Graph: N_CpOs[XDCGI_I@L_Xw on 15 vertices
+                Checking Graph: N@qAGPaUPFEC`@@qaIw on 15 vertices
+                Checking Graph: NAHT@oK@m?PDSQGs_Fw on 15 vertices
+                Checking Graph: NAHT@oK@m?PDSQGs_Fw on 15 vertices
+                Checking Graph: N@PCbPEL?osG@MARoSw on 15 vertices
+                Checking Graph: NAQ`@cS_sOhOC]Hh@Dw on 15 vertices
+                Checking Graph: NCOoWksOT?PPQK?vCFW on 15 vertices
+                Checking Graph: N@SGxa@`Y@OTWA@bciW on 15 vertices
+                Checking Graph: NWeaa@`D_IbCa@?e_Lw on 15 vertices
+                Checking Graph: N?YPx?POS@HB`FS[SL? on 15 vertices
+                N?YPx?POS@HB`FS[SL? has a non-tight bound ************
+                    Checking Graph: MHDFCQAROpE@@J@T_ on 14 vertices
+                    Checking Graph: MHDFCQAROpE@@J@T_ on 14 vertices
+                    Checking Graph: M`EcI?oHGt@IArO\? on 14 vertices
+                    Checking Graph: M`EcI?oHGt@IArO\? on 14 vertices
+                    Checking Graph: MG_`gIDaGqBRO[SQ_ on 14 vertices
+                    Checking Graph: MG_`gIDaGqBRO[SQ_ on 14 vertices
+                    Checking Graph: MKGOOHA_YJpUIoDo_ on 14 vertices
+                    Checking Graph: MIH`ObO`SPAW@TAb_ on 14 vertices
+                    Checking Graph: MIH`ObO`SPAW@TAb_ on 14 vertices
+                    Checking Graph: MIH`ObO`SPAW@TAb_ on 14 vertices
+                    Checking Graph: MIH`ObO`SPAW@TAb_ on 14 vertices
+                    Checking Graph: M`KPQi_OOS_F@b`H_ on 14 vertices
+                    Checking Graph: M`KPQi_OOS_F@b`H_ on 14 vertices
+                    Checking Graph: M@AbKXOc?RFAAFOi_ on 14 vertices
+                    Checking Graph: M@AbKXOc?RFAAFOi_ on 14 vertices
+                Checking Graph: NDaG?cpOZC?yHbQaHEG on 15 vertices
+                Checking Graph: N@NCQCCXIaCEEI_p?Lw on 15 vertices
+            Checking Graph: O@KaSDFhCaWA@Y@Db@YSJ on 16 vertices
+            Checking Graph: O@KaSDFhCaWA@Y@Db@YSJ on 16 vertices
+            Checking Graph: O@KaSDFhCaWA@Y@Db@YSJ on 16 vertices
+            Checking Graph: OOCxAPJTCAQ@EhHc?PyAr on 16 vertices
+            Checking Graph: OOCxAPJTCAQ@EhHc?PyAr on 16 vertices
+            Checking Graph: OOKaQDESSAQ@EhNC?jGH\ on 16 vertices
+            Checking Graph: OOKaQDESSAQ@EhNC?jGH\ on 16 vertices
+            Checking Graph: OBiCIMCHI`HGCa?p_FXOj on 16 vertices
+            Checking Graph: OBiCIMCHI`HGCa?p_FXOj on 16 vertices
+            Checking Graph: OL?@OhKbIPOaW`cQ@XGML on 16 vertices
+            Checking Graph: OL?@OhKbIPOaW`cQ@XGML on 16 vertices
+            Checking Graph: OwCWO_CMaiPcOqGkOK_FF on 16 vertices
+            OwCWO_CMaiPcOqGkOK_FF has a non-tight bound ************
+                Checking Graph: N`?@XSWKQRPoPI`DAeW on 15 vertices
+                Checking Graph: N`?@XSWKQRPoPI`DAeW on 15 vertices
+                Checking Graph: N`?@XSWKQRPoPI`DAeW on 15 vertices
+                Checking Graph: NWeaa@`D_IbCa@?e_Lw on 15 vertices
+                Checking Graph: NWeaa@`D_IbCa@?e_Lw on 15 vertices
+                Checking Graph: NWeaa@`D_IbCa@?e_Lw on 15 vertices
+                Checking Graph: N?YPx?POS@HB`FS[SL? on 15 vertices
+                Checking Graph: N?YPx?POS@HB`FS[SL? on 15 vertices
+                Checking Graph: N?YPx?POS@HB`FS[SL? on 15 vertices
+                Checking Graph: NBaL?gB@YbH@ODI@cUW on 15 vertices
+                Checking Graph: NBaL?gB@YbH@ODI@cUW on 15 vertices
+                Checking Graph: NBaL?gB@YbH@ODI@cUW on 15 vertices
+                Checking Graph: NDaG?cpOZC?yHbQaHEG on 15 vertices
+                Checking Graph: NDaG?cpOZC?yHbQaHEG on 15 vertices
+                Checking Graph: NDaG?cpOZC?yHbQaHEG on 15 vertices
+                Checking Graph: NyI?ogKSPSOc?U?L_Pw on 15 vertices
+            Checking Graph: OwCWO_CMaiPcOqGkOK_FF on 16 vertices
+        Checking Graph: PJWO[IAgU@AsBoKDH@OAf?J[ on 17 vertices
+        Checking Graph: P`KrC`G`@SAg@LAM_XaDL_UW on 17 vertices
+        Checking Graph: PJWO[IAgU@AsBoKDH@OAf?J[ on 17 vertices
+        Checking Graph: P`KrC`G`@SAg@LAM_XaDL_UW on 17 vertices
+        Checking Graph: P?YQd?aCOwddK{QEOcaDB_S[ on 17 vertices
+        P?YQd?aCOwddK{QEOcaDB_S[ has a non-tight bound ************
+            Checking Graph: O@QA`IG?xoH`dBI]Gycdc on 16 vertices
+            Checking Graph: O@QA`IG?xoH`dBI]Gycdc on 16 vertices
+            Checking Graph: OK?A[[gDHHbEQ``QK@[_N on 16 vertices
+            Checking Graph: OK?A[[gDHHbEQ``QK@[_N on 16 vertices
+            Checking Graph: O?CyjAOa?rHJGYOdCo[@f on 16 vertices
+            Checking Graph: O?CyjAOa?rHJGYOdCo[@f on 16 vertices
+            Checking Graph: O?CyjAOa?rHJGYOdCo[@f on 16 vertices
+            Checking Graph: O?CyjAOa?rHJGYOdCo[@f on 16 vertices
+            Checking Graph: O@KaSDFhCaWA@Y@Db@YSJ on 16 vertices
+            Checking Graph: O@KaSDFhCaWA@Y@Db@YSJ on 16 vertices
+            Checking Graph: O_MCWg`oJ??pHZC[GBgsJ on 16 vertices
+            Checking Graph: O_MCWg`oJ??pHZC[GBgsJ on 16 vertices
+            Checking Graph: OKGQKOcEB@QBOf_Z@YONB on 16 vertices
+            Checking Graph: OOCxAPJTCAQ@EhHc?PyAr on 16 vertices
+            Checking Graph: OOCxAPJTCAQ@EhHc?PyAr on 16 vertices
+            Checking Graph: OOKaQDESSAQ@EhNC?jGH\ on 16 vertices
+            Checking Graph: OOKaQDESSAQ@EhNC?jGH\ on 16 vertices
+        Checking Graph: P`KrC`G`@SAg@LAM_XaDL_UW on 17 vertices
+        Checking Graph: P`KrC`G`@SAg@LAM_XaDL_UW on 17 vertices
+        Checking Graph: P`KrC`G`@SAg@LAM_XaDL_UW on 17 vertices
+        Checking Graph: P?YQd?aCOwddK{QEOcaDB_S[ on 17 vertices
+        Checking Graph: P?YQd?aCOwddK{QEOcaDB_S[ on 17 vertices
+        Checking Graph: PJWO[IAgU@AsBoKDH@OAf?J[ on 17 vertices
+        Checking Graph: P?YQd?aCOwddK{QEOcaDB_S[ on 17 vertices
+        Checking Graph: P?YQd?aCOwddK{QEOcaDB_S[ on 17 vertices
+        Checking Graph: PJWO[IAgU@AsBoKDH@OAf?J[ on 17 vertices
+        Checking Graph: P`KrC`G`@SAg@LAM_XaDL_UW on 17 vertices
+        Checking Graph: PJWO[IAgU@AsBoKDH@OAf?J[ on 17 vertices
+        Checking Graph: P?YQd?aCOwddK{QEOcaDB_S[ on 17 vertices
+Checking Graph: S~~vVjjve}vmxymlG~Oi~Qm{jfxjNw{z{ on 20 vertices
+S~~vVjjve}vmxymlG~Oi~Qm{jfxjNw{z{ has a non-tight bound ************
+    Checking Graph: R~~vVjjve}vmxymlG~Oi~Qm{jfxjNw on 19 vertices
+Checking Graph: S~~vnZjvUtvimj`~nibtTP}[ffwk~wR~{ on 20 vertices
+S~~vnZjvUtvimj`~nibtTP}[ffwk~wR~{ has a non-tight bound ************
+    Checking Graph: R~~vnZjvUtvimj`~nibtTP}[ffwk~w on 19 vertices
+Checking Graph: S~~vVjjve}vmxymlG~Oi~Qm{jfxjNw{z{ on 20 vertices
+S~~vVjjve}vmxymlG~Oi~Qm{jfxjNw{z{ has a non-tight bound ************
+Graph is regular
+    Checking Graph: R~~vVjjve}vmxymlG~Oi~Qm{jfxjNw on 19 vertices
+Checking Graph: S~~vnZjvUtvimj`~nibtTP}[ffwk~wR~{ on 20 vertices
+S~~vnZjvUtvimj`~nibtTP}[ffwk~wR~{ has a non-tight bound ************
+Graph is regular
+    Checking Graph: R~~vnZjvUtvimj`~nibtTP}[ffwk~w on 19 vertices
+    R~~vnZjvUtvimj`~nibtTP}[ffwk~w has a non-tight bound ************
+        Checking Graph: QxU^~w\w^Cbt]^l^xnzt{lnVM{w on 18 vertices
+Checking Graph: S~~vnZjvUtvimj`~nibtTP}[ffwk~wR~{ on 20 vertices
+S~~vnZjvUtvimj`~nibtTP}[ffwk~wR~{ has a non-tight bound ************
+    Checking Graph: R~~vnZjvUtvimj`~nibtTP}[ffwk~w on 19 vertices
+Checking Graph: S~~vVjjve}vmxymlG~Oi~Qm{jfxjNw{z{ on 20 vertices
