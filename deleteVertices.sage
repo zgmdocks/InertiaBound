@@ -13,7 +13,6 @@ def deleteVertices(G, tab, First):
     for line in allGraphs:
         if graph6 in line:
             found = True
-            print "FOUND"
     if First or found or check(G):
         output_file.write(tab*" " + G.graph6_string() + "\n")
         print tab*" " + G.graph6_string() + " has a non-tight bound ************"
