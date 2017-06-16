@@ -549,7 +549,7 @@ Let $G$ be a graph. Then $\alpha(G) \leq \min\{|G| - n_+(W),|G|-n_-(W)\} \leq \t
 \begin{proof}
 Consider a clique partition, $\mathcal{C}$, of a graph $G$. Let $\hat{A}$, denote the adjacency matrix of G where the only connected components are the cliques in $\mathcal{C}$.
 
-Now if we consider the adjacency matrix of $K_n$
+Now if we consider the adjacency matrix of the complete graph, $K_n$, we see that it is equal to $J_n - I_n$ where $J_n$ is the all ones matrix. 
 \end{proof}
 
 \begin{theorem}
@@ -942,7 +942,7 @@ Due to the complexity of needing to consider edges that could potentially be zer
 
 \subsection{Cayley Graphs}
 \begin{definition}[Cayley Graph]
-
+Let $H$ be a finite group, and $S \subseteq H$, be a subset of $H$. Then the Cayley Graph $C(H,S)$, has a vertex for each element in $H$. There exists an edge between two vertices $g$ and $h$, if and only if there exists $s \in S$ such that $ sh = g$. If $G$ is a graph such that there exists a group $H$ and a generating set $S \subseteq H$ with $G \cong C(H,S)$, then G is a Cayley Graph. \cite{franccayley}
 
 \end{definition}
 
