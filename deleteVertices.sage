@@ -1,7 +1,9 @@
 load("check.sage")
 output_file = open('DeleteResults.txt','a+')
+graphs_checked = open('CheckedBad.txt','a+')
 
 checked = set()
+
 def deleteVertices(G, tab, First):
     graph6 = G.graph6_string()
     print tab*" " + "Checking Graph: " + graph6 + " on {} vertices".format(G.order())
@@ -27,4 +29,6 @@ def deleteVertices(G, tab, First):
                 H.delete_vertex(v)
                 H = H.canonical_label()
                 deleteVertices(H,tab+4,False)
+    else:
+        graphs_checked.write(graph6 + "\n")
 

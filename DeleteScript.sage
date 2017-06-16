@@ -1,5 +1,11 @@
 load('deleteVertices.sage')
 i = 0
+
+read_graphs = open('CheckedBad.txt','r')
+
+for line in read_graphs:
+    checked.add(line[:-1])
+
 with open('/Users/zgmdocks/Downloads/Found.txt') as input_file:
     for line in input_file:
         i += 1

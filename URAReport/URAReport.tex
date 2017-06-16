@@ -8,6 +8,7 @@
 \usepackage{color}
 \usepackage{bm}
 \usepackage{array}
+\usepackage{amssymb}
 
 \newtheoremstyle{parenbold} % Name
   {2\parskip}           % Space above
@@ -946,7 +947,25 @@ Let $H$ be a finite group, and $S \subseteq H$, be a subset of $H$. Then the Cay
 
 \end{definition}
 
+\begin{exmp}
+Consider the group $\mathbb{Z}_8$ and let the generating set be $S = \{1,2\}$. The vertex set will be $\{0,1,2,3,4,5,6,7\}$ and there will be an edge between two vertices, $g$ and $h$, if for an $s \in S$, $g + s = h$:
+\\
 
+\begin{tikzpicture}
+[scale=.8,every node/.style={circle,fill=blue!20}]
+\node (n0) at (1.5,9) {0};
+\node (n1) at (4,9) {1};
+\node (n2) at (5.5,7.5) {2};
+\node (n3) at (5.5,5.5) {3};
+\node (n4) at (4,4) {4};
+\node (n5) at (1.5,4) {5};
+\node (n6) at (0,5.5) {6};
+\node (n7) at (0,7.5) {7};
+\foreach \from/\to in {n0/n1,n1/n2,n2/n3,n3/n4,n4/n5,n5/n6,n6/n7, n7/n0, n0/n2, n1/n3,n2/n4,n3/n5,n4/n6,n5/n7,n6/n0,n7/n1}
+\draw (\from) -- (\to);
+\end{tikzpicture}
+
+\end{exmp}
 
 
 \bibliographystyle{plain}
