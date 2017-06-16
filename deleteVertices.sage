@@ -3,11 +3,18 @@ output_file = open('DeleteResults.txt','a+')
 
 checked = set()
 def deleteVertices(G, tab, First):
-    print tab*" " + "Checking Graph: " + G.graph6_string() + " on {} vertices".format(G.order())
-    if G.graph6_string() in checked:
+    graph6 = G.graph6_string()
+    print tab*" " + "Checking Graph: " + graph6 + " on {} vertices".format(G.order())
+    if graph6 in checked:
         return
-    checked.add(G.graph6_string())
-    if First or check(G):
+    checked.add(graph6)
+    found = False
+    allGraphs = file('DeleteResults.txt')
+    for line in allGraphs:
+        if graph6 in line:
+            found = True
+            print "FOUND"
+    if First or found or check(G):
         output_file.write(tab*" " + G.graph6_string() + "\n")
         print tab*" " + G.graph6_string() + " has a non-tight bound ************"
         if G.is_regular():

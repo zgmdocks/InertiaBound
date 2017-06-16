@@ -437,7 +437,7 @@ A graph G is perfect if $\chi(G) = \omega(G)$ for all induced subgraphs, H, of G
 
 \end{definition}
 
-\begin{theorem}[Perfect Graph Theorem]
+\begin{theorem}[Perfect Graph Theorem] \label{PGthm}
 A Graph $G$ is perfect if and only if its compliment, $\overline{G}$, is also perfect.
 \end{theorem}
 
@@ -546,12 +546,18 @@ Let $G$ be a graph. Then $\alpha(G) \leq \min\{|G| - n_+(W),|G|-n_-(W)\} \leq \t
 \cite{elzinga2007minimum}
 \end{lemma}
 
+\begin{proof}
+Consider a clique partition, $\mathcal{C}$, of a graph $G$. Let $\hat{A}$, denote the adjacency matrix of G where the only connected components are the cliques in $\mathcal{C}$.
+
+Now if we consider the adjacency matrix of $K_n$
+\end{proof}
+
 \begin{theorem}
 Every Perfect Graph, $G$, has a tight inertia bound
 \end{theorem}
 
 \begin{proof}
-By the Perfect Graph Theorem, we know that $\overline{G}$, is also perfect. Thus $\overline{G}$ satisies that $\chi(H) = \omega(H)$ for all subgraphs, $H$, of $\overline{G}$, by definition.
+By the Perfect Graph Theorem (theorem \ref{PGthm}), we know that $\overline{G}$, is also perfect. Thus $\overline{G}$ satisies that $\chi(H) = \omega(H)$ for all subgraphs, $H$, of $\overline{G}$, by definition.
 Thus, since $\chi(\overline{G}) = \omega(\overline{G})$, we can get from the observation \ref{obs1} and \ref{obs2}, that
 \begin{equation}
 \alpha(G) = \omega(\overline{G}) = \chi(\overline{G}) = \theta(G)
