@@ -1,3 +1,6 @@
+i = 0
+k = 2
+read_graphs = open('CheckedBad.txt','r')
 load("check.sage")
 output_file = open('DeleteResults.txt','a+')
 graphs_checked = open('CheckedBad.txt','a+')
@@ -12,8 +15,8 @@ checkedBad = set()
 # two graphs share a subgraph without repetitively written the same thing.
 checkedGood = {}
 
-
 def deleteVertices(G, tab, First):
+    global k
     graph6 = G.graph6_string()
     print tab*" " + "Checking Graph: " + graph6 + " on {} vertices".format(G.order())
     found = False
@@ -21,12 +24,15 @@ def deleteVertices(G, tab, First):
         found = True
     if (graph6 not in checkedBad) and (First or found or check(G)):
         if graph6 not in checkedGood:
-            checkedGood[graph6] = k
+            checkedGood[graph6] = k+1
             output_file.write(tab*" " + G.graph6_string() + "\n")
             k += 1
         else:
-            print tab*" " + checkedGood[graph6]
-            checkedGood[graph6] = k
+            print tab*" " + "last seen: " + str(checkedGood[graph6])
+            output_file.write(tab*" " + G.graph6_string() + ": " + str(checkedGood[graph6]) + "\n")
+            checkedGood[graph6] = k+1
+            k += 1
+            return
         print tab*" " + G.graph6_string() + " has a non-tight bound ************"
         if G.is_vertex_transitive():
             H = G.copy()
@@ -43,4 +49,33 @@ def deleteVertices(G, tab, First):
         if graph6 not in checkedBad:
             graphs_checked.write(graph6 + "\n")
         checkedBad.add(graph6)
+
+
+
+for line in read_graphs:
+    checkedBad.add(line[:-1])
+    
+GoTo = int(allGraphs.readline())
+
+startAt = int(allGraphs.readline())
+
+for line in allGraphs:
+    if k == GoTo:
+        print line
+        break
+    k += 1
+    checkedGood[line.lstrip()[:-1]] = k
+
+with open('/Users/zgmdocks/Downloads/Found.txt') as input_file:
+    for line in input_file:
+        i += 1
+        if i <= startAt:
+            continue
+        G = Graph(line)
+        deleteVertices(G,0,True)
+        firstLine = open('DeleteResults.txt','w')
+        firstLine.write(str(k) + "\n")
+        firstLine.write(str(i) + "\n")
+        firstLine.close()
+
 

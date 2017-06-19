@@ -1,4 +1,4 @@
-output_file = open('FoundVertices.sage', 'w')
+output_file = open('FoundVertices.txt', 'w')
 
 with open('DeleteResults.txt') as input_file:
     for line in input_file:
