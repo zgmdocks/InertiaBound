@@ -15,22 +15,28 @@ checkedBad = set()
 # two graphs share a subgraph without repetitively written the same thing.
 checkedGood = {}
 
+PartiallyChecked = set()
+
+
+
 def deleteVertices(G, tab, First):
     global k
     graph6 = G.graph6_string()
     print tab*" " + "Checking Graph: " + graph6 + " on {} vertices".format(G.order())
     found = False
+    if graph6 in PartiallyChecked:
+        found = True
     if graph6 in checkedGood:
         found = True
     if (graph6 not in checkedBad) and (First or found or check(G)):
         if graph6 not in checkedGood:
-            checkedGood[graph6] = k+1
+            checkedGood[graph6] = k
             output_file.write(tab*" " + G.graph6_string() + "\n")
             k += 1
         else:
             print tab*" " + "last seen: " + str(checkedGood[graph6])
-            output_file.write(tab*" " + G.graph6_string() + ": " + str(checkedGood[graph6]) + "\n")
-            checkedGood[graph6] = k+1
+            output_file.write(tab*" " + G.graph6_string() + " " + str(checkedGood[graph6]) + "\n")
+            checkedGood[graph6] = k
             k += 1
             return
         print tab*" " + G.graph6_string() + " has a non-tight bound ************"
@@ -59,12 +65,21 @@ GoTo = int(allGraphs.readline())
 
 startAt = int(allGraphs.readline())
 
+if GoTo == 0:
+    k += 1
+
 for line in allGraphs:
-    if k == GoTo:
-        print line
+    if k == GoTo-1:
+        k += 1
+        checkedGood[line.lstrip().split(" ")[0]] = k
         break
     k += 1
-    checkedGood[line.lstrip()[:-1]] = k
+    checkedGood[line.lstrip().split(" ")[0]] = k
+
+for line in allGraphs:
+    split = line.lstrip().split(" ")
+    if len(split) == 1:
+        PartiallyChecked.add(split[0][:-1])
 
 with open('/Users/zgmdocks/Downloads/Found.txt') as input_file:
     for line in input_file:
@@ -73,7 +88,7 @@ with open('/Users/zgmdocks/Downloads/Found.txt') as input_file:
             continue
         G = Graph(line)
         deleteVertices(G,0,True)
-        firstLine = open('DeleteResults.txt','w')
+        firstLine = open('DeleteResults.txt','r+')
         firstLine.write(str(k) + "\n")
         firstLine.write(str(i) + "\n")
         firstLine.close()
