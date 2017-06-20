@@ -567,6 +567,14 @@ Thus, since $\chi(\overline{G}) = \omega(\overline{G})$, we can get from the obs
 Therefore, from lemma \ref{lem:alphatheta}, G has a tight inertia bound.
 \end{proof}
 
+\begin{theorem}[Strong Perfect Graph Theorem \cite{elzinga2007minimum}] \label{SPGT}
+A graph $G$ is a perfect graph if and only if both $G$ and its complement, $\overline{G}$, do not contain a induced odd cycle of length at least 5.
+\end{theorem}
+
+\begin{observation}
+Due to each perfect graph having a tight inertia bound, and the Strong Perfect Graph Theorem (theorem \ref{SPGT}), every graph not containing an induced odd cycle of length 5 or greater has a tight inertia bound.
+\end{observation}
+
 \subsubsection{Latin Square Graphs}
 
 \subsubsection{Graphs with an Eigensharp decomposition by Stars}
@@ -826,7 +834,8 @@ Due to the complexity of needing to consider edges that could potentially be zer
 \renewcommand{\thempfootnote}{\arabic{mpfootnote}}
 \begin{center}
 \begin{minipage}{\textwidth}
-\begin{tabular}{ |p{1cm}|p{1.5cm}|p{0.5cm}|p{1.5cm}|p{2.7cm}|p{2cm}|p{1cm}| } 
+\small
+\begin{tabular}{ |p{1cm}|p{1.5cm}|p{0.5cm}|p{1.5cm}|p{2.7cm}|p{2cm}|p{1cm}|} 
  \hline
  Graph & Vertices & $\alpha$ & Degree & Circulant & Strongly Regular & Arc Transitive\\ 
  \hline
