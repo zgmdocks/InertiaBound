@@ -978,6 +978,37 @@ Consider the group $\mathbb{Z}_8$ and let the generating set be $S = \{1,2\}$. T
 
 \end{exmp}
 
+\subsection{John's Proof}
+
+\begin{theorem}
+Let G be a connected graph such that $\frac{|G|}{2} \leq \alpha(G)$. Then either G has a tight weight matrix, or there exists an induced subgraph, H, such that H has no tight weight matrix and $\frac{|H|}{2} > \alpha(H)$.
+\end{theorem}
+
+\begin{definition}[k-saturated]
+The graph $G$ is said to be k-saturated if it does not conatin a complete (k+1)-graph, but every graph $G'$ obtained from adding a new edge to G contains a complete (k+1)-graph. \cite{kSaturated}
+\end{definition}
+
+\begin{definition}[Conical Vertex]
+A vertex, $V$, is a conical vertex of a graph, $G$, if $V$ is adjacent to every vertex in $G$.
+\end{definition}
+
+
+\begin{observation} \label{obs-sat}
+A graph, $G$, is k-saturated, if and only if its complement, $\overline{G}$, is $\alpha$-critical, with $\alpha(\overline{G})=k$. \\
+This is due to the fact that since $G$ contains a complete k-graph but not a complete (k+1)-graph, $\overline{G}$ will have a maximum independent set of size k. By adding any edge to $G$ to obtain $G'$, $G'$ will contain a complete (k+1)-graph, and thus $\overline{G'}$ will then have an independent set of size k+1. Thus, $\overline{G}$ is $\alpha$-critical and $\alpha(G)=k$.
+\end{observation}
+
+\begin{theorem} \label{k-sat}
+Assume $G$ is k-saturated. Then $G$ contains at least $2k - |G|$ conical vertices. \cite{kSaturated}
+\end{theorem}
+
+\begin{observation}
+From theorem \ref{k-sat}, thinking in terms of of the complement of a graph, we get that if $G$ is $\alpha$-critical and connected, then $G$ must satisfy $\alpha(G) \leq \frac{|G|}{2}$.
+\end{observation}
+
+\begin{proof}
+Beginning with a graph $G$, if $G$ is $\alpha$-critical with $\alpha(G)=k$, then due to observation \ref{obs-sat}, $\overline{G}$ is k-saturated. Now, following from theorem \ref{k-sat}, $\overline{G}$ contains at least $2k - |\overline{G}|$ conical vertices. This means that $G$ must contain at least $2k - |\overline{G}| = 2\alpha - |G|$ isolated vertices. However, $G$ is connected, so the number of isolated vertices must equal zero and so $2\alpha - |G| \leq 0$. Rearranging, gives $\alpha(G) \leq \frac{|G|}{2}$ as required.
+\end{proof}
 
 \bibliographystyle{plain}
 \bibliography{mybib}
