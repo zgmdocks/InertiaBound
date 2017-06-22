@@ -579,6 +579,16 @@ Due to each perfect graph having a tight inertia bound, and the Strong Perfect G
 
 \subsubsection{Graphs with an Eigensharp decomposition by Stars}
 
+\subsubsection{Summary}
+In summary, the following list of graphs attain a tight inertia bound:
+\begin{itemize}
+	\item Graphs on 10 or fewer vertices (pg 81 \cite{elzinga2007minimum})
+	\item Vertex Transitive graphs on 12 or fewer vertices (pg 81 \cite{elzinga2007minimum})
+	\item Perfect Graphs
+	\item Latin Square Graphs
+	\item Graphs with an Eigensharp decomposition by stars
+\end{itemize}
+
 \subsection{Other Bounds on Independence Number}
 
 \section{Algorithm to Find Graphs Lacking a Tight Inertia Bound}
@@ -1007,7 +1017,16 @@ From theorem \ref{k-sat}, thinking in terms of of the complement of a graph, we 
 \end{observation}
 
 \begin{proof}
-Beginning with a graph $G$, if $G$ is $\alpha$-critical with $\alpha(G)=k$, then due to observation \ref{obs-sat}, $\overline{G}$ is k-saturated. Now, following from theorem \ref{k-sat}, $\overline{G}$ contains at least $2k - |\overline{G}|$ conical vertices. This means that $G$ must contain at least $2k - |\overline{G}| = 2\alpha - |G|$ isolated vertices. However, $G$ is connected, so the number of isolated vertices must equal zero and so $2\alpha - |G| \leq 0$. Rearranging, gives $\alpha(G) \leq \frac{|G|}{2}$ as required.
+Beginning with a graph $G$, if $G$ is $\alpha$-critical with $\alpha(G)=k$, then due to observation \ref{obs-sat}, $\overline{G}$ is k-saturated. Now, following from theorem \ref{k-sat}, $\overline{G}$ contains at least $2k - |\overline{G}|$ conical vertices. This means that $G$ must contain at least $2k - |\overline{G}| = 2\alpha(G) - |G|$ isolated vertices. However, $G$ is connected, so the number of isolated vertices must equal zero and so $2\alpha(G) - |G| \leq 0$. Rearranging, gives $\alpha(G) \leq \frac{|G|}{2}$ as required.
+\end{proof}
+
+\begin{theorem}
+Let $G$ be a connected graph such that $\alpha(G) \leq \frac{|G|}{2}$. Then either $G$ has a tight weight matrix, or there exists an incuded subgraph, $H$, such that $H$ has no tight weight matrix and $\alpha(H) > \frac{|H|}{2}$.
+\end{theorem}
+
+\begin{proof}
+We will proceed with induction on the number of vertices.
+Base case: Let $G$ be a connected graph on 10 vertices or less with $\alpha(G) \leq \frac{|G|}{2}$. Then 
 \end{proof}
 
 \bibliographystyle{plain}
