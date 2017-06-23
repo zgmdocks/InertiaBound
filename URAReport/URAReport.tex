@@ -991,7 +991,7 @@ Consider the group $\mathbb{Z}_8$ and let the generating set be $S = \{1,2\}$. T
 \subsection{John's Proof}
 
 \begin{definition}[k-saturated]
-The graph $G$ is said to be k-saturated if it does not conatin a complete (k+1)-graph, but every graph $G'$ obtained from adding a new edge to G contains a complete (k+1)-graph. \cite{kSaturated}
+The graph $G$ is said to be $k$-saturated if it does not contain a complete $(k+1)$-graph, but every graph $G'$ obtained from adding a new edge to G contains a complete $(k+1)$-graph. \cite{kSaturated}
 \end{definition}
 
 \begin{definition}[Conical Vertex]
@@ -1000,12 +1000,12 @@ A vertex, $V$, is a conical vertex of a graph, $G$, if $V$ is adjacent to every 
 
 
 \begin{observation} \label{obs-sat}
-A graph, $G$, is k-saturated, if and only if its complement, $\overline{G}$, is $\alpha$-critical, with $\alpha(\overline{G})=k$. \\
-This is due to the fact that since $G$ contains a complete k-graph but not a complete (k+1)-graph, $\overline{G}$ will have a maximum independent set of size k. By adding any edge to $G$ to obtain $G'$, $G'$ will contain a complete (k+1)-graph, and thus $\overline{G'}$ will then have an independent set of size k+1. Thus, $\overline{G}$ is $\alpha$-critical and $\alpha(G)=k$.
+A graph, $G$, is $k$-saturated, if and only if its complement, $\overline{G}$, is $\alpha$-critical, with $\alpha(\overline{G})=k$. \\
+This is due to the fact that since $G$ contains a complete $k$-graph but not a complete $(k+1)$-graph, $\overline{G}$ will have a maximum independent set of size $k$. By adding any edge to $G$ to obtain $G'$, $G'$ will contain a complete (k+1)-graph, and thus $\overline{G'}$ will then have an independent set of size $k+1$. Thus, $\overline{G}$ is $\alpha$-critical and $\alpha(G)=k$.
 \end{observation}
 
 \begin{theorem} \label{k-sat}
-Assume $G$ is k-saturated. Then $G$ contains at least $2k - |G|$ conical vertices. \cite{kSaturated}
+Assume $G$ is $k$-saturated. Then $G$ contains at least $2k - |G|$ conical vertices. \cite{kSaturated}
 \end{theorem}
 
 \begin{observation}
@@ -1013,29 +1013,35 @@ From theorem \ref{k-sat}, thinking in terms of of the complement of a graph, we 
 \end{observation}
 
 \begin{proof}
-Beginning with a graph $G$, if $G$ is $\alpha$-critical with $\alpha(G)=k$, then due to observation \ref{obs-sat}, $\overline{G}$ is k-saturated. Now, following from theorem \ref{k-sat}, $\overline{G}$ contains at least $2k - |\overline{G}|$ conical vertices. This means that $G$ must contain at least $2k - |\overline{G}| = 2\alpha(G) - |G|$ isolated vertices. However, $G$ is connected, so the number of isolated vertices must equal zero and so $2\alpha(G) - |G| \leq 0$. Rearranging, gives $\alpha(G) \leq \frac{|G|}{2}$ as required.
+Beginning with a graph $G$, if $G$ is $\alpha$-critical with $\alpha(G)=k$, then due to observation \ref{obs-sat}, $\overline{G}$ is $k$-saturated. Now, following from theorem \ref{k-sat}, $\overline{G}$ contains at least $2k - |\overline{G}|$ conical vertices. This means that $G$ must contain at least $2k - |\overline{G}| = 2\alpha(G) - |G|$ isolated vertices. However, $G$ is connected, so the number of isolated vertices must equal zero and so $2\alpha(G) - |G| \leq 0$. Rearranging, gives $\alpha(G) \leq \frac{|G|}{2}$ as required.
 \end{proof}
 
 As well, consider the contrapositive of the statement:
 if $\alpha(G) > \frac{|G|}{2}$, then G is either not connected or not $\alpha$-critical.
 
-\begin{theorem}
+\begin{theorem} \label{John's}
 Let $G$ be a connected graph such that $\alpha(G) > \frac{|G|}{2}$. Then either $G$ has a tight weight matrix, or there exists an incuded subgraph, $H$, such that $H$ has no tight weight matrix and $\alpha(H) \leq \frac{|H|}{2}$.
 \end{theorem}
 
 \begin{proof}
 We will proceed with induction on the number of vertices.
 
-Base case: Let $G$ be a connected graph on 10 vertices or less with $\alpha(G) > \frac{|G|}{2}$. Then from \cite{elzinga2007minimum}, we know that G does not have a tight weight matrix and so we are done.
+Base case: Let $G$ be a connected graph on 10 vertices or less with $\alpha(G) > \frac{|G|}{2}$. Then from \cite{elzinga2007minimum}, we know that all graphs on 10 vertices or less does not have a tight weight matrix, and so G does not have a tight weighting.
 
-Inductive Hypothesis: Let $G$ be a connected graph $G$ on n vertices such that $\alpha(G) > \frac{|G|}{2}$. Then either $G$ has a tight weight matrix, or there exists an incuded subgraph, $H$, such that $H$ has no tight weight matrix and $\alpha(H) \leq \frac{|H|}{2}$.
+Inductive Hypothesis: Let $G$ be a connected graph on n vertices such that $\alpha(G) > \frac{|G|}{2}$. Then either $G$ has a tight weight matrix, or there exists an induced subgraph, $H$, such that $H$ has no tight weight matrix and $\alpha(H) \leq \frac{|H|}{2}$.
 
 Inductive Step: Consider a connected graph $G$ on n+1 vertices such that $\alpha(G) > \frac{|G|}{2}$. Now if G has a tight weight matrix, we're done, so assume that G does not have a tight weight matrix. Now, from the contrapositive of observation \ref{obs-sat} and due to $G$ being connected, we know $G$ is not $\alpha$-critical. Thus, there exists an edge, $e_1$, such that $\alpha(G-e_1) = \alpha(G)$. This leaves us with 2 cases:
 
-Case 1: $G-e_1$ is disconnected. In this case, either both of the disconnected subgraphs have a tight weighting, or one has a non-tight weighting. If one has a no tight weight matrix, then $G$ contains an induced subgraph such that it has no tight weight matrix (HOW TO SHOW THAT IT ALSO HAS $\alpha(H) \leq \frac{|H|}{2}$?)  and we are done. Thus, assume that both subgraphs have a tight weighting. However, using both of these tight weightings on $G$, and setting $e_1$ to a zero weighting, $G$ then has a tight weight matrix which is a contradiction as we assumed $G$ did not. This completes this case.
+Case 1: $G-e_1$ is disconnected. In this case, either both of the components have a tight weighting, or at least one has a non-tight weighting. If one has a non-tight weight matrix, then $G$ contains an induced subgraph, $H$, such that $H$ has no tight weight matrix. Now, either $H$ satisfies $\alpha(H) \leq \frac{|H|}{2}$ in which case we're done, or $\alpha(H) > \frac{|H|}{2}$. If $\alpha(H) > \frac{|H|}{2}$, then we apply the inductive hypothesis to $H$ and since we already know $H$ does not have a tight weight matrix, it must be the case the $H$ contains an induced subgraph $F$ such that $F$ has no tight weight matrix and $\alpha(F) \leq \frac{|F|}{2}$. However, since $F$ is an induced subgraph of $H$, it must also be an induced subgraph of $G$, and so we find that $F$ satisfies the condition that $G$ has an induced subgraph with $\alpha(F) \leq \frac{|F|}{2}$ and so we are done. Thus, assume that both components have a tight weighting. However, using both of these tight weightings on $G$, and setting $e_1$ to a zero weighting, $G$ then has a tight weight matrix. However, this is a contradiction as we assumed $G$ did not have a tight weight matrix. This completes this case.
 
-Case 2: $G-e_1$ is connected.
+Case 2: $G-e_1$ is connected. Now because $G$ was not $\alpha$-critical, $\alpha(G) = \alpha(G-e_1)$ and so $\alpha(G-e_1) > \frac{|G-e_1|}{2}$. Thus, due to observation \ref{obs-sat}, $G-e_1$ is still not $\alpha$-critical. Therefore, we can continue to delete edges without changing the fact that the resulting graph will be $\alpha$-critical as long as it's connected. Now, consider the graph that results from $G$, which will be denoted $G'$, where after deleting $k-1$ edges, $G$ is still connected, but after deleting the $kth$ edge, $G$ has now become disconnected. We can now add back all edges that do not reconnect $G'$ as this will not decrease $\alpha(G')$ since deleting it did not. Now, we have the same case as case 1, with the only difference being that if the two disconnected components of $G'$ have a tight weighting, we use their tight weightings and put the weightings of all edges we deleted to obtain $G'$ to 0, giving us a tight weighting for $G$. This completes this case. \\
+
+Therefore, $G$ satisfies the statement, and so by induction, the statement is true for all graphs.
 \end{proof}
+
+\begin{observation}
+Note that we can further strengthen theorem \ref{John's} to letting $G$ be a connected graph such that $\alpha(G) \geq \frac{|G|}{2}$. This follows from \cite{plummer1970some} which states that the only graph, $H$, with $\alpha(H) = \frac{|H|}{2}$ is the complete graph $K_2$. However, this graph has a tight weight matrix since it has less than 10 vertices, and so the statement is true even for the case of $\alpha(G) = \frac{|G|}{2}$.
+\end{observation}
 
 \bibliographystyle{plain}
 \bibliography{mybib}
