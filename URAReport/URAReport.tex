@@ -1008,7 +1008,7 @@ This is due to the fact that since $G$ contains a complete $k$-graph but not a c
 Assume $G$ is $k$-saturated. Then $G$ contains at least $2k - |G|$ conical vertices. \cite{kSaturated}
 \end{theorem}
 
-\begin{observation}
+\begin{observation} \label{Contra}
 From theorem \ref{k-sat}, thinking in terms of of the complement of a graph, we get that if $G$ is $\alpha$-critical and connected, then $G$ must satisfy $\alpha(G) \leq \frac{|G|}{2}$.
 \end{observation}
 
@@ -1020,28 +1020,37 @@ As well, consider the contrapositive of the statement:
 if $\alpha(G) > \frac{|G|}{2}$, then G is either not connected or not $\alpha$-critical.
 
 \begin{theorem} \label{John's}
-Let $G$ be a connected graph such that $\alpha(G) > \frac{|G|}{2}$. Then either $G$ has a tight weight matrix, or there exists an incuded subgraph, $H$, such that $H$ has no tight weight matrix and $\alpha(H) \leq \frac{|H|}{2}$.
+Let $G$ be a connected graph such that $\alpha(G) \geq \frac{|G|}{2}$. Then either $G$ has a tight weight matrix, or there exists an induced subgraph, $H$, such that $H$ has no tight weight matrix and $\alpha(H) < \frac{|H|}{2}$.
 \end{theorem}
 
 \begin{proof}
+
+First off, following from \cite{plummer1970some}, the only graph, $H$, with $\alpha(H) = \frac{|H|}{2}$ is the complete graph, $K_2$. However, since $K_2$ has less than 10 vertices, we know that from \cite{elzinga2007minimum} that $K_2$ does not have a tight weight matrix. Thus, the statement is true for $K_2$ and since it is the only graph with $\alpha(K_2) = \frac{|K_2|}{2}$, we now only need to consider graphs, $G$, with $\alpha(G) > \frac{|G|}{2}$.
+
 We will proceed with induction on the number of vertices.
 
 Base case: Let $G$ be a connected graph on 10 vertices or less with $\alpha(G) > \frac{|G|}{2}$. Then from \cite{elzinga2007minimum}, we know that all graphs on 10 vertices or less does not have a tight weight matrix, and so G does not have a tight weighting.
 
 Inductive Hypothesis: Let $G$ be a connected graph on n vertices such that $\alpha(G) > \frac{|G|}{2}$. Then either $G$ has a tight weight matrix, or there exists an induced subgraph, $H$, such that $H$ has no tight weight matrix and $\alpha(H) \leq \frac{|H|}{2}$.
 
-Inductive Step: Consider a connected graph $G$ on n+1 vertices such that $\alpha(G) > \frac{|G|}{2}$. Now if G has a tight weight matrix, we're done, so assume that G does not have a tight weight matrix. Now, from the contrapositive of observation \ref{obs-sat} and due to $G$ being connected, we know $G$ is not $\alpha$-critical. Thus, there exists an edge, $e_1$, such that $\alpha(G-e_1) = \alpha(G)$. This leaves us with 2 cases:
+Inductive Step: Consider a connected graph $G$ on n+1 vertices such that $\alpha(G) > \frac{|G|}{2}$. Now if G has a tight weight matrix, we're done, so assume that G does not have a tight weight matrix. Now, from the contrapositive of observation \ref{Contra} and due to $G$ being connected, we know $G$ is not $\alpha$-critical. Thus, there exists an edge, $e_1$, such that $\alpha(G-e_1) = \alpha(G)$. This leaves us with 2 cases:
 
 Case 1: $G-e_1$ is disconnected. In this case, either both of the components have a tight weighting, or at least one has a non-tight weighting. If one has a non-tight weight matrix, then $G$ contains an induced subgraph, $H$, such that $H$ has no tight weight matrix. Now, either $H$ satisfies $\alpha(H) \leq \frac{|H|}{2}$ in which case we're done, or $\alpha(H) > \frac{|H|}{2}$. If $\alpha(H) > \frac{|H|}{2}$, then we apply the inductive hypothesis to $H$ and since we already know $H$ does not have a tight weight matrix, it must be the case the $H$ contains an induced subgraph $F$ such that $F$ has no tight weight matrix and $\alpha(F) \leq \frac{|F|}{2}$. However, since $F$ is an induced subgraph of $H$, it must also be an induced subgraph of $G$, and so we find that $F$ satisfies the condition that $G$ has an induced subgraph with $\alpha(F) \leq \frac{|F|}{2}$ and so we are done. Thus, assume that both components have a tight weighting. However, using both of these tight weightings on $G$, and setting $e_1$ to a zero weighting, $G$ then has a tight weight matrix. However, this is a contradiction as we assumed $G$ did not have a tight weight matrix. This completes this case.
 
-Case 2: $G-e_1$ is connected. Now because $G$ was not $\alpha$-critical, $\alpha(G) = \alpha(G-e_1)$ and so $\alpha(G-e_1) > \frac{|G-e_1|}{2}$. Thus, due to observation \ref{obs-sat}, $G-e_1$ is still not $\alpha$-critical. Therefore, we can continue to delete edges without changing the fact that the resulting graph will be $\alpha$-critical as long as it's connected. Now, consider the graph that results from $G$, which will be denoted $G'$, where after deleting $k-1$ edges, $G$ is still connected, but after deleting the $kth$ edge, $G$ has now become disconnected. We can now add back all edges that do not reconnect $G'$ as this will not decrease $\alpha(G')$ since deleting it did not. Now, we have the same case as case 1, with the only difference being that if the two disconnected components of $G'$ have a tight weighting, we use their tight weightings and put the weightings of all edges we deleted to obtain $G'$ to 0, giving us a tight weighting for $G$. This completes this case. \\
+Case 2: $G-e_1$ is connected. Now because $G$ was not $\alpha$-critical, $\alpha(G) = \alpha(G-e_1)$ and so $\alpha(G-e_1) > \frac{|G-e_1|}{2}$. Thus, due to observation \ref{obs-sat}, $G-e_1$ is still not $\alpha$-critical. Therefore, we can continue to delete edges without changing the fact that the resulting graph will be $\alpha$-critical as long as it's connected. Now, consider the graph that results from $G$, which will be denoted $G'$, where after deleting $k-1$ edges, $G$ is still connected, but after deleting the $kth$ edge, $G$ has now become disconnected. We can now add back all edges that do not reconnect $G'$ as this will not decrease $\alpha(G')$ since deleting it did not. Now, we have the same situation as Case 1, with the only difference being that if the two disconnected components of $G'$ have a tight weighting, we use their tight weightings and put the weightings of all edges we deleted to obtain $G'$ to 0, giving us a tight weighting for $G$. This completes this case. \\
 
 Therefore, $G$ satisfies the statement, and so by induction, the statement is true for all graphs.
 \end{proof}
 
-\begin{observation}
-Note that we can further strengthen theorem \ref{John's} to letting $G$ be a connected graph such that $\alpha(G) \geq \frac{|G|}{2}$. This follows from \cite{plummer1970some} which states that the only graph, $H$, with $\alpha(H) = \frac{|H|}{2}$ is the complete graph $K_2$. However, this graph has a tight weight matrix since it has less than 10 vertices, and so the statement is true even for the case of $\alpha(G) = \frac{|G|}{2}$.
-\end{observation}
+\subsection{No Bound on Inertia Bound Gap}
+
+\begin{theorem}
+For a graph $G$, there does not exist a bound on the difference between $\alpha(G)$ and the minimum inertia of a weight matrix corresponding to $G$.
+\end{theorem}
+
+\begin{proof}
+
+\end{proof}
 
 \bibliographystyle{plain}
 \bibliography{mybib}

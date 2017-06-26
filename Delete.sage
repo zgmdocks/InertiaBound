@@ -81,6 +81,7 @@ for line in allGraphs:
     if len(split) == 1:
         PartiallyChecked.add(split[0][:-1])
 
+
 with open('/Users/zgmdocks/Downloads/Found.txt') as input_file:
     for line in input_file:
         i += 1
