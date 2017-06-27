@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-f = open("test.txt","r")
+f = open("DeleteResults.txt","r")
 read = f.readlines()
 goTo = int(read[0])
 
@@ -16,7 +16,7 @@ for line in read:
 
 if NeedErase:
     i = 0
-    f = open("test.txt","w")
+    f = open("DeleteResults.txt","w")
     Write = False
     for line in read:
         if i < goTo-1:
