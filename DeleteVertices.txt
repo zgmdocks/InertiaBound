@@ -12825,3 +12825,138 @@ WvvdtIJpB_c[LEHPiH?PsE_GAsWKcwBXhGDgOFXWIBV@CZT has a non-tight bound **********
         Checking Graph: UGe@imeOQoTCWBETpa?lODRuGtsGTpub@?wuWcgw on 22 vertices
         Checking Graph: ULKqCDG`MFWYJOF_@EoHrHqsZFjPDCgadAhR_Tgw on 22 vertices
         Checking Graph: ULKoOLJ`u@WB@YAdD`WwNOJu?^bF?Se_Li@fdOeo on 22 vertices
+Checking Graph: WvvdtIJpB_c[LEHPiH?PsE_GAsWKcwBXhGDgOFXWIBV@CZT on 24 vertices
+WvvdtIJpB_c[LEHPiH?PsE_GAsWKcwBXhGDgOFXWIBV@CZT has a non-tight bound ************
+    Checking Graph: VGTXsibWAGCF_SqCwbGI[GjcpURSesPZ?[LTciISedG_ on 23 vertices
+    VGTXsibWAGCF_SqCwbGI[GjcpURSesPZ?[LTciISedG_ has a non-tight bound ************
+        Checking Graph: U_KzCdRgyPOa\_mODOWiFFJ?k[IDXSAwh?Iv_@]w on 22 vertices
+        Checking Graph: UGe@imeOQoTCWBETpa?lODRuGtsGTpub@?wuWcgw on 22 vertices
+        Checking Graph: UGe@imeOQoTCWBETpa?lODRuGtsGTpub@?wuWcgw on 22 vertices
+        Checking Graph: ULKqCDG`MFWYJOF_@EoHrHqsZFjPDCgadAhR_Tgw on 22 vertices
+        Checking Graph: ULKoOLJ`u@WB@YAdD`WwNOJu?^bF?Se_Li@fdOeo on 22 vertices
+Checking Graph: WvvdtIJpB_c[LEHPiH?PsE_GAsWKcwBXhGDgOFXWIBV@CZT on 24 vertices
+WvvdtIJpB_c[LEHPiH?PsE_GAsWKcwBXhGDgOFXWIBV@CZT has a non-tight bound ************
+    Checking Graph: VGTXsibWAGCF_SqCwbGI[GjcpURSesPZ?[LTciISedG_ on 23 vertices
+    VGTXsibWAGCF_SqCwbGI[GjcpURSesPZ?[LTciISedG_ has a non-tight bound ************
+        Checking Graph: U_KzCdRgyPOa\_mODOWiFFJ?k[IDXSAwh?Iv_@]w on 22 vertices
+        Checking Graph: UGe@imeOQoTCWBETpa?lODRuGtsGTpub@?wuWcgw on 22 vertices
+        Checking Graph: UGe@imeOQoTCWBETpa?lODRuGtsGTpub@?wuWcgw on 22 vertices
+        Checking Graph: ULKqCDG`MFWYJOF_@EoHrHqsZFjPDCgadAhR_Tgw on 22 vertices
+        Checking Graph: ULKoOLJ`u@WB@YAdD`WwNOJu?^bF?Se_Li@fdOeo on 22 vertices
+Checking Graph: WvvdtIJpB_c[LEHPiH?PsE_GAsWKcwBXhGDgOFXWIBV@CZT on 24 vertices
+WvvdtIJpB_c[LEHPiH?PsE_GAsWKcwBXhGDgOFXWIBV@CZT has a non-tight bound ************
+    Checking Graph: VGTXsibWAGCF_SqCwbGI[GjcpURSesPZ?[LTciISedG_ on 23 vertices
+    VGTXsibWAGCF_SqCwbGI[GjcpURSesPZ?[LTciISedG_ has a non-tight bound ************
+        Checking Graph: U_KzCdRgyPOa\_mODOWiFFJ?k[IDXSAwh?Iv_@]w on 22 vertices
+        Checking Graph: UGe@imeOQoTCWBETpa?lODRuGtsGTpub@?wuWcgw on 22 vertices
+        Checking Graph: UGe@imeOQoTCWBETpa?lODRuGtsGTpub@?wuWcgw on 22 vertices
+        Checking Graph: ULKqCDG`MFWYJOF_@EoHrHqsZFjPDCgadAhR_Tgw on 22 vertices
+        Checking Graph: ULKoOLJ`u@WB@YAdD`WwNOJu?^bF?Se_Li@fdOeo on 22 vertices
+Checking Graph: WvvdtIJpB_c[LEHPiH?PsE_GAsWKcwBXhGDgOFXWIBV@CZT on 24 vertices
+WvvdtIJpB_c[LEHPiH?PsE_GAsWKcwBXhGDgOFXWIBV@CZT has a non-tight bound ************
+    Checking Graph: VGTXsibWAGCF_SqCwbGI[GjcpURSesPZ?[LTciISedG_ on 23 vertices
+    VGTXsibWAGCF_SqCwbGI[GjcpURSesPZ?[LTciISedG_ has a non-tight bound ************
+        Checking Graph: U_KzCdRgyPOa\_mODOWiFFJ?k[IDXSAwh?Iv_@]w on 22 vertices
+        Checking Graph: UGe@imeOQoTCWBETpa?lODRuGtsGTpub@?wuWcgw on 22 vertices
+        Checking Graph: UGe@imeOQoTCWBETpa?lODRuGtsGTpub@?wuWcgw on 22 vertices
+        Checking Graph: ULKqCDG`MFWYJOF_@EoHrHqsZFjPDCgadAhR_Tgw on 22 vertices
+        Checking Graph: ULKoOLJ`u@WB@YAdD`WwNOJu?^bF?Se_Li@fdOeo on 22 vertices
+Checking Graph: WvvdtIJpB_c[LEHPiH?PsE_GAsWKcwBXhGDgOFXWIBV@CZT on 24 vertices
+WvvdtIJpB_c[LEHPiH?PsE_GAsWKcwBXhGDgOFXWIBV@CZT has a non-tight bound ************
+    Checking Graph: VGTXsibWAGCF_SqCwbGI[GjcpURSesPZ?[LTciISedG_ on 23 vertices
+    VGTXsibWAGCF_SqCwbGI[GjcpURSesPZ?[LTciISedG_ has a non-tight bound ************
+        Checking Graph: U_KzCdRgyPOa\_mODOWiFFJ?k[IDXSAwh?Iv_@]w on 22 vertices
+        Checking Graph: UGe@imeOQoTCWBETpa?lODRuGtsGTpub@?wuWcgw on 22 vertices
+        Checking Graph: UGe@imeOQoTCWBETpa?lODRuGtsGTpub@?wuWcgw on 22 vertices
+        Checking Graph: ULKqCDG`MFWYJOF_@EoHrHqsZFjPDCgadAhR_Tgw on 22 vertices
+        Checking Graph: ULKoOLJ`u@WB@YAdD`WwNOJu?^bF?Se_Li@fdOeo on 22 vertices
+Checking Graph: WvvdtIJpB_c[LEHPiH?PsE_GAsWKcwBXhGDgOFXWIBV@CZT on 24 vertices
+WvvdtIJpB_c[LEHPiH?PsE_GAsWKcwBXhGDgOFXWIBV@CZT has a non-tight bound ************
+    Checking Graph: VGTXsibWAGCF_SqCwbGI[GjcpURSesPZ?[LTciISedG_ on 23 vertices
+    VGTXsibWAGCF_SqCwbGI[GjcpURSesPZ?[LTciISedG_ has a non-tight bound ************
+        Checking Graph: U_KzCdRgyPOa\_mODOWiFFJ?k[IDXSAwh?Iv_@]w on 22 vertices
+        Checking Graph: UGe@imeOQoTCWBETpa?lODRuGtsGTpub@?wuWcgw on 22 vertices
+        Checking Graph: UGe@imeOQoTCWBETpa?lODRuGtsGTpub@?wuWcgw on 22 vertices
+        Checking Graph: ULKqCDG`MFWYJOF_@EoHrHqsZFjPDCgadAhR_Tgw on 22 vertices
+        Checking Graph: ULKoOLJ`u@WB@YAdD`WwNOJu?^bF?Se_Li@fdOeo on 22 vertices
+Checking Graph: WvvdtIJpB_c[LEHPiH?PsE_GAsWKcwBXhGDgOFXWIBV@CZT on 24 vertices
+WvvdtIJpB_c[LEHPiH?PsE_GAsWKcwBXhGDgOFXWIBV@CZT has a non-tight bound ************
+    Checking Graph: VGTXsibWAGCF_SqCwbGI[GjcpURSesPZ?[LTciISedG_ on 23 vertices
+    VGTXsibWAGCF_SqCwbGI[GjcpURSesPZ?[LTciISedG_ has a non-tight bound ************
+        Checking Graph: U_KzCdRgyPOa\_mODOWiFFJ?k[IDXSAwh?Iv_@]w on 22 vertices
+        Checking Graph: UGe@imeOQoTCWBETpa?lODRuGtsGTpub@?wuWcgw on 22 vertices
+        Checking Graph: UGe@imeOQoTCWBETpa?lODRuGtsGTpub@?wuWcgw on 22 vertices
+        Checking Graph: ULKqCDG`MFWYJOF_@EoHrHqsZFjPDCgadAhR_Tgw on 22 vertices
+        Checking Graph: ULKoOLJ`u@WB@YAdD`WwNOJu?^bF?Se_Li@fdOeo on 22 vertices
+Checking Graph: WvvdtIJpB_c[LEHPiH?PsE_GAsWKcwBXhGDgOFXWIBV@CZT on 24 vertices
+WvvdtIJpB_c[LEHPiH?PsE_GAsWKcwBXhGDgOFXWIBV@CZT has a non-tight bound ************
+    Checking Graph: VGTXsibWAGCF_SqCwbGI[GjcpURSesPZ?[LTciISedG_ on 23 vertices
+    VGTXsibWAGCF_SqCwbGI[GjcpURSesPZ?[LTciISedG_ has a non-tight bound ************
+        Checking Graph: U_KzCdRgyPOa\_mODOWiFFJ?k[IDXSAwh?Iv_@]w on 22 vertices
+        Checking Graph: UGe@imeOQoTCWBETpa?lODRuGtsGTpub@?wuWcgw on 22 vertices
+        Checking Graph: UGe@imeOQoTCWBETpa?lODRuGtsGTpub@?wuWcgw on 22 vertices
+        Checking Graph: ULKqCDG`MFWYJOF_@EoHrHqsZFjPDCgadAhR_Tgw on 22 vertices
+        Checking Graph: ULKoOLJ`u@WB@YAdD`WwNOJu?^bF?Se_Li@fdOeo on 22 vertices
+Checking Graph: WvvdtIJpB_c[LEHPiH?PsE_GAsWKcwBXhGDgOFXWIBV@CZT on 24 vertices
+WvvdtIJpB_c[LEHPiH?PsE_GAsWKcwBXhGDgOFXWIBV@CZT has a non-tight bound ************
+    Checking Graph: VGTXsibWAGCF_SqCwbGI[GjcpURSesPZ?[LTciISedG_ on 23 vertices
+    VGTXsibWAGCF_SqCwbGI[GjcpURSesPZ?[LTciISedG_ has a non-tight bound ************
+        Checking Graph: U_KzCdRgyPOa\_mODOWiFFJ?k[IDXSAwh?Iv_@]w on 22 vertices
+        Checking Graph: UGe@imeOQoTCWBETpa?lODRuGtsGTpub@?wuWcgw on 22 vertices
+        Checking Graph: UGe@imeOQoTCWBETpa?lODRuGtsGTpub@?wuWcgw on 22 vertices
+        Checking Graph: ULKqCDG`MFWYJOF_@EoHrHqsZFjPDCgadAhR_Tgw on 22 vertices
+        Checking Graph: ULKoOLJ`u@WB@YAdD`WwNOJu?^bF?Se_Li@fdOeo on 22 vertices
+Checking Graph: WvvdtIJpB_c[LEHPiH?PsE_GAsWKcwBXhGDgOFXWIBV@CZT on 24 vertices
+WvvdtIJpB_c[LEHPiH?PsE_GAsWKcwBXhGDgOFXWIBV@CZT has a non-tight bound ************
+    Checking Graph: VGTXsibWAGCF_SqCwbGI[GjcpURSesPZ?[LTciISedG_ on 23 vertices
+    VGTXsibWAGCF_SqCwbGI[GjcpURSesPZ?[LTciISedG_ has a non-tight bound ************
+        Checking Graph: U_KzCdRgyPOa\_mODOWiFFJ?k[IDXSAwh?Iv_@]w on 22 vertices
+        Checking Graph: UGe@imeOQoTCWBETpa?lODRuGtsGTpub@?wuWcgw on 22 vertices
+        Checking Graph: UGe@imeOQoTCWBETpa?lODRuGtsGTpub@?wuWcgw on 22 vertices
+        Checking Graph: ULKqCDG`MFWYJOF_@EoHrHqsZFjPDCgadAhR_Tgw on 22 vertices
+        Checking Graph: ULKoOLJ`u@WB@YAdD`WwNOJu?^bF?Se_Li@fdOeo on 22 vertices
+Checking Graph: WvvdtIJpB_c[LEHPiH?PsE_GAsWKcwBXhGDgOFXWIBV@CZT on 24 vertices
+WvvdtIJpB_c[LEHPiH?PsE_GAsWKcwBXhGDgOFXWIBV@CZT has a non-tight bound ************
+    Checking Graph: VGTXsibWAGCF_SqCwbGI[GjcpURSesPZ?[LTciISedG_ on 23 vertices
+    VGTXsibWAGCF_SqCwbGI[GjcpURSesPZ?[LTciISedG_ has a non-tight bound ************
+        Checking Graph: U_KzCdRgyPOa\_mODOWiFFJ?k[IDXSAwh?Iv_@]w on 22 vertices
+        Checking Graph: UGe@imeOQoTCWBETpa?lODRuGtsGTpub@?wuWcgw on 22 vertices
+        Checking Graph: UGe@imeOQoTCWBETpa?lODRuGtsGTpub@?wuWcgw on 22 vertices
+        Checking Graph: ULKqCDG`MFWYJOF_@EoHrHqsZFjPDCgadAhR_Tgw on 22 vertices
+        Checking Graph: ULKoOLJ`u@WB@YAdD`WwNOJu?^bF?Se_Li@fdOeo on 22 vertices
+Checking Graph: WvvdtIJpB_c[LEHPiH?PsE_GAsWKcwBXhGDgOFXWIBV@CZT on 24 vertices
+WvvdtIJpB_c[LEHPiH?PsE_GAsWKcwBXhGDgOFXWIBV@CZT has a non-tight bound ************
+    Checking Graph: VGTXsibWAGCF_SqCwbGI[GjcpURSesPZ?[LTciISedG_ on 23 vertices
+    VGTXsibWAGCF_SqCwbGI[GjcpURSesPZ?[LTciISedG_ has a non-tight bound ************
+        Checking Graph: U_KzCdRgyPOa\_mODOWiFFJ?k[IDXSAwh?Iv_@]w on 22 vertices
+        Checking Graph: UGe@imeOQoTCWBETpa?lODRuGtsGTpub@?wuWcgw on 22 vertices
+        Checking Graph: UGe@imeOQoTCWBETpa?lODRuGtsGTpub@?wuWcgw on 22 vertices
+        Checking Graph: ULKqCDG`MFWYJOF_@EoHrHqsZFjPDCgadAhR_Tgw on 22 vertices
+        Checking Graph: ULKoOLJ`u@WB@YAdD`WwNOJu?^bF?Se_Li@fdOeo on 22 vertices
+Checking Graph: WvvdtIJpB_c[LEHPiH?PsE_GAsWKcwBXhGDgOFXWIBV@CZT on 24 vertices
+WvvdtIJpB_c[LEHPiH?PsE_GAsWKcwBXhGDgOFXWIBV@CZT has a non-tight bound ************
+    Checking Graph: VGTXsibWAGCF_SqCwbGI[GjcpURSesPZ?[LTciISedG_ on 23 vertices
+    VGTXsibWAGCF_SqCwbGI[GjcpURSesPZ?[LTciISedG_ has a non-tight bound ************
+        Checking Graph: U_KzCdRgyPOa\_mODOWiFFJ?k[IDXSAwh?Iv_@]w on 22 vertices
+        Checking Graph: UGe@imeOQoTCWBETpa?lODRuGtsGTpub@?wuWcgw on 22 vertices
+        Checking Graph: UGe@imeOQoTCWBETpa?lODRuGtsGTpub@?wuWcgw on 22 vertices
+        Checking Graph: ULKqCDG`MFWYJOF_@EoHrHqsZFjPDCgadAhR_Tgw on 22 vertices
+        Checking Graph: ULKoOLJ`u@WB@YAdD`WwNOJu?^bF?Se_Li@fdOeo on 22 vertices
+Checking Graph: WvvdtIJpB_c[LEHPiH?PsE_GAsWKcwBXhGDgOFXWIBV@CZT on 24 vertices
+WvvdtIJpB_c[LEHPiH?PsE_GAsWKcwBXhGDgOFXWIBV@CZT has a non-tight bound ************
+    Checking Graph: VGTXsibWAGCF_SqCwbGI[GjcpURSesPZ?[LTciISedG_ on 23 vertices
+    VGTXsibWAGCF_SqCwbGI[GjcpURSesPZ?[LTciISedG_ has a non-tight bound ************
+        Checking Graph: U_KzCdRgyPOa\_mODOWiFFJ?k[IDXSAwh?Iv_@]w on 22 vertices
+        Checking Graph: UGe@imeOQoTCWBETpa?lODRuGtsGTpub@?wuWcgw on 22 vertices
+        Checking Graph: UGe@imeOQoTCWBETpa?lODRuGtsGTpub@?wuWcgw on 22 vertices
+        Checking Graph: ULKqCDG`MFWYJOF_@EoHrHqsZFjPDCgadAhR_Tgw on 22 vertices
+        Checking Graph: ULKoOLJ`u@WB@YAdD`WwNOJu?^bF?Se_Li@fdOeo on 22 vertices
+Checking Graph: WvvdtIJpB_c[LEHPiH?PsE_GAsWKcwBXhGDgOFXWIBV@CZT on 24 vertices
+WvvdtIJpB_c[LEHPiH?PsE_GAsWKcwBXhGDgOFXWIBV@CZT has a non-tight bound ************
+    Checking Graph: VGTXsibWAGCF_SqCwbGI[GjcpURSesPZ?[LTciISedG_ on 23 vertices
+    VGTXsibWAGCF_SqCwbGI[GjcpURSesPZ?[LTciISedG_ has a non-tight bound ************
+        Checking Graph: U_KzCdRgyPOa\_mODOWiFFJ?k[IDXSAwh?Iv_@]w on 22 vertices
+        Checking Graph: UGe@imeOQoTCWBETpa?lODRuGtsGTpub@?wuWcgw on 22 vertices
+        Checking Graph: UGe@imeOQoTCWBETpa?lODRuGtsGTpub@?wuWcgw on 22 vertices
+        Checking Graph: ULKqCDG`MFWYJOF_@EoHrHqsZFjPDCgadAhR_Tgw on 22 vertices
+        Checking Graph: ULKoOLJ`u@WB@YAdD`WwNOJu?^bF?Se_Li@fdOeo on 22 vertices
