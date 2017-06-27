@@ -1,21 +1,19 @@
 file="DeleteResults.txt"
 
 /../Applications/SageMath-7.6.app/sage Delete.sage &
-sleep 15
+sleep 30
 prevlast=$(cat $file | tail -n 2 | head -1)
-echo $prevlast
 while true
 do
-    echo "NOW"
-    sleep 10
+    sleep 1m
     if [ "$prevlast" == "$(cat $file | tail -n 2 | head -1)" ]
     then
         echo ""
         echo "Program will be restarted"
         echo ""
         kill -INT $(ps | grep 'python Delete.sage.py' | grep -v 'grep' | grep -v 'bash'| awk '{print $1;}')
-        ./cleaner.py
-        git add .
+        ./clean.py
+        git add DeleteResults.txt
         git commit -m "added new graphs"
         git push
         /../Applications/SageMath-7.6.app/sage Delete.sage &
