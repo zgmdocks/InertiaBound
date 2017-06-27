@@ -5,7 +5,7 @@ sleep 30
 prevlast=$(cat $file | tail -n 2 | head -1)
 while true
 do
-    sleep 1m
+    sleep 1800
     if [ "$prevlast" == "$(cat $file | tail -n 2 | head -1)" ]
     then
         echo ""
