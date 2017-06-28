@@ -6,15 +6,18 @@ prevlast=$(cat $file | tail -n 2 | head -1)
 while true
 do
     sleep 1800
-    if [ "$prevlast" == "$(cat $file | tail -n 2 | head -1)" ]
+    curLast=$(cat $file | tail -n 2 | head -1)
+    echo $curLast
+    echo $prevlast
+    if [ "$prevlast" == "$curLast" ]
     then
         echo ""
         echo "Program will be restarted"
         echo ""
         kill -INT $(ps | grep 'python Delete.sage.py' | grep -v 'grep' | grep -v 'bash'| awk '{print $1;}')
-        sleep 30
+        sleep 20
         ./clean.py
-        sleep 30
+        sleep 10
         git add DeleteResults.txt
         git commit -m "added new graphs"
         git push
