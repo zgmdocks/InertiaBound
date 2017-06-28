@@ -12,10 +12,13 @@ do
         echo "Program will be restarted"
         echo ""
         kill -INT $(ps | grep 'python Delete.sage.py' | grep -v 'grep' | grep -v 'bash'| awk '{print $1;}')
+        sleep 30
         ./clean.py
+        sleep 30
         git add DeleteResults.txt
         git commit -m "added new graphs"
         git push
+        sleep 10
         /../Applications/SageMath-7.6.app/sage Delete.sage &
     else
         echo ""
