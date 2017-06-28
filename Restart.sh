@@ -18,7 +18,7 @@ do
         sleep 20
         ./clean.py
         sleep 10
-        git add DeleteResults.txt
+        git add DeleteResults.txt CheckedBad.txt
         git commit -m "added new graphs"
         git push
         sleep 10
