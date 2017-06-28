@@ -32,10 +32,12 @@ def deleteVertices(G, tab, First):
         if graph6 not in checkedGood:
             checkedGood[graph6] = k
             output_file.write(tab*" " + G.graph6_string() + "\n")
+            output_file.flush()
             k += 1
         else:
             print tab*" " + "last seen: " + str(checkedGood[graph6])
             output_file.write(tab*" " + G.graph6_string() + " " + str(checkedGood[graph6]) + "\n")
+            output_file.flush()
             checkedGood[graph6] = k
             k += 1
             return
