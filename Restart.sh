@@ -1,6 +1,5 @@
 file="DeleteResults.txt"
 /../Applications/SageMath-7.6.app/sage Delete.sage &
-echo "NOW"
 sleep 30
 prevlast=$(cat $file | tail -n 2 | head -1)
 while true
