@@ -1,3 +1,4 @@
+import cleanFunc
 i = 0
 k = 2
 read_graphs = open('CheckedBad.txt','r')
@@ -91,6 +92,7 @@ with open('/Users/zgmdocks/Downloads/Found.txt') as input_file:
             continue
         G = Graph(line)
         deleteVertices(G,0,True)
+        cleanFunc.Clean()
         firstLine = open('DeleteResults.txt','r+')
         firstLine.write(str(k) + "\n")
         firstLine.write(str(i) + "\n")
