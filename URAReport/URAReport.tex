@@ -1049,13 +1049,39 @@ For a graph $G$, there does not exist a bound on the difference between $\alpha(
 \end{theorem}
 
 \begin{proof}
-Consider a graph, $G$, such that $G$ does not have a tight weight matrix. Now, construct a graph $H$ by connecting two copies of $G$, $G_1$ and $G_2$, with an edge between a vertex on each copy of $G$ that does not belong to the independent set of either $G_1$ or $G_2$.
+Consider a graph, $G$, such that $G$ does not have a tight weight matrix with the gap from equality in the inertia bound being $\gamma$, and G-v does not have a tight weight matrix and $\alpha(G) = \alpha(G-v)$ $\forall v \in V(G)$. Paley 17 is an example of a graph that has this property so there will exist such a graph. Now, construct a graph $H$ by connecting two copies of $G$, $G_1$ and $G_2$, with an edge between a vertex on each copy of $G$ that does not belong to the independent set of either $G_1$ or $G_2$.
 
-(WHY DO WE NEED TO CREATE AN EDGE BETWEEN THE TWO GRAPHS AND THEN DELETE A VERTEX? WHY NOT JUST CREATE THE UNION OF TWO GRAPHS AND NOT WORRY ABOUT CREATING AN EDGE AND THEN DELETING THAT EDGE WITH THE VERTEX?)
+Now, consider the induced subgraph $H'$ obtained by deleting the vertex from the component $G_1$ in $H$ that connects to the cut-edge in $H$. This will result in $H'$ having two components, $G_1-v$ and $G_2$. Now any weight matrix of $H'$, $W'$ will have the form:
 
+\begin{center}
+$W'=
+\begin{bmatrix}
+W_1 & 0 \\
+0 & W_2 \\
+\end{bmatrix}
+$
+\end{center}
+
+With $W_1$ and $W_2$ being the weight matrices associated with the components $G_1-v$ and $G_2$, respectively. As a result, the eigenvalues of $W'$ will be equal to the eigenvalues of $W_1$ and $W_2$. Thus, for any weight matrix $W'$ of $H'$, the inertia of $W'$ will be equal to the sum of the inertias of $W_1$ and $W_2$. Therefore,
+\begin{multline}
+\min\{|H'|-n_+(W'), |H'|-n_-(W')\} \\ = \min\{|G-v|-n_+(W_1), |G-v|-n_-(W_1)\} + \min\{|G|-n_+(W_2), |G|-n_-(W_2)\} \\ \leq 2\min\{|G|-n_+(W_2), |G|-n_-(W_2)\}
+\end{multline}
+From Cauchy's Eigenvalue Interlacing Theorem , we know any weight matrix associated with $H$, $W$, will have at least as many positive and negative eigenvalues as $W'$. Thus,
+\begin{multline}
+\min\{|H'|-n_+(W'), |H'|-n_-(W')\} \\ \leq 2\min\{|G|-n_+(W_2), |G|-n_-(W_2)\} \\ \leq \min\{|H|-n_+(W), |H|-n_-(W)\}
+\end{multline}
 Due to how we created $H$, $\alpha(H) = 2\alpha(G)$ because the largest independent set of $H$ will just equal the union of the largest independent set of $G_1$ and $G_2$ since we connected $G_1$ and $G_2$ without connecting edges between the two independent sets.
 
-As well, the inertia of $H$ will just equal to the sum of the inertia of $G_1$ and $G_2$. This is because every eigenvalue of $G_1$ and $G_2$ will also be an eigenvalue of $H$ 
+Therefore, we get:
+
+\begin{center}
+\begin{multline}
+\alpha(H) \\ = 2\alpha(G) \\ = 2\gamma + 2\min{|G|-n_+(W_2), |G|-n_-(W_2)} \\ \leq 2\gamma + \min\{|H|-n_+(W), |H|-n_-(W)\}
+\end{multline}
+\end{center}
+
+Therefore, the gap between equality in the inertia bound has at least doubled. Now as long as there exists a graph without a tight weight matrix, $F$, such that $F-v_1-v_2$ also does not have a tight weight matrix, we can generalize this result to create a new graph, connecting arbitrarily many copies of $F$ and following the same argument to multiply the gap in the inertia bound by how many copies of $F$ we connect.
+
 \end{proof}
 
 \bibliographystyle{plain}
