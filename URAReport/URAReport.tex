@@ -1064,23 +1064,27 @@ $
 
 With $W_1$ and $W_2$ being the weight matrices associated with the components $G_1-v$ and $G_2$, respectively. As a result, the eigenvalues of $W'$ will be equal to the eigenvalues of $W_1$ and $W_2$. Thus, for any weight matrix $W'$ of $H'$, the inertia of $W'$ will be equal to the sum of the inertias of $W_1$ and $W_2$. Therefore,
 \begin{multline}
-\min\{|H'|-n_+(W'), |H'|-n_-(W')\} \\ = \min\{|G-v|-n_+(W_1), |G-v|-n_-(W_1)\} + \min\{|G|-n_+(W_2), |G|-n_-(W_2)\} \\ \leq 2\min\{|G|-n_+(W_2), |G|-n_-(W_2)\}
+\begin{split}
+\min\{|H'|-n_+(W'), |H'|-n_-(W')\} & = \min\{|G-v|-n_+(W_1), |G-v|-n_-(W_1)\} \\ & + \min\{|G|-n_+(W_2), |G|-n_-(W_2)\} \\ & \leq 2\min\{|G|-n_+(W_2), |G|-n_-(W_2)\}
+\end{split}
 \end{multline}
 From Cauchy's Eigenvalue Interlacing Theorem , we know any weight matrix associated with $H$, $W$, will have at least as many positive and negative eigenvalues as $W'$. Thus,
 \begin{multline}
-\min\{|H'|-n_+(W'), |H'|-n_-(W')\} \\ \leq 2\min\{|G|-n_+(W_2), |G|-n_-(W_2)\} \\ \leq \min\{|H|-n_+(W), |H|-n_-(W)\}
+\begin{split}
+\min\{|H'|-n_+(W'), |H'|-n_-(W')\} & \leq 2\min\{|G|-n_+(W_2), |G|-n_-(W_2)\} \\ & \leq \min\{|H|-n_+(W), |H|-n_-(W)\}
+\end{split}
 \end{multline}
 Due to how we created $H$, $\alpha(H) = 2\alpha(G)$ because the largest independent set of $H$ will just equal the union of the largest independent set of $G_1$ and $G_2$ since we connected $G_1$ and $G_2$ without connecting edges between the two independent sets.
 
 Therefore, we get:
 
-\begin{center}
-\begin{multline}
-\alpha(H) \\ = 2\alpha(G) \\ = 2\gamma + 2\min{|G|-n_+(W_2), |G|-n_-(W_2)} \\ \leq 2\gamma + \min\{|H|-n_+(W), |H|-n_-(W)\}
-\end{multline}
-\end{center}
+\begin{equation}
+\begin{split}
+\alpha(H) & = 2\alpha(G) \\ & = 2\gamma + 2\min{|G|-n_+(W_2), |G|-n_-(W_2)} \\ & \leq 2\gamma + \min\{|H|-n_+(W), |H|-n_-(W)\}
+\end{split}
+\end{equation}
 
-Therefore, the gap between equality in the inertia bound has at least doubled. Now as long as there exists a graph without a tight weight matrix, $F$, such that $F-v_1-v_2$ also does not have a tight weight matrix, we can generalize this result to create a new graph, connecting arbitrarily many copies of $F$ and following the same argument to multiply the gap in the inertia bound by how many copies of $F$ we connect.
+Therefore, the gap between equality in the inertia bound has at least doubled. Now as long as there exists a graph without a tight weight matrix, $F$, such that $F-v_1-v_2$ also does not have a tight weight matrix, we can generalize this result to create a new graph, connecting arbitrarily many copies of $F$ and following the same argument to multiply the gap in the inertia bound by how many copies of $F$ we connect. (I THINK THERE DOES EXIST A GRAPH THAT WOULD SATISFY THIS PROPERTY BUT NEED TO CHECK)
 
 \end{proof}
 
