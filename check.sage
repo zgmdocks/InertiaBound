@@ -29,9 +29,9 @@ class Logger(object):
 # time taken for certain processes, the independent number, number of vertices,
 # the number of subgraphs needed to iterate over, the number of subraphs that are
 # potentially useable, and the success of finding a contradictary case.
-moreDebug = True
+moreDebug = False
 # showFigs will save and open files showing the graph, path used, and subgraphs used
-showFigs = True
+showFigs = False
 openFig = False
 # change Guess to 0 if you want it to make a guess, and change it to any value other than
 # 0, 1, or -1 if you don't want it to guess.
