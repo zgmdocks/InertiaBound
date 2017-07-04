@@ -23,4 +23,4 @@ with open("DeleteResults.txt") as input_file:
                 output_file.write(space*" " + words[0] + " {}\n".format(graphs[words[0]]))
         graphs[words[0]] = k
         k += 1
-
+print len(graphs)
