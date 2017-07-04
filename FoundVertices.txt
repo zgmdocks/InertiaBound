@@ -66,7 +66,7 @@ SJ\z{]Vh}N~?m|uz|Z~d~n\b\lNYx^hw{: 20 2
                     N~vgXc~{U[j^X~e~S~W: 15 2 54 
                     N~vgXc~{U[j^X~e~S~W: 15 2 66 
                     N~vgXc~{U[j^X~e~S~W: 15 2 67 
-                    N~LZ[yjpw^npmZtV{Vw: 15 2
+                    N~LZ[yjpw^npmZtV{Vw: 15 2 4 ********************
                         M]~qitfY{nRZhni^_: 14 2 17 ********************
                         M]~qitfY{nRZhni^_: 14 2 70 
                         M]~qitfY{nRZhni^_: 14 2 71 
@@ -1793,7 +1793,7 @@ WHPhioZEzZMq_FuWYJV_tjKu]Ff[buT]iFuinPrDnPg{\wK: 24 3
                         QIu}SrA[obKqDmCZsfTEyJB|hlg: 18 3
                             PR?|LPqY]ExStABd`nY}YeXw: 17 3
                                 O`Y^UhOgJfUYFhJUHE{Hv: 16 3
-                                    NLGY[XVirBqUq`pQf`w: 15 3
+                                    NLGY[XVirBqUq`pQf`w: 15 3 173 ********************
                                         M`YRthOgHRauRZbf?: 14 3 176 ********************
                                     NLGY[XVirBqUq`pQf`w: 15 3 1796 
                                 O|QWyVK[dADVS[@NoXxyV: 16 3
@@ -2340,7 +2340,7 @@ WJ\zz}bo{Zqn`~}k^`nrzy}vrv\z\}y|~mzg|lxL|^Dzr{N: 24 2
                                             L`\|tl{k}]ZVx]: 13 2 113 ********************
                                         MJn}CVftzfrZjx]r_: 14 2 2339 
                                     NTnnmZR^aZi^ZV[nvLw: 15 2 2336 
-                                OznZdVFw~wB|F|Mviv{Z~: 16 2
+                                OznZdVFw~wB|F|Mviv{Z~: 16 2 103 ********************
                                     Nzn^zahpWzf\Tvbn{Nw: 15 2 2335 
                                     Nzn^zahpWzf\Tvbn{Nw: 15 2 2344 
                                     N|nMnZqFo|fNP~ZVmVw: 15 2 116 ********************
@@ -2367,7 +2367,7 @@ WJ\zz}bo{Zqn`~}k^`nrzy}vrv\z\}y|~mzg|lxL|^Dzr{N: 24 2
                                     Nzn^zahpWzf\Tvbn{Nw: 15 2 2366 
                                     NKn^\rT^Z[k^[^mrytw: 15 2
                                         MbnxuFD[|Vm}jzu}?: 14 2 2338 
-                                        MxUW~@z]|mu|rurx_: 14 2
+                                        MxUW~@z]|mu|rurx_: 14 2 76 ********************
                                             LxUZrutlmZXrF~: 13 2 97 ********************
                                             LxUZrutlmZXrF~: 13 2 2371 
                                         M`]ztlyl]Fxfs~zr?: 14 2
@@ -2387,7 +2387,7 @@ WJ\zz}bo{Zqn`~}k^`nrzy}vrv\z\}y|~mzg|lxL|^Dzr{N: 24 2
                                         Mv|IhlFHz~xuj\k|_: 14 2
                                             L`\|tl{k}]ZVx]: 13 2 2374 
                                     NjvuVKtMhxp^h~]~Rvo: 15 2 2384 
-                                OJ\{^bZy|vy{xtfjTr^iN: 16 2
+                                OJ\{^bZy|vy{xtfjTr^iN: 16 2 117 ********************
                                     Nzn^zahpWzf\Tvbn{Nw: 15 2 2377 
                                     Nzn^zahpWzf\Tvbn{Nw: 15 2 2391 
                                     Nzn^zahpWzf\Tvbn{Nw: 15 2 2392 
@@ -3098,7 +3098,7 @@ WJ\zz}Fa|fy^w~f^Tn]Zn~?^umNs{^j^zx^znmZe|i{|uVr: 24 2
                                 OdZU}^syX|Fxl^Z^nVlu|: 16 2 3097 
                                 O~CmvKNR{^f~umx]ne|x^: 16 2 2946 
                                 OJem\zZx|yZTxf[^npz~b: 16 2 3080 
-                                O`]uvVUx]|\jNrNNn]\nf: 16 2
+                                O`]uvVUx]|\jNrNNn]\nf: 16 2 2363 ********************
                                     N~}uOM^\RUfnU~h~W~W: 15 2 3075 
                                     N~}uOM^\RUfnU~h~W~W: 15 2 3102 
                                     Nzn^zahpWzf\Tvbn{Nw: 15 2 2401 ********************
@@ -3163,7 +3163,7 @@ WJ\zz}Fa|fy^w~f^Tn]Zn~?^umNs{^j^zx^znmZe|i{|uVr: 24 2
                                     NKm}mvnXjRmr]VnFyZw: 15 2 3111 
                                     N|nMnZqFo|fNP~ZVmVw: 15 2 2620 ********************
                                     NjrmvktKxttfen^Np~o: 15 2
-                                        ML~{bUZXrfuvo~r{_: 14 2
+                                        ML~{bUZXrfuvo~r{_: 14 2 2623 ********************
                                         ML~zJUUeZfu^o~r{_: 14 2 2629 ********************
                                         MK^{ctjw~Lyzny]|?: 14 2 2443 ********************
                                     NjrmvktKxttfen^Np~o: 15 2 3165 
@@ -3174,7 +3174,7 @@ WJ\zz}Fa|fy^w~f^Tn]Zn~?^umNs{^j^zx^znmZe|i{|uVr: 24 2
                                 O~a\~R\Bx]bvR^Yvmrzb~: 16 2
                                     N|nMnZqFo|fNP~ZVmVw: 15 2 3164 
                                     NjvuVKtMhxp^h~]~Rvo: 15 2 2472 ********************
-                                    NmvfnWfLhZfVe^]^rvo: 15 2
+                                    NmvfnWfLhZfVe^]^rvo: 15 2 2621 ********************
                                         Ml~}@fFX{nl]ezMv_: 14 2 2622 ********************
                                         ML~{bUZXrfuvo~r{_: 14 2 3166 
                                         MJn}CVftzfrZjx]r_: 14 2 3119 
@@ -3301,7 +3301,7 @@ WJ\zz}Fa|fy^w~f^Tn]Zn~?^umNs{^j^zx^znmZe|i{|uVr: 24 2
                             PbnxpvZ[|VwfvhxVW^zmnjr{: 17 2 2704 ********************
                             P~{?g]fpzNf|Vv|m\nt~Ivss: 17 2
                                 O~QN]xylg^dvF^rrnL|i~: 16 2 3210 
-                                OJ\{^bZy|vy{xtfjTr^iN: 16 2
+                                OJ\{^bZy|vy{xtfjTr^iN: 16 2 2390 ********************
                                     Nzn^zahpWzf\Tvbn{Nw: 15 2 3280 
                                     Nzn^zahpWzf\Tvbn{Nw: 15 2 3305 
                                     Nzn^zahpWzf\Tvbn{Nw: 15 2 3306 
@@ -3446,7 +3446,7 @@ WJ\zz}Fa|fy^w~f^Tn]Zn~?^umNs{^j^zx^znmZe|i{|uVr: 24 2
                     RyfZl^fx~oBxMvMzzbuxZF||q~|R~w: 19 2 2912 
                     RyfZl^fx~oBxMvMzzbuxZF||q~|R~w: 19 2 3446 
                     R~vj||MbWvc~K~rNZF^Hn[j}p^w^~w: 19 2 3243 
-                    R~@|}~n^DszJyNFvDvYZnaz~o^~nBw: 19 2
+                    R~@|}~n^DszJyNFvDvYZnaz~o^~nBw: 19 2 48 ********************
                         QznZdVFFw~{\~B~C{]hu~Tn}L~w: 18 2 3052 
                         QznZdVFFw~{\~B~C{]hu~Tn}L~w: 18 2 3450 
                         QznZdVFFw~{\~B~C{]hu~Tn}L~w: 18 2 3451 
@@ -3626,7 +3626,7 @@ WJ\zz}Fa|fy^w~f^Tn]Zn~?^umNs{^j^zx^znmZe|i{|uVr: 24 2
                 S~jK~Yztzbnpzp{]@~o|zb{|lNxt^yk~{: 20 2 3521 
                 S~jK~Yztzbnpzp{]@~o|zb{|lNxt^yk~{: 20 2 3626 
                 S~NVMzj]\rnqnb|``~q^jby{\^xT~}Nr{: 20 2 3498 
-                SJ\z{MZi{^~E|PvZ|j~fktyvfY|z~Ftww: 20 2
+                SJ\z{MZi{^~E|PvZ|j~fktyvfY|z~Ftww: 20 2 2749 ********************
                     R~MM~^Ux\x~w]MB}btxY~]p~Ft~`vw: 19 2 3592 
                     R~]}]~nsvDnBlFFtdtxzNQ~]Fz~_~w: 19 2 3555 
                     R~MM~^Ux\x~w]MB}btxY~]p~Ft~`vw: 19 2 3630 
@@ -4027,7 +4027,7 @@ WJ\zz}Lc|rt^l^q~Yn]Nn~Ijy\N\I~kd~lny{v|\|{]ZuNx: 24 2
                             P^mJ\]nfY{nV]rxwyj]hzP~{: 17 2 3409 ********************
                             PNb\}ZLi}zVZmnZ{MyjlVY^{: 17 2 4025 
                             P~{?\NFTzNt|NvVn}nE|bnpk: 17 2
-                                OJ\{lMN{utv^x{}VZtVZF: 16 2
+                                OJ\{lMN{utv^x{}VZtVZF: 16 2 3257 ********************
                                 OJ\~]}~c^CwzqvlNVFZw~: 16 2 3362 ********************
                         Qtz\||oTjRlVRNN~ynUllyZkr~w: 18 2
                             PNb\}ZLi}zVZmnZ{MyjlVY^{: 17 2 4028 
@@ -4359,7 +4359,7 @@ WJ\zz}Lc|rt^l^q~Yn]Nn~Ijy\N\I~kd~lny{v|\|{]ZuNx: 24 2
             TJvl{ufk}r{n^c^pnt[vth|vLl}q}~H||p~~: 21 2 4343 
             T~vj|~~BpemRRfeVsjyt}Xnmp|{Zv~`^~Kv~: 21 2
                 S|twzN{~Hme|RvRzuZtfZqu~Jf~B~{t~{: 20 2 4344 
-                S^~nm|FUZplf[nXnrNsZzc}}Fv|o~|L^{: 20 2
+                S^~nm|FUZplf[nXnrNsZzc}}Fv|o~|L^{: 20 2 3067 ********************
                     R~vj|{ZH}XjVXne^SnXfnuJ~c^w^~w: 19 2 3402 ********************
                     R~vj|{ZH}XjVXne^SnXfnuJ~c^w^~w: 19 2 4363 
                     R~vj||MbWvc~K~rNZF^Hn[j}p^w^~w: 19 2 3448 ********************
@@ -4434,7 +4434,7 @@ WJ\zz}Lc|rt^l^q~Yn]Nn~Ijy\N\I~kd~lny{v|\|{]ZuNx: 24 2
                             P^mK[}nVr\nN^Fts{t^fJP~{: 17 2 4389 
                             P^|c[lm\Y~|s|Terr^IN~h|{: 17 2 4140 
                             PN~{CefiznNZZnb{y|MujW~{: 17 2
-                                O~emvLrn?^h|bvUnknxx~: 16 2
+                                O~emvLrn?^h|bvUnknxx~: 16 2 3161 ********************
                                     N|vz|bHwW~EzRnW~rNw: 15 2 4059 
                                     NKm}mvnXjRmr]VnFyZw: 15 2 3163 ********************
                                     N|nMnZqFo|fNP~ZVmVw: 15 2 3574 ********************
@@ -4443,7 +4443,7 @@ WJ\zz}Lc|rt^l^q~Yn]Nn~Ijy\N\I~kd~lny{v|\|{]ZuNx: 24 2
                                     NlruVktMhxl^e~ZnRvW: 15 2 3576 ********************
                                 O~QN]xylg^dvF^rrnL|i~: 16 2 3303 ********************
                                 OJ\~\~^c^CtZqnlVYfZw~: 16 2 4148 
-                                Oj]lk|w`vX}Vr]s|f~`~f: 16 2
+                                Oj]lk|w`vX}Vr]s|f~`~f: 16 2 3286 ********************
                                     NKn^\rT^Z[k^[^mrytw: 15 2 3922 
                                     NKn^\rT^Z[k^[^mrytw: 15 2 4447 
                                     N|nMnZqFo|fNP~ZVmVw: 15 2 4440 
@@ -4747,7 +4747,7 @@ WJ\zz}Lc|rt^l^q~Yn]Nn~Ijy\N\I~kd~lny{v|\|{]ZuNx: 24 2
                 S~QX~R\vn]u{]x{X`~o|nJr~LxzUv|kz{: 20 2 4611 
                 S~QX~R\vn]u{]x{X`~o|nJr~LxzUv|kz{: 20 2 4747 
                 S~FJ\^fvJtvNvs{N@~p^ZVe}\Vxu^~NF{: 20 2 4583 
-                SJ\z{uNd|N~GzJ|Fz]eznyzjr\nLv\z}_: 20 2
+                SJ\z{uNd|N~GzJ|Fz]eznyzjr\nLv\z}_: 20 2 3768 ********************
                     R~Dl^NX^\vzs~`B~DzYxnej~fF~brw: 19 2 4741 
                     R~]\]]ut^F~w]MB}fsyynYr}F|~`vw: 19 2 4694 
                     R~Dl^NX^\vzs~`B~DzYxnej~fF~brw: 19 2 4751 
