@@ -74,10 +74,10 @@ if GoTo == 0:
 for line in allGraphs:
     if k == GoTo-1:
         k += 1
-        checkedGood[line.lstrip().split(" ")[0]] = k
+        checkedGood[line.lstrip().split(" ")[0].rstrip()] = k
         break
     k += 1
-    checkedGood[line.lstrip().split(" ")[0]] = k
+    checkedGood[line.lstrip().split(" ")[0].rstrip()] = k
 
 for line in allGraphs:
     split = line.lstrip().split(" ")
