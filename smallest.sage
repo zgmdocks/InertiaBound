@@ -2,7 +2,6 @@ import copy
 
 smallest = None
 smallestG = set()
-output_file = open("shared.txt","w")
 with open("FoundVertices.txt") as input_file:
     input_file.readline()
     input_file.readline()
