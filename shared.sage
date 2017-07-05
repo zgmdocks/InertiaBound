@@ -1,3 +1,4 @@
+import copy
 sharedGraphs = {}
 
 output_file = open("shared.txt","w")
@@ -34,7 +35,22 @@ with open("FoundVertices.txt") as input_file:
             temp.add(parent)
             sharedGraphs[graph] = temp
 
-for g in sharedGraphs:
+smallest = None
+sortedList = []
+graphsCopy = copy.deepcopy(sharedGraphs)
+for i in range(len(graphsCopy)):
+    for g in graphsCopy:
+        if smallest:
+            if len(smallest) > len(g):
+                smallest = g
+        else:
+            smallest = g
+    del graphsCopy[smallest]
+    sortedList.append(smallest)
+    smallest = None
+
+
+for g in sortedList:
     output_file.write(g + " {}\n".format(Graph(g).order()))
     for p in sharedGraphs[g]:
         output_file.write(" "*4 + "{} {}\n".format(p, Graph(p).order()))
