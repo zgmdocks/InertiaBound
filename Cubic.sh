@@ -1,5 +1,5 @@
 file="cubicvt4-300g6.txt"
-../SageMath/sage CubicSearch.sage &
+/../Applications/SageMath-7.6.app/sage CubicSearch.sage &
 sleep 5
 prevlast=$(cat $file | head -1)
 while true
@@ -19,7 +19,7 @@ do
         git commit -m "updated cubic graph search"
         git push
         sleep 10
-        ../SageMath/sage CubicSearch.sage &
+        /../Applications/SageMath-7.6.app/sage CubicSearch.sage &
     else
         echo ""
         echo "Program has made progress"
