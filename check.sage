@@ -187,7 +187,7 @@ def is_alpha_critical(G):
     return True
 
 if showFigs:
-    g = Graph("L]Tk|^oVjZr^h~")
+    g = Graph("LLnMlrF^c~Ln[~")
     graphic = g.plot()
     graphic.save('output.png')
     if openFig:
