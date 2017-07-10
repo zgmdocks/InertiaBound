@@ -11,6 +11,7 @@ def is_alpha_critical(G):
 count = 0
 
 output_file = open("AlphaCheck.txt","w")
+second_output = open("NotTightAlpha.txt","w")
 
 with open("textFiles/CheckedBad.txt") as input_file:
     for line in input_file:
@@ -19,6 +20,7 @@ with open("textFiles/CheckedBad.txt") as input_file:
         if is_alpha_critical(g):
             count += 1
             Alpha = True
+            second_output.write(line)
         output_file.write("{} {} {}\n".format(line.rstrip(), g.order(), Alpha))
 
 output_file.write(str(count))
