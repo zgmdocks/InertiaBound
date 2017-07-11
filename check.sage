@@ -31,8 +31,8 @@ class Logger(object):
 # potentially useable, and the success of finding a contradictary case.
 moreDebug = True
 # showFigs will save and open files showing the graph, path used, and subgraphs used
-showFigs = True
-openFig = True
+showFigs = False
+openFig = False
 # change Guess to 0 if you want it to make a guess, and change it to any value other than
 # 0, 1, or -1 if you don't want it to guess.
 Guess = 0
@@ -76,7 +76,12 @@ def check(G):
         path = G.random_spanning_tree()
     subgraphs = set()
     trianglesCheck = set()
+    counter = 0
     for combo in Combinations(numVertices,2*alpha+1):
+        counter += 1
+        if moreDebug:
+            if counter % 1000 == 0:
+                print counter
         I = G.subgraph(combo,immutable=true)
         #this next while loop will delete all pendants of g,
         #then check if the resulting g is a: a single odd cycle
@@ -187,7 +192,9 @@ def is_alpha_critical(G):
     return True
 
 if showFigs:
-    g = Graph("MbnxuFD[|Vm}jzu}?")
+    g = Graph(r":ca_GKQNE_R?gm_BFOoc}CN_BwGiRBA`h?yULeCatCjGEcgGyCWLqa@YG\baq[cgX`BSF")
+    g.allow_loops(False)
+    g.allow_multiple_edges(False)
     graphic = g.plot()
     graphic.save('output.png')
     if openFig:

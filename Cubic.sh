@@ -4,7 +4,7 @@ sleep 5
 prevlast=$(cat $file | head -1)
 while true
 do
-    sleep 2700
+    sleep 9000
     curLast=$(cat $file | head -1)
     echo $prevlast
     echo $curLast

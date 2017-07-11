@@ -5,6 +5,7 @@ with open('DeleteResults.txt') as input_file:
     primary = 1
     for line in input_file:
         i += 1
+        print i
         if i == 1 or i == 2:
             continue
         newline = line.lstrip().split(" ")
@@ -17,6 +18,6 @@ with open('DeleteResults.txt') as input_file:
             ending = ""
             if lastSeen <= primary:
                 ending = "********************"
-            output_file.write(space*" " + graph6 + ": {} {} {} {}\n".format(Graph(graph6).order(), len(Graph(graph6).independent_set()), lastSeen, ending))
+            output_file.write(space*" " + graph6 + ": {} {} {} {} {}\n".format(Graph(graph6).order(), len(Graph(graph6).independent_set()),Graph(graph6).treewidth(algorithm="tdlib"), lastSeen, ending))
         else:
-            output_file.write(space*" " + graph6 + ": {} {}\n".format(Graph(graph6).order(), len(Graph(graph6).independent_set())))
+            output_file.write(space*" " + graph6 + ": {} {} {}\n".format(Graph(graph6).order(), Graph(graph6).treewidth(algorithm="tdlib"), len(Graph(graph6).independent_set())))
