@@ -18,6 +18,6 @@ with open('DeleteResults.txt') as input_file:
             ending = ""
             if lastSeen <= primary:
                 ending = "********************"
-            output_file.write(space*" " + graph6 + ": {} {} {} {} {}\n".format(Graph(graph6).order(), len(Graph(graph6).independent_set()),Graph(graph6).treewidth(algorithm="tdlib"), lastSeen, ending))
+            output_file.write(space*" " + graph6 + " order:{} TW:{} alpha:{} LS:{} {}\n".format(Graph(graph6).order(), Graph(graph6).treewidth(algorithm="sage"), len(Graph(graph6).independent_set()), lastSeen, ending))
         else:
-            output_file.write(space*" " + graph6 + ": {} {} {}\n".format(Graph(graph6).order(), Graph(graph6).treewidth(algorithm="tdlib"), len(Graph(graph6).independent_set())))
+            output_file.write(space*" " + graph6 + " order:{} TW:{} alpha:{}\n".format(Graph(graph6).order(), Graph(graph6).treewidth(algorithm="sage"), len(Graph(graph6).independent_set())))
