@@ -1,46 +1,45 @@
-OBXP@dI@_Wt@_U_kWKSgI: 16 7 4
-    N_KGW__D[MSLpKSoKSG: 15 6 4
-OJ\{|]vm}]YtufxZ\J^`n: 16 12 2
-    N~LZ[yjpw^npmZtV{Vw: 15 11 2
-        M]~qitfY{nRZhni^_: 14 10 2
-            LxUZrutlmZXrF~: 13 9 2
-            LxUZrutlmZXrF~: 13 2 9 6 
-            LxUZrutlmZXrF~: 13 2 9 7 
-            LxUZrutlmZXrF~: 13 2 9 8 
-            LxUZrutlmZXrF~: 13 2 9 9 
-            LxUZrutlmZXrF~: 13 2 9 10 
-            LxUZrutlmZXrF~: 13 2 9 11 
-            LxUZrutlmZXrF~: 13 2 9 12 
-        M]~qitfY{nRZhni^_: 14 2 10 5 
-        M]~qitfY{nRZhni^_: 14 2 10 14 
-        M]~qitfY{nRZhni^_: 14 2 10 15 
-        M]~qitfY{nRZhni^_: 14 2 10 16 
-P@LaYtshsjrpikshxLVWH{SS: 17 11 3
-    OIJKt`qV@ZBZikwTwtkjs: 16 10 3
-R@LAHgYHrOH`SggEPCcaC_kYDCu?U_: 19 10 4
-    QIiQ@?PA_KoKSkWpAl@QpaLaEL?: 18 9 4
-        P?YQd?aCOwddK{QEOcaDB_S[: 17 8 4
-            O@KaSDFhCaWA@Y@Db@YSJ: 16 7 4
-                N?YPx?POS@HB`FS[SL?: 15 6 4
-            O@KaSDFhCaWA@Y@Db@YSJ: 16 4 7 23 
-        P?YQd?aCOwddK{QEOcaDB_S[: 17 4 8 22 
-        P?YQd?aCOwddK{QEOcaDB_S[: 17 4 8 26 
-        P?YQd?aCOwddK{QEOcaDB_S[: 17 4 8 27 
-        P?YQd?aCOwddK{QEOcaDB_S[: 17 4 8 28 
-        P?YQd?aCOwddK{QEOcaDB_S[: 17 4 8 29 
-        PJWO[IAgU@AsBoKDH@OAf?J[: 17 8 4
-            O@KaSDFhCaWA@Y@Db@YSJ: 16 4 7 25 
-            O@KaSDFhCaWA@Y@Db@YSJ: 16 4 7 32 
-            O@KaSDFhCaWA@Y@Db@YSJ: 16 4 7 33 
-            O@KaSDFhCaWA@Y@Db@YSJ: 16 4 7 34 
-            OwCWO_CMaiPcOqGkOK_FF: 16 7 4
-                N?YPx?POS@HB`FS[SL?: 15 4 6 24 
-                N?YPx?POS@HB`FS[SL?: 15 4 6 37 
-                N?YPx?POS@HB`FS[SL?: 15 4 6 38 
-            OwCWO_CMaiPcOqGkOK_FF: 16 4 7 36 
-        PJWO[IAgU@AsBoKDH@OAf?J[: 17 4 8 31 
-        PJWO[IAgU@AsBoKDH@OAf?J[: 17 4 8 41 
-        PJWO[IAgU@AsBoKDH@OAf?J[: 17 4 8 42 
-        PJWO[IAgU@AsBoKDH@OAf?J[: 17 4 8 43 
-        PJWO[IAgU@AsBoKDH@OAf?J[: 17 4 8 44 
-SJ\z{qFj^F~Jxm}Vy|vf^f{i|tN\u]~Hw: 20 15 2
+OBXP@dI@_Wt@_U_kWKSgI order:16 TW:7 alpha:4
+    N_KGW__D[MSLpKSoKSG order:15 TW:6 alpha:4
+OJ\{|]vm}]YtufxZ\J^`n order:16 TW:12 alpha:2
+    N~LZ[yjpw^npmZtV{Vw order:15 TW:11 alpha:2
+        M]~qitfY{nRZhni^_ order:14 TW:10 alpha:2
+            LxUZrutlmZXrF~ order:13 TW:9 alpha:2
+            LxUZrutlmZXrF~ order:13 TW:9 alpha:2 LS:6 
+            LxUZrutlmZXrF~ order:13 TW:9 alpha:2 LS:7 
+            LxUZrutlmZXrF~ order:13 TW:9 alpha:2 LS:8 
+            LxUZrutlmZXrF~ order:13 TW:9 alpha:2 LS:9 
+            LxUZrutlmZXrF~ order:13 TW:9 alpha:2 LS:10 
+            LxUZrutlmZXrF~ order:13 TW:9 alpha:2 LS:11 
+            LxUZrutlmZXrF~ order:13 TW:9 alpha:2 LS:12 
+        M]~qitfY{nRZhni^_ order:14 TW:10 alpha:2 LS:5 
+        M]~qitfY{nRZhni^_ order:14 TW:10 alpha:2 LS:14 
+        M]~qitfY{nRZhni^_ order:14 TW:10 alpha:2 LS:15 
+        M]~qitfY{nRZhni^_ order:14 TW:10 alpha:2 LS:16 
+P@LaYtshsjrpikshxLVWH{SS order:17 TW:11 alpha:3
+    OIJKt`qV@ZBZikwTwtkjs order:16 TW:10 alpha:3
+R@LAHgYHrOH`SggEPCcaC_kYDCu?U_ order:19 TW:10 alpha:4
+    QIiQ@?PA_KoKSkWpAl@QpaLaEL? order:18 TW:9 alpha:4
+        P?YQd?aCOwddK{QEOcaDB_S[ order:17 TW:8 alpha:4
+            O@KaSDFhCaWA@Y@Db@YSJ order:16 TW:7 alpha:4
+                N?YPx?POS@HB`FS[SL? order:15 TW:6 alpha:4
+            O@KaSDFhCaWA@Y@Db@YSJ order:16 TW:7 alpha:4 LS:23 
+        P?YQd?aCOwddK{QEOcaDB_S[ order:17 TW:8 alpha:4 LS:22 
+        P?YQd?aCOwddK{QEOcaDB_S[ order:17 TW:8 alpha:4 LS:26 
+        P?YQd?aCOwddK{QEOcaDB_S[ order:17 TW:8 alpha:4 LS:27 
+        P?YQd?aCOwddK{QEOcaDB_S[ order:17 TW:8 alpha:4 LS:28 
+        P?YQd?aCOwddK{QEOcaDB_S[ order:17 TW:8 alpha:4 LS:29 
+        PJWO[IAgU@AsBoKDH@OAf?J[ order:17 TW:8 alpha:4
+            O@KaSDFhCaWA@Y@Db@YSJ order:16 TW:7 alpha:4 LS:25 
+            O@KaSDFhCaWA@Y@Db@YSJ order:16 TW:7 alpha:4 LS:32 
+            O@KaSDFhCaWA@Y@Db@YSJ order:16 TW:7 alpha:4 LS:33 
+            O@KaSDFhCaWA@Y@Db@YSJ order:16 TW:7 alpha:4 LS:34 
+            OwCWO_CMaiPcOqGkOK_FF order:16 TW:7 alpha:4
+                N?YPx?POS@HB`FS[SL? order:15 TW:6 alpha:4 LS:24 
+                N?YPx?POS@HB`FS[SL? order:15 TW:6 alpha:4 LS:37 
+                N?YPx?POS@HB`FS[SL? order:15 TW:6 alpha:4 LS:38 
+            OwCWO_CMaiPcOqGkOK_FF order:16 TW:7 alpha:4 LS:36 
+        PJWO[IAgU@AsBoKDH@OAf?J[ order:17 TW:8 alpha:4 LS:31 
+        PJWO[IAgU@AsBoKDH@OAf?J[ order:17 TW:8 alpha:4 LS:41 
+        PJWO[IAgU@AsBoKDH@OAf?J[ order:17 TW:8 alpha:4 LS:42 
+        PJWO[IAgU@AsBoKDH@OAf?J[ order:17 TW:8 alpha:4 LS:43 
+        PJWO[IAgU@AsBoKDH@OAf?J[ order:17 TW:8 alpha:4 LS:44 
