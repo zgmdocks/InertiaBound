@@ -10,8 +10,8 @@ treewidth_file = open('TreeWidths.txt', 'w')
 
 for g in treeWidths:
     treewidth_file.write("{} {}\n".format(g, treeWidths[g]))
+
 treewidth_file.flush()
-print treeWidths
 
 with open('DeleteResults.txt') as input_file:
     i = 0
