@@ -1,4 +1,4 @@
-/../Applications/SageMath-7.6.app/sage test.sage
+/../Applications/SageMath-7.6.app/sage isSubgraph.sage
 sleep 10
 
 git add .
