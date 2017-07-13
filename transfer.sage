@@ -10,7 +10,7 @@ treewidth_file = open('TreeWidths.txt', 'w')
 
 for g in treeWidths:
     treewidth_file.write("{} {}\n".format(g, treeWidths[g]))
-
+treewidth_file.flush()
 print treeWidths
 
 with open('DeleteResults.txt') as input_file:
@@ -33,6 +33,7 @@ with open('DeleteResults.txt') as input_file:
             TreeWidth = Graph(graph6).treewidth(algorithm="sage")
             treeWidths[graph6] = TreeWidth
             treewidth_file.write("{} {}\n".format(graph6, TreeWidth))
+            treewidth_file.flush()
         if len(newline) == 2:
             lastSeen = int(newline[1].rstrip())-2
             ending = ""
@@ -41,3 +42,4 @@ with open('DeleteResults.txt') as input_file:
             output_file.write(space*" " + graph6 + " order:{} TW:{} alpha:{} LS:{} {}\n".format(Graph(graph6).order(), TreeWidth, len(Graph(graph6).independent_set()), lastSeen, ending))
         else:
             output_file.write(space*" " + graph6 + " order:{} TW:{} alpha:{}\n".format(Graph(graph6).order(), TreeWidth, len(Graph(graph6).independent_set())))
+        output_file.flush()
