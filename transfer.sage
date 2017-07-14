@@ -1,3 +1,4 @@
+import types
 output_file = open('FoundVertices.txt', 'w')
 treeWidths = {}
 smallest = None
@@ -5,7 +6,9 @@ with open('TreeWidths.txt') as Input_file:
     for line in Input_file:
         graphString,width = line.rstrip().split(" ")
         treeWidths[graphString] = width
-        if smallest == None:
+        if type(width) == types.BooleanType:
+            continue
+        elif smallest == None:
             smallest = int(width)
         elif int(width) < smallest:
             smallest = int(width)
