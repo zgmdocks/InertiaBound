@@ -6,12 +6,11 @@ with open('TreeWidths.txt') as Input_file:
     for line in Input_file:
         graphString,width = line.rstrip().split(" ")
         treeWidths[graphString] = width
-        if type(width) == types.BooleanType:
-            continue
-        elif smallest == None:
-            smallest = int(width)
-        elif int(width) < smallest:
-            smallest = int(width)
+        if isinstance( width, ( int, long ) ):
+            if smallest == None:
+                smallest = int(width)
+            elif type(width) == types.int(width) < smallest:
+                smallest = int(width)
 
 print smallest
 
