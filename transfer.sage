@@ -1,10 +1,16 @@
 output_file = open('FoundVertices.txt', 'w')
 treeWidths = {}
-
+smallest = None
 with open('TreeWidths.txt') as Input_file:
     for line in Input_file:
         graphString,width = line.rstrip().split(" ")
         treeWidths[graphString] = width
+        if smallest == None:
+            smallest = int(width)
+        elif int(width) < smallest:
+            smallest = int(width)
+
+print smallest
 
 treewidth_file = open('TreeWidths.txt', 'w')
 
@@ -12,6 +18,8 @@ for g in treeWidths:
     treewidth_file.write("{} {}\n".format(g, treeWidths[g]))
 
 treewidth_file.flush()
+
+output_file.write("smallest TW: {}\n".format(smallest))
 
 with open('DeleteResults.txt') as input_file:
     i = 0
@@ -30,7 +38,10 @@ with open('DeleteResults.txt') as input_file:
         if graph6 in treeWidths:
             TreeWidth = treeWidths[graph6]
         else:
-            TreeWidth = Graph(graph6).treewidth(algorithm="sage")
+            TreeWidth = Graph(graph6).treewidth(k=smallest,algorithm="sage")
+            if TreeWidth:
+                TreeWidth = Graph(graph6).treewidth(algorithm="sage")
+                smallest = TreeWidth
             treeWidths[graph6] = TreeWidth
             treewidth_file.write("{} {}\n".format(graph6, TreeWidth))
             treewidth_file.flush()

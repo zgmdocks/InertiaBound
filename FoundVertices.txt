@@ -1,3 +1,4 @@
+smallest TW: 6
 OBXP@dI@_Wt@_U_kWKSgI order:16 TW:7 alpha:4
     N_KGW__D[MSLpKSoKSG order:15 TW:6 alpha:4
 OJ\{|]vm}]YtufxZ\J^`n order:16 TW:12 alpha:2
@@ -203,3 +204,6 @@ UBWqP\ULYVpMcZhmWzLeLrHrw]FiTvTiq}BSv`JG order:22 TW:15 alpha:3
                 QBaiis~IjiLBatppuJUKRuLC_~w order:18 TW:11 alpha:3 LS:202 
             RCcq\rWZRdFxVkHLgXtQrsM]ebuMJW order:19 TW:12 alpha:3 LS:201 
         S@YYSHZhqnTY[VkjXouYRKB{~oMdb^Bc{ order:20 TW:13 alpha:3 LS:164 
+        SKLCJMUT\F[esqVmTzHzCMxFMEZO}[o|k order:20 TW:13 alpha:3
+            RCcq\rWZRdFxVkHLgXtQrsM]ebuMJW order:19 TW:12 alpha:3 LS:204 
+        SKLCJMUT\F[esqVmTzHzCMxFMEZO}[o|k order:20 TW:13 alpha:3 LS:206 

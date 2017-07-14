@@ -31,7 +31,7 @@ class Logger(object):
 # potentially useable, and the success of finding a contradictary case.
 moreDebug = True
 # showFigs will save and open files showing the graph, path used, and subgraphs used
-showFigs = False
+showFigs = True
 openFig = False
 # change Guess to 0 if you want it to make a guess, and change it to any value other than
 # 0, 1, or -1 if you don't want it to guess.
