@@ -9,9 +9,10 @@ def is_alpha_critical(G):
              return False
      return True
 
-output_file = open("12.txt","w")
+output_file = open("12.txt","a")
 Tocheck = set()
 with open("13.txt") as input_file:
+    input_file.readline()
     for line in input_file:
         line = line.rstrip()
         g = Graph(line).canonical_label()
@@ -28,7 +29,7 @@ with open("13.txt") as input_file:
                     print re
                     h.delete_edge(re)
             Tocheck.add(h.canonical_label().graph6_string())
-
+print len(Tocheck)
 
 for graphstring in Tocheck:
     graph = Graph(graphstring)

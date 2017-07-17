@@ -11,7 +11,7 @@ def is_alpha_critical(G):
 
 output_file = open("12.txt","a")
 Tocheck = set()
-with open("CheckedBad.txt") as input_file:
+with open("13.txt") as input_file:
     for line in input_file:
         line = line.rstrip()
         g = Graph(line).canonical_label()
