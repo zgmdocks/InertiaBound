@@ -1,4 +1,4 @@
-g = Graph("Jtv`plZXy^_")
+g = Graph("J`]T?KTGyR_")
 
 def isomorphic_subgraph(orig,subgraph):
     checked = set()
@@ -15,10 +15,14 @@ def isomorphic_subgraph(orig,subgraph):
     print count
     return False
 
-output = open("Subgraphof19.txt","w")
+output = open("Subgraphof19-2.txt","w")
 
 with open("Original19NoCanon.txt") as input_file:
+    counter = 0
     for line in input_file:
+        counter += 1
+        if counter < 10:
+            continue
         G = Graph(line.rstrip())
         print line.rstrip()
         if isomorphic_subgraph(G,g):
