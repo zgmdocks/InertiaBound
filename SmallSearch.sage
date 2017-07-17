@@ -9,13 +9,13 @@ def is_alpha_critical(G):
              return False
      return True
 
-output_file = open("Smallest.txt","w")
+output_file = open("12.txt","a")
 Tocheck = set()
 with open("CheckedBad.txt") as input_file:
     for line in input_file:
         line = line.rstrip()
         g = Graph(line).canonical_label()
-        if g.order() == 12:
+        if g.order() == 13:
             print line
             alpha = len(g.independent_set())
             while not is_alpha_critical(g):
@@ -26,6 +26,8 @@ with open("CheckedBad.txt") as input_file:
                     g.delete_edge(re)
                     print re
             Tocheck.add(g.canonical_label().graph6_string())
+
+print len(Tocheck)
 
 for graphstring in Tocheck:
     graph = Graph(graphstring)

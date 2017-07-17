@@ -6,10 +6,10 @@ with open('TreeWidths.txt') as Input_file:
     for line in Input_file:
         graphString,width = line.rstrip().split(" ")
         treeWidths[graphString] = width
-        if isinstance( width, ( int, long ) ):
+        if width != "-1":
             if smallest == None:
                 smallest = int(width)
-            elif type(width) == types.int(width) < smallest:
+            elif int(width) < smallest:
                 smallest = int(width)
 
 print smallest
@@ -44,11 +44,13 @@ with open('DeleteResults.txt') as input_file:
             if TreeWidth:
                 TreeWidth = Graph(graph6).treewidth(algorithm="sage")
                 smallest = TreeWidth
+            elif TreeWidth == False:
+                TreeWidth = -1
             treeWidths[graph6] = TreeWidth
             treewidth_file.write("{} {}\n".format(graph6, TreeWidth))
             treewidth_file.flush()
         if len(newline) == 2:
-            lastSeen = int(newline[1].rstrip())-2
+            lastSeen = int(newline[1].rstrip())-1
             ending = ""
             if lastSeen <= primary:
                 ending = "********************"
