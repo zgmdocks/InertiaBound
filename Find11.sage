@@ -9,9 +9,9 @@ def is_alpha_critical(G):
              return False
      return True
 
-output_file = open("12.txt","a")
+output_file = open("11.txt","a")
 Tocheck = set()
-with open("13.txt") as input_file:
+with open("12.txt") as input_file:
     input_file.readline()
     for line in input_file:
         line = line.rstrip()
@@ -21,11 +21,17 @@ with open("13.txt") as input_file:
             h.delete_vertex(v)
             alpha = len(h.independent_set())
             print h.canonical_label().graph6_string()
+            count = 0
             while not is_alpha_critical(h):
+                count += 1
+                if count % 100 == 0:
+                    print count
+                if count > 1000:
+                    break
                 c = h.copy()
                 re = h.random_edge()
                 c.delete_edge(re)
-                if alpha == len(c.independent_set()):
+                if alpha == len(c.independent_set()) and c.is_connected():
                     print re
                     h.delete_edge(re)
             Tocheck.add(h.canonical_label().graph6_string())
