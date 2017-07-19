@@ -12,7 +12,7 @@ def is_alpha_critical(G):
 output_file = open("EdgesResults.txt","a")
 Tocheck = set()
 
-inter = True
+inter = False
 
 if inter == False:
     intermediate = open("intermediate.txt","w")
@@ -22,7 +22,7 @@ if inter == False:
         for line in input_file:
             line = line.rstrip()
             g = Graph(line).canonical_label()
-            if g.order() != 13:
+            if g.order() != 14:
                 continue
             for v in g.vertices():
                 h = g.copy()
