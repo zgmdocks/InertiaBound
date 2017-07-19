@@ -91,7 +91,7 @@ def check(G):
         h = G.subgraph(combo)
         # this changed variable is necessary because when we iterate through the
         # vertices, we are deleting some and creating new pendants that we need
-        # to delete also, but if we already iterated over that vertice, then
+        # to delete also, but if we already iterated over that vertex, then
         # we won't realize that it still needs to be deleted so we need to
         # keep iterating over the vertices until we get to a point where we don't
         # find and delete any new pendants
@@ -104,7 +104,11 @@ def check(G):
                     h.delete_vertex(h[v][0])
                     h.delete_vertex(v)
                     break
-        if h.is_cycle() and h.order()%2 == 1:
+        #changed this from just needing to be an odd cycle to needing to be a triangle
+        # because there's no way there is an odd cycle thats not a triangle that contains
+        # the vertices from a triangle or else there would be a chord in that cycle
+        # and so it would not be a cycle.
+        if h.is_cycle() and h.order() == 3:
             copy = h.copy(immutable=true)
             trianglesCheck.add(copy)
         components = h.connected_components_subgraphs()
@@ -192,7 +196,7 @@ def is_alpha_critical(G):
     return True
 
 if showFigs:
-    g = Graph(r"J`]T?KTGyR_")
+    g = Graph(r"W~~~vvu|^\\jvivTvtTyj_~|}ibyiiF}[b{~C{~wU^~_f~~")
     g.allow_loops(False)
     g.allow_multiple_edges(False)
     graphic = g.plot()

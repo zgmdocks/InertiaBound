@@ -136,8 +136,8 @@ def signing(G, M, subgraphs, triSign, Triangles, guesses, depth):
         if moreDebug:
             print "CHECKING SUBGRAPHS FOR CONTRADICTION"
         for s in subgraphs:
-            #if posEigen and negEigen:
-             #   break
+            if posEigen and negEigen:
+                break
             edgeSigned = True
             for e in s.edge_iterator(labels=false):
                 if M[e[0],e[1]] == 10:

@@ -12,7 +12,7 @@ def is_alpha_critical(G):
 output_file = open("EdgesResults.txt","a")
 Tocheck = set()
 
-inter = False
+inter = True
 
 if inter == False:
     intermediate = open("intermediate.txt","w")
@@ -50,7 +50,8 @@ if inter:
         for line in input_file:
             Tocheck.add(line.rstrip())
 
-intermediate.flush()
+if inter == False:
+    intermediate.flush()
 print len(Tocheck)
 
 num = 12
