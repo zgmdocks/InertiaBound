@@ -12,8 +12,7 @@ def is_alpha_critical(G):
 output_file = open("EdgesResults.txt","a")
 Tocheck = set()
 
-inter = False
-
+inter = True
 if inter == False:
     intermediate = open("intermediate.txt","w")
 
@@ -45,14 +44,28 @@ if inter == False:
                 intermediate.write(h.canonical_label().graph6_string() + "\n")
                 Tocheck.add(h.canonical_label().graph6_string())
 
+NoGood = set()
+
 if inter:
     with open("intermediate.txt") as input_file:
         for line in input_file:
             Tocheck.add(line.rstrip())
 
+    with open("NoGood.txt") as input_file:
+        for line in input_file:
+            NoGood.add(line.rstrip())
+
+print len(Tocheck)
+print len(NoGood)
+Tocheck = Tocheck.symmetric_difference(NoGood)
+print len(Tocheck)
+
 if inter == False:
     intermediate.flush()
 print len(Tocheck)
+
+NoGoodFile = open("NoGood.txt","a")
+
 
 num = 12
 while len(Tocheck) > 0:
@@ -65,11 +78,13 @@ while len(Tocheck) > 0:
         graph = Graph(graphstring)
         if check(graph):
             print graphstring + " has a non-tight bound #$#$#$#$#$#$#$#$#$#$$#$#$#$#$"
-            if graph.order() <= 11:
-                output_file.write(graphstring + "\n")
+            output_file.write(graphstring + "\n")
+            output_file.flush()
             NonTight.add(graphstring)
         else:
             print graphstring + " didn't work #$#$#$#$#$#$#$#$$##$#$#$#$#$"
+            NoGoodFile.write(graphstring + "\n")
+            NoGoodFile.flush()
     Tocheck = set()
     for line in NonTight:
         line = line.rstrip()
