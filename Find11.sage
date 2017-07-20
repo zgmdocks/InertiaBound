@@ -59,10 +59,14 @@ if inter:
     with open("EdgesResults.txt") as input_file:
         for line in input_file:
             Good.add(line.rstrip())
+            Tocheck.add(line.rstrip())
 
 print len(Tocheck)
 print len(NoGood)
 Tocheck = Tocheck.symmetric_difference(NoGood)
+print len(Tocheck)
+print len(Good)
+Tocheck = Tocheck.symmetric_difference(Good)
 print len(Tocheck)
 
 if inter == False:
@@ -81,10 +85,6 @@ while len(Tocheck) > 0:
     NonTight = set()
     for graphstring in Tocheck:
         graph = Graph(graphstring)
-        if graphstring in Good:
-            print graphstring + " has a non-tight bound #$#$#$#$#$#$#$#$#$#$$#$#$#$#$ already been checked"
-            NonTight.add(graphstring)
-            continue
         if check(graph):
             print graphstring + " has a non-tight bound #$#$#$#$#$#$#$#$#$#$$#$#$#$#$"
             output_file.write(graphstring + "\n")
