@@ -45,6 +45,7 @@ if inter == False:
                 Tocheck.add(h.canonical_label().graph6_string())
 
 NoGood = set()
+Good = set()
 
 if inter:
     with open("intermediate.txt") as input_file:
@@ -54,6 +55,10 @@ if inter:
     with open("NoGood.txt") as input_file:
         for line in input_file:
             NoGood.add(line.rstrip())
+
+    with open("EdgesResults.txt") as input_file:
+        for line in input_file:
+            Good.add(line.rstrip())
 
 print len(Tocheck)
 print len(NoGood)
@@ -76,6 +81,10 @@ while len(Tocheck) > 0:
     NonTight = set()
     for graphstring in Tocheck:
         graph = Graph(graphstring)
+        if graphstring in Good:
+            print graphstring + " has a non-tight bound #$#$#$#$#$#$#$#$#$#$$#$#$#$#$ already been checked"
+            NonTight.add(graphstring)
+            continue
         if check(graph):
             print graphstring + " has a non-tight bound #$#$#$#$#$#$#$#$#$#$$#$#$#$#$"
             output_file.write(graphstring + "\n")
