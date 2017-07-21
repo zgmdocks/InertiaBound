@@ -75,7 +75,7 @@ print len(Tocheck)
 
 NoGoodFile = open("NoGood.txt","a")
 
-
+print len(NonTight)
 num = 12
 while len(Tocheck) > 0:
     print ""
@@ -95,6 +95,7 @@ while len(Tocheck) > 0:
             NoGoodFile.write(graphstring + "\n")
             NoGoodFile.flush()
     Tocheck = set()
+    print len(NonTight)
     for line in NonTight:
         line = line.rstrip()
         g = Graph(line).canonical_label()
