@@ -61,16 +61,8 @@ if inter:
             Good.add(line.rstrip())
             NonTight.add(line.rstrip())
 
-print len(Tocheck)
 print len(NoGood)
-for graph in NoGood:
-    if graph in ToCheck:
-        Tocheck.remove(graph)
-print len(Tocheck)
 print len(Good)
-for graph in Good:
-    if graph in Tocheck:
-        Tocheck.remove(graph)
 print len(Tocheck)
 
 if inter == False:
@@ -87,6 +79,11 @@ while len(Tocheck) > 0 or len(NonTight) > 0:
     if inter == False:
         NonTight = set()
     for graphstring in Tocheck:
+        if graphstring in Good:
+            NonTight.add(graphstring)
+            continue
+        if graphstring in NoGood:
+            continue
         graph = Graph(graphstring)
         if check(graph):
             print graphstring + " has a non-tight bound #$#$#$#$#$#$#$#$#$#$$#$#$#$#$"
@@ -121,5 +118,5 @@ while len(Tocheck) > 0 or len(NonTight) > 0:
                     print re
                     h.delete_edge(re)
             Tocheck.add(h.canonical_label().graph6_string())
-        NonTight.remove(line)
+    NonTight = set()
     print len(Tocheck)
