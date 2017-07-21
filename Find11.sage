@@ -46,12 +46,12 @@ if inter == False:
 
 NoGood = set()
 Good = set()
-
+NonTight = set()
+print len(Tocheck)
 if inter:
     with open("intermediate.txt") as input_file:
         for line in input_file:
             Tocheck.add(line.rstrip())
-
     with open("NoGood.txt") as input_file:
         for line in input_file:
             NoGood.add(line.rstrip())
@@ -59,7 +59,7 @@ if inter:
     with open("EdgesResults.txt") as input_file:
         for line in input_file:
             Good.add(line.rstrip())
-            Tocheck.add(line.rstrip())
+            NonTight.add(line.rstrip())
 
 print len(Tocheck)
 print len(NoGood)
@@ -71,8 +71,6 @@ print len(Tocheck)
 
 if inter == False:
     intermediate.flush()
-print len(Tocheck)
-
 NoGoodFile = open("NoGood.txt","a")
 
 print len(NonTight)
@@ -82,7 +80,8 @@ while len(Tocheck) > 0:
     print num
     print ""
     num -= 1
-    NonTight = set()
+    if inter == False:
+        NonTight = set()
     for graphstring in Tocheck:
         graph = Graph(graphstring)
         if check(graph):
@@ -119,8 +118,3 @@ while len(Tocheck) > 0:
                     h.delete_edge(re)
             Tocheck.add(h.canonical_label().graph6_string())
     print len(Tocheck)
-
-       
-
-
-
