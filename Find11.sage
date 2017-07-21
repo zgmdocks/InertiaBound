@@ -21,7 +21,7 @@ if inter == False:
         for line in input_file:
             line = line.rstrip()
             g = Graph(line).canonical_label()
-            if g.order() != 14:
+            if g.order() != 15:
                 continue
             for v in g.vertices():
                 h = g.copy()
