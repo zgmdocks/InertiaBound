@@ -63,10 +63,14 @@ if inter:
 
 print len(Tocheck)
 print len(NoGood)
-Tocheck = Tocheck.symmetric_difference(NoGood)
+for graph in NoGood:
+    if graph in ToCheck:
+        Tocheck.remove(graph)
 print len(Tocheck)
 print len(Good)
-Tocheck = Tocheck.symmetric_difference(Good)
+for graph in Good:
+    if graph in Tocheck:
+        Tocheck.remove(graph)
 print len(Tocheck)
 
 if inter == False:
@@ -75,7 +79,7 @@ NoGoodFile = open("NoGood.txt","a")
 
 print len(NonTight)
 num = 12
-while len(Tocheck) > 0:
+while len(Tocheck) > 0 or len(NonTight) > 0:
     print ""
     print num
     print ""
@@ -117,4 +121,5 @@ while len(Tocheck) > 0:
                     print re
                     h.delete_edge(re)
             Tocheck.add(h.canonical_label().graph6_string())
+        NonTight.remove(line)
     print len(Tocheck)
