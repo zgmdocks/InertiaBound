@@ -47,7 +47,6 @@ if inter == False:
 NoGood = set()
 Good = set()
 NonTight = set()
-print len(Tocheck)
 if inter:
     with open("intermediate.txt") as input_file:
         for line in input_file:
@@ -61,21 +60,16 @@ if inter:
             Good.add(line.rstrip())
             NonTight.add(line.rstrip())
 
-print len(NoGood)
-print len(Good)
-print len(Tocheck)
+print len(NoGood), "NoGood"
+print len(Good), "Good"
+print len(Tocheck), "ToCheck"
 
 if inter == False:
     intermediate.flush()
 NoGoodFile = open("NoGood.txt","a")
 
-print len(NonTight)
-num = 12
+print len(NonTight), "NonTight"
 while len(Tocheck) > 0 or len(NonTight) > 0:
-    print ""
-    print num
-    print ""
-    num -= 1
     if inter == False:
         NonTight = set()
     for graphstring in Tocheck:
