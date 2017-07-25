@@ -13,6 +13,6 @@ test.sage
 *.synctex.gz
 *.aux
 *.log
-*.py
+*.sage.py
 *.swp
 .DS_Store
