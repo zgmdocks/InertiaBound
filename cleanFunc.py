@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 def Clean():
-    f = open("DeleteResults.txt","r")
+    f = open("Minimal.txt","r")
     read = f.readlines()
     goTo = int(read[0])
 
@@ -17,7 +17,7 @@ def Clean():
 
     if NeedErase:
         i = 0
-        f = open("DeleteResults.txt","w")
+        f = open("Minimal.txt","w")
         Write = False
         for line in read:
             if i < goTo-1:

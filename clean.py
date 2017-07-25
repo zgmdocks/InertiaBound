@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-f = open("DeleteResults.txt","r")
+f = open("Minimal.txt","r")
 read = f.readlines()
 goTo = int(read[0])
 
@@ -13,16 +13,15 @@ for line in read:
             NeedErase = True
             break
     i += 1
-
 if NeedErase:
     i = 0
-    f = open("DeleteResults.txt","w")
+    f = open("Minimal.txt","w")
     Write = False
     for line in read:
-        if i < goTo-1:
+        if i < goTo:
             f.write(line)
         else:
-            if line[0] != " " and i > goTo-1:
+            if line[0] != " " and i > goTo:
                 Write = True
             if Write:
                 f.write(line)

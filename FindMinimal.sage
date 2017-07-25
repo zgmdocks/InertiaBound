@@ -6,6 +6,7 @@ load("check.sage")
 output_file = open('Minimal.txt','a+')
 graphs_checked = open('CheckedBad.txt','a+')
 allGraphs = file('GoodGraphs.txt')
+GoodGraphs = file('GoodGraphs.txt','a')
 
 checkedBad = set()
 # this dictionary has the keys be the graph6 string of graphs that ended up having
@@ -14,9 +15,10 @@ checkedBad = set()
 # have an intersection of non-tight subgraphs but we don't want to rewrite the
 # same thing multiple times or else the file will get huge. This we we see if
 # two graphs share a subgraph without repetitively written the same thing.
-checkedGood = {}
+checkedGood = set()
 
 PartiallyChecked = set()
+FoundFromMinimal = set()
 
 def is_alpha_critical(G):
      alpha=len(G.independent_set())
@@ -26,22 +28,27 @@ def is_alpha_critical(G):
          if len(H.independent_set())==alpha:
              return False
      return True
-
+SeenLastGraph = False
 def deleteVertices(G, tab, First):
     global k
+    global SeenLastGraph
+    count = 0
+    alpha = len(G.independent_set())
     while not is_alpha_critical(G):
 	count += 1
 	if count % 100 == 0:
-            print count
+            print tab*" " + str(count)
 	if count > 1000:
             break
 	c = G.copy()
 	re = G.random_edge()
 	c.delete_edge(re)
 	if alpha == len(c.independent_set()) and c.is_connected():
-            print re
+            print tab*" " + str(re)
             G.delete_edge(re)
     graph6 = G.graph6_string()
+    if graph6 == LastGraph:
+        SeenLastGraph = True
     print tab*" " + "Checking Graph: " + graph6 + " on {} vertices".format(G.order())
     found = False
     if graph6 in PartiallyChecked:
@@ -50,18 +57,22 @@ def deleteVertices(G, tab, First):
         found = True
     if (graph6 not in checkedBad) and (First or found or check(G)):
         if graph6 not in checkedGood:
-            checkedGood[graph6] = k
-            output_file.write(tab*" " + G.graph6_string() + "\n")
+            checkedGood.add(graph6)
+            output_file.write(tab*" " + graph6 + "\n")
             output_file.flush()
+            GoodGraphs.write(graph6 + "\n")
             k += 1
         else:
-            print tab*" " + "last seen: " + str(checkedGood[graph6])
-            output_file.write(tab*" " + G.graph6_string() + " " + str(checkedGood[graph6]) + "\n")
+            print tab*" " + "already seen"
+            output_file.write(tab*" " + graph6 + "\n")
             output_file.flush()
-            checkedGood[graph6] = k
             k += 1
-            return
-        print tab*" " + G.graph6_string() + " has a non-tight bound ************"
+            if graph6 in FoundFromMinimal:
+                print tab*" " + "already seen in Minimal file"
+                if SeenLastGraph:
+                    return
+        print tab*" " + graph6 + " has a non-tight bound ************"
+        FoundFromMinimal.add(graph6)
         if G.is_vertex_transitive():
             H = G.copy()
             H.delete_vertex(G.order()-1)
@@ -78,11 +89,29 @@ def deleteVertices(G, tab, First):
             graphs_checked.write(graph6 + "\n")
         checkedBad.add(graph6)
 
+with open("Minimal.txt") as input_file:
+    z = 0
+    for line in input_file:
+        z += 1
 
+
+with open("Minimal.txt") as input_file:
+    p = 0
+    for line in input_file:
+        p += 1
+        if p == 1:
+            continue
+        if p == 2:
+            startAt = int(line.rstrip())
+            continue
+        if p == z:
+            LastGraph = line.lstrip().rstrip()
+            break
+        FoundFromMinimal.add(line.lstrip().rstrip())
 
 for line in read_graphs:
     checkedBad.add(line[:-1])
-    
+
 for line in allGraphs:
     checkedGood.add(line.rstrip())
 
@@ -94,7 +123,7 @@ with open('WithoutMinimal.txt') as input_file:
         G = Graph(line)
         deleteVertices(G,0,True)
         cleanFunc.Clean()
-        firstLine = open('DeleteResults.txt','r+')
+        firstLine = open('Minimal.txt','r+')
         firstLine.write(str(k) + "\n")
         firstLine.write(str(i) + "\n")
         firstLine.close()
