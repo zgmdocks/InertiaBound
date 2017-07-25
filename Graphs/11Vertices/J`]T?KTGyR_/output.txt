@@ -1,0 +1,494 @@
+alpha is 3
+numVerties is 11
+number of combinations will be 330
+number of subgraphs: 152
+**************************** 0.200195
+number of triangles to use: 54
+number of triangles: 54
+Check passed
+152
+(0, 5)
+(0, 6)
+(1, 4)
+(2, 3)
+(2, 6)
+(3, 8)
+(4, 10)
+(5, 7)
+(7, 9)
+(8, 10)
+[ 0 10  0  0  0  1  1  0  0  0  0]
+[10  0  0  0  1  0  0  0  0  0 10]
+[ 0  0  0  1 10  0  1  0  0 10  0]
+[ 0  0  1  0 10 10  0  0  1  0  0]
+[ 0  1 10 10  0  0  0  0  0  0  1]
+[ 1  0  0 10  0  0  0  1 10  0  0]
+[ 1  0  1  0  0  0  0 10  0 10  0]
+[ 0  0  0  0  0  1 10  0 10  1 10]
+[ 0  0  0  1  0 10  0 10  0 10  1]
+[ 0  0 10  0  0  0 10  1 10  0 10]
+[ 0 10  0  0  1  0  0 10  1 10  0]
+tree node is 
+NEW SIGNING IS BEGINNING ************************
+sign of triangles is 1
+this time around: 9.99999999918e-07
+step 1:
+triangle is 4-1-10
+signs are 4-1: 1, 4-10: 1, 1-10: 10
+new sign is: 1
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 0.000985
+posEigen: 0 negEigen: 0
+this time around: 0.001217
+Printing sum of edges in all trianlges:
+21
+GUESSING EDGES ************************
+edge that will be guessed is 9 - 6
+tree node is 1
+NEW SIGNING IS BEGINNING ************************
+sign of triangles is 1
+guessed edge is set to positive
+this time around: 9.99999999918e-07
+step 1:
+triangle is 2-9-6
+signs are 2-9: 10, 2-6: 1, 9-6: 1
+new sign is: 1
+step 2:
+triangle is 6-9-7
+signs are 6-9: 1, 6-7: 10, 9-7: 1
+new sign is: 1
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 0.000873
+posEigen: 0 negEigen: 0
+this time around: 0.001182
+Printing sum of edges in all trianlges:
+3
+21
+GUESSING EDGES ************************
+edge that will be guessed is 5 - 3
+tree node is 11
+NEW SIGNING IS BEGINNING ************************
+sign of triangles is 1
+this time around: 0.0
+step 1:
+triangle is 8-5-3
+signs are 8-5: 10, 8-3: 1, 5-3: 1
+new sign is: 1
+step 2:
+triangle is 5-7-8
+signs are 5-7: 1, 5-8: 1, 7-8: 10
+new sign is: 1
+step 3:
+triangle is 7-9-8
+signs are 7-9: 1, 7-8: 1, 9-8: 10
+new sign is: 1
+step 4:
+triangle is 10-8-7
+signs are 10-8: 1, 10-7: 10, 8-7: 1
+new sign is: 1
+step 5:
+triangle is 10-7-9
+signs are 10-7: 1, 10-9: 10, 7-9: 1
+new sign is: 1
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 0.073965
+posEigen: 1 negEigen: 6
+Found a contradictory case
+1 6
+[ 0 10  0  0  0  1  1  0  0  0  0]
+[10  0  0  0  1  0  0  0  0  0  1]
+[ 0  0  0  1 10  0  1  0  0  1  0]
+[ 0  0  1  0 10  1  0  0  1  0  0]
+[ 0  1 10 10  0  0  0  0  0  0  1]
+[ 1  0  0  1  0  0  0  1  1  0  0]
+[ 1  0  1  0  0  0  0  1  0  1  0]
+[ 0  0  0  0  0  1  1  0  1  1  1]
+[ 0  0  0  1  0  1  0  1  0  1  1]
+[ 0  0  1  0  0  0  1  1  1  0  1]
+[ 0  1  0  0  1  0  0  1  1  1  0]
+[-1.618033988749895?, 0.618033988749895?, -1.845761491745763?, -1.231177576442390?, 0.2718309342759101?, 1.284472244443100?, 2.520635889469143?]
+[-1, -1.618033988749895?, 0.618033988749895?, -1.835624170091892?, -0.3990275668647190?, 0.7934823655668671?, 3.441169371389744?]
+tree node is 10
+NEW SIGNING IS BEGINNING ************************
+sign of triangles is 1
+this time around: 1.99999999984e-06
+step 1:
+triangle is 8-5-3
+signs are 8-5: 10, 8-3: 1, 5-3: -1
+new sign is: -1
+step 2:
+triangle is 5-7-8
+signs are 5-7: 1, 5-8: -1, 7-8: 10
+new sign is: -1
+step 3:
+triangle is 7-9-8
+signs are 7-9: 1, 7-8: -1, 9-8: 10
+new sign is: -1
+step 4:
+triangle is 10-8-7
+signs are 10-8: 1, 10-7: 10, 8-7: -1
+new sign is: -1
+step 5:
+triangle is 10-7-9
+signs are 10-7: -1, 10-9: 10, 7-9: 1
+new sign is: -1
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 0.107514
+posEigen: 1 negEigen: 10
+Found a contradictory case
+1 10
+[ 0 10  0  0  0  1  1  0  0  0  0]
+[10  0  0  0  1  0  0  0  0  0  1]
+[ 0  0  0  1 10  0  1  0  0  1  0]
+[ 0  0  1  0 10 -1  0  0  1  0  0]
+[ 0  1 10 10  0  0  0  0  0  0  1]
+[ 1  0  0 -1  0  0  0  1 -1  0  0]
+[ 1  0  1  0  0  0  0  1  0  1  0]
+[ 0  0  0  0  0  1  1  0 -1  1 -1]
+[ 0  0  0  1  0 -1  0 -1  0 -1  1]
+[ 0  0  1  0  0  0  1  1 -1  0 -1]
+[ 0  1  0  0  1  0  0 -1  1 -1  0]
+[-1.618033988749895?, 0.618033988749895?, -1.845761491745763?, -1.231177576442390?, 0.2718309342759101?, 1.284472244443100?, 2.520635889469143?]
+[-1, -1.618033988749895?, 0.618033988749895?, -1.835624170091892?, -0.3990275668647190?, 0.7934823655668671?, 3.441169371389744?]
+Guesses both reached a contradiction *******************
+tree node is 0
+NEW SIGNING IS BEGINNING ************************
+sign of triangles is 1
+guessed edge is set to negative
+this time around: 9.99999999696e-07
+step 1:
+triangle is 2-9-6
+signs are 2-9: 10, 2-6: 1, 9-6: -1
+new sign is: -1
+step 2:
+triangle is 6-9-7
+signs are 6-9: -1, 6-7: 10, 9-7: 1
+new sign is: -1
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 0.001009
+posEigen: 0 negEigen: 0
+this time around: 0.001329
+Printing sum of edges in all trianlges:
+-1
+21
+GUESSING EDGES ************************
+edge that will be guessed is 5 - 3
+tree node is 01
+NEW SIGNING IS BEGINNING ************************
+sign of triangles is 1
+this time around: 1.00000000014e-06
+step 1:
+triangle is 8-5-3
+signs are 8-5: 10, 8-3: 1, 5-3: 1
+new sign is: 1
+step 2:
+triangle is 5-7-8
+signs are 5-7: 1, 5-8: 1, 7-8: 10
+new sign is: 1
+step 3:
+triangle is 7-9-8
+signs are 7-9: 1, 7-8: 1, 9-8: 10
+new sign is: 1
+step 4:
+triangle is 10-8-7
+signs are 10-8: 1, 10-7: 10, 8-7: 1
+new sign is: 1
+step 5:
+triangle is 10-7-9
+signs are 10-7: 1, 10-9: 10, 7-9: 1
+new sign is: 1
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 0.067158
+posEigen: 1 negEigen: 6
+Found a contradictory case
+1 6
+[ 0 10  0  0  0  1  1  0  0  0  0]
+[10  0  0  0  1  0  0  0  0  0  1]
+[ 0  0  0  1 10  0  1  0  0 -1  0]
+[ 0  0  1  0 10  1  0  0  1  0  0]
+[ 0  1 10 10  0  0  0  0  0  0  1]
+[ 1  0  0  1  0  0  0  1  1  0  0]
+[ 1  0  1  0  0  0  0 -1  0 -1  0]
+[ 0  0  0  0  0  1 -1  0  1  1  1]
+[ 0  0  0  1  0  1  0  1  0  1  1]
+[ 0  0 -1  0  0  0 -1  1  1  0  1]
+[ 0  1  0  0  1  0  0  1  1  1  0]
+[-1.618033988749895?, 0.618033988749895?, -1.845761491745763?, -1.231177576442390?, 0.2718309342759101?, 1.284472244443100?, 2.520635889469143?]
+[-1, -1.618033988749895?, 0.618033988749895?, -1.835624170091892?, -0.3990275668647190?, 0.7934823655668671?, 3.441169371389744?]
+tree node is 00
+NEW SIGNING IS BEGINNING ************************
+sign of triangles is 1
+this time around: 2.00000000028e-06
+step 1:
+triangle is 8-5-3
+signs are 8-5: 10, 8-3: 1, 5-3: -1
+new sign is: -1
+step 2:
+triangle is 5-7-8
+signs are 5-7: 1, 5-8: -1, 7-8: 10
+new sign is: -1
+step 3:
+triangle is 7-9-8
+signs are 7-9: 1, 7-8: -1, 9-8: 10
+new sign is: -1
+step 4:
+triangle is 10-8-7
+signs are 10-8: 1, 10-7: 10, 8-7: -1
+new sign is: -1
+step 5:
+triangle is 10-7-9
+signs are 10-7: -1, 10-9: 10, 7-9: 1
+new sign is: -1
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 0.080423
+posEigen: 1 negEigen: 7
+Found a contradictory case
+1 7
+[ 0 10  0  0  0  1  1  0  0  0  0]
+[10  0  0  0  1  0  0  0  0  0  1]
+[ 0  0  0  1 10  0  1  0  0 -1  0]
+[ 0  0  1  0 10 -1  0  0  1  0  0]
+[ 0  1 10 10  0  0  0  0  0  0  1]
+[ 1  0  0 -1  0  0  0  1 -1  0  0]
+[ 1  0  1  0  0  0  0 -1  0 -1  0]
+[ 0  0  0  0  0  1 -1  0 -1  1 -1]
+[ 0  0  0  1  0 -1  0 -1  0 -1  1]
+[ 0  0 -1  0  0  0 -1  1 -1  0 -1]
+[ 0  1  0  0  1  0  0 -1  1 -1  0]
+[-1.618033988749895?, 0.618033988749895?, -1.845761491745763?, -1.231177576442390?, 0.2718309342759101?, 1.284472244443100?, 2.520635889469143?]
+[-1, -1.618033988749895?, 0.618033988749895?, -1.835624170091892?, -0.3990275668647190?, 0.7934823655668671?, 3.441169371389744?]
+Guesses both reached a contradiction *******************
+Guesses both reached a contradiction *******************
+************* Positive Signing found a contradiction **********************
+tree node is 
+NEW SIGNING IS BEGINNING ************************
+sign of triangles is -1
+this time around: 1.00000000014e-06
+step 1:
+triangle is 4-1-10
+signs are 4-1: 1, 4-10: 1, 1-10: 10
+new sign is: -1
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 0.000983
+posEigen: 0 negEigen: 0
+this time around: 0.001265
+Printing sum of edges in all trianlges:
+21
+GUESSING EDGES ************************
+edge that will be guessed is 9 - 6
+tree node is 1
+NEW SIGNING IS BEGINNING ************************
+sign of triangles is -1
+guessed edge is set to positive
+this time around: 0.0
+step 1:
+triangle is 2-9-6
+signs are 2-9: 10, 2-6: 1, 9-6: 1
+new sign is: -1
+step 2:
+triangle is 6-9-7
+signs are 6-9: 1, 6-7: 10, 9-7: 1
+new sign is: -1
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 0.000863
+posEigen: 0 negEigen: 0
+this time around: 0.001157
+Printing sum of edges in all trianlges:
+1
+21
+GUESSING EDGES ************************
+edge that will be guessed is 5 - 3
+tree node is 11
+NEW SIGNING IS BEGINNING ************************
+sign of triangles is -1
+this time around: 1.00000000014e-06
+step 1:
+triangle is 8-5-3
+signs are 8-5: 10, 8-3: 1, 5-3: 1
+new sign is: -1
+step 2:
+triangle is 5-7-8
+signs are 5-7: 1, 5-8: -1, 7-8: 10
+new sign is: 1
+step 3:
+triangle is 7-9-8
+signs are 7-9: 1, 7-8: 1, 9-8: 10
+new sign is: -1
+step 4:
+triangle is 10-8-7
+signs are 10-8: 1, 10-7: 10, 8-7: 1
+new sign is: -1
+step 5:
+triangle is 10-7-9
+signs are 10-7: -1, 10-9: 10, 7-9: 1
+new sign is: 1
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 0.082565
+posEigen: 7 negEigen: 1
+Found a contradictory case
+7 1
+[ 0 10  0  0  0  1  1  0  0  0  0]
+[10  0  0  0  1  0  0  0  0  0 -1]
+[ 0  0  0  1 10  0  1  0  0 -1  0]
+[ 0  0  1  0 10  1  0  0  1  0  0]
+[ 0  1 10 10  0  0  0  0  0  0  1]
+[ 1  0  0  1  0  0  0  1 -1  0  0]
+[ 1  0  1  0  0  0  0 -1  0  1  0]
+[ 0  0  0  0  0  1 -1  0  1  1 -1]
+[ 0  0  0  1  0 -1  0  1  0 -1  1]
+[ 0  0 -1  0  0  0  1  1 -1  0  1]
+[ 0 -1  0  0  1  0  0 -1  1  1  0]
+[1, -0.618033988749895?, 1.618033988749895?, -3.441169371389744?, -0.7934823655668671?, 0.3990275668647190?, 1.835624170091892?]
+[-0.618033988749895?, 1.618033988749895?, -2.520635889469143?, -1.284472244443100?, -0.2718309342759101?, 1.231177576442390?, 1.845761491745763?]
+tree node is 10
+NEW SIGNING IS BEGINNING ************************
+sign of triangles is -1
+this time around: 1.00000000014e-06
+step 1:
+triangle is 8-5-3
+signs are 8-5: 10, 8-3: 1, 5-3: -1
+new sign is: 1
+step 2:
+triangle is 5-7-8
+signs are 5-7: 1, 5-8: 1, 7-8: 10
+new sign is: -1
+step 3:
+triangle is 7-9-8
+signs are 7-9: 1, 7-8: -1, 9-8: 10
+new sign is: 1
+step 4:
+triangle is 10-8-7
+signs are 10-8: 1, 10-7: 10, 8-7: -1
+new sign is: 1
+step 5:
+triangle is 10-7-9
+signs are 10-7: 1, 10-9: 10, 7-9: 1
+new sign is: -1
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 0.068786
+posEigen: 6 negEigen: 1
+Found a contradictory case
+6 1
+[ 0 10  0  0  0  1  1  0  0  0  0]
+[10  0  0  0  1  0  0  0  0  0 -1]
+[ 0  0  0  1 10  0  1  0  0 -1  0]
+[ 0  0  1  0 10 -1  0  0  1  0  0]
+[ 0  1 10 10  0  0  0  0  0  0  1]
+[ 1  0  0 -1  0  0  0  1  1  0  0]
+[ 1  0  1  0  0  0  0 -1  0  1  0]
+[ 0  0  0  0  0  1 -1  0 -1  1  1]
+[ 0  0  0  1  0  1  0 -1  0  1  1]
+[ 0  0 -1  0  0  0  1  1  1  0 -1]
+[ 0 -1  0  0  1  0  0  1  1 -1  0]
+[1, -0.618033988749895?, 1.618033988749895?, -3.441169371389744?, -0.7934823655668671?, 0.3990275668647190?, 1.835624170091892?]
+[-0.618033988749895?, 1.618033988749895?, -2.520635889469143?, -1.284472244443100?, -0.2718309342759101?, 1.231177576442390?, 1.845761491745763?]
+Guesses both reached a contradiction *******************
+tree node is 0
+NEW SIGNING IS BEGINNING ************************
+sign of triangles is -1
+guessed edge is set to negative
+this time around: 9.99999999696e-07
+step 1:
+triangle is 2-9-6
+signs are 2-9: 10, 2-6: 1, 9-6: -1
+new sign is: 1
+step 2:
+triangle is 6-9-7
+signs are 6-9: -1, 6-7: 10, 9-7: 1
+new sign is: 1
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 0.001026
+posEigen: 0 negEigen: 0
+this time around: 0.00134
+Printing sum of edges in all trianlges:
+1
+21
+GUESSING EDGES ************************
+edge that will be guessed is 5 - 3
+tree node is 01
+NEW SIGNING IS BEGINNING ************************
+sign of triangles is -1
+this time around: 1.00000000014e-06
+step 1:
+triangle is 8-5-3
+signs are 8-5: 10, 8-3: 1, 5-3: 1
+new sign is: -1
+step 2:
+triangle is 5-7-8
+signs are 5-7: 1, 5-8: -1, 7-8: 10
+new sign is: 1
+step 3:
+triangle is 7-9-8
+signs are 7-9: 1, 7-8: 1, 9-8: 10
+new sign is: -1
+step 4:
+triangle is 10-8-7
+signs are 10-8: 1, 10-7: 10, 8-7: 1
+new sign is: -1
+step 5:
+triangle is 10-7-9
+signs are 10-7: -1, 10-9: 10, 7-9: 1
+new sign is: 1
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 0.111155
+posEigen: 10 negEigen: 1
+Found a contradictory case
+10 1
+[ 0 10  0  0  0  1  1  0  0  0  0]
+[10  0  0  0  1  0  0  0  0  0 -1]
+[ 0  0  0  1 10  0  1  0  0  1  0]
+[ 0  0  1  0 10  1  0  0  1  0  0]
+[ 0  1 10 10  0  0  0  0  0  0  1]
+[ 1  0  0  1  0  0  0  1 -1  0  0]
+[ 1  0  1  0  0  0  0  1  0 -1  0]
+[ 0  0  0  0  0  1  1  0  1  1 -1]
+[ 0  0  0  1  0 -1  0  1  0 -1  1]
+[ 0  0  1  0  0  0 -1  1 -1  0  1]
+[ 0 -1  0  0  1  0  0 -1  1  1  0]
+[1, -0.618033988749895?, 1.618033988749895?, -3.441169371389744?, -0.7934823655668671?, 0.3990275668647190?, 1.835624170091892?]
+[-0.618033988749895?, 1.618033988749895?, -2.520635889469143?, -1.284472244443100?, -0.2718309342759101?, 1.231177576442390?, 1.845761491745763?]
+tree node is 00
+NEW SIGNING IS BEGINNING ************************
+sign of triangles is -1
+this time around: 9.99999999252e-07
+step 1:
+triangle is 8-5-3
+signs are 8-5: 10, 8-3: 1, 5-3: -1
+new sign is: 1
+step 2:
+triangle is 5-7-8
+signs are 5-7: 1, 5-8: 1, 7-8: 10
+new sign is: -1
+step 3:
+triangle is 7-9-8
+signs are 7-9: 1, 7-8: -1, 9-8: 10
+new sign is: 1
+step 4:
+triangle is 10-8-7
+signs are 10-8: 1, 10-7: 10, 8-7: -1
+new sign is: 1
+step 5:
+triangle is 10-7-9
+signs are 10-7: 1, 10-9: 10, 7-9: 1
+new sign is: -1
+CHECKING SUBGRAPHS FOR CONTRADICTION
+*#*#*#*#**#*#*#*#*#*#* 0.07037
+posEigen: 6 negEigen: 1
+Found a contradictory case
+6 1
+[ 0 10  0  0  0  1  1  0  0  0  0]
+[10  0  0  0  1  0  0  0  0  0 -1]
+[ 0  0  0  1 10  0  1  0  0  1  0]
+[ 0  0  1  0 10 -1  0  0  1  0  0]
+[ 0  1 10 10  0  0  0  0  0  0  1]
+[ 1  0  0 -1  0  0  0  1  1  0  0]
+[ 1  0  1  0  0  0  0  1  0 -1  0]
+[ 0  0  0  0  0  1  1  0 -1  1  1]
+[ 0  0  0  1  0  1  0 -1  0  1  1]
+[ 0  0  1  0  0  0 -1  1  1  0 -1]
+[ 0 -1  0  0  1  0  0  1  1 -1  0]
+[1, -0.618033988749895?, 1.618033988749895?, -3.441169371389744?, -0.7934823655668671?, 0.3990275668647190?, 1.835624170091892?]
+[-0.618033988749895?, 1.618033988749895?, -2.520635889469143?, -1.284472244443100?, -0.2718309342759101?, 1.231177576442390?, 1.845761491745763?]
+Guesses both reached a contradiction *******************
+Guesses both reached a contradiction *******************
+True

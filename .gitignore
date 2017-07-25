@@ -1,8 +1,7 @@
 *.dvi
-test.py
+*.png
 *.spyx
 *.pyc
-*.png
 *.so
 *.pyx
 *.c
@@ -14,6 +13,6 @@ test.sage
 *.synctex.gz
 *.aux
 *.log
-*.sage.py
+*.py
 *.swp
 .DS_Store
