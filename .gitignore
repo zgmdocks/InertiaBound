@@ -1,4 +1,5 @@
 *.dvi
+test.py
 *.spyx
 *.pyc
 *.png
