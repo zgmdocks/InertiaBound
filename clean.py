@@ -18,10 +18,10 @@ if NeedErase:
     f = open("Minimal.txt","w")
     Write = False
     for line in read:
-        if i < goTo:
+        if i < goTo-1:
             f.write(line)
         else:
-            if line[0] != " " and i > goTo:
+            if line[0] != " " and i >= goTo:
                 Write = True
             if Write:
                 f.write(line)
