@@ -7,13 +7,13 @@ prevlast2=$(cat $file2 | tail -n 2 | head -1)
 Update=false
 while true
 do
-    sleep 60
+    sleep 3600
     curLast=$(cat $file | tail -n 2 | head -1)
     curLast2=$(cat $file2 | tail -n 2 | head -1)
     echo $prevlast
     echo $curLast
     echo $prevlast2
-    echo $curlast2
+    echo $curLast2
     if [ "$prevlast" == "$curLast" ] && [ "$prevlast2" == "$curLast2" ]
     then
         echo ""
