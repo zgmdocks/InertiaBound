@@ -47,8 +47,6 @@ def deleteVertices(G, tab, First):
             print tab*" " + str(re)
             G.delete_edge(re)
     graph6 = G.graph6_string()
-    if graph6 == LastGraph:
-        SeenLastGraph = True
     print tab*" " + "Checking Graph: " + graph6 + " on {} vertices".format(G.order())
     found = False
     if graph6 in PartiallyChecked:
@@ -71,6 +69,8 @@ def deleteVertices(G, tab, First):
                 print tab*" " + "already seen in Minimal file"
                 if SeenLastGraph:
                     return
+                if graph6 == LastGraph:
+                    SeenLastGraph = True
         print tab*" " + graph6 + " has a non-tight bound ************"
         FoundFromMinimal.add(graph6)
         if G.is_vertex_transitive():
