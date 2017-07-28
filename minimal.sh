@@ -7,7 +7,7 @@ prevlast2=$(cat $file2 | tail -n 2 | head -1)
 Update=false
 while true
 do
-    sleep 3600
+    sleep 2700
     curLast=$(cat $file | tail -n 2 | head -1)
     curLast2=$(cat $file2 | tail -n 2 | head -1)
     echo $prevlast
