@@ -34,18 +34,17 @@ def deleteVertices(G, tab, First):
     global SeenLastGraph
     count = 0
     alpha = len(G.independent_set())
-    while not is_alpha_critical(G):
-	count += 1
-	if count % 100 == 0:
-            print tab*" " + str(count)
-	if count > 1000:
-            break
-	c = G.copy()
-	re = G.random_edge()
-	c.delete_edge(re)
-	if alpha == len(c.independent_set()) and c.is_connected():
-            print tab*" " + str(re)
-            G.delete_edge(re)
+    Changed = True
+    while not is_alpha_critical(G) and Changed == True:
+        Changed = False
+        for e in G.edges():
+            c = G.copy()
+            c.delete_edge(e)
+            if alpha == len(c.independent_set()) and c.is_connected():
+                print tab*" " + str(e)
+                G.delete_edge(e)
+                Changed = True
+                break
     graph6 = G.graph6_string()
     print tab*" " + "Checking Graph: " + graph6 + " on {} vertices".format(G.order())
     found = False
@@ -88,7 +87,7 @@ def deleteVertices(G, tab, First):
         if graph6 not in checkedBad:
             graphs_checked.write(graph6 + "\n")
         else:
-            print "graph in checkedBad"
+            print tab*" " + "graph in checkedBad"
         checkedBad.add(graph6)
 
 with open("Minimal.txt") as input_file:
