@@ -196,7 +196,7 @@ def is_alpha_critical(G):
     return True
 
 if showFigs:
-    g = Graph(r"J`]T?KTGyR_")
+    g = Graph(r"ktv`plZXy^~_L}rNE~UXyL}jK|PntUXygvyirNTPntTXfiiL}iirNTTE~TTUXyiiL}iijK|TTPntTTUXyiigvyiiirNTTTPntTTTXfiiiiL}iiiirNTTTTE~TTTTUXyiiiiL}iiiijK|TTTTPntTTTTUXyiiiig")
     g.allow_loops(False)
     g.allow_multiple_edges(False)
     graphic = g.plot()
