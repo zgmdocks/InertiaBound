@@ -87,6 +87,8 @@ def deleteVertices(G, tab, First):
     else:
         if graph6 not in checkedBad:
             graphs_checked.write(graph6 + "\n")
+        else:
+            print "graph in checkedBad"
         checkedBad.add(graph6)
 
 with open("Minimal.txt") as input_file:
