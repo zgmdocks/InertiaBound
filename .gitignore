@@ -1,4 +1,5 @@
 *.dvi
+*.png
 *.spyx
 *.pyc
 *.so
