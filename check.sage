@@ -29,9 +29,9 @@ class Logger(object):
 # time taken for certain processes, the independent number, number of vertices,
 # the number of subgraphs needed to iterate over, the number of subraphs that are
 # potentially useable, and the success of finding a contradictary case.
-moreDebug = False
+moreDebug = True
 # showFigs will save and open files showing the graph, path used, and subgraphs used
-showFigs = False
+showFigs = True
 openFig = False
 # change Guess to 0 if you want it to make a guess, and change it to any value other than
 # 0, 1, or -1 if you don't want it to guess.
@@ -196,7 +196,7 @@ def is_alpha_critical(G):
     return True
 
 if showFigs:
-    g = Graph(r"J`]T?KTGyR_")
+    g = Graph(r"ktv`plZXy^~_L}rNE~UXyL}jK|PntUXygvyirNTPntTXfiiL}iirNTTE~TTUXyiiL}iijK|TTPntTTUXyiigvyiiirNTTTPntTTTXfiiiiL}iiiirNTTTTE~TTTTUXyiiiiL}iiiijK|TTTTPntTTTTUXyiiiig")
     g.allow_loops(False)
     g.allow_multiple_edges(False)
     graphic = g.plot()
