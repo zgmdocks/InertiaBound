@@ -49,7 +49,7 @@ def deleteVertices(G, tab, First):
                 break
     graph6 = G.graph6_string()
     if graph6 in alreadySeen:
-        print "#$#$#$#$#$#$#$ already seen this one #$#$#$#$#$#$#$#$#$#"
+        print "#$#$#$#$#$#$#$ already seen {} #$#$#$#$#$#$#$#$#$#".format(graph6)
         output_file.write(tab*" " + graph6 + "\n")
         output_file.flush()
         return
