@@ -48,7 +48,7 @@ def deleteVertices(G, tab, First):
                 Changed = True
                 break
     graph6 = G.graph6_string()
-    if graph6 in alreadySeen:
+    if graph6 in alreadySeen and (graph6 not in checkedBad):
         print "#$#$#$#$#$#$#$ already seen {} #$#$#$#$#$#$#$#$#$#".format(graph6)
         output_file.write(tab*" " + graph6 + "\n")
         output_file.flush()
