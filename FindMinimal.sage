@@ -8,6 +8,8 @@ graphs_checked = open('CheckedBad.txt','a+')
 allGraphs = file('GoodGraphs.txt')
 GoodGraphs = file('GoodGraphs.txt','a')
 
+alreadySeen = set()
+
 checkedBad = set()
 # this dictionary has the keys be the graph6 string of graphs that ended up having
 # a non-tight bound. The value is the last line that this graph was written on in
@@ -46,6 +48,12 @@ def deleteVertices(G, tab, First):
                 Changed = True
                 break
     graph6 = G.graph6_string()
+    if graph6 in alreadySeen:
+        print "#$#$#$#$#$#$#$ already seen this one #$#$#$#$#$#$#$#$#$#"
+        output_file.write(tab*" " + graph6 + "\n")
+        output_file.flush()
+        return
+    alreadySeen.add(graph6)
     print tab*" " + "Checking Graph: " + graph6 + " on {} vertices".format(G.order())
     found = False
     if graph6 in PartiallyChecked:
