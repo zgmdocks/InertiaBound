@@ -1,19 +1,18 @@
-output_file = open("TightWeightings.txt","a")
-limit = 50000
-with open("FalseCheckAlpha.txt") as input_file:
+output_file = open("HermWeightings.txt","a")
+limit = 100000
+with open("11.txt") as input_file:
     t = int(input_file.readline())
     c = 1
     while c < t:
         input_file.readline()
         c += 1
     for line in input_file:
-        print i
         print line.rstrip()
         g = Graph(line)
         alpha = len(g.independent_set())
         print alpha
         M = g.adjacency_matrix()
-        C = Matrix(RDF,M)
+        C = Matrix(CDF,M)
         count = 0
         lowest = None
         while min(sum(x>=0 for x in C.eigenvalues()), sum(x<=0 for x in C.eigenvalues())) != alpha  and count < limit:
@@ -21,11 +20,15 @@ with open("FalseCheckAlpha.txt") as input_file:
             for k in range(g.order()):
                 for j in range(g.order()):
                     if C[k,j] != 0:
-                        C[k,j] = random()*100
+                        C[k,j] = uniform(-10,10) + uniform(-10,10)*i
                         while C[k,j] == 0:
-                            C[k,j] = random*100
-                        C[j,k] = C[k,j]
-            minEig = min(sum(x>=0 for x in C.eigenvalues()), sum(x<=0 for x in C.eigenvalues()))
+                            C[k,j] = uniform(-10,10)*10 + uniform(-10,10)*i
+                        C[j,k] = conjugate(C[k,j])
+            if not C.is_hermitian():
+                print "C is not hermitian"
+                print C
+                break
+            minEig = min(sum(real(x)>=0 for x in C.eigenvalues()), sum(real(x)<=0 for x in C.eigenvalues()))
             if lowest == None:
                 lowest = minEig
             else:
@@ -35,7 +38,7 @@ with open("FalseCheckAlpha.txt") as input_file:
         print lowest
         print count
         print C
-        if count < limit:
+        if count < limit and C.is_hermitian():
             output_file.write(line)
             output_file.write(C.str())
             output_file.write("\nalpha: {}\neigenvalues: {}\nNon-negative: {}\nNon-positive: {}\n\n".format(alpha,C.eigenvalues(),sum(x>=0 for x in C.eigenvalues()),sum(x<=0 for x in C.eigenvalues())))
