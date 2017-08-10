@@ -14,6 +14,7 @@ with open("TryWeighting.txt") as input_file:
         n = g.order()
         tries = 10
         counter = 0
+        output_file.write("subgraph of " + line)
         while counter < tries:
             rand = randint(1,10)
             print rand
@@ -26,6 +27,8 @@ with open("TryWeighting.txt") as input_file:
                 if len(h.independent_set()) != len(Temp.independent_set()):
                     continue
                 h.add_edge(combo[0],combo[1])
+                print combo
+                output_file.write("added edge {}-{}\n".format(combo[0],combo[1]))
                 addedEdges += 1
                 if addedEdges > rand:
                     break
@@ -57,14 +60,14 @@ with open("TryWeighting.txt") as input_file:
             print count
             print C
             if count < limit:
-                output_file.write(h.graph6_string())
-                output_file.write("added {} edges".format(addedEdges))
+                output_file.write(h.graph6_string() + "\n")
+                output_file.write("added {} edges\n".format(addedEdges))
                 output_file.write(C.str())
                 output_file.write("\nalpha: {}\neigenvalues: {}\nNon-negative: {}\nNon-positive: {}\n\n".format(alpha,C.eigenvalues(),sum(x>=0 for x in C.eigenvalues()),sum(x<=0 for x in C.eigenvalues())))
             else:
                 output_file.write("graph number: " + str(t) + "\n")
-                output_file.write(h.graph6_string())
-                output_file.write("added {} edges".format(addedEdges))
+                output_file.write(h.graph6_string() + "\n")
+                output_file.write("added {} edges\n".format(addedEdges))
                 output_file.write("alpha: {}\nlowest: {}\n\n".format(alpha,lowest))
             counter += 1
         t += 1

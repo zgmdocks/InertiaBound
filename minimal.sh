@@ -7,7 +7,14 @@ prevlast2=$(cat $file2 | tail -n 2 | head -1)
 Update=false
 while true
 do
-    sleep 2700
+    if [ "$Update" = true ]
+    then
+        echo "Update was True"
+        sleep 2700
+    else
+        echo "Update was False"
+        sleep 7200
+    fi
     curLast=$(cat $file | tail -n 2 | head -1)
     curLast2=$(cat $file2 | tail -n 2 | head -1)
     echo $prevlast
