@@ -1,5 +1,5 @@
 output_file = open("HermWeightings.txt","a")
-limit = 100000
+limit = 500000
 with open("11.txt") as input_file:
     t = int(input_file.readline())
     c = 1
@@ -47,6 +47,6 @@ with open("11.txt") as input_file:
             output_file.write(line)
             output_file.write("alpha: {}\nlowest: {}\n\n".format(alpha,lowest))
         t += 1
-        firstLine = open('FalseCheckAlpha.txt', "r+")
+        firstLine = open('11.txt', "r+")
         firstLine.write(str(t) + "\n")
         firstLine.close()

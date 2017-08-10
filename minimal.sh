@@ -1,4 +1,4 @@
-file="NoGood.txt"
+file="CheckedBad.txt"
 file2="GoodGraphs.txt"
 /../Applications/SageMath-7.6.app/sage FindMinimal.sage &
 sleep 5
@@ -25,7 +25,7 @@ do
         sleep 10
         if [ "$Update" = true ]
         then
-            git add NoGood.txt GoodGraphs.txt Minimal.txt
+            git add CheckedBad.txt GoodGraphs.txt Minimal.txt
             git commit -m "updated files that are used to find minimal graphs"
             git push
             Update=false
