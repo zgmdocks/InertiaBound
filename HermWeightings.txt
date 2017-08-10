@@ -1,1 +1,6 @@
 
+graph number: 2
+J`]T?KTGyR_
+alpha: 3
+lowest: 4
+
