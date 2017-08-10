@@ -23,9 +23,11 @@ do
         sleep 20
         ./clean.py
         sleep 10
+        /../Applications/SageMath-7.6.app/sage transferMin.sage
+        sleep 20
         if [ "$Update" = true ]
         then
-            git add CheckedBad.txt GoodGraphs.txt Minimal.txt
+            git add CheckedBad.txt GoodGraphs.txt Minimal.txt MinimalVertices.txt
             git commit -m "updated files that are used to find minimal graphs"
             git push
             Update=false

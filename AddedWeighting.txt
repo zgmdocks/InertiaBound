@@ -98,3 +98,97 @@ J`]T?KTGyR_
 alpha: 3
 lowest: 4
 
+graph number: 0
+JtvdtnZXy^_added 3 edgesalpha: 2
+lowest: 4
+
+graph number: 0
+J~vdtnZx}^_added 7 edgesalpha: 2
+lowest: 3
+
+graph number: 0
+JtvdtnZXy^_added 3 edgesalpha: 2
+lowest: 4
+
+graph number: 0
+JtvdtlZXy^_added 2 edgesalpha: 2
+lowest: 4
+
+graph number: 0
+J~~fvnzx}^_added 11 edgesalpha: 2
+lowest: 4
+
+graph number: 0
+J~~fvnZx}^_added 10 edgesalpha: 2
+lowest: 4
+
+graph number: 0
+JtvdtnZxy^_added 4 edgesalpha: 2
+lowest: 3
+
+graph number: 0
+J~vfvnZx}^_added 9 edgesalpha: 2
+lowest: 4
+
+graph number: 0
+JtvdtnZx}^_added 5 edgesalpha: 2
+lowest: 4
+
+graph number: 0
+J~vftnZx}^_added 8 edgesalpha: 2
+lowest: 4
+
+graph number: 1
+Jt}T?KTGyR_added 3 edgesalpha: 3
+lowest: 4
+
+graph number: 1
+Jt]T?KTGyR_added 2 edgesalpha: 3
+lowest: 4
+
+graph number: 1
+J~}TCMTg}R_added 9 edgesalpha: 3
+lowest: 4
+
+graph number: 1
+J~~TCMTg}R_added 10 edgesalpha: 3
+lowest: 4
+
+graph number: 1
+J~~VCMTg}R_added 11 edgesalpha: 3
+lowest: 4
+
+graph number: 1
+J~}TCMTg}R_added 9 edgesalpha: 3
+lowest: 4
+
+graph number: 1
+Jt]T?KTGyR_added 2 edgesalpha: 3
+lowest: 4
+
+graph number: 1
+J|}TCMTg}R_added 8 edgesalpha: 3
+lowest: 4
+
+graph number: 1
+Jt}TCMTg}R_added 7 edgesalpha: 3
+lowest: 4
+
+J~~TCMTg}R_
+added 10 edges
+[                0.0  -9.038127201688315   -1.17913880567599   -9.90259939030383   3.595695691262353  2.9831827295664137   7.244856502228075   8.771260151171422   -6.46838418147005  -4.174761851681912   9.678891891994166]
+[ -9.038127201688315                 0.0  -6.744175905712339  -7.013832992689952 -2.9885715788806326  5.8615555120038145                 0.0                 0.0                 0.0                 0.0  -8.755592378045158]
+[  -1.17913880567599  -6.744175905712339                 0.0  -4.362765992077325  1.3483422458223515                 0.0   6.204391316488024                 0.0                 0.0  -4.420386428944441                 0.0]
+[  -9.90259939030383  -7.013832992689952  -4.362765992077325                 0.0  3.5361565657576826  -9.412503846455309                 0.0                 0.0  3.1532961002766022                 0.0                 0.0]
+[  3.595695691262353 -2.9885715788806326  1.3483422458223515  3.5361565657576826                 0.0                 0.0                 0.0                 0.0                 0.0                 0.0   6.112105947254889]
+[ 2.9831827295664137  5.8615555120038145                 0.0  -9.412503846455309                 0.0                 0.0                 0.0   3.748308229686879   -9.86510349383307                 0.0                 0.0]
+[  7.244856502228075                 0.0   6.204391316488024                 0.0                 0.0                 0.0                 0.0  -6.512292658705896                 0.0 -1.2163818301948321                 0.0]
+[  8.771260151171422                 0.0                 0.0                 0.0                 0.0   3.748308229686879  -6.512292658705896                 0.0  -9.300515289588303   5.384349264641923   8.222194920687514]
+[  -6.46838418147005                 0.0                 0.0  3.1532961002766022                 0.0   -9.86510349383307                 0.0  -9.300515289588303                 0.0 -2.9422825574393263  -5.676024748946283]
+[ -4.174761851681912                 0.0  -4.420386428944441                 0.0                 0.0                 0.0 -1.2163818301948321   5.384349264641923 -2.9422825574393263                 0.0  7.5970605067803945]
+[  9.678891891994166  -8.755592378045158                 0.0                 0.0   6.112105947254889                 0.0                 0.0   8.222194920687514  -5.676024748946283  7.5970605067803945                 0.0]
+alpha: 3
+eigenvalues: [31.684488746512724, -25.209801733772, 19.758969727713428, 15.250387946802785, -14.169930850045201, -13.340531528795417, -8.459908754200638, -3.759904410492007, -1.1222011826568565, -0.16712944961491694, -0.4644385114518878]
+Non-negative: 3
+Non-positive: 8
+
