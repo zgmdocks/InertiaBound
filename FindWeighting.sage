@@ -1,6 +1,6 @@
 output_file = open("TightWeightings.txt","a")
 limit = 50000
-with open("FalseCheckAlpha.txt") as input_file:
+with open("test.txt") as input_file:
     t = int(input_file.readline())
     c = 1
     while c < t:
@@ -21,9 +21,9 @@ with open("FalseCheckAlpha.txt") as input_file:
             for k in range(g.order()):
                 for j in range(g.order()):
                     if C[k,j] != 0:
-                        C[k,j] = random()*100
+                        C[k,j] = uniform(-10,10)
                         while C[k,j] == 0:
-                            C[k,j] = random*100
+                            C[k,j] = uniform(-10,10)
                         C[j,k] = C[k,j]
             minEig = min(sum(x>=0 for x in C.eigenvalues()), sum(x<=0 for x in C.eigenvalues()))
             if lowest == None:
@@ -44,6 +44,6 @@ with open("FalseCheckAlpha.txt") as input_file:
             output_file.write(line)
             output_file.write("alpha: {}\nlowest: {}\n\n".format(alpha,lowest))
         t += 1
-        firstLine = open('FalseCheckAlpha.txt', "r+")
+        firstLine = open('test.txt', "r+")
         firstLine.write(str(t) + "\n")
         firstLine.close()

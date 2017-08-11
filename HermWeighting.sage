@@ -1,6 +1,6 @@
 output_file = open("HermWeightings.txt","a")
-limit = 50000
-with open("12.txt") as input_file:
+limit = 500000
+with open("11.txt") as input_file:
     t = int(input_file.readline())
     c = 1
     while c < t:
@@ -48,6 +48,6 @@ with open("12.txt") as input_file:
             output_file.write("alpha: {}\nlowest: {}\n\n".format(alpha,lowest))
         output_file.flush()
         t += 1
-        firstLine = open('12.txt', "r+")
+        firstLine = open('11.txt', "r+")
         firstLine.write(str(t) + "\n")
         firstLine.close()
