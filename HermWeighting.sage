@@ -1,6 +1,6 @@
 output_file = open("HermWeightings.txt","a")
-limit = 100000
-with open("11.txt") as input_file:
+limit = 50000
+with open("12.txt") as input_file:
     t = int(input_file.readline())
     c = 1
     while c < t:
@@ -46,7 +46,8 @@ with open("11.txt") as input_file:
             output_file.write("graph number: " + str(t) + "\n")
             output_file.write(line)
             output_file.write("alpha: {}\nlowest: {}\n\n".format(alpha,lowest))
+        output_file.flush()
         t += 1
-        firstLine = open('FalseCheckAlpha.txt', "r+")
+        firstLine = open('12.txt', "r+")
         firstLine.write(str(t) + "\n")
         firstLine.close()
