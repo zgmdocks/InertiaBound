@@ -1,0 +1,116 @@
+
+graph number: 70
+K[c`I@LSo^Az
+alpha: 3
+lowest: 4
+
+graph number: 3
+KjejcZZxp~Fz
+alpha: 2
+lowest: 4
+
+graph number: 4
+K`Kx}^V}FY}U
+alpha: 2
+lowest: 4
+
+graph number: 5
+KUPJHCRE\W@n
+alpha: 3
+lowest: 5
+
+graph number: 6
+K{e}rHbFxzj^
+alpha: 2
+lowest: 4
+
+graph number: 7
+K{nOw{zTzVk~
+alpha: 2
+lowest: 4
+
+graph number: 8
+KtPHhr?@gR_^
+alpha: 3
+lowest: 5
+
+graph number: 9
+KJ]NMmm{}yVd
+alpha: 2
+lowest: 4
+
+graph number: 10
+K`Kx}^V}FY}U
+alpha: 2
+lowest: 4
+
+graph number: 11
+KpSO\FCLQT?~
+alpha: 3
+lowest: 4
+
+graph number: 12
+K`CgXaZhraHp
+alpha: 3
+lowest: 5
+
+graph number: 13
+KNAC[gmR`RHJ
+alpha: 3
+lowest: 5
+
+graph number: 14
+KoCpYhJLQTRB
+alpha: 3
+lowest: 4
+
+graph number: 15
+KNACKomR`ZHY
+alpha: 3
+lowest: 5
+
+graph number: 16
+K{e}rHbFxzj^
+alpha: 2
+lowest: 4
+
+graph number: 17
+KMgOh\_aGNgv
+alpha: 3
+lowest: 5
+
+graph number: 18
+KoCY@SrRqlV_
+alpha: 3
+lowest: 5
+
+graph number: 19
+KjejcZZxp~Fz
+alpha: 2
+lowest: 4
+
+graph number: 20
+KBkaKHQa]MC}
+alpha: 3
+lowest: 5
+
+graph number: 21
+K[c`I@LSo^Az
+alpha: 3
+lowest: 5
+
+graph number: 22
+K{nOw{zTzVk~
+alpha: 2
+lowest: 5
+
+graph number: 23
+KtPHhr?@gR_^
+alpha: 3
+lowest: 4
+
+graph number: 24
+KJ]NMmm{}yVd
+alpha: 2
+lowest: 5
+

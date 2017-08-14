@@ -46,6 +46,7 @@ with open("11.txt") as input_file:
             output_file.write("graph number: " + str(t) + "\n")
             output_file.write(line)
             output_file.write("alpha: {}\nlowest: {}\n\n".format(alpha,lowest))
+        output_file.flush()
         t += 1
         firstLine = open('11.txt', "r+")
         firstLine.write(str(t) + "\n")
