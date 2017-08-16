@@ -16,7 +16,7 @@ def isomorphic_subgraph(orig,subgraph):
     print count
     return False
 
-output = open("Subgraphof.txt","w")
+output = open("SubgraphofTest.txt","w")
 
 with open("original19NoCanon.txt") as input_file:
     output.write(g.graph6_string() + " alpha:{}\n".format(len(g.independent_set())))
@@ -28,8 +28,8 @@ with open("original19NoCanon.txt") as input_file:
             continue
         G = Graph(line.rstrip())
         print line.rstrip()
-        g_search = G.subgraph_search(g)
-        h_search = G.subgraph_search(h)
+        g_search = G.subgraph_search(g,induced=True)
+        h_search = G.subgraph_search(h,induced=True)
         if g_search and h_search:
             print True
             output.write(line.rstrip() + " alpha:{} subgraphs: {} {}\n".format(len(G.independent_set()),g.graph6_string(),h.graph6_string()))

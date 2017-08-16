@@ -1,0 +1,21 @@
+J`]T?KTGyR_ alpha:3
+Jtv`plZXy^_ alpha:2
+Otr@PKoE?T_iOoOG_dg_m alpha:4 subgraphs:
+O~~em]uj[vmsZTUrfFwN~ alpha:2 subgraphs: Jtv`plZXy^_
+P}qtSeLUbaKeQZJabfGmmG~G alpha:3 subgraphs:
+R}ecZ@OH?o`W@gOWcI_`p?hkHL?GuG alpha:4 subgraphs:
+S~~vVjjve}vmxymlG~Oi~Qm{jfxjNw{z{ alpha:2 subgraphs: Jtv`plZXy^_
+S~~vnZjvUtvimj`~nibtTP}[ffwk~wR~{ alpha:2 subgraphs: Jtv`plZXy^_
+Uv~LnbgfeDShP\G}HuXmePrSemapSxqJWG|ZCVhw alpha:3 subgraphs:
+Wunneyzx~W]OwBPfcroK~S{OlogtIoyPlPFMIIjWPUvaGu~ alpha:3 subgraphs: Jtv`plZXy^_
+WvrlvjZj~c\_wBTRcroK~K{HLpGtPo[ikpImQHrWaUn`Cv^ alpha:3 subgraphs:
+WvvdtIJpB_c[LEHPiH?PsE_GAsWKcwBXhGDgOFXWIBV@CZT alpha:4 subgraphs:
+W}mKmIbqD_JJMMBYa]_{??ucC{YKeHKXPadVXOmqQbqEDMp alpha:4 subgraphs:
+W}nS|QeoOq_nWS]?KcPQUPDgU@_TBG_ug@ei?jCgCwY_?J~ alpha:4 subgraphs:
+W}}VNbMtdyWkic?zg]gevHT_TfGo~bPK|xHkJJMolozdq\s alpha:3 subgraphs:
+W}~SvAbp@IcjDgEaj?@BKPCgBbXP@oCz?BLdE@KwGu[?EFZ alpha:4 subgraphs:
+W~nELU\`aKkXTJ]?@cGUB@KgBSX?wG_sS`DUCGyWO`}?@M^ alpha:4 subgraphs:
+W~~~vnnv|~}gzH}`za|J^ef|~wBJNisn[bn^@^nwez~`V^~ alpha:2 subgraphs: Jtv`plZXy^_
+W~~~vnn{vT{nvFnFo^}~Dnw\{^AF|hFz[YZ~DT~wX^~n{B~ alpha:2 subgraphs: Jtv`plZXy^_
+W~~~vnn{vXyjqnnFs^}~Knw\[^QF|hiz[iznCt~wX^~n{B~ alpha:2 subgraphs: Jtv`plZXy^_
+W~~~vvu|^\\jvivTvtTyj_~|}ibyiiF}[b{~C{~wU^~_f~~ alpha:2 subgraphs: Jtv`plZXy^_
