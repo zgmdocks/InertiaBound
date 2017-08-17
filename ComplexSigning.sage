@@ -54,10 +54,10 @@ def ComplexSigning(G,m):
             neg[s] = subgraphs[s]
         else:
             print "subgraph with vertices {} has a zero determinant".format(vertices)
-    print "Subgraphs with positive determinants:"
+    print "Subgraphs with positive determinants: {}".format(len(pos))
     for p in pos.keys():
         print "{} : {}".format(p.vertices(),pos[p].vertices())
-    print "Subgraphs with negative determinants:"
+    print "Subgraphs with negative determinants: {}".format(len(neg))
     for n in neg.keys():
         print "{} : {}".format(n.vertices(),neg[n].vertices())
 

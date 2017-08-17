@@ -6,29 +6,9 @@ def is_cycle(G):
     for v in vertices:
         if G.degree(v) != 2:
             return False
-    numVertices = G.order()
-    lastVert = vertices[0]
-    currVert = G.neighbors(lastVert)[0]
-    seen = 2
-    alreadySeen = set()
-    alreadySeen.add(lastVert)
-    alreadySeen.add(currVert)
-    while True:
-        neighbors = G.neighbors(currVert)
-        if neighbors[0] != lastVert:
-            lastVert = currVert
-            currVert = neighbors[0]
-        else:
-            lastVert = currVert
-            currVert = neighbors[1]
-        if currVert in alreadySeen:
-            break
-        alreadySeen.add(currVert)
-        seen += 1
-    if seen != numVertices:
-        return False
-    return True
-    
+    if G.is_connected():
+        return True
+    return False
 
 def ComplexSigning(G,m):
     numVertices = G.order()
