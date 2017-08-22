@@ -57,9 +57,11 @@ This will run the program with the graph that you entered in step 1 and print th
 **4. Reading the output**
 Depending on which variables have been changed, this output may be different. The output described will be assumed that debug and moreDebug are set to True and Guess is set to 0.
 First off, the program will check the graph to ensure it is alpha-critical, will find all nonsingular subgraphs of size 2\*\alpha(G)+1 and is of the form necessary to be used in the method, and will find all the triangles that must be the same sign (information on why these checks are performed or definitions of the terms can be found in the paper linked above). The results of these checks will be printed to the screen as shown below.
+
 ![Alt text](https://user-images.githubusercontent.com/19316223/29589774-8cb1d8d2-8764-11e7-949d-afa1f9ef2153.png)
 
 Next the program will find a path/tree so that we can set all the edges to be positively signed and will print the edges in this path, followed by the weight matrix associated with the graph. This weight matrix has 0's in entries where the vertices have no edge, 10's where the vertices share an edge but the program has not determined yet if that edge must be positively or negatively signed, 1's if the edge is postively signed, and -1's if the edge is negatively signed. The following screenshot is an example of what will be printed from this part.
+
 ![Alt text](https://user-images.githubusercontent.com/19316223/29590088-2b173b42-8766-11e7-8efb-e8ed31ba5cb8.png)
 
 
