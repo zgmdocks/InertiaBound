@@ -1,6 +1,6 @@
 # SageCode
 
-The files found in this repository were used to investigate the inertia bound, also known as the Cvetkovic bound.
+The files found in this repository were used to investigate the inertia bound, also known as the Cvetkovic bound, throughout a undergraduate research assistantship with Chris Godsil and John Sinkovic in the Spring of 2017. 
 
 ## Inertia Bound
 The inertia bound is defined as follows:
@@ -25,6 +25,11 @@ This file contains a database of graphs that were found to have a non-tight iner
 This file contains 19 graphs, one on each line, written in their graph6 string form. All graphs with a non-tight inertia bound that were found (the graphs found in NonTightGraphs.txt) were obtained by looking at subgraphs of the graphs found in this file.
 
 ### check.sage & signing.sage
+These two scripts create the program that has been used to determine if a graph has a non-tight inerta bound using a proof method found in the following [paper](https://arxiv.org/abs/1609.02826) by John Sinkovic.
 
+You can run this file on a specific graph by following the following instructions:
+
+**1. Inputting the graph you wish to check for a non-tight inertia bound**
+    
 
 
