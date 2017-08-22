@@ -44,4 +44,15 @@ RunScript being set to True will cause the program to execute the last few lines
 
 openfig being set to True will open and save relevant images to the current directory. This option will save the graph being examined, the path/tree that had its edges set to positive, and the subgraphs that were used to find a contradiction and prove that the graph has a non-tight inertia bound.
 
-Guess being set to 0 will cause the program to consider the cases of when an edge that is currently unsigned, is set to positive and when it is set to negative. This option will only be utilized when all edges that can be signed have been signed and the program would normally terminate with a return value of False (indicating the graph could not be determined if it had a non-tight inertia bound). Only if both the case when the edge is set to positive and when it is set to negative create a contradiction as described in the method in the paper linked above, will the graph be determined to have a non-tight inertia bound.
+Guess being set to 0 will cause the program to consider the cases of when an edge that is currently unsigned, is set to positive and when it is set to negative. This option will only be utilized when all edges that can be signed have been signed and the program would normally terminate with a return value of False (indicating the graph could not be determined if it had a non-tight inertia bound). Only if both the case when the edge is set to positive and when it is set to negative create a contradiction as described in the method in the paper linked above, will the graph be determined to have a non-tight inertia bound. Setting guess to a number other than 0, 1, or -1 will cause the program to terminate and return False when no more edges can be guessed and a contradiction has not yet been reached.
+
+**3. Running the program**
+
+In the terminal, run
+```
+sage check.sage
+```
+This will run the program with the graph that you entered in step 1 and print the output to the terminal.
+
+**4. Reading the output**
+
