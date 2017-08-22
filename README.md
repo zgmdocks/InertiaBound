@@ -73,3 +73,15 @@ Now that the program has determined the sign of all edges that can be signed wit
 ![Alt text](https://user-images.githubusercontent.com/19316223/29591212-77def55a-876b-11e7-89b9-2def58b6edcc.png)
 
 Finally, when the program has completed, as the last line printed to the screen, it will return a True if the graph has a non-tight inertia bound, or a False if the method cannot determine if the graph has a non-tight inertia bound.
+
+## Graphs
+
+The subdirectory Graphs contains output from the program that would be sufficient to determine it has a non-tight inertia bound for a few select graphs.
+
+## oldScripts
+
+The subdirectory oldScripts contains many python, sage, and bash scripts that were used to automate checking graphs or determine other useful information during the term.
+
+## textFiles
+
+This subdirectory contains a large amount of text files that contain graphs that we have determined the method does not work on, and information about the graphs that we have determined to have a non-tight inertia bound.
