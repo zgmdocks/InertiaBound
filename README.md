@@ -35,5 +35,13 @@ You can run this file on a specific graph by following the following instruction
 
 On line 197 in the screenshot, change the string inside of the Graph() function to the graph6 string of the graph you want to check.
 
+**2. Change the information the program outputs**
+![Alt text](https://user-images.githubusercontent.com/19316223/29588904-2de82534-8761-11e7-8d4f-4d6c75534264.png)
 
+By setting the debug and moreDebug variables to True, the program will print useful information that can be used to verify that a graph has a non-tight inertia bound, or can show where the method to prove that the graph has a non-tight inertia bound fails.
 
+RunScript being set to True will cause the program to execute the last few lines in the file where you entered the graph you wish to check for a non-tight inertia bound in step 1.
+
+openfig being set to True will open and save relevant images to the current directory. This option will save the graph being examined, the path/tree that had its edges set to positive, and the subgraphs that were used to find a contradiction and prove that the graph has a non-tight inertia bound.
+
+Guess being set to 0 will cause the program to consider the cases of when an edge that is currently unsigned, is set to positive and when it is set to negative. This option will only be utilized when all edges that can be signed have been signed and the program would normally terminate with a return value of False (indicating the graph could not be determined if it had a non-tight inertia bound). Only if both the case when the edge is set to positive and when it is set to negative give 
