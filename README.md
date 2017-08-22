@@ -64,6 +64,10 @@ Next the program will find a path/tree so that we can set all the edges to be po
 
 ![Alt text](https://user-images.githubusercontent.com/19316223/29590088-2b173b42-8766-11e7-8efb-e8ed31ba5cb8.png)
 
+The next information printed to the screen will be information on the signing of the edges. It will notify that a new edge signing is beginning, then will state what the sign of the triangles will be (the sign of the triangles is the sign of the product of the edges in the triangle). It will say the triangles' sign is 1 if the triangles are positively signed, and -1 if the triangles are negatively signed. Then it will begin to determine signs of edges that are currently unsigned. It will state the triangle that is used to determine the new edge sign, then the edge of each sign in the triangle, followed by the new sign of the edge that was previously unsigned in the triangle. This will continue until the program cannot determine anymore edges. An example of a print out of this process is in the screenshot below.
+
+![Alt text](https://user-images.githubusercontent.com/19316223/29590692-0da37708-8769-11e7-9e94-2522f797b4be.png)
+
 
 
 
