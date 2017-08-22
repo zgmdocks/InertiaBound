@@ -25,7 +25,7 @@ This file contains a database of graphs that were found to have a non-tight iner
 This file contains 19 graphs, one on each line, written in their graph6 string form. All graphs with a non-tight inertia bound that were found (the graphs found in NonTightGraphs.txt) were obtained by looking at subgraphs of the graphs found in this file.
 
 ### check.sage & signing.sage
-These two scripts create the program that has been used to determine if a graph has a non-tight inerta bound using a proof method found in the following [paper](https://arxiv.org/abs/1609.02826) by John Sinkovic.
+These two scripts create the program that has been used to determine if a graph has a non-tight inertia bound using a proof method found in the following [paper](https://arxiv.org/abs/1609.02826) by John Sinkovic.
 
 You can run this file on a specific graph by following the following instructions:
 
@@ -56,11 +56,11 @@ This will run the program with the graph that you entered in step 1 and print th
 
 **4. Reading the output**
 Depending on which variables have been changed, this output may be different. The output described will be assumed that debug and moreDebug are set to True and Guess is set to 0.
-First off, the program will check the graph to ensure it is alpha-critical, will find all nonsingular subgraphs of size 2\*\alpha(G)+1 and is of the form necessary to be used in the method, and will find all the triangles that must be the same sign (information on why these checks are performed or definitions of the terms can be found in the paper linked above). The results of these checks will be printed to the screen as shown below.
+First off, the program will check the graph to ensure it is alpha-critical, will find all non-singular subgraphs of size 2\*\alpha(G)+1 and is of the form necessary to be used in the method, and will find all the triangles that must be the same sign (information on why these checks are performed or definitions of the terms can be found in the paper linked above). The results of these checks will be printed to the screen as shown below.
 
 ![Alt text](https://user-images.githubusercontent.com/19316223/29589774-8cb1d8d2-8764-11e7-949d-afa1f9ef2153.png)
 
-Next the program will find a path/tree so that we can set all the edges to be positively signed and will print the edges in this path, followed by the weight matrix associated with the graph. This weight matrix has 0's in entries where the vertices have no edge, 10's where the vertices share an edge but the program has not determined yet if that edge must be positively or negatively signed, 1's if the edge is postively signed, and -1's if the edge is negatively signed. The following screenshot is an example of what will be printed from this part.
+Next the program will find a path/tree so that we can set all the edges to be positively signed and will print the edges in this path, followed by the weight matrix associated with the graph. This weight matrix has 0's in entries where the vertices have no edge, 10's where the vertices share an edge but the program has not determined yet if that edge must be positively or negatively signed, 1's if the edge is positively signed, and -1's if the edge is negatively signed. The following screenshot is an example of what will be printed from this part.
 
 ![Alt text](https://user-images.githubusercontent.com/19316223/29590088-2b173b42-8766-11e7-8efb-e8ed31ba5cb8.png)
 
@@ -68,7 +68,7 @@ The next information printed to the screen will be information on the signing of
 
 ![Alt text](https://user-images.githubusercontent.com/19316223/29590692-0da37708-8769-11e7-9e94-2522f797b4be.png)
 
-Now that the program has determined the sign of all edges that can be signed with the information known, the program will iterate through the subgraphs that were determined in the first step, looking for at least one subgraph that has alpha(G)+1 positive eigenvalues, and at least one subgraph that has alpha(G)+1 negative eigenvalues. If it can find suitable subgraphs, it will have found a contradiction and will print relevant information about the subgraphs and the current state of the weight matrix associated with the graph. Then it will move onto the next signing (either making all the triangles negatively signed, or changing the guessed edge to negatively signed), or will terminate and return True that this graph has a non-tight inertia bound. However, if it does not find suitable subgraphs, the program will try considering the cases of making a previously unsigned edge both positve and negative (as long as the Guess variable from step 2 is set to 0). If no more edges are unsigned, the program will terminate and return False, indicating that the program cannot determine if the graph has a non-tight inertia bound using this method. An example of the program finding suitable subgraphs and obtaining a contradiction is included below.
+Now that the program has determined the sign of all edges that can be signed with the information known, the program will iterate through the subgraphs that were determined in the first step, looking for at least one subgraph that has alpha(G)+1 positive eigenvalues, and at least one subgraph that has alpha(G)+1 negative eigenvalues. If it can find suitable subgraphs, it will have found a contradiction and will print relevant information about the subgraphs and the current state of the weight matrix associated with the graph. Then it will move onto the next signing (either making all the triangles negatively signed, or changing the guessed edge to negatively signed), or will terminate and return True that this graph has a non-tight inertia bound. However, if it does not find suitable subgraphs, the program will try considering the cases of making a previously unsigned edge both positive and negative (as long as the Guess variable from step 2 is set to 0). If no more edges are unsigned, the program will terminate and return False, indicating that the program cannot determine if the graph has a non-tight inertia bound using this method. An example of the program finding suitable subgraphs and obtaining a contradiction is included below.
 
 ![Alt text](https://user-images.githubusercontent.com/19316223/29591212-77def55a-876b-11e7-89b9-2def58b6edcc.png)
 
