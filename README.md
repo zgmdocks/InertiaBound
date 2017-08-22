@@ -68,8 +68,8 @@ The next information printed to the screen will be information on the signing of
 
 ![Alt text](https://user-images.githubusercontent.com/19316223/29590692-0da37708-8769-11e7-9e94-2522f797b4be.png)
 
+Now that the program has determined the sign of all edges that can be signed with the information known, the program will iterate through the subgraphs that were determined in the first step, looking for at least one subgraph that has alpha(G)+1 positive eigenvalues, and at least one subgraph that has alpha(G)+1 negative eigenvalues. If it can find suitable subgraphs, it will have found a contradiction and will print relevant information about the subgraphs and the current state of the weight matrix associated with the graph. Then it will move onto the next signing (either making all the triangles negatively signed, or changing the guessed edge to negatively signed), or will terminate and return True that this graph has a non-tight inertia bound. However, if it does not find suitable subgraphs, the program will try considering the cases of making a previously unsigned edge both positve and negative (as long as the Guess variable from step 2 is set to 0). If no more edges are unsigned, the program will terminate and return False, indicating that the program cannot determine if the graph has a non-tight inertia bound using this method. An example of the program finding suitable subgraphs and obtaining a contradiction is included below.
 
+![Alt text](https://user-images.githubusercontent.com/19316223/29591108-0d828a1e-876b-11e7-8802-44ef3e6e5a20.png)
 
-
-
-
+Finally, when the program has completed, as the last line printed to the screen, it will return a True if the graph has a non-tight inertia bound, or a False if the method cannot determine if the graph has a non-tight inertia bound.
