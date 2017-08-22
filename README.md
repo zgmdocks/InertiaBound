@@ -18,4 +18,7 @@ More information on the inertia bound, other relevant definitions, and the proof
 
 ## Files & Descriptions:
 
+### NonTightGraphs.txt
+This file contains a database of graphs that were found to have a non-tight inertia bound. Each line corresponds to a graph written in its graph6 string form and the file is ordered by the number of vertices in the graphs. More information on graph6 strings can be located in the following [SageMath manuals](http://doc.sagemath.org/html/en/reference/graphs/sage/graphs/graph.html#sage.graphs.graph.Graph.graph6_string)
+
 
