@@ -31,5 +31,9 @@ You can run this file on a specific graph by following the following instruction
 
 **1. Inputting the graph you wish to check for a non-tight inertia bound**
     
+![Alt text](https://user-images.githubusercontent.com/19316223/29586906-496c2398-875a-11e7-9af7-0dc4d7aa3257.png)
+
+On line 197 in the screenshot, change the string inside of the Graph() function to the graph6 string of the graph you want to check.
+
 
 
