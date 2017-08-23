@@ -36,6 +36,7 @@ You can run this file on a specific graph by following the following instruction
 On line 197 in the screenshot, change the string inside of the Graph() function to the graph6 string of the graph you want to check.
 
 **2. Change the information the program outputs**
+
 ![Alt text](https://user-images.githubusercontent.com/19316223/29588904-2de82534-8761-11e7-8d4f-4d6c75534264.png)
 
 By setting the debug and moreDebug variables to True, the program will print useful information that can be used to verify that a graph has a non-tight inertia bound, or can show where the method to prove that the graph has a non-tight inertia bound fails.
@@ -55,6 +56,7 @@ sage check.sage
 This will run the program with the graph that you entered in step 1 and print the output to the terminal.
 
 **4. Reading the output**
+
 Depending on which variables have been changed, this output may be different. The output described will be assumed that debug and moreDebug are set to True and Guess is set to 0.
 First off, the program will check the graph to ensure it is alpha-critical, will find all non-singular subgraphs of size 2\*\alpha(G)+1 and is of the form necessary to be used in the method, and will find all the triangles that must be the same sign (information on why these checks are performed or definitions of the terms can be found in the paper linked above). The results of these checks will be printed to the screen as shown below.
 
