@@ -58,7 +58,7 @@ This will run the program with the graph that you entered in step 1 and print th
 **4. Reading the output**
 
 Depending on which variables have been changed, this output may be different. The output described will be assumed that debug and moreDebug are set to True and Guess is set to 0.
-First off, the program will check the graph to ensure it is alpha-critical, will find all non-singular subgraphs of size 2\*\alpha(G)+1 and is of the form necessary to be used in the method, and will find all the triangles that must be the same sign (information on why these checks are performed or definitions of the terms can be found in the paper linked above). The results of these checks will be printed to the screen as shown below.
+First off, the program will check the graph to ensure it is alpha-critical, will find all non-singular subgraphs of size 2\*alpha(G)+1 and is of the form necessary to be used in the method, and will find all the triangles that must be the same sign (information on why these checks are performed or definitions of the terms can be found in the paper linked above). The results of these checks will be printed to the screen as shown below.
 
 ![Alt text](https://user-images.githubusercontent.com/19316223/29589774-8cb1d8d2-8764-11e7-949d-afa1f9ef2153.png)
 
