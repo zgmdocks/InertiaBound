@@ -49,6 +49,8 @@ Guess being set to 0 will cause the program to consider the cases of when an edg
 
 **3. Running the program**
 
+Note: Before running the program, you must download and install [SageMath (version >= 7.6)](http://www.sagemath.org/)
+
 In the terminal, type
 ```
 sage check.sage
