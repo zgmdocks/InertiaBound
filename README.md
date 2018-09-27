@@ -1,4 +1,4 @@
-# SageCode
+# InertiaBound
 
 The files found in this repository were used to investigate the inertia bound, also known as the Cvetkovic bound, throughout a undergraduate research assistantship with Chris Godsil and John Sinkovic in the Spring of 2017. 
 
